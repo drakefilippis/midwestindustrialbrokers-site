@@ -28,7 +28,6 @@
   html { scroll-behavior: smooth; }
   body { background: var(--white); color: var(--black); font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.5; min-height: 100vh; overflow-x: hidden; }
   .wrap { max-width: 1320px; margin: 0 auto; padding: 0 32px; position: relative; }
-
   /* ============ NAV ============ */
   nav.top { position: sticky; top: 0; z-index: 100; background: var(--black); border-bottom: 3px solid var(--yellow); }
   nav.top .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; padding-bottom: 18px; }
@@ -43,55 +42,45 @@
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 13px;
     color: var(--black);
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
   }
-  .brand-mark::before { content: 'MIB'; font-size: 13px; letter-spacing: -0.02em; }
+  .brand-mark::before { content: 'MIB'; }
   .brand-text { font-family: 'Montserrat', sans-serif; line-height: 1.1; }
   .brand-text .b1 { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: var(--yellow); text-transform: uppercase; margin-bottom: 3px; }
   .brand-text .b2 { font-size: 15px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
-  .nav-links { display: flex; gap: 32px; list-style: none; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
+  .nav-links { display: flex; gap: 28px; list-style: none; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
   .nav-links a { color: var(--white); text-decoration: none; transition: color 0.2s; position: relative; padding-bottom: 4px; }
   .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: var(--yellow); transition: width 0.25s ease; }
   .nav-links a:hover { color: var(--yellow); }
   .nav-links a:hover::after { width: 100%; }
-
-  /* ============ HERO ============ */
-  .hero { background: var(--black); color: var(--white); position: relative; overflow: hidden; padding: 80px 0 0; }
-  .hero::before { content: ''; position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); }
-  .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; }
+  /* ============ HERO (SINGLE-COLUMN, CENTERED) ============ */
+  .hero { background: var(--black); color: var(--white); position: relative; overflow: hidden; padding: 120px 0 100px; }
+  .hero::before { content: ''; position: absolute; top: 0; right: 0; width: 96px; height: 96px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); }
+  .hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 64px; height: 64px; background: var(--yellow); clip-path: polygon(0 0, 100% 100%, 0 100%); }
+  .hero-inner { max-width: 920px; }
   .hero-eyebrow { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.25em; color: var(--yellow); text-transform: uppercase; margin-bottom: 28px; display: flex; align-items: center; gap: 14px; }
   .hero-eyebrow::before { content: ''; width: 32px; height: 2px; background: var(--yellow); }
-  .hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(46px, 6.5vw, 86px); line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; margin-bottom: 24px; }
+  .hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(48px, 7.5vw, 104px); line-height: 0.92; letter-spacing: -0.025em; text-transform: uppercase; margin-bottom: 32px; }
   .hero h1 .of { color: var(--yellow); font-weight: 400; font-style: italic; }
-  .hero-sub { font-size: 18px; line-height: 1.6; color: var(--gray-200); max-width: 540px; margin-bottom: 40px; font-weight: 300; }
-  .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 80px; }
-  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; text-decoration: none; transition: all 0.2s; border: 2px solid transparent; cursor: pointer; }
+  .hero-sub { font-size: 19px; line-height: 1.6; color: var(--gray-200); max-width: 640px; margin-bottom: 48px; font-weight: 300; }
+  .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; text-decoration: none; transition: all 0.2s; border: 2px solid transparent; cursor: pointer; }
   .btn-primary { background: var(--yellow); color: var(--black); }
   .btn-primary:hover { background: var(--yellow-soft); transform: translateY(-2px); }
   .btn-ghost { background: transparent; color: var(--white); border-color: var(--white); }
   .btn-ghost:hover { background: var(--white); color: var(--black); }
+  .btn-dark { background: var(--black); color: var(--yellow); border-color: var(--black); }
+  .btn-dark:hover { background: var(--black-soft); }
   .btn .arrow { transition: transform 0.2s; }
   .btn:hover .arrow { transform: translateX(4px); }
-
-  .hero-card { background: var(--white); color: var(--black); padding: 40px; position: relative; margin-bottom: -64px; margin-top: 32px; }
-  .hero-card::before { content: ''; position: absolute; bottom: -16px; right: 32px; width: 48px; height: 48px; background: var(--yellow); clip-path: polygon(0 0, 100% 0, 100% 100%); }
-  .hero-card .label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: var(--gray-600); text-transform: uppercase; margin-bottom: 12px; }
-  .hero-card h2 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; margin-bottom: 6px; letter-spacing: -0.01em; }
-  .hero-card .role { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-600); margin-bottom: 24px; }
-  .hero-card-contact { border-top: 1px solid var(--line); padding-top: 20px; font-size: 14px; line-height: 1.95; }
-  .hero-card-contact a { color: var(--black); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
-  .hero-card-contact a:hover { border-bottom-color: var(--yellow); }
-  .hero-card-contact .lbl { display: inline-block; width: 64px; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; color: var(--gray-600); text-transform: uppercase; }
-
   /* ============ COVERAGE STRIP ============ */
   .coverage { background: var(--yellow); padding: 28px 0; position: relative; z-index: 2; }
   .coverage-inner { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; justify-content: center; }
   .coverage-label { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); padding-right: 24px; border-right: 2px solid var(--black); }
   .coverage-cities { display: flex; gap: 28px; flex-wrap: wrap; }
   .coverage-cities span { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); }
-
   /* ============ STATS STRIP ============ */
   .stats { background: var(--gray-50); padding: 80px 0 64px; border-bottom: 1px solid var(--line); }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
@@ -101,7 +90,6 @@
   .stat-num { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 56px; line-height: 1; color: var(--black); margin-bottom: 8px; letter-spacing: -0.02em; }
   .stat-num .unit { color: var(--yellow); }
   .stat-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-600); }
-
   /* ============ SECTIONS ============ */
   section.block { padding: 96px 0; }
   section.block.dark { background: var(--black); color: var(--white); }
@@ -112,7 +100,6 @@
   .section-head h2 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1; text-transform: uppercase; letter-spacing: -0.01em; }
   .section-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-600); }
   section.block.dark .section-tag { color: var(--gray-200); }
-
   /* ============ TEAM ============ */
   .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; max-width: 900px; }
   .broker-card { background: var(--white); border: 1px solid var(--line); padding: 36px 32px; position: relative; overflow: hidden; transition: all 0.2s; }
@@ -131,14 +118,12 @@
   .broker-card.coming-soon::before { background: var(--gray-200); }
   .broker-card.coming-soon .placeholder-icon { font-family: 'Montserrat', sans-serif; font-size: 56px; font-weight: 800; color: var(--gray-200); margin-bottom: 16px; line-height: 1; }
   .broker-card.coming-soon .placeholder-text { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; color: var(--gray-400); text-transform: uppercase; }
-
   /* ============ DEALS TABLE ============ */
   .deals-controls { display: flex; gap: 10px; margin-bottom: 28px; flex-wrap: wrap; align-items: center; }
   .filter-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.15em; margin-right: 8px; }
   .year-btn { background: transparent; color: var(--black); border: 2px solid var(--line); padding: 8px 18px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; letter-spacing: 0.05em; }
   .year-btn:hover { border-color: var(--black); }
   .year-btn.active { background: var(--yellow); border-color: var(--yellow); color: var(--black); }
-
   .deals-table { width: 100%; border-collapse: collapse; font-size: 14px; }
   .deals-table thead { background: var(--black); color: var(--white); }
   .deals-table th { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; text-align: left; padding: 16px 18px; }
@@ -157,24 +142,44 @@
   .badge.seller { background: var(--white); }
   .badge.landlord { background: var(--black); color: var(--white); }
   .deal-type { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-600); }
-
-  /* ============ LISTINGS ============ */
-  .listings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
-  .listing-card { background: var(--white); color: var(--black); border: 1px solid var(--line); padding: 32px; transition: all 0.2s; cursor: pointer; position: relative; min-height: 300px; display: flex; flex-direction: column; overflow: hidden; }
-  .listing-card::before { content: ''; position: absolute; top: 0; right: 0; width: 40px; height: 40px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); transition: width 0.25s, height 0.25s; }
-  .listing-card:hover { border-color: var(--black); transform: translateY(-4px); }
-  .listing-card:hover::before { width: 56px; height: 56px; }
-  .listing-status { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--black); background: var(--yellow); padding: 4px 10px; display: inline-block; margin-bottom: 20px; align-self: flex-start; }
-  .listing-status.pending { background: var(--black); color: var(--yellow); }
-  .listing-addr { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; line-height: 1.05; text-transform: uppercase; margin-bottom: 4px; letter-spacing: -0.01em; }
-  .listing-city { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 28px; }
-  .listing-details { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); }
-  .listing-detail-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-600); margin-bottom: 4px; }
-  .listing-detail-val { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); }
-  .empty-state { background: var(--white); border: 2px dashed var(--gray-200); padding: 64px 32px; text-align: center; font-family: 'Montserrat', sans-serif; }
-  .empty-state-title { font-size: 16px; font-weight: 700; letter-spacing: 0.1em; color: var(--gray-400); text-transform: uppercase; margin-bottom: 8px; }
-  .empty-state-sub { font-size: 13px; color: var(--gray-400); }
-
+  /* ============ CLIENT MARQUEE ============ */
+  .marquee-section { background: var(--black); padding: 56px 0 64px; border-top: 1px solid var(--line-dark); }
+  .marquee-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.25em; color: var(--yellow); text-transform: uppercase; text-align: center; margin-bottom: 36px; display: flex; align-items: center; gap: 18px; justify-content: center; }
+  .marquee-label::before, .marquee-label::after { content: ''; width: 48px; height: 1px; background: var(--yellow); }
+  .marquee { overflow: hidden; position: relative; mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); }
+  .marquee-track { display: flex; gap: 64px; animation: marquee 48s linear infinite; width: max-content; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  .client-logo {
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    padding: 16px 28px;
+    border: 1px solid var(--line-dark);
+    background: rgba(255,255,255,0.02);
+    transition: all 0.3s;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+  }
+  .client-logo:hover { color: var(--yellow); border-color: var(--yellow); background: rgba(255,212,0,0.05); }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  /* ============ LISTINGS — CPIX EMBED ============ */
+  .listings-cta { display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; align-items: center; }
+  .listings-cta-text { color: var(--gray-200); font-size: 14px; }
+  .listings-frame-wrap { position: relative; background: var(--white); border: 1px solid var(--line-dark); min-height: 600px; }
+  .listings-frame { width: 100%; height: 800px; border: 0; display: block; }
+  .listings-fallback { display: none; padding: 80px 32px; text-align: center; color: var(--black); background: var(--white); }
+  .listings-fallback.show { display: block; }
+  .listings-fallback h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin-bottom: 12px; letter-spacing: -0.01em; }
+  .listings-fallback p { color: var(--gray-600); font-size: 15px; max-width: 480px; margin: 0 auto 28px; line-height: 1.6; }
   /* ============ MARKET REPORT ============ */
   .market-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
   .market-headline { background: var(--yellow); padding: 40px; position: relative; color: var(--black); margin-bottom: 32px; }
@@ -189,21 +194,18 @@
   .m-stat-trend.up { color: #1a7f37; }
   .m-stat-trend.down { color: #c22d2d; }
   .m-stat-trend.flat { color: var(--gray-600); }
-
   .submarket-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .submarket-table th { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; text-align: left; padding: 12px 12px; background: var(--black); color: var(--white); }
   .submarket-table th:not(:first-child) { text-align: right; }
   .submarket-table td { padding: 14px 12px; border-bottom: 1px solid var(--line); }
   .submarket-table td:not(:first-child) { text-align: right; font-family: 'Montserrat', sans-serif; font-weight: 600; }
   .submarket-table tbody tr:hover { background: var(--gray-50); }
-
   .market-side h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid var(--yellow); }
   .takeaway-list { list-style: none; margin-bottom: 32px; }
   .takeaway-list li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.5; display: flex; gap: 14px; }
   .takeaway-list li::before { content: ''; flex-shrink: 0; width: 10px; height: 10px; background: var(--yellow); margin-top: 6px; }
   .market-update { background: var(--gray-50); padding: 24px; border-left: 4px solid var(--yellow); font-size: 13px; line-height: 1.6; color: var(--gray-600); }
   .market-update strong { color: var(--black); }
-
   /* ============ RESOURCES ============ */
   .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
   .subsection-title { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; color: var(--black); }
@@ -219,7 +221,20 @@
   .link-name .desc { font-size: 12px; color: var(--gray-600); font-weight: 400; }
   .link-arrow { font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--gray-400); font-weight: 700; transition: color 0.15s; }
   .link-list a:hover .link-arrow { color: var(--yellow); }
-
+  /* ============ PREFERRED SERVICES ============ */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+  .service-cat { background: var(--white); border: 1px solid var(--line); padding: 28px; position: relative; transition: all 0.2s; }
+  .service-cat::before { content: ''; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background: var(--yellow); }
+  .service-cat:hover { border-color: var(--black); transform: translateX(2px); }
+  .service-cat-title { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--black); margin-bottom: 6px; padding-left: 16px; }
+  .service-cat-sub { font-size: 11px; color: var(--gray-400); padding-left: 16px; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+  .service-contact { padding-left: 16px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .service-contact + .service-contact { margin-top: 14px; }
+  .service-contact-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; color: var(--black); margin-bottom: 2px; line-height: 1.2; }
+  .service-contact-firm { font-size: 13px; color: var(--gray-600); margin-bottom: 8px; }
+  .service-contact-info { font-size: 12px; line-height: 1.7; font-family: 'Inter', sans-serif; }
+  .service-contact-info a { color: var(--black); text-decoration: none; display: block; }
+  .service-contact-info a:hover { color: var(--gray-600); }
   /* ============ FOOTER ============ */
   footer { background: var(--black); color: var(--white); padding: 80px 0 32px; position: relative; }
   footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--yellow); }
@@ -236,13 +251,11 @@
   .footer-bottom { border-top: 1px solid var(--line-dark); padding-top: 24px; }
   .footer-bottom-row { display: flex; justify-content: space-between; font-family: 'Montserrat', sans-serif; font-size: 11px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.12em; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
   .footer-disclosure { font-size: 11px; color: var(--gray-400); line-height: 1.6; max-width: 900px; padding-top: 8px; border-top: 1px solid var(--line-dark); margin-top: 12px; }
-
   /* ============ RESPONSIVE ============ */
   @media (max-width: 960px) {
     .wrap { padding: 0 20px; }
     .nav-links { display: none; }
-    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-    .hero-card { margin-bottom: -32px; }
+    .hero { padding: 80px 0 64px; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 0; padding-top: 32px; }
     .stat { border-right: none; padding: 0 16px; }
     .stat:nth-child(odd) { border-right: 1px solid var(--line); padding-left: 0; }
@@ -257,6 +270,7 @@
     .deals-table td { padding: 6px 0; text-align: left !important; }
     .section-head { flex-direction: column; align-items: flex-start; gap: 12px; }
     .coverage-label { border-right: none; padding-right: 0; padding-bottom: 12px; border-bottom: 2px solid var(--black); margin-bottom: 4px; }
+    .listings-frame { height: 600px; }
   }
   @media (max-width: 600px) {
     .footer-grid { grid-template-columns: 1fr; }
@@ -265,7 +279,6 @@
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav class="top">
   <div class="wrap">
@@ -282,46 +295,32 @@
       <li><a href="#listings">Listings</a></li>
       <li><a href="#market">Market Report</a></li>
       <li><a href="#resources">Resources</a></li>
+      <li><a href="#services">Preferred Services</a></li>
     </ul>
   </div>
 </nav>
-
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-eyebrow">Industrial CRE Brokerage</div>
-        <h1>Industrial<br />Real Estate<br /><span class="of">across</span> the Midwest</h1>
-        <p class="hero-sub">
-          Tenant and buyer representation, leasing, investment sales, and sale-leaseback advisory for industrial
-          properties throughout Plymouth, Ann Arbor, the I-275 corridor, and greater Metro Detroit.
-        </p>
-        <div class="hero-cta">
-          <a href="mailto:dfilippis@signatureassociates.com" class="btn btn-primary">Get In Touch <span class="arrow">→</span></a>
-          <a href="#deals" class="btn btn-ghost">See Our Work <span class="arrow">↓</span></a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="label">Lead Broker</div>
-        <h2>Drake Filippis</h2>
-        <div class="role">Commercial + Industrial Broker</div>
-        <div class="hero-card-contact">
-          <div><span class="lbl">Email</span><a href="mailto:dfilippis@signatureassociates.com">dfilippis@signatureassociates.com</a></div>
-          <div><span class="lbl">Office</span><a href="tel:+12487993161">(248) 799-3161</a></div>
-          <div><span class="lbl">Mobile</span><a href="tel:+12489411125">(248) 941-1125</a></div>
-          <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">/in/drake-filippis</a></div>
-        </div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Industrial CRE Brokerage</div>
+      <h1>Industrial<br />Real Estate<br /><span class="of">across</span> the Midwest</h1>
+      <p class="hero-sub">
+        Tenant and buyer representation, leasing, investment sales, and sale-leaseback advisory for industrial
+        properties throughout Plymouth, Ann Arbor, the I-275 corridor, and greater Metro Detroit.
+      </p>
+      <div class="hero-cta">
+        <a href="mailto:dfilippis@signatureassociates.com" class="btn btn-primary">Get In Touch <span class="arrow">→</span></a>
+        <a href="#deals" class="btn btn-ghost">See Our Work <span class="arrow">↓</span></a>
       </div>
     </div>
   </div>
 </header>
-
 <!-- COVERAGE STRIP -->
 <div class="coverage">
   <div class="wrap">
     <div class="coverage-inner">
-      <span class="coverage-label">Submarkets We Cover</span>
+      <span class="coverage-label">Markets We Cover</span>
       <div class="coverage-cities">
         <span>Plymouth</span>
         <span>Livonia</span>
@@ -335,7 +334,6 @@
     </div>
   </div>
 </div>
-
 <!-- STATS -->
 <section class="stats">
   <div class="wrap">
@@ -343,11 +341,10 @@
       <div class="stat"><div class="stat-num">$300<span class="unit">M+</span></div><div class="stat-label">Career Deal Volume</div></div>
       <div class="stat"><div class="stat-num">14<span class="unit">+</span></div><div class="stat-label">Years Experience</div></div>
       <div class="stat"><div class="stat-num">10,000<span class="unit">+</span></div><div class="stat-label">Clients Served</div></div>
-      <div class="stat"><div class="stat-num">7<span class="unit"></span></div><div class="stat-label">Submarkets Covered</div></div>
+      <div class="stat"><div class="stat-num">7<span class="unit"></span></div><div class="stat-label">Markets Covered</div></div>
     </div>
   </div>
 </section>
-
 <!-- TEAM -->
 <section class="block" id="team">
   <div class="wrap">
@@ -356,12 +353,10 @@
       <span class="section-tag">Your Brokers</span>
     </div>
     <div class="team-grid">
-
-      <!-- BROKER CARD: DRAKE -->
       <div class="broker-card">
         <div class="broker-avatar">DF</div>
         <div class="broker-name">Drake Filippis</div>
-        <div class="broker-role">Lead Broker · Commercial + Industrial</div>
+        <div class="broker-role">Associate Broker</div>
         <div class="broker-bio">
           Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and
           greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in
@@ -375,17 +370,13 @@
           <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">View profile ↗</a></div>
         </div>
       </div>
-
-      <!-- COMING SOON / EXPANSION PLACEHOLDER -->
       <div class="broker-card coming-soon">
         <div class="placeholder-icon">+</div>
         <div class="placeholder-text">Team Expansion<br />Coming Soon</div>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- CLOSED DEALS -->
 <section class="block" id="deals" style="background: var(--gray-50);">
   <div class="wrap">
@@ -396,17 +387,16 @@
     <div class="deals-controls">
       <span class="filter-label">Filter by year:</span>
       <button class="year-btn active" data-year="all">All</button>
+      <button class="year-btn" data-year="2026">2026</button>
       <button class="year-btn" data-year="2025">2025</button>
       <button class="year-btn" data-year="2024">2024</button>
       <button class="year-btn" data-year="2023">2023</button>
-      <button class="year-btn" data-year="2022">2022</button>
     </div>
     <table class="deals-table">
       <thead>
         <tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr>
       </thead>
       <tbody id="dealsBody">
-        <!-- ANCHOR DEAL: BANK SUPPLIES CONSOLIDATION (real, from your deck) -->
         <tr data-year="2024">
           <td><span class="deal-year">2024</span></td>
           <td class="deal-property">1294 Beach Court<span class="sub">Saline, MI — New Headquarters</span></td>
@@ -415,7 +405,6 @@
           <td class="deal-type">Sale · Consolidation / 1031</td>
           <td class="deal-size">175,000 SF</td>
         </tr>
-        <!-- More deals to come — placeholder rows so the section doesn't look empty -->
         <tr data-year="2025">
           <td><span class="deal-year">2025</span></td>
           <td class="deal-property">[Property Address]<span class="sub">[City, Submarket]</span></td>
@@ -452,52 +441,71 @@
     </table>
   </div>
 </section>
-
-<!-- ACTIVE LISTINGS -->
+<!--
+====================================================
+ CLIENT LOGO MARQUEE
+ ====================================================
+ To swap in real client names: replace each <div class="client-logo">
+ with your client name. Duplicate the entire .marquee-track block contents
+ once (the marquee-track has the same items listed twice, which is what
+ makes the infinite loop look seamless — keep both copies identical).
+=====================================================
+-->
+<section class="marquee-section">
+  <div class="wrap">
+    <div class="marquee-label">Trusted by Industry Leaders</div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <!-- FIRST COPY (visible) -->
+      <div class="client-logo">Bank Supplies</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <!-- SECOND COPY (for seamless loop — keep identical to above) -->
+      <div class="client-logo">Bank Supplies</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+      <div class="client-logo">[Client Name]</div>
+    </div>
+  </div>
+</section>
+<!-- ACTIVE LISTINGS (CPIX EMBED) -->
 <section class="block dark" id="listings">
   <div class="wrap">
     <div class="section-head">
       <div class="section-head-left"><span class="section-num">03</span><h2 style="color:var(--white);">Active Listings</h2></div>
-      <span class="section-tag">Available Now</span>
+      <span class="section-tag">Live Feed · CPIX</span>
     </div>
-    <div class="listings-grid">
-      <div class="listing-card">
-        <div class="listing-status">Available</div>
-        <div class="listing-addr">[Street Address]</div>
-        <div class="listing-city">[City, MI ZIP]</div>
-        <div class="listing-details">
-          <div><div class="listing-detail-label">Size</div><div class="listing-detail-val">XX,XXX SF</div></div>
-          <div><div class="listing-detail-label">Type</div><div class="listing-detail-val">Industrial</div></div>
-          <div><div class="listing-detail-label">Rate</div><div class="listing-detail-val">$X.XX NNN</div></div>
-          <div><div class="listing-detail-label">Clear Height</div><div class="listing-detail-val">XX'</div></div>
-        </div>
-      </div>
-      <div class="listing-card">
-        <div class="listing-status pending">Under Contract</div>
-        <div class="listing-addr">[Street Address]</div>
-        <div class="listing-city">[City, MI ZIP]</div>
-        <div class="listing-details">
-          <div><div class="listing-detail-label">Size</div><div class="listing-detail-val">XX,XXX SF</div></div>
-          <div><div class="listing-detail-label">Type</div><div class="listing-detail-val">Flex / Industrial</div></div>
-          <div><div class="listing-detail-label">Price</div><div class="listing-detail-val">$X,XXX,XXX</div></div>
-          <div><div class="listing-detail-label">Acreage</div><div class="listing-detail-val">X.X AC</div></div>
-        </div>
-      </div>
-      <div class="listing-card">
-        <div class="listing-status">Available</div>
-        <div class="listing-addr">[Street Address]</div>
-        <div class="listing-city">[City, MI ZIP]</div>
-        <div class="listing-details">
-          <div><div class="listing-detail-label">Size</div><div class="listing-detail-val">XX,XXX SF</div></div>
-          <div><div class="listing-detail-label">Type</div><div class="listing-detail-val">Warehouse</div></div>
-          <div><div class="listing-detail-label">Rate</div><div class="listing-detail-val">$X.XX NNN</div></div>
-          <div><div class="listing-detail-label">Dock Doors</div><div class="listing-detail-val">X DH / X DI</div></div>
-        </div>
+    <div class="listings-cta">
+      <a href="https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031" target="_blank" rel="noopener" class="btn btn-primary">View All Listings on CPIX <span class="arrow">↗</span></a>
+      <span class="listings-cta-text">Live inventory updated daily — opens in a new tab.</span>
+    </div>
+    <div class="listings-frame-wrap">
+      <iframe
+        id="listingsFrame"
+        class="listings-frame"
+        src="https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031"
+        title="Active Listings — Midwest Industrial Brokers"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="listings-fallback" id="listingsFallback">
+        <h3>Listings Open in a New Tab</h3>
+        <p>Our live inventory is hosted on CPIX. Click below to browse every active sale and lease listing in our portfolio.</p>
+        <a href="https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031" target="_blank" rel="noopener" class="btn btn-dark">Open Active Listings <span class="arrow">↗</span></a>
       </div>
     </div>
   </div>
 </section>
-
 <!-- MARKET REPORT -->
 <section class="block" id="market" style="background: var(--gray-50);">
   <div class="wrap">
@@ -521,7 +529,7 @@
         </div>
         <h4 class="subsection-title" style="font-size:14px; margin-bottom:16px;">Submarket Snapshot</h4>
         <table class="submarket-table">
-          <thead><tr><th>Submarket</th><th>Vacancy</th><th>Avg. NNN</th><th>YoY Δ</th></tr></thead>
+          <thead><tr><th>Market</th><th>Vacancy</th><th>Avg. NNN</th><th>YoY Δ</th></tr></thead>
           <tbody>
             <tr><td>Plymouth / Canton</td><td>5.2%</td><td>$9.10</td><td style="color:#1a7f37;">+4.5%</td></tr>
             <tr><td>Ann Arbor / Saline</td><td>4.8%</td><td>$11.25</td><td style="color:#1a7f37;">+5.8%</td></tr>
@@ -538,7 +546,7 @@
         <ul class="takeaway-list">
           <li>Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.</li>
           <li>Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.</li>
-          <li>Ann Arbor / Saline remains the tightest submarket — sub-5% vacancy and the highest NNN rates in the region.</li>
+          <li>Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.</li>
           <li>Sale-leaseback activity is up materially as owner-users look to unlock equity ahead of expected rate cuts.</li>
           <li>Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial.</li>
         </ul>
@@ -548,7 +556,6 @@
     </div>
   </div>
 </section>
-
 <!-- RESOURCES -->
 <section class="block" id="resources">
   <div class="wrap">
@@ -602,13 +609,143 @@
     </div>
   </div>
 </section>
-
+<!-- PREFERRED SERVICES -->
+<section class="block" id="services" style="background: var(--gray-50);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left"><span class="section-num">06</span><h2>Preferred Services</h2></div>
+      <span class="section-tag">Trusted Network of Specialists</span>
+    </div>
+    <div class="services-grid">
+      <div class="service-cat">
+        <div class="service-cat-title">Attorneys</div>
+        <div class="service-cat-sub">CRE · Land Use · Closings</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Title</div>
+        <div class="service-cat-sub">Title Insurance · Escrow · Closings</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Title Company]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Environmental</div>
+        <div class="service-cat-sub">Phase I · Phase II · BEA</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Architecture</div>
+        <div class="service-cat-sub">Industrial · Adaptive Reuse · Build-to-Suit</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">General Contractors</div>
+        <div class="service-cat-sub">Build-out · Tenant Improvements · New Construction</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[GC Firm]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Structural Engineers</div>
+        <div class="service-cat-sub">Mezzanines · Crane Loads · Inspections</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Surveyors</div>
+        <div class="service-cat-sub">ALTA · Boundary · Topographical</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Appraisers</div>
+        <div class="service-cat-sub">Industrial · MAI · Lender-Approved</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Property Inspectors</div>
+        <div class="service-cat-sub">Commercial · Roof · Mechanical</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Firm Name]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-title">Lenders</div>
+        <div class="service-cat-sub">CRE Debt · SBA · Bridge</div>
+        <div class="service-contact">
+          <div class="service-contact-name">[Contact Name]</div>
+          <div class="service-contact-firm">[Bank / Lender]</div>
+          <div class="service-contact-info">
+            <a href="tel:">(XXX) XXX-XXXX</a>
+            <a href="mailto:">email@firm.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="footer-cta">
       <h3>Ready to secure the right industrial space?</h3>
-      <a href="mailto:dfilippis@signatureassociates.com" class="btn" style="background:var(--black); color:var(--yellow); border-color:var(--black);">Let's Talk <span class="arrow">→</span></a>
+      <a href="mailto:dfilippis@signatureassociates.com" class="btn btn-dark">Let's Talk <span class="arrow">→</span></a>
     </div>
     <div class="footer-grid">
       <div class="footer-brand">
@@ -640,6 +777,7 @@
           <li><a href="#listings">Active Listings</a></li>
           <li><a href="#market">Market Report</a></li>
           <li><a href="#resources">Resources</a></li>
+          <li><a href="#services">Preferred Services</a></li>
         </ul>
       </div>
     </div>
@@ -654,7 +792,6 @@
     </div>
   </div>
 </footer>
-
 <script>
   // Year filter
   const buttons = document.querySelectorAll('.year-btn');
@@ -681,7 +818,25 @@
       }
     });
   });
+  // CPIX iframe fallback — if the iframe fails to load (blocked, error, etc.)
+  // within 6 seconds, hide it and show the button-only fallback.
+  (function() {
+    const frame = document.getElementById('listingsFrame');
+    const fallback = document.getElementById('listingsFallback');
+    if (!frame || !fallback) return;
+    let loaded = false;
+    frame.addEventListener('load', () => { loaded = true; });
+    frame.addEventListener('error', () => {
+      frame.style.display = 'none';
+      fallback.classList.add('show');
+    });
+    setTimeout(() => {
+      if (!loaded) {
+        frame.style.display = 'none';
+        fallback.classList.add('show');
+      }
+    }, 6000);
+  })();
 </script>
-
 </body>
 </html>
