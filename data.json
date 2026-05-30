@@ -1,0 +1,256 @@
+{
+  "stats": [
+    { "value": "$300", "unit": "M+", "label": "Career Deal Volume" },
+    { "value": "14", "unit": "+", "label": "Years Experience" },
+    { "value": "10,000", "unit": "+", "label": "Clients Served" },
+    { "value": "7", "unit": "", "label": "Markets Covered" }
+  ],
+  "coverage_cities": [
+    "Plymouth",
+    "Livonia",
+    "Ann Arbor",
+    "Saline",
+    "Northville",
+    "Novi",
+    "Wixom",
+    "Metro Detroit"
+  ],
+  "team": [
+    {
+      "name": "Drake Filippis",
+      "title": "Associate Broker",
+      "initials": "DF",
+      "bio_html": "Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in residential finance, leasing, and property management — closing more than <strong>$300 million in deal volume</strong> directly assisting over 10,000 clients.",
+      "email": "dfilippis@signatureassociates.com",
+      "office_phone": "(248) 799-3161",
+      "mobile_phone": "(248) 941-1125",
+      "linkedin_url": "https://www.linkedin.com/in/drake-filippis-267a104a/"
+    }
+  ],
+  "closed_deals": [
+    {
+      "slug": "4301-highland-rd-waterford",
+      "year": "2026",
+      "property": "4301 Highland Rd.",
+      "subtitle": "Waterford, MI",
+      "client": "Advanced Systems",
+      "client_industry": "",
+      "side": "Buyer",
+      "deal_type": "Sale",
+      "size": "8,892 SF",
+      "closed_date": "April 17, 2026",
+      "headline": "Advanced Systems acquires 8,892 SF facility in Waterford",
+      "summary": "Buyer representation for Advanced Systems on the acquisition of 4301 Highland Rd., Waterford.",
+      "body_md": "[Add case study narrative here — search process, key requirements, why this site, how the transaction came together, timeline, any creative deal points.]",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": []
+    },
+    {
+      "slug": "vios-compounding-livonia",
+      "year": "2026",
+      "property": "32131 Industrial Drive",
+      "subtitle": "Livonia, MI — New Headquarters",
+      "client": "VIOS Compounding",
+      "client_industry": "Pharmaceutical Compounding",
+      "side": "Buyer",
+      "deal_type": "Sale",
+      "size": "15,400 SF",
+      "closed_date": "",
+      "headline": "VIOS Compounding establishes new HQ at 32131 Industrial Drive, Livonia",
+      "summary": "Buyer representation for pharmaceutical compounder VIOS Compounding on their new 15,400 SF headquarters acquisition in Livonia.",
+      "body_md": "[Add case study narrative here — site selection criteria for pharmaceutical compounding, build-out considerations, why Livonia, timeline.]",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": []
+    },
+    {
+      "slug": "medical-investment-portfolio",
+      "year": "2025",
+      "property": "Medical Investment Sale Portfolio",
+      "subtitle": "4-Building Medical Office Portfolio",
+      "client": "Confidential",
+      "client_industry": "Medical / Investment",
+      "side": "Both",
+      "deal_type": "Investment Sale",
+      "size": "44,403 SF · 4 Buildings",
+      "closed_date": "",
+      "headline": "Dual representation on 44,403 SF medical office investment portfolio",
+      "summary": "Represented both buyer and seller on a four-building medical office investment portfolio totaling 44,403 SF.",
+      "body_md": "[Add case study narrative here — portfolio composition, tenant mix, investment thesis, valuation approach, why dual rep worked, timeline.]",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": []
+    },
+    {
+      "slug": "bank-supplies-saline",
+      "year": "2024",
+      "property": "1294 Beach Court",
+      "subtitle": "Saline, MI — New Headquarters",
+      "client": "Bank Supplies",
+      "client_industry": "",
+      "side": "Buyer",
+      "deal_type": "Sale · Consolidation / 1031",
+      "size": "175,000 SF",
+      "closed_date": "",
+      "headline": "Bank Supplies acquires 175,000 SF headquarters in Saline",
+      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court — a consolidation play structured as a 1031 exchange.",
+      "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": []
+    }
+  ],
+  "client_logos": [
+    "Bank Supplies",
+    "Advanced Systems",
+    "VIOS Compounding",
+    "[Client Name]",
+    "[Client Name]",
+    "[Client Name]",
+    "[Client Name]",
+    "[Client Name]"
+  ],
+  "market_report": {
+    "quarter_label": "Q2 2026 · Detroit Industrial",
+    "headline": "Activity steadies as new supply tapers and tenants return to 100k+ SF requirements.",
+    "stats": [
+      { "label": "Total Inventory", "value": "615", "unit": "M SF", "trend": "— Stable", "direction": "flat" },
+      { "label": "Overall Vacancy", "value": "6.8", "unit": "%", "trend": "▲ +20 bps QoQ", "direction": "up" },
+      { "label": "Avg. Asking NNN", "value": "$8.45", "unit": "/SF", "trend": "▲ +3.1% YoY", "direction": "up" },
+      { "label": "Net Absorption YTD", "value": "2.1", "unit": "M SF", "trend": "— Tracking 2025", "direction": "flat" },
+      { "label": "Under Construction", "value": "4.8", "unit": "M SF", "trend": "▼ Down 38% YoY", "direction": "down" },
+      { "label": "Sales Volume (TTM)", "value": "$1.6", "unit": "B", "trend": "▲ Cap rates 7.2%", "direction": "up" }
+    ],
+    "submarkets": [
+      { "name": "Plymouth / Canton", "vacancy": "5.2%", "nnn": "$9.10", "yoy": "+4.5%", "yoy_color": "green" },
+      { "name": "Ann Arbor / Saline", "vacancy": "4.8%", "nnn": "$11.25", "yoy": "+5.8%", "yoy_color": "green" },
+      { "name": "Livonia / Wayne", "vacancy": "6.1%", "nnn": "$8.75", "yoy": "+2.9%", "yoy_color": "green" },
+      { "name": "Northville / Novi", "vacancy": "5.5%", "nnn": "$9.50", "yoy": "+3.8%", "yoy_color": "green" },
+      { "name": "Wixom / I-96 Corridor", "vacancy": "6.4%", "nnn": "$8.40", "yoy": "+2.5%", "yoy_color": "green" },
+      { "name": "Romulus / Airport", "vacancy": "8.9%", "nnn": "$7.80", "yoy": "+0.4%", "yoy_color": "gray" }
+    ],
+    "data_note": "Sample / placeholder data — replace with current CoStar export.",
+    "takeaways": [
+      "Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
+      "Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.",
+      "Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.",
+      "Sale-leaseback activity is up materially as owner-users look to unlock equity ahead of expected rate cuts.",
+      "Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial."
+    ],
+    "watching_title": "EV supply chain shake-out:",
+    "watching_body": "several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters — could create opportunity for tenants with timing flexibility."
+  },
+  "preferred_services": [
+    {
+      "category": "Attorneys",
+      "subtitle": "CRE · Land Use · Closings",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Title",
+      "subtitle": "Title Insurance · Escrow · Closings",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Title Company]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Environmental",
+      "subtitle": "Phase I · Phase II · BEA",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Architecture",
+      "subtitle": "Industrial · Adaptive Reuse · Build-to-Suit",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "General Contractors",
+      "subtitle": "Build-out · Tenant Improvements · New Construction",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[GC Firm]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Structural Engineers",
+      "subtitle": "Mezzanines · Crane Loads · Inspections",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Surveyors",
+      "subtitle": "ALTA · Boundary · Topographical",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Appraisers",
+      "subtitle": "Industrial · MAI · Lender-Approved",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Property Inspectors",
+      "subtitle": "Commercial · Roof · Mechanical",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+      ]
+    },
+    {
+      "category": "Lenders",
+      "subtitle": "CRE Debt · SBA · Bridge",
+      "contacts": [
+        { "name": "[Contact Name]", "firm": "[Bank / Lender]", "phone": "", "email": "" }
+      ]
+    }
+  ]
+}

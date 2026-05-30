@@ -1,0 +1,4 @@
+# Netlify headers config
+# Prevents caching of data.json so CMS edits appear immediately on the live site.
+/data.json
+  Cache-Control: no-cache, max-age=0, must-revalidate

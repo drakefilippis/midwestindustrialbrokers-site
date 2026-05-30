@@ -141,7 +141,13 @@
   .badge.tenant { background: var(--black); color: var(--yellow); }
   .badge.seller { background: var(--white); }
   .badge.landlord { background: var(--black); color: var(--white); }
+  .badge.both { background: var(--yellow); color: var(--black); box-shadow: 3px 3px 0 var(--black); }
   .deal-type { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-600); }
+  /* Clickable deal rows */
+  .deals-table tbody tr.clickable { cursor: pointer; position: relative; }
+  .deals-table tbody tr.clickable:hover { background: var(--white); box-shadow: inset 4px 0 0 var(--yellow); }
+  .deals-table tbody tr.clickable .case-arrow { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: var(--gray-400); margin-left: 8px; transition: color 0.15s, transform 0.15s; display: inline-block; }
+  .deals-table tbody tr.clickable:hover .case-arrow { color: var(--black); transform: translateX(2px); }
   /* ============ CLIENT MARQUEE ============ */
   .marquee-section { background: var(--black); padding: 56px 0 64px; border-top: 1px solid var(--line-dark); }
   .marquee-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.25em; color: var(--yellow); text-transform: uppercase; text-align: center; margin-bottom: 36px; display: flex; align-items: center; gap: 18px; justify-content: center; }
@@ -321,28 +327,14 @@
   <div class="wrap">
     <div class="coverage-inner">
       <span class="coverage-label">Markets We Cover</span>
-      <div class="coverage-cities">
-        <span>Plymouth</span>
-        <span>Livonia</span>
-        <span>Ann Arbor</span>
-        <span>Saline</span>
-        <span>Northville</span>
-        <span>Novi</span>
-        <span>Wixom</span>
-        <span>Metro Detroit</span>
-      </div>
+      <div class="coverage-cities" id="coverageCities"></div>
     </div>
   </div>
 </div>
 <!-- STATS -->
 <section class="stats">
   <div class="wrap">
-    <div class="stats-grid">
-      <div class="stat"><div class="stat-num">$300<span class="unit">M+</span></div><div class="stat-label">Career Deal Volume</div></div>
-      <div class="stat"><div class="stat-num">14<span class="unit">+</span></div><div class="stat-label">Years Experience</div></div>
-      <div class="stat"><div class="stat-num">10,000<span class="unit">+</span></div><div class="stat-label">Clients Served</div></div>
-      <div class="stat"><div class="stat-num">7<span class="unit"></span></div><div class="stat-label">Markets Covered</div></div>
-    </div>
+    <div class="stats-grid" id="statsGrid"></div>
   </div>
 </section>
 <!-- TEAM -->
@@ -352,29 +344,7 @@
       <div class="section-head-left"><span class="section-num">01</span><h2>The Team</h2></div>
       <span class="section-tag">Your Brokers</span>
     </div>
-    <div class="team-grid">
-      <div class="broker-card">
-        <div class="broker-avatar">DF</div>
-        <div class="broker-name">Drake Filippis</div>
-        <div class="broker-role">Associate Broker</div>
-        <div class="broker-bio">
-          Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and
-          greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in
-          residential finance, leasing, and property management — closing more than <strong>$300 million in deal
-          volume</strong> directly assisting over 10,000 clients.
-        </div>
-        <div class="broker-contact">
-          <div><span class="lbl">Email</span><a href="mailto:dfilippis@signatureassociates.com">dfilippis@signatureassociates.com</a></div>
-          <div><span class="lbl">Office</span><a href="tel:+12487993161">(248) 799-3161</a></div>
-          <div><span class="lbl">Mobile</span><a href="tel:+12489411125">(248) 941-1125</a></div>
-          <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">View profile ↗</a></div>
-        </div>
-      </div>
-      <div class="broker-card coming-soon">
-        <div class="placeholder-icon">+</div>
-        <div class="placeholder-text">Team Expansion<br />Coming Soon</div>
-      </div>
-    </div>
+    <div class="team-grid" id="teamGrid"></div>
   </div>
 </section>
 <!-- CLOSED DEALS -->
@@ -396,86 +366,17 @@
       <thead>
         <tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr>
       </thead>
-      <tbody id="dealsBody">
-        <tr data-year="2024">
-          <td><span class="deal-year">2024</span></td>
-          <td class="deal-property">1294 Beach Court<span class="sub">Saline, MI — New Headquarters</span></td>
-          <td>Bank Supplies</td>
-          <td><span class="badge buyer">Buyer</span></td>
-          <td class="deal-type">Sale · Consolidation / 1031</td>
-          <td class="deal-size">175,000 SF</td>
-        </tr>
-        <tr data-year="2025">
-          <td><span class="deal-year">2025</span></td>
-          <td class="deal-property">[Property Address]<span class="sub">[City, Submarket]</span></td>
-          <td>[Client Name]</td>
-          <td><span class="badge tenant">Tenant</span></td>
-          <td class="deal-type">[Lease type]</td>
-          <td class="deal-size">XX,XXX SF</td>
-        </tr>
-        <tr data-year="2025">
-          <td><span class="deal-year">2025</span></td>
-          <td class="deal-property">[Property Address]<span class="sub">[City, Submarket]</span></td>
-          <td>[Client Name]</td>
-          <td><span class="badge buyer">Buyer</span></td>
-          <td class="deal-type">Sale</td>
-          <td class="deal-size">$X,XXX,XXX</td>
-        </tr>
-        <tr data-year="2024">
-          <td><span class="deal-year">2024</span></td>
-          <td class="deal-property">[Property Address]<span class="sub">[City, Submarket]</span></td>
-          <td>[Client Name]</td>
-          <td><span class="badge landlord">Landlord</span></td>
-          <td class="deal-type">Lease</td>
-          <td class="deal-size">XX,XXX SF</td>
-        </tr>
-        <tr data-year="2023">
-          <td><span class="deal-year">2023</span></td>
-          <td class="deal-property">[Property Address]<span class="sub">[City, Submarket]</span></td>
-          <td>[Client Name]</td>
-          <td><span class="badge seller">Seller</span></td>
-          <td class="deal-type">Sale</td>
-          <td class="deal-size">$X,XXX,XXX</td>
-        </tr>
-      </tbody>
+      <tbody id="dealsBody"></tbody>
     </table>
   </div>
 </section>
-<!--
-====================================================
- CLIENT LOGO MARQUEE
- ====================================================
- To swap in real client names: replace each <div class="client-logo">
- with your client name. Duplicate the entire .marquee-track block contents
- once (the marquee-track has the same items listed twice, which is what
- makes the infinite loop look seamless — keep both copies identical).
-=====================================================
--->
+<!-- CLIENT LOGO MARQUEE -->
 <section class="marquee-section">
   <div class="wrap">
     <div class="marquee-label">Trusted by Industry Leaders</div>
   </div>
   <div class="marquee">
-    <div class="marquee-track">
-      <!-- FIRST COPY (visible) -->
-      <div class="client-logo">Bank Supplies</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <!-- SECOND COPY (for seamless loop — keep identical to above) -->
-      <div class="client-logo">Bank Supplies</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-      <div class="client-logo">[Client Name]</div>
-    </div>
+    <div class="marquee-track" id="marqueeTrack"></div>
   </div>
 </section>
 <!-- ACTIVE LISTINGS (CPIX EMBED) -->
@@ -516,42 +417,22 @@
     <div class="market-grid">
       <div>
         <div class="market-headline">
-          <div class="quarter">Q2 2026 · Detroit Industrial</div>
-          <h3>Activity steadies as new supply tapers and tenants return to 100k+ SF requirements.</h3>
+          <div class="quarter" id="marketQuarter"></div>
+          <h3 id="marketHeadline"></h3>
         </div>
-        <div class="market-stats">
-          <div class="m-stat"><div class="m-stat-label">Total Inventory</div><div class="m-stat-val">615<span class="unit">M SF</span></div><div class="m-stat-trend flat">— Stable</div></div>
-          <div class="m-stat"><div class="m-stat-label">Overall Vacancy</div><div class="m-stat-val">6.8<span class="unit">%</span></div><div class="m-stat-trend up">▲ +20 bps QoQ</div></div>
-          <div class="m-stat"><div class="m-stat-label">Avg. Asking NNN</div><div class="m-stat-val">$8.45<span class="unit">/SF</span></div><div class="m-stat-trend up">▲ +3.1% YoY</div></div>
-          <div class="m-stat"><div class="m-stat-label">Net Absorption YTD</div><div class="m-stat-val">2.1<span class="unit">M SF</span></div><div class="m-stat-trend flat">— Tracking 2025</div></div>
-          <div class="m-stat"><div class="m-stat-label">Under Construction</div><div class="m-stat-val">4.8<span class="unit">M SF</span></div><div class="m-stat-trend down">▼ Down 38% YoY</div></div>
-          <div class="m-stat"><div class="m-stat-label">Sales Volume (TTM)</div><div class="m-stat-val">$1.6<span class="unit">B</span></div><div class="m-stat-trend up">▲ Cap rates 7.2%</div></div>
-        </div>
+        <div class="market-stats" id="marketStats"></div>
         <h4 class="subsection-title" style="font-size:14px; margin-bottom:16px;">Submarket Snapshot</h4>
         <table class="submarket-table">
           <thead><tr><th>Market</th><th>Vacancy</th><th>Avg. NNN</th><th>YoY Δ</th></tr></thead>
-          <tbody>
-            <tr><td>Plymouth / Canton</td><td>5.2%</td><td>$9.10</td><td style="color:#1a7f37;">+4.5%</td></tr>
-            <tr><td>Ann Arbor / Saline</td><td>4.8%</td><td>$11.25</td><td style="color:#1a7f37;">+5.8%</td></tr>
-            <tr><td>Livonia / Wayne</td><td>6.1%</td><td>$8.75</td><td style="color:#1a7f37;">+2.9%</td></tr>
-            <tr><td>Northville / Novi</td><td>5.5%</td><td>$9.50</td><td style="color:#1a7f37;">+3.8%</td></tr>
-            <tr><td>Wixom / I-96 Corridor</td><td>6.4%</td><td>$8.40</td><td style="color:#1a7f37;">+2.5%</td></tr>
-            <tr><td>Romulus / Airport</td><td>8.9%</td><td>$7.80</td><td style="color:#4a4a47;">+0.4%</td></tr>
-          </tbody>
+          <tbody id="submarketBody"></tbody>
         </table>
-        <p style="font-size:11px; color:var(--gray-400); margin-top:12px; font-style:italic;">Sample / placeholder data — replace with current CoStar export.</p>
+        <p id="marketDataNote" style="font-size:11px; color:var(--gray-400); margin-top:12px; font-style:italic;"></p>
       </div>
       <div class="market-side">
         <h4>Key Takeaways</h4>
-        <ul class="takeaway-list">
-          <li>Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.</li>
-          <li>Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.</li>
-          <li>Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.</li>
-          <li>Sale-leaseback activity is up materially as owner-users look to unlock equity ahead of expected rate cuts.</li>
-          <li>Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial.</li>
-        </ul>
+        <ul class="takeaway-list" id="takeawayList"></ul>
         <h4>What We're Watching</h4>
-        <div class="market-update"><strong>EV supply chain shake-out:</strong> several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters — could create opportunity for tenants with timing flexibility.</div>
+        <div class="market-update"><strong id="watchingTitle"></strong> <span id="watchingBody"></span></div>
       </div>
     </div>
   </div>
@@ -616,128 +497,7 @@
       <div class="section-head-left"><span class="section-num">06</span><h2>Preferred Services</h2></div>
       <span class="section-tag">Trusted Network of Specialists</span>
     </div>
-    <div class="services-grid">
-      <div class="service-cat">
-        <div class="service-cat-title">Attorneys</div>
-        <div class="service-cat-sub">CRE · Land Use · Closings</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Title</div>
-        <div class="service-cat-sub">Title Insurance · Escrow · Closings</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Title Company]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Environmental</div>
-        <div class="service-cat-sub">Phase I · Phase II · BEA</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Architecture</div>
-        <div class="service-cat-sub">Industrial · Adaptive Reuse · Build-to-Suit</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">General Contractors</div>
-        <div class="service-cat-sub">Build-out · Tenant Improvements · New Construction</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[GC Firm]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Structural Engineers</div>
-        <div class="service-cat-sub">Mezzanines · Crane Loads · Inspections</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Surveyors</div>
-        <div class="service-cat-sub">ALTA · Boundary · Topographical</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Appraisers</div>
-        <div class="service-cat-sub">Industrial · MAI · Lender-Approved</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Property Inspectors</div>
-        <div class="service-cat-sub">Commercial · Roof · Mechanical</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Firm Name]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cat">
-        <div class="service-cat-title">Lenders</div>
-        <div class="service-cat-sub">CRE Debt · SBA · Bridge</div>
-        <div class="service-contact">
-          <div class="service-contact-name">[Contact Name]</div>
-          <div class="service-contact-firm">[Bank / Lender]</div>
-          <div class="service-contact-info">
-            <a href="tel:">(XXX) XXX-XXXX</a>
-            <a href="mailto:">email@firm.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="services-grid" id="servicesGrid"></div>
   </div>
 </section>
 <!-- FOOTER -->
@@ -793,17 +553,161 @@
   </div>
 </footer>
 <script>
-  // Year filter
-  const buttons = document.querySelectorAll('.year-btn');
-  const rows = document.querySelectorAll('#dealsBody tr');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const year = btn.dataset.year;
-      rows.forEach(row => { row.style.display = (year === 'all' || row.dataset.year === year) ? '' : 'none'; });
+  // ============================================================
+  // CMS-driven content rendering
+  // Loads data.json and populates all dynamic sections.
+  // Edits via Sveltia CMS at /admin update data.json,
+  // which Netlify rebuilds and serves; this script renders it.
+  // ============================================================
+
+  const esc = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+  const telHref = (p) => 'tel:' + String(p || '').replace(/[^\d+]/g, '');
+
+  function renderStats(stats) {
+    const grid = document.getElementById('statsGrid');
+    if (!grid || !Array.isArray(stats)) return;
+    grid.innerHTML = stats.map(s => `
+      <div class="stat">
+        <div class="stat-num">${esc(s.value)}<span class="unit">${esc(s.unit)}</span></div>
+        <div class="stat-label">${esc(s.label)}</div>
+      </div>`).join('');
+  }
+
+  function renderCoverage(cities) {
+    const wrap = document.getElementById('coverageCities');
+    if (!wrap || !Array.isArray(cities)) return;
+    wrap.innerHTML = cities.map(c => `<span>${esc(c)}</span>`).join('');
+  }
+
+  function renderTeam(team) {
+    const grid = document.getElementById('teamGrid');
+    if (!grid || !Array.isArray(team)) return;
+    const cards = team.map(b => `
+      <div class="broker-card">
+        <div class="broker-avatar">${esc(b.initials)}</div>
+        <div class="broker-name">${esc(b.name)}</div>
+        <div class="broker-role">${esc(b.title)}</div>
+        <div class="broker-bio">${b.bio_html || ''}</div>
+        <div class="broker-contact">
+          ${b.email ? `<div><span class="lbl">Email</span><a href="mailto:${esc(b.email)}">${esc(b.email)}</a></div>` : ''}
+          ${b.office_phone ? `<div><span class="lbl">Office</span><a href="${telHref(b.office_phone)}">${esc(b.office_phone)}</a></div>` : ''}
+          ${b.mobile_phone ? `<div><span class="lbl">Mobile</span><a href="${telHref(b.mobile_phone)}">${esc(b.mobile_phone)}</a></div>` : ''}
+          ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile ↗</a></div>` : ''}
+        </div>
+      </div>`).join('');
+    const placeholder = `
+      <div class="broker-card coming-soon">
+        <div class="placeholder-icon">+</div>
+        <div class="placeholder-text">Team Expansion<br />Coming Soon</div>
+      </div>`;
+    grid.innerHTML = cards + placeholder;
+  }
+
+  function renderDeals(deals) {
+    const body = document.getElementById('dealsBody');
+    if (!body || !Array.isArray(deals)) return;
+    body.innerHTML = deals.map(d => {
+      const sideClass = String(d.side || '').toLowerCase().replace(/\s+/g, '');
+      const hasCase = !!d.slug;
+      return `
+      <tr data-year="${esc(d.year)}" ${hasCase ? `class="clickable" data-slug="${esc(d.slug)}"` : ''}>
+        <td><span class="deal-year">${esc(d.year)}</span></td>
+        <td class="deal-property">${esc(d.property)}<span class="sub">${esc(d.subtitle)}</span></td>
+        <td>${esc(d.client)}</td>
+        <td><span class="badge ${esc(sideClass)}">${esc(d.side)}</span></td>
+        <td class="deal-type">${esc(d.deal_type)}</td>
+        <td class="deal-size">${esc(d.size)}${hasCase ? '<span class="case-arrow">→</span>' : ''}</td>
+      </tr>`;
+    }).join('');
+    // Wire row clicks for case-study navigation
+    document.querySelectorAll('#dealsBody tr.clickable').forEach(row => {
+      row.addEventListener('click', () => {
+        const slug = row.dataset.slug;
+        if (slug) window.location.href = '/deal.html?slug=' + encodeURIComponent(slug);
+      });
     });
-  });
+    // Re-wire year filter for fresh rows
+    const buttons = document.querySelectorAll('.year-btn');
+    const rows = document.querySelectorAll('#dealsBody tr');
+    buttons.forEach(btn => {
+      btn.onclick = () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const year = btn.dataset.year;
+        rows.forEach(row => { row.style.display = (year === 'all' || row.dataset.year === year) ? '' : 'none'; });
+      };
+    });
+  }
+
+  function renderLogos(logos) {
+    const track = document.getElementById('marqueeTrack');
+    if (!track || !Array.isArray(logos)) return;
+    const items = logos.map(l => `<div class="client-logo">${esc(l)}</div>`).join('');
+    // Duplicate the list so the seamless-loop CSS animation works
+    track.innerHTML = items + items;
+  }
+
+  function renderMarketReport(mr) {
+    if (!mr) return;
+    const q = document.getElementById('marketQuarter');
+    const h = document.getElementById('marketHeadline');
+    const stats = document.getElementById('marketStats');
+    const subs = document.getElementById('submarketBody');
+    const note = document.getElementById('marketDataNote');
+    const take = document.getElementById('takeawayList');
+    const watchT = document.getElementById('watchingTitle');
+    const watchB = document.getElementById('watchingBody');
+
+    if (q) q.textContent = mr.quarter_label || '';
+    if (h) h.textContent = mr.headline || '';
+    if (note) note.textContent = mr.data_note || '';
+    if (watchT) watchT.textContent = mr.watching_title || '';
+    if (watchB) watchB.textContent = mr.watching_body || '';
+
+    if (stats && Array.isArray(mr.stats)) {
+      stats.innerHTML = mr.stats.map(s => `
+        <div class="m-stat">
+          <div class="m-stat-label">${esc(s.label)}</div>
+          <div class="m-stat-val">${esc(s.value)}<span class="unit">${esc(s.unit)}</span></div>
+          <div class="m-stat-trend ${esc(String(s.direction || 'flat'))}">${esc(s.trend)}</div>
+        </div>`).join('');
+    }
+    if (subs && Array.isArray(mr.submarkets)) {
+      subs.innerHTML = mr.submarkets.map(s => {
+        const color = s.yoy_color === 'green' ? '#1a7f37' : s.yoy_color === 'red' ? '#c22d2d' : '#4a4a47';
+        return `<tr><td>${esc(s.name)}</td><td>${esc(s.vacancy)}</td><td>${esc(s.nnn)}</td><td style="color:${color};">${esc(s.yoy)}</td></tr>`;
+      }).join('');
+    }
+    if (take && Array.isArray(mr.takeaways)) {
+      take.innerHTML = mr.takeaways.map(t => `<li>${esc(t)}</li>`).join('');
+    }
+  }
+
+  function renderServices(services) {
+    const grid = document.getElementById('servicesGrid');
+    if (!grid || !Array.isArray(services)) return;
+    grid.innerHTML = services.map(cat => {
+      const contacts = (cat.contacts || []).map(c => `
+        <div class="service-contact">
+          <div class="service-contact-name">${esc(c.name)}</div>
+          <div class="service-contact-firm">${esc(c.firm)}</div>
+          <div class="service-contact-info">
+            ${c.phone ? `<a href="${telHref(c.phone)}">${esc(c.phone)}</a>` : ''}
+            ${c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''}
+          </div>
+        </div>`).join('');
+      return `
+        <div class="service-cat">
+          <div class="service-cat-title">${esc(cat.category)}</div>
+          <div class="service-cat-sub">${esc(cat.subtitle)}</div>
+          ${contacts}
+        </div>`;
+    }).join('');
+  }
+
   // Smooth scroll with sticky-nav offset
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
@@ -818,8 +722,8 @@
       }
     });
   });
-  // CPIX iframe fallback — if the iframe fails to load (blocked, error, etc.)
-  // within 6 seconds, hide it and show the button-only fallback.
+
+  // CPIX iframe fallback — hide and show button-only fallback if iframe fails
   (function() {
     const frame = document.getElementById('listingsFrame');
     const fallback = document.getElementById('listingsFallback');
@@ -837,6 +741,22 @@
       }
     }, 6000);
   })();
+
+  // Load data.json (cache-busted) and render everything
+  fetch('/data.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      renderStats(data.stats);
+      renderCoverage(data.coverage_cities);
+      renderTeam(data.team);
+      renderDeals(data.closed_deals);
+      renderLogos(data.client_logos);
+      renderMarketReport(data.market_report);
+      renderServices(data.preferred_services);
+    })
+    .catch(err => {
+      console.error('Failed to load site data:', err);
+    });
 </script>
 </body>
 </html>
