@@ -1,0 +1,189 @@
+# Sveltia CMS configuration for Midwest Industrial Brokers
+# https://github.com/sveltia/sveltia-cms
+
+backend:
+  name: github
+  # TODO: replace YOUR_USERNAME with your actual GitHub username
+  repo: Drakefilippis/midwestindustrialbrokers-site
+  branch: main
+  # Auth backend — Sveltia's hosted OAuth service (free, no setup)
+  # If you'd prefer to self-host, swap this for your own Cloudflare Worker URL.
+  base_url: https://gitlocked.dev
+
+# Where uploaded images get stored in the repo
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Default branch for edits is "main" — straight commits, no draft/review workflow
+publish_mode: simple
+
+# Site preview link in the CMS header
+site_url: https://midwestindustrialbrokers.com
+display_url: https://midwestindustrialbrokers.com
+
+collections:
+  - name: content
+    label: "Site Content"
+    label_singular: "Site Content"
+    description: "Edit every dynamic section of midwestindustrialbrokers.com here."
+    files:
+      - name: data
+        label: "All Site Content"
+        file: "data.json"
+        format: "json"
+        fields:
+          # ============ STATS STRIP ============
+          - label: "Stats Strip (under hero)"
+            name: "stats"
+            widget: "list"
+            min: 4
+            max: 4
+            summary: "{{fields.value}}{{fields.unit}} — {{fields.label}}"
+            fields:
+              - { label: "Number", name: "value", widget: "string", hint: "e.g. $300, 14, 10,000" }
+              - { label: "Unit", name: "unit", widget: "string", required: false, hint: "e.g. M+, +, B" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          # ============ COVERAGE CITIES (yellow strip) ============
+          - label: "Coverage Cities (yellow strip)"
+            name: "coverage_cities"
+            widget: "list"
+            field: { label: "City", name: "city", widget: "string" }
+
+          # ============ TEAM ============
+          - label: "Team / Brokers"
+            name: "team"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.title}}"
+            fields:
+              - { label: "Full name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Initials (for avatar)", name: "initials", widget: "string" }
+              - { label: "Bio (HTML allowed)", name: "bio_html", widget: "text" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Office phone", name: "office_phone", widget: "string", required: false }
+              - { label: "Mobile phone", name: "mobile_phone", widget: "string", required: false }
+              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string", required: false }
+
+          # ============ CLOSED DEALS (with case studies) ============
+          - label: "Closed Deals"
+            name: "closed_deals"
+            widget: "list"
+            summary: "{{fields.year}} · {{fields.property}} — {{fields.client}}"
+            fields:
+              - label: "URL slug (kebab-case, no spaces)"
+                name: "slug"
+                widget: "string"
+                hint: "Becomes the URL: /deal.html?slug=YOUR-SLUG-HERE. Example: bank-supplies-saline"
+              - label: "Year"
+                name: "year"
+                widget: "select"
+                options: ["2023", "2024", "2025", "2026", "2027"]
+              - { label: "Property (address or portfolio name)", name: "property", widget: "string" }
+              - { label: "Subtitle (city, context)", name: "subtitle", widget: "string", required: false }
+              - { label: "Client name", name: "client", widget: "string" }
+              - { label: "Client industry", name: "client_industry", widget: "string", required: false }
+              - label: "Side represented"
+                name: "side"
+                widget: "select"
+                options: ["Buyer", "Seller", "Tenant", "Landlord", "Both"]
+              - { label: "Deal type", name: "deal_type", widget: "string", hint: "e.g. Sale, Lease NNN, Sale-Leaseback, Investment Sale" }
+              - { label: "Size or value", name: "size", widget: "string", hint: "e.g. 175,000 SF or $2,400,000" }
+              - { label: "Closed date", name: "closed_date", widget: "string", required: false, hint: "e.g. April 17, 2026" }
+              - { label: "Case study headline (shown at top of case study page)", name: "headline", widget: "string", required: false }
+              - { label: "Short summary (1–2 sentences, shown under headline)", name: "summary", widget: "text", required: false }
+              - label: "Full case study body (markdown — use ## for subheads, ** for bold)"
+                name: "body_md"
+                widget: "markdown"
+                required: false
+                buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list]
+              - label: "Deal details (sidebar — leave blank to hide)"
+                name: "deal_details"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Clear height", name: "clear_height", widget: "string", required: false }
+                  - { label: "Dock doors", name: "dock_doors", widget: "string", required: false }
+                  - { label: "Office finish", name: "office_finish", widget: "string", required: false }
+                  - { label: "Acreage", name: "acreage", widget: "string", required: false }
+                  - { label: "Asking price", name: "asking_price", widget: "string", required: false }
+                  - { label: "Sale price", name: "sale_price", widget: "string", required: false }
+              - label: "Testimonial (sidebar — leave blank to hide)"
+                name: "testimonial"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Quote", name: "quote", widget: "text", required: false }
+                  - { label: "Attribution (name, title)", name: "attribution", widget: "string", required: false }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                field: { label: "Photo", name: "url", widget: "image" }
+
+          # ============ CLIENT LOGO MARQUEE ============
+          - label: "Client Logo Marquee (only real past clients)"
+            name: "client_logos"
+            widget: "list"
+            hint: "Only add companies you've actually represented. No aspirational logos."
+            field: { label: "Client name", name: "name", widget: "string" }
+
+          # ============ MARKET REPORT ============
+          - label: "Market Report"
+            name: "market_report"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Quarter label", name: "quarter_label", widget: "string", hint: "e.g. Q2 2026 · Detroit Industrial" }
+              - { label: "Market headline", name: "headline", widget: "text" }
+              - label: "Headline stats (6 tiles)"
+                name: "stats"
+                widget: "list"
+                summary: "{{fields.label}} — {{fields.value}}{{fields.unit}}"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value (number)", name: "value", widget: "string" }
+                  - { label: "Unit", name: "unit", widget: "string", required: false }
+                  - { label: "Trend text", name: "trend", widget: "string", required: false }
+                  - label: "Direction (controls color)"
+                    name: "direction"
+                    widget: "select"
+                    options: ["up", "down", "flat"]
+              - label: "Submarket snapshot table"
+                name: "submarkets"
+                widget: "list"
+                summary: "{{fields.name}} — Vac {{fields.vacancy}} · NNN {{fields.nnn}}"
+                fields:
+                  - { label: "Submarket name", name: "name", widget: "string" }
+                  - { label: "Vacancy", name: "vacancy", widget: "string" }
+                  - { label: "Avg. NNN", name: "nnn", widget: "string" }
+                  - { label: "YoY change", name: "yoy", widget: "string" }
+                  - label: "YoY color"
+                    name: "yoy_color"
+                    widget: "select"
+                    options: ["green", "red", "gray"]
+              - { label: "Data note (small italic line)", name: "data_note", widget: "string", required: false }
+              - label: "Key takeaways (bulleted list)"
+                name: "takeaways"
+                widget: "list"
+                field: { label: "Takeaway", name: "text", widget: "text" }
+              - { label: "What We're Watching — title", name: "watching_title", widget: "string", required: false }
+              - { label: "What We're Watching — body", name: "watching_body", widget: "text", required: false }
+
+          # ============ PREFERRED SERVICES ============
+          - label: "Preferred Services (vendor network)"
+            name: "preferred_services"
+            widget: "list"
+            summary: "{{fields.category}}"
+            fields:
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Subtitle (specialties)", name: "subtitle", widget: "string", required: false }
+              - label: "Contacts"
+                name: "contacts"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.firm}}"
+                fields:
+                  - { label: "Contact name", name: "name", widget: "string", required: false }
+                  - { label: "Firm name", name: "firm", widget: "string", required: false }
+                  - { label: "Phone", name: "phone", widget: "string", required: false }
+                  - { label: "Email", name: "email", widget: "string", required: false }
