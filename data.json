@@ -1,9 +1,25 @@
 {
   "stats": [
-    { "value": "$300", "unit": "M+", "label": "Career Deal Volume" },
-    { "value": "14", "unit": "+", "label": "Years Experience" },
-    { "value": "10,000", "unit": "+", "label": "Clients Served" },
-    { "value": "7", "unit": "", "label": "Markets Covered" }
+    {
+      "value": "$300",
+      "unit": "M+",
+      "label": "Career Deal Volume"
+    },
+    {
+      "value": "14",
+      "unit": "+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "10,000",
+      "unit": "+",
+      "label": "Clients Served"
+    },
+    {
+      "value": "7",
+      "unit": "",
+      "label": "Markets Covered"
+    }
   ],
   "coverage_cities": [
     "Plymouth",
@@ -120,11 +136,11 @@
       "client": "Bank Supplies",
       "client_industry": "",
       "side": "Buyer",
-      "deal_type": "Sale · Consolidation / 1031",
+      "deal_type": "Sale · Consolidation",
       "size": "175,000 SF",
       "closed_date": "",
-      "headline": "Bank Supplies acquires 175,000 SF headquarters in Saline",
-      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court — a consolidation play structured as a 1031 exchange.",
+      "headline": "Bank Supplies acquires 105,000 SF headquarters in Saline",
+      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court — a consolidation from four facilities into one new headquarters.",
       "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
       "deal_details": {
         "clear_height": "",
@@ -155,20 +171,92 @@
     "quarter_label": "Q2 2026 · Detroit Industrial",
     "headline": "Activity steadies as new supply tapers and tenants return to 100k+ SF requirements.",
     "stats": [
-      { "label": "Total Inventory", "value": "615", "unit": "M SF", "trend": "— Stable", "direction": "flat" },
-      { "label": "Overall Vacancy", "value": "6.8", "unit": "%", "trend": "▲ +20 bps QoQ", "direction": "up" },
-      { "label": "Avg. Asking NNN", "value": "$8.45", "unit": "/SF", "trend": "▲ +3.1% YoY", "direction": "up" },
-      { "label": "Net Absorption YTD", "value": "2.1", "unit": "M SF", "trend": "— Tracking 2025", "direction": "flat" },
-      { "label": "Under Construction", "value": "4.8", "unit": "M SF", "trend": "▼ Down 38% YoY", "direction": "down" },
-      { "label": "Sales Volume (TTM)", "value": "$1.6", "unit": "B", "trend": "▲ Cap rates 7.2%", "direction": "up" }
+      {
+        "label": "Total Inventory",
+        "value": "615",
+        "unit": "M SF",
+        "trend": "— Stable",
+        "direction": "flat"
+      },
+      {
+        "label": "Overall Vacancy",
+        "value": "6.8",
+        "unit": "%",
+        "trend": "▲ +20 bps QoQ",
+        "direction": "up"
+      },
+      {
+        "label": "Avg. Asking NNN",
+        "value": "$8.45",
+        "unit": "/SF",
+        "trend": "▲ +3.1% YoY",
+        "direction": "up"
+      },
+      {
+        "label": "Net Absorption YTD",
+        "value": "2.1",
+        "unit": "M SF",
+        "trend": "— Tracking 2025",
+        "direction": "flat"
+      },
+      {
+        "label": "Under Construction",
+        "value": "4.8",
+        "unit": "M SF",
+        "trend": "▼ Down 38% YoY",
+        "direction": "down"
+      },
+      {
+        "label": "Sales Volume (TTM)",
+        "value": "$1.6",
+        "unit": "B",
+        "trend": "▲ Cap rates 7.2%",
+        "direction": "up"
+      }
     ],
     "submarkets": [
-      { "name": "Plymouth / Canton", "vacancy": "5.2%", "nnn": "$9.10", "yoy": "+4.5%", "yoy_color": "green" },
-      { "name": "Ann Arbor / Saline", "vacancy": "4.8%", "nnn": "$11.25", "yoy": "+5.8%", "yoy_color": "green" },
-      { "name": "Livonia / Wayne", "vacancy": "6.1%", "nnn": "$8.75", "yoy": "+2.9%", "yoy_color": "green" },
-      { "name": "Northville / Novi", "vacancy": "5.5%", "nnn": "$9.50", "yoy": "+3.8%", "yoy_color": "green" },
-      { "name": "Wixom / I-96 Corridor", "vacancy": "6.4%", "nnn": "$8.40", "yoy": "+2.5%", "yoy_color": "green" },
-      { "name": "Romulus / Airport", "vacancy": "8.9%", "nnn": "$7.80", "yoy": "+0.4%", "yoy_color": "gray" }
+      {
+        "name": "Plymouth / Canton",
+        "vacancy": "5.2%",
+        "nnn": "$9.10",
+        "yoy": "+4.5%",
+        "yoy_color": "green"
+      },
+      {
+        "name": "Ann Arbor / Saline",
+        "vacancy": "4.8%",
+        "nnn": "$11.25",
+        "yoy": "+5.8%",
+        "yoy_color": "green"
+      },
+      {
+        "name": "Livonia / Wayne",
+        "vacancy": "6.1%",
+        "nnn": "$8.75",
+        "yoy": "+2.9%",
+        "yoy_color": "green"
+      },
+      {
+        "name": "Northville / Novi",
+        "vacancy": "5.5%",
+        "nnn": "$9.50",
+        "yoy": "+3.8%",
+        "yoy_color": "green"
+      },
+      {
+        "name": "Wixom / I-96 Corridor",
+        "vacancy": "6.4%",
+        "nnn": "$8.40",
+        "yoy": "+2.5%",
+        "yoy_color": "green"
+      },
+      {
+        "name": "Romulus / Airport",
+        "vacancy": "8.9%",
+        "nnn": "$7.80",
+        "yoy": "+0.4%",
+        "yoy_color": "gray"
+      }
     ],
     "data_note": "Sample / placeholder data — replace with current CoStar export.",
     "takeaways": [
@@ -186,70 +274,120 @@
       "category": "Attorneys",
       "subtitle": "CRE · Land Use · Closings",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Title",
       "subtitle": "Title Insurance · Escrow · Closings",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Title Company]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Title Company]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Environmental",
       "subtitle": "Phase I · Phase II · BEA",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Architecture",
       "subtitle": "Industrial · Adaptive Reuse · Build-to-Suit",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "General Contractors",
       "subtitle": "Build-out · Tenant Improvements · New Construction",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[GC Firm]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[GC Firm]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Structural Engineers",
       "subtitle": "Mezzanines · Crane Loads · Inspections",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Surveyors",
       "subtitle": "ALTA · Boundary · Topographical",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Appraisers",
       "subtitle": "Industrial · MAI · Lender-Approved",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Property Inspectors",
       "subtitle": "Commercial · Roof · Mechanical",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Firm Name]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Firm Name]",
+          "phone": "",
+          "email": ""
+        }
       ]
     },
     {
       "category": "Lenders",
       "subtitle": "CRE Debt · SBA · Bridge",
       "contacts": [
-        { "name": "[Contact Name]", "firm": "[Bank / Lender]", "phone": "", "email": "" }
+        {
+          "name": "[Contact Name]",
+          "firm": "[Bank / Lender]",
+          "phone": "",
+          "email": ""
+        }
       ]
     }
   ]
