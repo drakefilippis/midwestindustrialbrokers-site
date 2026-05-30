@@ -3,12 +3,11 @@
 
 backend:
   name: github
-  # TODO: replace YOUR_USERNAME with your actual GitHub username
   repo: Drakefilippis/midwestindustrialbrokers-site
   branch: main
-  # Auth backend — Sveltia's hosted OAuth service (free, no setup)
-  # If you'd prefer to self-host, swap this for your own Cloudflare Worker URL.
-  base_url: https://gitlocked.dev
+  # NOTE: base_url removed — use Personal Access Token sign-in for now.
+  # When you deploy your own Cloudflare Worker (sveltia-cms-auth), add:
+  #   base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
 
 # Where uploaded images get stored in the repo
 media_folder: "uploads"
