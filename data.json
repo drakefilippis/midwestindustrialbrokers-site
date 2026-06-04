@@ -102,7 +102,7 @@
     },
     {
       "slug": "medical-investment-portfolio",
-      "year": "2025",
+      "year": "2026",
       "property": "Medical Investment Sale Portfolio",
       "subtitle": "4-Building Medical Office Portfolio",
       "client": "Confidential",
@@ -130,7 +130,7 @@
     },
     {
       "slug": "bank-supplies-saline",
-      "year": "2024",
+      "year": "2025",
       "property": "1294 Beach Court",
       "subtitle": "Saline, MI — New Headquarters",
       "client": "Bank Supplies",
@@ -155,6 +155,36 @@
         "attribution": ""
       },
       "photos": []
+    },
+    {
+      "slug": "michigan-fine-yarn",
+      "year": "2026",
+      "property": "45570 Maben Rd",
+      "subtitle": "Canton, MI 48188",
+      "client": "Michigan Fine Yarn",
+      "client_industry": "Retail",
+      "side": "Buyer",
+      "deal_type": "Sale",
+      "size": "805,000",
+      "closed_date": "May 28, 2026",
+      "headline": "Michigan Fine Yarn Expands to Larger Facility",
+      "summary": "",
+      "body_md": "",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": [
+        "/uploads/Maben.png"
+      ]
     }
   ],
   "client_logos": [
