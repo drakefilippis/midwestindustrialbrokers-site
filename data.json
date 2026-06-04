@@ -185,6 +185,36 @@
       "photos": [
         "/uploads/Maben.png"
       ]
+    },
+    {
+      "slug": "Cross and Black",
+      "year": "2026",
+      "property": "7711",
+      "subtitle": "44099 Plymouth Oaks Blvd",
+      "client": "Cross and Black",
+      "client_industry": "Automotive R&D",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "7,711",
+      "closed_date": "June 5, 2026",
+      "headline": "",
+      "summary": "",
+      "body_md": "",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": [
+        "/uploads/Cross and Black.png"
+      ]
     }
   ],
   "client_logos": [
