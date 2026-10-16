@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Closed Deal — Midwest Industrial Brokers</title>
-<meta name="description" content="Case study from Midwest Industrial Brokers — industrial CRE transactions across Metro Detroit." />
+<title>Closed Deal | Midwest Industrial Brokers</title>
+<meta name="description" content="Closed deal case study from Midwest Industrial Brokers, Drake Filippis of Signature Associates: industrial CRE transactions across Metro Detroit." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <style>
   :root {
@@ -247,7 +247,7 @@
         <span>Industrial · Plymouth · Ann Arbor · Metro Detroit</span>
       </div>
       <div class="footer-disclosure">
-        Brokerage services provided through Signature Associates. Drake Filippis, Licensed Real Estate Broker — State of Michigan. Midwest Industrial Brokers is a marketing brand of Filippis Commercial LLC.
+        Brokerage services provided through Signature Associates. Drake Filippis, Licensed Real Estate Broker · State of Michigan. Midwest Industrial Brokers is a marketing brand of Filippis Commercial LLC.
       </div>
     </div>
   </div>
@@ -268,12 +268,13 @@
   }
 
   function renderDeal(deal) {
-    document.title = (deal.headline || deal.property) + ' — Midwest Industrial Brokers';
+    document.title = (deal.headline || deal.property) + ' | Midwest Industrial Brokers';
     document.getElementById('bcSlug').textContent = deal.property || 'Case Study';
     document.getElementById('dealHeadline').textContent = deal.headline || deal.property || '';
     document.getElementById('dealAddress').textContent = [deal.property, deal.subtitle].filter(Boolean).join(' · ');
     document.getElementById('dealSummary').textContent = deal.summary || '';
-    const md = deal.body_md || '';
+    if (deal.summary) { const m = document.querySelector('meta[name="description"]'); if (m) m.setAttribute('content', deal.summary); }
+    const md = (deal.body_md && !/^\s*\[/.test(deal.body_md)) ? deal.body_md : '';
     const html = (typeof marked !== 'undefined' && md) ? marked.parse(md) : md;
     document.getElementById('dealBody').innerHTML = html;
 
@@ -322,7 +323,7 @@
         // either { url: "/uploads/foo.jpg" } or just "/uploads/foo.jpg"
         const src = (p && typeof p === 'object') ? (p.url || p.image || '') : String(p || '');
         if (!src) return '';
-        const alt = (deal.property || 'Deal photo') + (deal.client ? ' — ' + deal.client : '');
+        const alt = (deal.property || 'Deal photo') + (deal.client ? ', ' + deal.client : '');
         return `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" />`;
       }).filter(Boolean);
       if (items.length > 0) {

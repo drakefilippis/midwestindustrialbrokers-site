@@ -43,6 +43,36 @@
       "linkedin_url": "https://www.linkedin.com/in/drake-filippis-267a104a/"
     }
   ],
+  "services": [
+    {
+      "title": "Disposition",
+      "description": "Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing."
+    },
+    {
+      "title": "Acquisition",
+      "description": "Owner user and investor acquisitions, from requirements and site search through due diligence and closing."
+    },
+    {
+      "title": "Build-to-Suit",
+      "description": "Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities."
+    },
+    {
+      "title": "Tenant Representation",
+      "description": "Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users."
+    },
+    {
+      "title": "Buyer Representation",
+      "description": "Representation of owner users buying industrial property, including financing timing and closing."
+    },
+    {
+      "title": "Landlord Representation",
+      "description": "Marketing and leasing of industrial buildings and multi tenant flex space."
+    },
+    {
+      "title": "Investment Sales",
+      "description": "Pricing, marketing and sale of industrial investment property."
+    }
+  ],
   "closed_deals": [
     {
       "slug": "4301-highland-rd-waterford",
@@ -76,7 +106,7 @@
       "slug": "vios-compounding-livonia",
       "year": "2026",
       "property": "32131 Industrial Drive",
-      "subtitle": "Livonia, MI — New Headquarters",
+      "subtitle": "Livonia, MI, New Headquarters",
       "client": "VIOS Compounding",
       "client_industry": "Pharmaceutical Compounding",
       "side": "Buyer",
@@ -132,15 +162,15 @@
       "slug": "bank-supplies-saline",
       "year": "2025",
       "property": "1294 Beach Court",
-      "subtitle": "Saline, MI — New Headquarters",
+      "subtitle": "Saline, MI, New Headquarters",
       "client": "Bank Supplies",
       "client_industry": "",
       "side": "Buyer",
       "deal_type": "Sale · Consolidation",
-      "size": "175,000 SF",
+      "size": "105,418 SF",
       "closed_date": "",
-      "headline": "Bank Supplies acquires 105,000 SF headquarters in Saline",
-      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court — a consolidation from four facilities into one new headquarters.",
+      "headline": "Bank Supplies acquires 105,418 SF headquarters in Saline",
+      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court, a consolidation from four facilities into one new headquarters.",
       "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
       "deal_details": {
         "clear_height": "",
@@ -183,7 +213,7 @@
         "attribution": ""
       },
       "photos": [
-        "/uploads/Maben.png"
+        "/uploads/maben.webp"
       ]
     },
     {
@@ -195,7 +225,7 @@
       "client_industry": "Automotive R&D",
       "side": "Tenant",
       "deal_type": "Lease",
-      "size": "7,711",
+      "size": "7,711 SF",
       "closed_date": "June 5, 2026",
       "headline": "",
       "summary": "",
@@ -213,7 +243,7 @@
         "attribution": ""
       },
       "photos": [
-        "/uploads/Cross and Black.png"
+        "/uploads/cross-and-black.webp"
       ]
     },
     {
@@ -351,7 +381,6 @@
       "Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
       "Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.",
       "Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.",
-      "Sale-leaseback activity is up materially as owner-users look to unlock equity ahead of expected rate cuts.",
       "Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial."
     ],
     "watching_title": "EV supply chain shake-out:",
