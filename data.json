@@ -76,7 +76,7 @@
       "slug": "vios-compounding-livonia",
       "year": "2026",
       "property": "32131 Industrial Drive",
-      "subtitle": "Livonia, MI — New Headquarters",
+      "subtitle": "Livonia, MI, New Headquarters",
       "client": "VIOS Compounding",
       "client_industry": "Pharmaceutical Compounding",
       "side": "Buyer",
@@ -132,15 +132,15 @@
       "slug": "bank-supplies-saline",
       "year": "2025",
       "property": "1294 Beach Court",
-      "subtitle": "Saline, MI — New Headquarters",
+      "subtitle": "Saline, MI, New Headquarters",
       "client": "Bank Supplies",
       "client_industry": "",
       "side": "Buyer",
       "deal_type": "Sale · Consolidation",
-      "size": "175,000 SF",
+      "size": "105,418 SF",
       "closed_date": "",
-      "headline": "Bank Supplies acquires 105,000 SF headquarters in Saline",
-      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court — a consolidation from four facilities into one new headquarters.",
+      "headline": "Bank Supplies acquires 105,418 SF headquarters in Saline",
+      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court, a consolidation from four facilities into one new headquarters.",
       "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
       "deal_details": {
         "clear_height": "",
@@ -183,7 +183,7 @@
         "attribution": ""
       },
       "photos": [
-        "/uploads/Maben.png"
+        "/uploads/maben.webp"
       ]
     },
     {
@@ -195,7 +195,7 @@
       "client_industry": "Automotive R&D",
       "side": "Tenant",
       "deal_type": "Lease",
-      "size": "7,711",
+      "size": "7,711 SF",
       "closed_date": "June 5, 2026",
       "headline": "",
       "summary": "",
@@ -213,7 +213,7 @@
         "attribution": ""
       },
       "photos": [
-        "/uploads/Cross and Black.png"
+        "/uploads/cross-and-black.webp"
       ]
     },
     {
