@@ -31,6 +31,7 @@
           ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile ↗</a></div>` : ''}
         </div>
       </div>`).join(''),
+    serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => `<li><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></li>`).join(''),
     deals: (deals) => (deals || []).map(d => {
       const sideClass = String(d.side || '').toLowerCase().replace(/\s+/g, '');
       const has = !!d.slug;

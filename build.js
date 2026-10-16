@@ -9,6 +9,7 @@ const parts = {
   coverage: R.coverage(data.coverage_cities),
   stats: R.stats(data.stats),
   team: R.team(data.team),
+  services: R.serviceList(data.services),
   dealphotos: R.dealPhotos(data.closed_deals),
   deals: R.deals(data.closed_deals),
   logos: R.logos(data.client_logos),

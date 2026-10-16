@@ -43,6 +43,15 @@ collections:
               - { label: "Unit", name: "unit", widget: "string", required: false, hint: "e.g. M+, +, B" }
               - { label: "Label", name: "label", widget: "string" }
 
+          # ============ SERVICES (listed in this order on the site) ============
+          - label: "Services (in display order)"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Service", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
           # ============ COVERAGE CITIES (yellow strip) ============
           - label: "Coverage Cities (yellow strip)"
             name: "coverage_cities"
@@ -86,7 +95,7 @@ collections:
                 name: "side"
                 widget: "select"
                 options: ["Buyer", "Seller", "Tenant", "Landlord", "Both"]
-              - { label: "Deal type", name: "deal_type", widget: "string", hint: "e.g. Sale, Lease NNN, Sale-Leaseback, Investment Sale" }
+              - { label: "Deal type", name: "deal_type", widget: "string", hint: "e.g. Sale, Lease NNN, Investment Sale" }
               - { label: "Size or value", name: "size", widget: "string", hint: "e.g. 175,000 SF or $2,400,000" }
               - { label: "Closed date", name: "closed_date", widget: "string", required: false, hint: "e.g. April 17, 2026" }
               - { label: "Case study headline (shown at top of case study page)", name: "headline", widget: "string", required: false }
