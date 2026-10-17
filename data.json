@@ -276,14 +276,27 @@
     }
   ],
   "client_logos": [
-    "Bank Supplies",
-    "Advanced Systems",
-    "VIOS Compounding",
-    "[Client Name]",
-    "[Client Name]",
-    "[Client Name]",
-    "[Client Name]",
-    "[Client Name]"
+    {
+      "name": "BankSupplies",
+      "logo": "/uploads/logos/banksupplies-white.png",
+      "logo_color": "/uploads/logos/banksupplies-white.png",
+      "hover_bg": "#185A7D",
+      "url": ""
+    },
+    {
+      "name": "ViOS",
+      "logo": "/uploads/logos/vios-white.png",
+      "logo_color": "/uploads/logos/vios.png",
+      "hover_bg": "#ffffff",
+      "url": ""
+    },
+    {
+      "name": "Interstate Capital",
+      "logo": "/uploads/logos/interstate-capital-white.png",
+      "logo_color": "/uploads/logos/interstate-capital.png",
+      "hover_bg": "#ffffff",
+      "url": "https://interstate-cap.com/"
+    }
   ],
   "market_report": {
     "quarter_label": "Q2 2026 · Detroit Industrial",
@@ -507,5 +520,711 @@
         }
       ]
     }
-  ]
+  ],
+  "listings_settings": {
+    "cpix_url": "https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031",
+    "home_limit": 9,
+    "last_synced": "October 17, 2026"
+  },
+  "listings": [
+    {
+      "title": "206 E. Huron St",
+      "address": "206 E. Huron St, Ann Arbor, MI 48104",
+      "deal_type": "Sale/Lease",
+      "use": "Office",
+      "size": "24K SF",
+      "lot": "0.6 ac",
+      "photo": "/uploads/listings/61e25908-206-e-huron-st.webp",
+      "url": "https://cpix.resimplifi.com/61e25908-206-e-huron-st",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "45700 Mast St",
+      "address": "45700 Mast St, Plymouth, MI 48170",
+      "deal_type": "Sale/Lease",
+      "use": "Industrial",
+      "size": "15K SF",
+      "lot": "1.3 ac",
+      "photo": "/uploads/listings/eb5c197c-45700-mast-st.webp",
+      "url": "https://cpix.resimplifi.com/eb5c197c-45700-mast-st",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "Taylor Distribution Center",
+      "address": "26456 Northline Rd, Taylor, MI 48180",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "378K SF",
+      "lot": "44.3 ac",
+      "photo": "/uploads/listings/898605c0-taylor-distribution-center.webp",
+      "url": "https://cpix.resimplifi.com/898605c0-taylor-distribution-center",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "23300 W. Davison St",
+      "address": "23300 W. Davison St, Detroit, MI 48223",
+      "deal_type": "Lease",
+      "use": "Office",
+      "size": "100 - 35.5K SF",
+      "lot": "5.5 ac",
+      "photo": "/uploads/listings/e2440ab2-23300-w-davison-st.webp",
+      "url": "https://cpix.resimplifi.com/e2440ab2-23300-w-davison-st",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "32535-32553 Schoolcraft Rd",
+      "address": "32535-32553 Schoolcraft Rd, Livonia, MI 48150",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "1.5K - 6.9K SF",
+      "lot": "2.1 ac",
+      "photo": "/uploads/listings/b92a371c-3253532553-schoolcraft-rd.webp",
+      "url": "https://cpix.resimplifi.com/b92a371c-3253532553-schoolcraft-rd",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "3901-3913 Varsity Dr",
+      "address": "3901-3913 Varsity Dr, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "2.4K - 4.8K SF",
+      "lot": "1.7 ac",
+      "photo": "/uploads/listings/3a711d7f-39013913-varsity-dr.webp",
+      "url": "https://cpix.resimplifi.com/3a711d7f-39013913-varsity-dr",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "34414 Rosati Ave",
+      "address": "34414 Rosati Ave, Livonia, MI 48150",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "7K SF",
+      "lot": "0.6 ac",
+      "photo": "/uploads/listings/a3afd471-34414-rosati-ave.webp",
+      "url": "https://cpix.resimplifi.com/a3afd471-34414-rosati-ave",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "770 James L. Hart Parkway",
+      "address": "770 James L Hart Parkway, Ypsilanti, MI 48197",
+      "deal_type": "Sale",
+      "use": "Industrial",
+      "size": "30.6K SF",
+      "lot": "6.4 ac",
+      "photo": "/uploads/listings/ad4ec5af-770-james-l-hart-parkway.webp",
+      "url": "https://cpix.resimplifi.com/ad4ec5af-770-james-l-hart-parkway",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "14496 Sheldon Rd",
+      "address": "14496 Sheldon Rd, Plymouth, MI 48170",
+      "deal_type": "Lease",
+      "use": "Office",
+      "size": "6.1K SF",
+      "lot": "7.6 ac",
+      "photo": "/uploads/listings/2378c1a2-14496-sheldon-rd.webp",
+      "url": "https://cpix.resimplifi.com/2378c1a2-14496-sheldon-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "44696-44808 Helm St",
+      "address": "44696-44808 Helm St, Plymouth, MI 48170",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "2.4K - 11.1K SF",
+      "lot": "12 ac",
+      "photo": "/uploads/listings/662be2ce-4469644808-helm-st.webp",
+      "url": "https://cpix.resimplifi.com/662be2ce-4469644808-helm-st",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "802-864 Phoenix Dr",
+      "address": "802-864 Phoenix Dr, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "4.3K SF",
+      "lot": "4 ac",
+      "photo": "/uploads/listings/abf8ecbf-802864-phoenix-dr.webp",
+      "url": "https://cpix.resimplifi.com/abf8ecbf-802864-phoenix-dr",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "8070 N. Territorial Rd",
+      "address": "8070 N. Territorial Rd, Plymouth, MI 48170",
+      "deal_type": "Sale/Lease",
+      "use": "Industrial",
+      "size": "15.3K SF",
+      "lot": "1.2 ac",
+      "photo": "/uploads/listings/ebd93c16-8070-n-territorial-rd.webp",
+      "url": "https://cpix.resimplifi.com/ebd93c16-8070-n-territorial-rd",
+      "featured": true,
+      "show": true
+    },
+    {
+      "title": "47495 Clipper",
+      "address": "47495 Clipper, Plymouth, MI 48170",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "6.4K SF",
+      "lot": "1 ac",
+      "photo": "/uploads/listings/fd3ff4ea-47495-clipper.webp",
+      "url": "https://cpix.resimplifi.com/fd3ff4ea-47495-clipper",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Land Air Cold Storage",
+      "address": "11520 Airport Hwy, Swanton, OH 43558",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "65K - 258.7K SF",
+      "lot": "20 ac",
+      "photo": "/uploads/listings/8c2ef5ef-land-air-cold-storage.webp",
+      "url": "https://cpix.resimplifi.com/8c2ef5ef-land-air-cold-storage",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Rossford Cold Storage",
+      "address": "Lime City Rd, Rossford, OH 43551",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "65K - 258K SF",
+      "lot": "23.7 ac",
+      "photo": "/uploads/listings/3c5874f0-rossford-cold-storage.webp",
+      "url": "https://cpix.resimplifi.com/3c5874f0-rossford-cold-storage",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "4801 Washtenaw Ave",
+      "address": "4801 Washtenaw Ave, Ann Arbor, MI 48108",
+      "deal_type": "Sale/Lease",
+      "use": "Retail",
+      "size": "19.6K SF",
+      "lot": "1.8 ac",
+      "photo": "/uploads/listings/359f9884-4801-washtenaw-ave.webp",
+      "url": "https://cpix.resimplifi.com/359f9884-4801-washtenaw-ave",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "DTW Taylor Cold Storage",
+      "address": "Wick Rd, Taylor, MI 48180",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "65K - 249.7K SF",
+      "lot": "16.8 ac",
+      "photo": "/uploads/listings/6d654a45-dtw-taylor-cold-storage.webp",
+      "url": "https://cpix.resimplifi.com/6d654a45-dtw-taylor-cold-storage",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "DTW Taylor Distribution Center - Building 1",
+      "address": "Wick Rd, Taylor, MI 48180",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "90K - 182K SF",
+      "lot": "35 ac",
+      "photo": "/uploads/listings/a536e35e-dtw-taylor-distribution-center-building-1.webp",
+      "url": "https://cpix.resimplifi.com/a536e35e-dtw-taylor-distribution-center-building-1",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "3915 Research Park Dr",
+      "address": "3915 Research Park Dr, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial, Office",
+      "size": "5.1K SF",
+      "lot": "5.8 ac",
+      "photo": "/uploads/listings/4436c3b3-3915-research-park-dr.webp",
+      "url": "https://cpix.resimplifi.com/4436c3b3-3915-research-park-dr",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "3145 Clark Rd",
+      "address": "3145 Clark Rd, Ypsilanti, MI 48197",
+      "deal_type": "Sale/Lease",
+      "use": "Healthcare, Office",
+      "size": "40.9K SF",
+      "lot": "1.9 ac",
+      "photo": "/uploads/listings/fa3e73a0-3145-clark-rd.webp",
+      "url": "https://cpix.resimplifi.com/fa3e73a0-3145-clark-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "3145 Clark Rd",
+      "address": "3145 Clark Rd, Ypsilanti, MI 48197",
+      "deal_type": "Sale",
+      "use": "Healthcare, Office",
+      "size": "4K SF",
+      "lot": "1.9 ac",
+      "photo": "/uploads/listings/c0b98e6f-3145-clark-rd.webp",
+      "url": "https://cpix.resimplifi.com/c0b98e6f-3145-clark-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "DTW Romulus Cold Storage",
+      "address": "15670 Wahrman Rd, Romulus, MI 48174",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "258K SF",
+      "lot": "21.2 ac",
+      "photo": "/uploads/listings/ede91a92-dtw-romulus-cold-storage.webp",
+      "url": "https://cpix.resimplifi.com/ede91a92-dtw-romulus-cold-storage",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "3930-3990 Varsity Dr",
+      "address": "3930-3990 Varsity Dr, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "3.2K SF",
+      "lot": "2 ac",
+      "photo": "/uploads/listings/15187239-39303990-varsity-dr.webp",
+      "url": "https://cpix.resimplifi.com/15187239-39303990-varsity-dr",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Jomar Dr",
+      "address": "Jomar Dr, Northfield Twp, MI 48189",
+      "deal_type": "Sale",
+      "use": "Land",
+      "size": "",
+      "lot": "45.7 ac",
+      "photo": "/uploads/listings/fb89748e-jomar-dr.webp",
+      "url": "https://cpix.resimplifi.com/fb89748e-jomar-dr",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Port Huron Commerce Park - Building B",
+      "address": "Dove Rd, Port Huron, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "301.3K SF",
+      "lot": "224 ac",
+      "photo": "/uploads/listings/0fd99f29-port-huron-commerce-park-building-b.webp",
+      "url": "https://cpix.resimplifi.com/0fd99f29-port-huron-commerce-park-building-b",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Port Huron Commerce Park - Building A",
+      "address": "Dove Rd, Port Huron, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "252K SF",
+      "lot": "224 ac",
+      "photo": "/uploads/listings/4ce31e41-port-huron-commerce-park-building-a.webp",
+      "url": "https://cpix.resimplifi.com/4ce31e41-port-huron-commerce-park-building-a",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Bluewater Commerce Park - Building D",
+      "address": "Ravenswood Rd, Kimball, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "369.3K SF",
+      "lot": "295 ac",
+      "photo": "/uploads/listings/c81ec706-bluewater-commerce-park-building-d.webp",
+      "url": "https://cpix.resimplifi.com/c81ec706-bluewater-commerce-park-building-d",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Bluewater Commerce Park - Building C",
+      "address": "Ravenswood Rd, Kimball, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "369.3K SF",
+      "lot": "295 ac",
+      "photo": "/uploads/listings/28d4d398-bluewater-commerce-park-building-c.webp",
+      "url": "https://cpix.resimplifi.com/28d4d398-bluewater-commerce-park-building-c",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Bluewater Commerce Park - Building B",
+      "address": "Ravenswood Rd, Kimball, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "430.9K SF",
+      "lot": "295 ac",
+      "photo": "/uploads/listings/99f2d378-bluewater-commerce-park-building-b.webp",
+      "url": "https://cpix.resimplifi.com/99f2d378-bluewater-commerce-park-building-b",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Bluewater Commerce Park - Building A2",
+      "address": "Ravenswood Rd, Kimball, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "380.7K SF",
+      "lot": "295 ac",
+      "photo": "/uploads/listings/1a5a59d7-bluewater-commerce-park-building-a2.webp",
+      "url": "https://cpix.resimplifi.com/1a5a59d7-bluewater-commerce-park-building-a2",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Bluewater Commerce Park - Building A1",
+      "address": "Ravenswood Rd, Kimball, MI",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "380.7K SF",
+      "lot": "295 ac",
+      "photo": "/uploads/listings/3de9c4b0-bluewater-commerce-park-building-a1.webp",
+      "url": "https://cpix.resimplifi.com/3de9c4b0-bluewater-commerce-park-building-a1",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "1545-1645 Holmes Rd",
+      "address": "1545-1645 Holmes Road, Ypsilanti, MI 48198",
+      "deal_type": "Lease",
+      "use": "Healthcare, Retail",
+      "size": "5K SF",
+      "lot": "10.8 ac",
+      "photo": "/uploads/listings/c8d7a575-15451645-holmes-rd.webp",
+      "url": "https://cpix.resimplifi.com/c8d7a575-15451645-holmes-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "2218-2258 S. Milford Rd",
+      "address": "2218-2258 S. Milford Rd, Highland Township, MI 48357",
+      "deal_type": "Lease",
+      "use": "Land",
+      "size": "",
+      "lot": "1.2 ac",
+      "photo": "/uploads/listings/a4334d77-22182258-s-milford-rd.webp",
+      "url": "https://cpix.resimplifi.com/a4334d77-22182258-s-milford-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "4765 Jackson Rd",
+      "address": "4765 Jackson Rd, Ann Arbor, MI 48103",
+      "deal_type": "Lease",
+      "use": "Office",
+      "size": "9K SF",
+      "lot": "1.2 ac",
+      "photo": "/uploads/listings/e319e35a-4765-jackson-rd.webp",
+      "url": "https://cpix.resimplifi.com/e319e35a-4765-jackson-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "125 W. Ellsworth Rd",
+      "address": "125 W. Ellsworth Rd, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "10K SF",
+      "lot": "2.4 ac",
+      "photo": "/uploads/listings/bd239509-125-w-ellsworth-rd.webp",
+      "url": "https://cpix.resimplifi.com/bd239509-125-w-ellsworth-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "40440 Grand River Ave",
+      "address": "40440 Grand River Ave, Novi, MI 48375",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "5K SF",
+      "lot": "6.9 ac",
+      "photo": "/uploads/listings/01de9cec-40440-grand-river-ave.webp",
+      "url": "https://cpix.resimplifi.com/01de9cec-40440-grand-river-ave",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "25873 - 25893 Meadowbrook Rd",
+      "address": "25873-25893 Meadowbrook Rd, Novi, MI 48375",
+      "deal_type": "Lease",
+      "use": "Industrial",
+      "size": "1.8K SF",
+      "lot": "2.3 ac",
+      "photo": "/uploads/listings/8aa4aea6-25873-25893-meadowbrook-rd.webp",
+      "url": "https://cpix.resimplifi.com/8aa4aea6-25873-25893-meadowbrook-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "3917 Research Park Dr",
+      "address": "3917 Research Park Dr, Ann Arbor, MI 48108",
+      "deal_type": "Lease",
+      "use": "Industrial, Office",
+      "size": "9K SF",
+      "lot": "5.8 ac",
+      "photo": "/uploads/listings/d25f3d2f-3917-research-park-dr.webp",
+      "url": "https://cpix.resimplifi.com/d25f3d2f-3917-research-park-dr",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "1251 N Main St",
+      "address": "1251 N Main St, Ann Arbor, MI 48103",
+      "deal_type": "Sale",
+      "use": "Industrial",
+      "size": "4K SF",
+      "lot": "1.1 ac",
+      "photo": "/uploads/listings/a1d55458-1251-n-main-st.webp",
+      "url": "https://cpix.resimplifi.com/a1d55458-1251-n-main-st",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "8260 Dexter Chelsea Rd",
+      "address": "8260 Dexter Chelsea Rd, Dexter, MI 48130",
+      "deal_type": "Sale",
+      "use": "Industrial",
+      "size": "5.3K SF",
+      "lot": "0.7 ac",
+      "photo": "/uploads/listings/56ea0c54-8260-dexter-chelsea-rd.webp",
+      "url": "https://cpix.resimplifi.com/56ea0c54-8260-dexter-chelsea-rd",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "200 S. First Street",
+      "address": "200 S First St, Ann Arbor, MI 48104",
+      "deal_type": "Lease",
+      "use": "Office",
+      "size": "5K SF",
+      "lot": "0.3 ac",
+      "photo": "/uploads/listings/a221527d-200-s-first-street.webp",
+      "url": "https://cpix.resimplifi.com/a221527d-200-s-first-street",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Whittaker Road",
+      "address": "Whittaker Road, Ypsilanti, MI 48197",
+      "deal_type": "Sale",
+      "use": "Land",
+      "size": "",
+      "lot": "25.5 ac",
+      "photo": "/uploads/listings/97847a6e-whittaker-road.webp",
+      "url": "https://cpix.resimplifi.com/97847a6e-whittaker-road",
+      "featured": false,
+      "show": true
+    },
+    {
+      "title": "Baker Road",
+      "address": "Baker Rd, Dexter, MI 48130",
+      "deal_type": "Sale",
+      "use": "Land",
+      "size": "",
+      "lot": "15 ac",
+      "photo": "/uploads/listings/98450870-baker-road.webp",
+      "url": "https://cpix.resimplifi.com/98450870-baker-road",
+      "featured": false,
+      "show": true
+    }
+  ],
+  "markets": [
+    {
+      "slug": "plymouth-mi",
+      "name": "Plymouth",
+      "full_name": "Plymouth and Plymouth Township, MI",
+      "cities": [
+        "Plymouth"
+      ],
+      "title": "Industrial Real Estate Broker in Plymouth, MI | Midwest Industrial Brokers",
+      "meta": "Industrial space for lease and sale in Plymouth and Plymouth Township, Michigan. Drake Filippis helps owners, tenants and buyers with disposition, acquisition, build-to-suit and leasing. Call (248) 941-1125.",
+      "summary": "Light manufacturing, flex and distribution space close to I-275 and M-14.",
+      "intro": [
+        "Plymouth and Plymouth Township sit in western Wayne County with direct access to I-275 and M-14. The area has a mix of established industrial parks, flex buildings and newer distribution space, and it draws users who want to stay between Detroit and Ann Arbor.",
+        "Drake works with owners selling or leasing buildings here, and with manufacturers, contractors and service companies looking for their next facility. Every search starts with the details that matter for industrial users: power, clear height, loading, yard space, zoning and timing."
+      ]
+    },
+    {
+      "slug": "ann-arbor-mi",
+      "name": "Ann Arbor",
+      "full_name": "Ann Arbor and Washtenaw County, MI",
+      "cities": [
+        "Ann Arbor",
+        "Saline",
+        "Ypsilanti",
+        "Dexter",
+        "Northfield Twp"
+      ],
+      "title": "Industrial Real Estate Broker in Ann Arbor, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, flex and research space in Ann Arbor and Washtenaw County, Michigan. Disposition, acquisition, build-to-suit and leasing with Drake Filippis, Signature Associates. Call (248) 941-1125.",
+      "summary": "Flex, research and light industrial space across Washtenaw County.",
+      "intro": [
+        "Ann Arbor and the surrounding Washtenaw County communities are served by I-94, US-23 and M-14. Industrial space here often supports research and development, technology, light manufacturing and flex users, along with service businesses that want to be close to the university and the region's workforce.",
+        "Drake represents owners, tenants and buyers in Ann Arbor, Saline, Ypsilanti, Dexter and nearby townships. He helps match each requirement to the buildings and sites that fit, and manages the process from first tour through closing or lease signing."
+      ]
+    },
+    {
+      "slug": "livonia-mi",
+      "name": "Livonia",
+      "full_name": "Livonia, MI",
+      "cities": [
+        "Livonia"
+      ],
+      "title": "Industrial Real Estate Broker in Livonia, MI | Midwest Industrial Brokers",
+      "meta": "Industrial buildings for lease and sale in Livonia, Michigan. Drake Filippis helps owners, tenants and buyers with disposition, acquisition, build-to-suit and leasing. Call (248) 941-1125.",
+      "summary": "An established industrial base with access to I-96 and I-275.",
+      "intro": [
+        "Livonia is a long established industrial community in western Wayne County, with I-96 and I-275 both running through the city. Its industrial corridors hold a wide range of manufacturing, warehouse and flex buildings, from small shop spaces to larger facilities.",
+        "Drake helps companies buy or lease the right building in Livonia, and helps owners position their property for sale or lease. He focuses on the practical questions early, like power, loading, ceiling height, office build out and zoning, so there are fewer surprises later."
+      ]
+    },
+    {
+      "slug": "i-275-corridor",
+      "name": "I-275 Corridor",
+      "full_name": "the I-275 Corridor, Michigan",
+      "cities": [
+        "Plymouth",
+        "Livonia",
+        "Canton",
+        "Novi",
+        "Northville",
+        "Romulus",
+        "Taylor",
+        "Wixom"
+      ],
+      "title": "I-275 Corridor Industrial Real Estate Broker | Midwest Industrial Brokers",
+      "meta": "Industrial space along the I-275 corridor in western Wayne County and Oakland County, including Plymouth, Livonia, Canton, Novi and Romulus. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Plymouth, Livonia, Canton, Novi and Romulus along one north south route.",
+      "intro": [
+        "I-275 runs north and south through western Wayne County, linking the I-96 and I-696 area near Novi with I-94 and I-75 to the south, with Detroit Metro Airport nearby. Communities along the route, including Livonia, Plymouth, Canton, Novi and Romulus, hold a large share of the region's manufacturing, warehouse and distribution space.",
+        "Because the corridor crosses several cities and townships, zoning, taxes and building types can change from one exit to the next. Drake helps owners, tenants and buyers compare options across the corridor and focus on the sites that fit their operation."
+      ]
+    },
+    {
+      "slug": "metro-detroit",
+      "name": "Metro Detroit",
+      "full_name": "Metro Detroit, MI",
+      "cities": [
+        "Detroit",
+        "Plymouth",
+        "Livonia",
+        "Canton",
+        "Novi",
+        "Northville",
+        "Wixom",
+        "Waterford",
+        "Taylor",
+        "Romulus",
+        "Highland Township",
+        "Southfield"
+      ],
+      "title": "Metro Detroit Industrial Real Estate Broker | Midwest Industrial Brokers",
+      "meta": "Industrial real estate brokerage across Metro Detroit. Disposition, acquisition, build-to-suit, tenant and buyer representation with Drake Filippis, Signature Associates. Call (248) 941-1125.",
+      "summary": "Manufacturing, warehouse and distribution space across the region.",
+      "intro": [
+        "Metro Detroit has a large and varied industrial base, shaped by the automotive supply chain, advanced manufacturing and logistics. Major routes including I-94, I-96, I-75 and I-696 connect industrial areas across Wayne, Oakland and Macomb counties.",
+        "Drake works across the region for owners, tenants and buyers of industrial property, with a focus on western Wayne County and the communities between Detroit and Ann Arbor. He handles disposition, acquisition, build-to-suit and leasing assignments from start to finish."
+      ]
+    },
+    {
+      "slug": "canton-mi",
+      "name": "Canton",
+      "full_name": "Canton Township, MI",
+      "cities": [
+        "Canton"
+      ],
+      "title": "Industrial Real Estate Broker in Canton, MI | Midwest Industrial Brokers",
+      "meta": "Industrial buildings for lease and sale in Canton Township, Michigan. Disposition, acquisition, build-to-suit and leasing with Drake Filippis. Call (248) 941-1125.",
+      "summary": "Industrial and flex space in western Wayne County off I-275.",
+      "intro": [
+        "Canton Township is in western Wayne County along I-275, with Michigan Avenue and Ford Road as major east west routes. Its industrial areas include warehouse, light manufacturing and flex buildings used by a wide mix of businesses.",
+        "Drake helps owners and users in Canton buy, sell and lease industrial property, and he can compare Canton sites with nearby options in Plymouth, Livonia and Romulus."
+      ]
+    },
+    {
+      "slug": "saline-mi",
+      "name": "Saline",
+      "full_name": "Saline, MI",
+      "cities": [
+        "Saline"
+      ],
+      "title": "Industrial Real Estate Broker in Saline, MI | Midwest Industrial Brokers",
+      "meta": "Industrial property for lease and sale in Saline, Michigan and southern Washtenaw County. Call Drake Filippis, Signature Associates, at (248) 941-1125.",
+      "summary": "Industrial space in southern Washtenaw County near US-12 and US-23.",
+      "intro": [
+        "Saline is in southern Washtenaw County, south of Ann Arbor, along US-12 with nearby access to US-23. Its industrial parks support manufacturing, warehouse and distribution users who want access to the Ann Arbor area.",
+        "Drake has closed industrial deals in Saline and helps owners and users understand their options in the local market."
+      ]
+    },
+    {
+      "slug": "novi-mi",
+      "name": "Novi",
+      "full_name": "Novi, MI",
+      "cities": [
+        "Novi",
+        "Wixom",
+        "Northville"
+      ],
+      "title": "Industrial Real Estate Broker in Novi, MI | Midwest Industrial Brokers",
+      "meta": "Industrial and flex space in Novi, Wixom and Northville, Michigan. Disposition, acquisition, build-to-suit and leasing with Drake Filippis. Call (248) 941-1125.",
+      "summary": "Flex and light industrial space near I-96 and I-275.",
+      "intro": [
+        "Novi is in southwest Oakland County where I-96, I-275 and M-5 meet. Along with nearby Wixom and Northville, it offers flex, research and light industrial buildings for companies that want quick highway access across the region.",
+        "Drake represents owners, tenants and buyers in Novi and the surrounding communities, from small flex suites to full buildings."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does Drake help owners sell or lease an industrial building?",
+      "a": "Disposition starts with a walkthrough and a review of the building, the market and your goals. From there Drake builds a pricing and marketing plan, lists the property on CPIX and other industrial channels, reaches out to likely buyers or tenants, and manages tours, offers, negotiation and due diligence through closing or lease signing."
+    },
+    {
+      "q": "How does an acquisition search work for owner users and investors?",
+      "a": "It begins with a clear list of requirements, such as size, clear height, power, loading, yard, zoning, location and budget. Drake then searches listed and off market options, sets up tours, helps compare buildings side by side, and negotiates the purchase. He also helps coordinate inspections, environmental review, title and financing timing so the deal can close on schedule."
+    },
+    {
+      "q": "What is a build-to-suit and when does it make sense?",
+      "a": "A build-to-suit is a new facility designed and built around a specific user. It can make sense when no existing building meets your needs, or when your operation needs special features like heavy power, high clear height or extra loading. Drake helps with site selection, entitlements and coordination with developers and contractors, and can compare build-to-suit options with existing buildings."
+    },
+    {
+      "q": "How long does it take to lease industrial space?",
+      "a": "It depends on the size of the space, how many options fit, the condition of the building and how much work is needed before move in. A simple lease of a ready space can move quickly, while larger spaces or spaces that need improvements often take longer. Starting early gives you more choices and more negotiating room, so it is smart to reach out well before your current lease ends."
+    },
+    {
+      "q": "What should I have ready before I start a search?",
+      "a": "Helpful details include the size you need, ceiling height, number and type of loading doors, power, parking and yard needs, preferred areas, budget, and your move in date. If you are buying, it also helps to know your financing plan. Drake can help you work through any of these if you are not sure yet."
+    },
+    {
+      "q": "Do you represent tenants, buyers, landlords and sellers?",
+      "a": "Yes. Drake represents owners on disposition and leasing, and represents buyers and tenants on acquisitions and leases. On every assignment the representation is confirmed in writing at the start so everyone knows who is represented."
+    },
+    {
+      "q": "Which areas do you cover?",
+      "a": "Drake focuses on industrial property in Plymouth, Livonia, Canton, Ann Arbor, Saline, Novi, Northville, Wixom, the I-275 corridor and greater Metro Detroit. Through Signature Associates he also handles assignments in other parts of Michigan and the region."
+    },
+    {
+      "q": "How do I get started?",
+      "a": "Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short note through the contact form on this site. Share what you need and your timing, and Drake will follow up to talk through next steps."
+    }
+  ],
+  "analytics": {
+    "ga4_measurement_id": ""
+  }
 }

@@ -129,12 +129,80 @@ collections:
                 required: false
                 field: { label: "Photo", name: "url", widget: "image" }
 
-          # ============ CLIENT LOGO MARQUEE ============
-          - label: "Client Logo Marquee (only real past clients)"
+          # ============ CLIENT LOGO STRIP (under the hero) ============
+          - label: "Client Logo Strip (only real clients)"
             name: "client_logos"
             widget: "list"
-            hint: "Only add companies you've actually represented. No aspirational logos."
-            field: { label: "Client name", name: "name", widget: "string" }
+            hint: "Only add companies you have actually represented. Upload a white version for the dark band and a color version for hover."
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Company name (used as alt text)", name: "name", widget: "string" }
+              - { label: "Logo, white version", name: "logo", widget: "image" }
+              - { label: "Logo, color version (shown on hover)", name: "logo_color", widget: "image", required: false }
+              - { label: "Hover tile color", name: "hover_bg", widget: "string", required: false, hint: "Example: #ffffff" }
+              - { label: "Website link (leave blank for no link)", name: "url", widget: "string", required: false }
+
+          # ============ ACTIVE LISTINGS (cards, data from CPIX) ============
+          - label: "Active Listings settings"
+            name: "listings_settings"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "CPIX link for all listings", name: "cpix_url", widget: "string" }
+              - { label: "Cards on the homepage", name: "home_limit", widget: "number", value_type: "int" }
+              - { label: "Last synced from CPIX", name: "last_synced", widget: "string", required: false }
+          - label: "Active Listings (cards)"
+            name: "listings"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.deal_type}} · {{fields.size}}"
+            hint: "Copy details from CPIX. Turn off Show when a listing is leased or sold."
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Full address", name: "address", widget: "string", hint: "Street, City, MI ZIP. The city is used to place the listing on market pages." }
+              - label: "Type"
+                name: "deal_type"
+                widget: "select"
+                options: ["Lease", "Sale", "Sale/Lease"]
+              - { label: "Use", name: "use", widget: "string", required: false, hint: "Industrial, Office, Land..." }
+              - { label: "Size", name: "size", widget: "string", required: false }
+              - { label: "Lot", name: "lot", widget: "string", required: false }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "CPIX listing link", name: "url", widget: "string" }
+              - { label: "Featured on homepage", name: "featured", widget: "boolean", default: false }
+              - { label: "Show on site", name: "show", widget: "boolean", default: true }
+
+          # ============ MARKET PAGES ============
+          - label: "Market Pages"
+            name: "markets"
+            widget: "list"
+            summary: "{{fields.name}} (/markets/{{fields.slug}}/)"
+            hint: "Each market gets its own page. Closed deals and listings show up automatically when their city matches."
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Full name (used in the headline)", name: "full_name", widget: "string" }
+              - { label: "URL slug", name: "slug", widget: "string", hint: "lowercase with hyphens, like plymouth-mi" }
+              - { label: "Cities that belong to this market", name: "cities", widget: "list", field: { label: "City", name: "city", widget: "string" } }
+              - { label: "Page title (search results)", name: "title", widget: "string" }
+              - { label: "Meta description", name: "meta", widget: "text" }
+              - { label: "Short summary (homepage card)", name: "summary", widget: "string" }
+              - { label: "Intro paragraphs", name: "intro", widget: "list", field: { label: "Paragraph", name: "text", widget: "text" } }
+
+          # ============ FAQ ============
+          - label: "FAQ"
+            name: "faqs"
+            widget: "list"
+            summary: "{{fields.q}}"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+
+          # ============ ANALYTICS ============
+          - label: "Analytics"
+            name: "analytics"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Google Analytics 4 measurement ID", name: "ga4_measurement_id", widget: "string", required: false, hint: "Looks like G-XXXXXXXXXX. Leave blank to turn analytics off." }
 
           # ============ MARKET REPORT ============
           - label: "Market Report"
