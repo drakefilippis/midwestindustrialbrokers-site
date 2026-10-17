@@ -681,7 +681,7 @@
       "photo": "/uploads/listings/fd3ff4ea-47495-clipper.webp",
       "url": "https://cpix.resimplifi.com/fd3ff4ea-47495-clipper",
       "featured": false,
-      "show": false
+      "show": true
     },
     {
       "title": "Land Air Cold Storage",

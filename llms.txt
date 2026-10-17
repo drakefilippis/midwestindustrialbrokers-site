@@ -45,6 +45,7 @@
 - [44696-44808 Helm St](https://cpix.resimplifi.com/662be2ce-4469644808-helm-st): Lease, Industrial, 2.4K - 11.1K SF, 12 ac lot, 44696-44808 Helm St, Plymouth, MI 48170
 - [802-864 Phoenix Dr](https://cpix.resimplifi.com/abf8ecbf-802864-phoenix-dr): Lease, Industrial, 4.3K SF, 4 ac lot, 802-864 Phoenix Dr, Ann Arbor, MI 48108
 - [8070 N. Territorial Rd](https://cpix.resimplifi.com/ebd93c16-8070-n-territorial-rd): Sale/Lease, Industrial, 15.3K SF, 1.2 ac lot, 8070 N. Territorial Rd, Plymouth, MI 48170
+- [47495 Clipper](https://cpix.resimplifi.com/fd3ff4ea-47495-clipper): Lease, Industrial, 6.4K SF, 1 ac lot, 47495 Clipper, Plymouth, MI 48170
 - [Land Air Cold Storage](https://cpix.resimplifi.com/8c2ef5ef-land-air-cold-storage): Lease, Industrial, 65K - 258.7K SF, 20 ac lot, 11520 Airport Hwy, Swanton, OH 43558
 - [Rossford Cold Storage](https://cpix.resimplifi.com/3c5874f0-rossford-cold-storage): Lease, Industrial, 65K - 258K SF, 23.7 ac lot, Lime City Rd, Rossford, OH 43551
 - [4801 Washtenaw Ave](https://cpix.resimplifi.com/359f9884-4801-washtenaw-ave): Sale/Lease, Retail, 19.6K SF, 1.8 ac lot, 4801 Washtenaw Ave, Ann Arbor, MI 48108
