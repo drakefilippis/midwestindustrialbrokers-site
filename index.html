@@ -58,6 +58,77 @@
   "sameAs": ["https://www.linkedin.com/in/drake-filippis-267a104a/"]
 }
 </script>
+<!--BUILD:faqld--><script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How does Drake help owners sell or lease an industrial building?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Disposition starts with a walkthrough and a review of the building, the market and your goals. From there Drake builds a pricing and marketing plan, lists the property on CPIX and other industrial channels, reaches out to likely buyers or tenants, and manages tours, offers, negotiation and due diligence through closing or lease signing."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How does an acquisition search work for owner users and investors?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It begins with a clear list of requirements, such as size, clear height, power, loading, yard, zoning, location and budget. Drake then searches listed and off market options, sets up tours, helps compare buildings side by side, and negotiates the purchase. He also helps coordinate inspections, environmental review, title and financing timing so the deal can close on schedule."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is a build-to-suit and when does it make sense?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A build-to-suit is a new facility designed and built around a specific user. It can make sense when no existing building meets your needs, or when your operation needs special features like heavy power, high clear height or extra loading. Drake helps with site selection, entitlements and coordination with developers and contractors, and can compare build-to-suit options with existing buildings."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How long does it take to lease industrial space?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It depends on the size of the space, how many options fit, the condition of the building and how much work is needed before move in. A simple lease of a ready space can move quickly, while larger spaces or spaces that need improvements often take longer. Starting early gives you more choices and more negotiating room, so it is smart to reach out well before your current lease ends."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What should I have ready before I start a search?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Helpful details include the size you need, ceiling height, number and type of loading doors, power, parking and yard needs, preferred areas, budget, and your move in date. If you are buying, it also helps to know your financing plan. Drake can help you work through any of these if you are not sure yet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you represent tenants, buyers, landlords and sellers?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Drake represents owners on disposition and leasing, and represents buyers and tenants on acquisitions and leases. On every assignment the representation is confirmed in writing at the start so everyone knows who is represented."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which areas do you cover?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Drake focuses on industrial property in Plymouth, Livonia, Canton, Ann Arbor, Saline, Novi, Northville, Wixom, the I-275 corridor and greater Metro Detroit. Through Signature Associates he also handles assignments in other parts of Michigan and the region."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How do I get started?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short note through the contact form on this site. Share what you need and your timing, and Drake will follow up to talk through next steps."
+   }
+  }
+ ]
+}</script><!--/BUILD:faqld-->
+<!--BUILD:analytics--><!--/BUILD:analytics-->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -431,6 +502,124 @@
   }
   @media (max-width: 600px) { .hero-cta .btn { width: 100%; justify-content: center; } .stat-num { font-size: 38px; } .listings-band .btn, .footer-cta .btn { width: 100%; justify-content: center; } }
   @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } html { scroll-behavior: auto; } }
+  /* ============ UPGRADE OCT 2026: logos, listings, markets, FAQ, contact ============ */
+  .coverage-cities a { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #000; text-decoration: none; border-bottom: 2px solid rgba(0,0,0,0.35); }
+  .coverage-cities a:hover { border-bottom-color: #000; }
+  .logo-band { background: #000; border-bottom: 1px solid var(--line-steel); padding: 40px 0; }
+  .logo-band .wrap { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  .logo-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.25em; color: var(--yellow); text-transform: uppercase; display: flex; align-items: center; gap: 14px; }
+  .logo-label::before { content: ''; width: 32px; height: 2px; background: var(--yellow); }
+  .logo-row { list-style: none; display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+  .logo-tile > a, .logo-tile > span { position: relative; display: flex; align-items: center; justify-content: center; width: 220px; height: 92px; padding: 18px 26px; background: var(--steel-2); border: 1px solid var(--line-steel); transition: background 0.25s, border-color 0.25s; }
+  .logo-tile img { max-width: 100%; max-height: 48px; width: auto; height: auto; display: block; transition: opacity 0.25s; }
+  .logo-tile img.mono { opacity: 0.78; }
+  .logo-tile img.color { position: absolute; opacity: 0; max-width: calc(100% - 52px); }
+  .logo-tile:hover > *, .logo-tile > a:focus-visible { background: var(--brand-bg, #fff); border-color: var(--yellow); }
+  .logo-tile:hover img.mono, .logo-tile > a:focus-visible img.mono { opacity: 0; }
+  .logo-tile:hover img.color, .logo-tile > a:focus-visible img.color { opacity: 1; }
+  .listing-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .listing-card { display: flex; flex-direction: column; height: 100%; background: var(--steel-2); border: 1px solid var(--line-steel); color: #f2f2ee; text-decoration: none; transition: border-color 0.2s, transform 0.2s; }
+  .listing-card:hover { border-color: var(--yellow); transform: translateY(-3px); }
+  .lc-photo { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+  .lc-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+  .listing-card:hover .lc-photo img { transform: scale(1.04); }
+  .lc-type { position: absolute; left: 0; top: 14px; background: var(--yellow); color: #000; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 12px; }
+  .lc-body { display: flex; flex-direction: column; gap: 6px; padding: 20px 22px 22px; flex: 1; }
+  .lc-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; line-height: 1.1; text-transform: uppercase; color: #fff; }
+  .lc-addr { font-size: 14px; color: #b9b9b3; }
+  .lc-specs { display: flex; gap: 22px; margin-top: 10px; padding-top: 12px; border-top: 1px solid var(--line-steel); flex-wrap: wrap; }
+  .lc-specs .k { display: block; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #9a9a95; }
+  .lc-specs .v { display: block; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 15px; color: #fff; }
+  .lc-link { margin-top: auto; padding-top: 14px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yellow); }
+  .listings-empty { background: var(--steel-2); border: 1px solid var(--line-steel); padding: 56px 32px; text-align: center; }
+  .listings-empty h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 26px; text-transform: uppercase; margin-bottom: 10px; }
+  .listings-empty p { color: #c4c4be; margin-bottom: 24px; }
+  .listings-note { margin-top: 24px; font-size: 13px; color: #9a9a95; }
+  .market-grid-cards { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1px; background: var(--line-steel); border: 1px solid var(--line-steel); }
+  .market-card { position: relative; display: flex; flex-direction: column; gap: 8px; height: 100%; padding: 30px 28px 34px; background: var(--steel-2); color: #f2f2ee; text-decoration: none; transition: background 0.2s; }
+  .market-card::before { content: ''; position: absolute; left: 0; top: 0; width: 0; height: 4px; background: var(--yellow); transition: width 0.25s; }
+  .market-card:hover { background: var(--steel-3); }
+  .market-card:hover::before { width: 100%; }
+  .mc-name { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 24px; text-transform: uppercase; color: #fff; padding-right: 30px; }
+  .mc-sum { font-size: 14px; color: #c4c4be; line-height: 1.55; }
+  .mc-meta { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yellow); margin-top: 6px; }
+  .mc-go { position: absolute; right: 26px; top: 30px; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: var(--yellow); transition: transform 0.2s; }
+  .market-card:hover .mc-go { transform: translateX(4px); }
+  .faq-list { max-width: 960px; border-top: 1px solid var(--line-steel); }
+  .faq-item { border-bottom: 1px solid var(--line-steel); }
+  .faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 0; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(17px, 2vw, 21px); line-height: 1.3; color: #fff; }
+  .faq-item summary:hover h3 { color: var(--yellow); }
+  .faq-plus { flex-shrink: 0; position: relative; width: 28px; height: 28px; background: var(--yellow); }
+  .faq-plus::before, .faq-plus::after { content: ''; position: absolute; left: 7px; right: 7px; top: 13px; height: 2px; background: #000; transition: transform 0.2s; }
+  .faq-plus::after { transform: rotate(90deg); }
+  .faq-item[open] .faq-plus::after { transform: rotate(0deg); }
+  .faq-a { padding: 0 56px 28px 0; }
+  .faq-a p { font-size: 16px; line-height: 1.7; color: #cfcfc9; max-width: 820px; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: start; }
+  .contact-h { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(28px, 3.6vw, 44px); line-height: 1; text-transform: uppercase; color: #fff; margin-bottom: 18px; }
+  .contact-intro { font-size: 17px; line-height: 1.6; color: #cfcfc9; margin-bottom: 28px; }
+  .call-buttons { display: grid; gap: 12px; margin-bottom: 24px; }
+  .call-btn { display: flex; flex-direction: column; gap: 2px; padding: 18px 22px; border: 2px solid var(--line-steel); background: var(--steel-2); color: #fff; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+  .call-btn:hover { border-color: var(--yellow); }
+  .call-btn.primary { background: var(--yellow); border-color: var(--yellow); color: #000; }
+  .call-btn.primary:hover { background: var(--yellow-soft); }
+  .call-btn .k { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.8; }
+  .call-btn .v { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; overflow-wrap: anywhere; }
+  .call-btn:not(.primary) .v { font-size: 18px; }
+  .contact-fine { font-size: 13px; color: #9a9a95; line-height: 1.6; }
+  .contact-form-wrap { background: var(--steel-2); border: 1px solid var(--line-steel); border-top: 5px solid var(--yellow); padding: 36px; }
+  .lead-form { display: grid; gap: 18px; }
+  .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .f { display: grid; gap: 7px; }
+  .f > span { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #c9c9c3; }
+  .f input, .f select, .f textarea { width: 100%; font: inherit; font-size: 16px; color: #fff; background: #0e0f10; border: 2px solid #3a3d40; padding: 13px 14px; border-radius: 0; appearance: none; -webkit-appearance: none; }
+  .f select { background-image: linear-gradient(45deg, transparent 50%, var(--yellow) 50%), linear-gradient(135deg, var(--yellow) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px; }
+  .f input::placeholder, .f textarea::placeholder { color: #7d7d78; }
+  .f input:focus, .f select:focus, .f textarea:focus { outline: none; border-color: var(--yellow); }
+  .lead-form .btn { justify-self: start; padding: 20px 34px; font-size: 13px; }
+  .lead-form .btn[disabled] { opacity: 0.6; cursor: wait; }
+  .hp { position: absolute !important; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  .form-error { color: #ff8a80; font-size: 14px; }
+  .form-thanks h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 28px; text-transform: uppercase; color: var(--yellow); margin-bottom: 12px; }
+  .form-thanks p { color: #cfcfc9; font-size: 16px; }
+  .form-thanks a { color: #fff; }
+  .mobile-bar { display: none; }
+  /* Market pages */
+  .page-hero { background: #000; color: #fff; padding: 96px 0 72px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line-steel); }
+  .page-hero::before { content: ''; position: absolute; top: 0; right: 0; width: 96px; height: 96px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); }
+  .page-hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(40px, 7vw, 92px); line-height: 0.95; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 28px; max-width: 1000px; }
+  .page-hero .lede p { font-size: clamp(16px, 1.8vw, 19px); line-height: 1.65; color: #d6d6d0; max-width: 800px; margin-bottom: 16px; }
+  .crumbs { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #9a9a95; margin-bottom: 24px; }
+  .crumbs a { color: var(--yellow); text-decoration: none; }
+  .page-hero .wrap { z-index: 2; }
+  .page-hero.has-photo { padding: 120px 0 96px; }
+  .page-hero::before { z-index: 3; }
+  .empty-note { color: #c4c4be; font-size: 16px; }
+  .empty-note a { color: var(--yellow); }
+  @media (max-width: 1100px) { .nav-links { gap: 20px; } }
+  @media (max-width: 960px) {
+    .logo-band { padding: 32px 0; }
+    .logo-band .wrap { gap: 20px; }
+    .logo-row { gap: 10px; width: 100%; }
+    .logo-tile { flex: 1 1 30%; min-width: 0; }
+    .logo-tile > a, .logo-tile > span { width: 100%; height: 72px; padding: 12px 14px; }
+    .logo-tile img { max-height: 34px; }
+    .logo-tile img.color { max-width: calc(100% - 28px); }
+    .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+    .contact-form-wrap { padding: 24px 20px; }
+    .f-row { grid-template-columns: 1fr; }
+    .lead-form .btn { width: 100%; justify-content: center; }
+    .faq-a { padding-right: 0; }
+    .mobile-call { display: none !important; }
+    .mobile-bar { display: grid; grid-template-columns: 1.4fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 200; background: #000; border-top: 3px solid var(--yellow); box-shadow: 0 -8px 24px rgba(0,0,0,0.5); padding-bottom: env(safe-area-inset-bottom); }
+    .mobile-bar a { display: flex; align-items: center; justify-content: center; min-height: 58px; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; text-decoration: none; border-left: 1px solid var(--line-steel); }
+    .mobile-bar a.mb-call { background: var(--yellow); color: #000; border-left: none; }
+    body { padding-bottom: 64px; }
+    .page-hero { padding: 64px 0 48px; }
+  }
+  @media (max-width: 600px) { .logo-tile { flex-basis: 100%; } .logo-row { flex-direction: column; } #listingGrid li:nth-child(n+7) { display: none; } }
 </style>
 </head>
 <body>
@@ -449,8 +638,10 @@
       <li><a href="#team">Team</a></li>
       <li><a href="#deals">Deals</a></li>
       <li><a href="#listings">Listings</a></li>
+      <li><a href="#markets">Markets</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li class="hidden" data-nav="market"><a href="#market">Market Report</a></li>
-      <li><a href="#resources">Resources</a></li>
       <li class="hidden" data-nav="services"><a href="#services">Preferred Services</a></li>
     </ul>
     <a class="nav-cta" href="tel:+12489411125">Call Drake</a>
@@ -471,8 +662,8 @@
       </p>
       <div class="hero-cta">
         <a href="tel:+12489411125" class="btn btn-primary">Call Drake (248) 941-1125 <span class="arrow" aria-hidden="true">→</span></a>
-        <a href="https://cpix.resimplifi.com/cards?types=sale_lease&amp;statuses=active&amp;brokers=3440e031" target="_blank" rel="noopener" class="btn btn-ghost">View Active Listings <span class="arrow" aria-hidden="true">↗</span></a>
-        <a href="#deals" class="btn btn-ghost">Closed Deals <span class="arrow" aria-hidden="true">↓</span></a>
+        <a href="#contact" class="btn btn-ghost">Tell Me What You Need <span class="arrow" aria-hidden="true">↓</span></a>
+        <a href="#listings" class="btn btn-ghost">Active Listings <span class="arrow" aria-hidden="true">↓</span></a>
       </div>
     </div>
   </div>
@@ -483,10 +674,17 @@
   <div class="wrap">
     <div class="coverage-inner">
       <span class="coverage-label">Markets We Cover</span>
-      <div class="coverage-cities" id="coverageCities"><!--BUILD:coverage--><span>Plymouth</span><span>Livonia</span><span>Ann Arbor</span><span>Saline</span><span>Northville</span><span>Novi</span><span>Wixom</span><span>Metro Detroit</span><!--/BUILD:coverage--></div>
+      <div class="coverage-cities" id="coverageCities"><!--BUILD:coverage--><a href="/markets/plymouth-mi/">Plymouth</a><a href="/markets/livonia-mi/">Livonia</a><a href="/markets/ann-arbor-mi/">Ann Arbor</a><a href="/markets/saline-mi/">Saline</a><span>Northville</span><a href="/markets/novi-mi/">Novi</a><span>Wixom</span><a href="/markets/metro-detroit/">Metro Detroit</a><!--/BUILD:coverage--></div>
     </div>
   </div>
 </div>
+<!-- CLIENT LOGOS -->
+<section class="logo-band" id="clients" aria-labelledby="clientsLabel">
+  <div class="wrap">
+    <h2 class="logo-label" id="clientsLabel">Trusted By</h2>
+    <ul class="logo-row" id="logoRow"><!--BUILD:logos--><li class="logo-tile" style="--brand-bg:#185A7D"><span><img class="mono" src="/uploads/logos/banksupplies-white.png" alt="BankSupplies" loading="lazy" decoding="async" /><img class="color" src="/uploads/logos/banksupplies-white.png" alt="" aria-hidden="true" loading="lazy" decoding="async" /></span></li><li class="logo-tile" style="--brand-bg:#ffffff"><span><img class="mono" src="/uploads/logos/vios-white.png" alt="ViOS" loading="lazy" decoding="async" /><img class="color" src="/uploads/logos/vios.png" alt="" aria-hidden="true" loading="lazy" decoding="async" /></span></li><li class="logo-tile" style="--brand-bg:#ffffff"><a href="https://interstate-cap.com/" target="_blank" rel="noopener" title="Interstate Capital (opens in a new tab)"><img class="mono" src="/uploads/logos/interstate-capital-white.png" alt="Interstate Capital" loading="lazy" decoding="async" /><img class="color" src="/uploads/logos/interstate-capital.png" alt="" aria-hidden="true" loading="lazy" decoding="async" /></a></li><!--/BUILD:logos--></ul>
+  </div>
+</section>
 <!-- STATS -->
 <section class="stats">
   <div class="wrap">
@@ -530,7 +728,7 @@
           <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">View profile ↗</a></div>
         </div>
       </div><!--/BUILD:team--></div>
-    <ul class="services-list" id="servicesList" aria-label="Services"><!--BUILD:services--><li><h3>Disposition</h3><p>Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing.</p></li><li><h3>Acquisition</h3><p>Owner user and investor acquisitions, from requirements and site search through due diligence and closing.</p></li><li><h3>Build-to-Suit</h3><p>Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities.</p></li><li><h3>Tenant Representation</h3><p>Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users.</p></li><li><h3>Buyer Representation</h3><p>Representation of owner users buying industrial property, including financing timing and closing.</p></li><li><h3>Landlord Representation</h3><p>Marketing and leasing of industrial buildings and multi tenant flex space.</p></li><li><h3>Investment Sales</h3><p>Pricing, marketing and sale of industrial investment property.</p></li><!--/BUILD:services--></ul>
+    <ul class="services-list" id="servicesList"><!--BUILD:services--><li><h3>Disposition</h3><p>Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing.</p></li><li><h3>Acquisition</h3><p>Owner user and investor acquisitions, from requirements and site search through due diligence and closing.</p></li><li><h3>Build-to-Suit</h3><p>Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities.</p></li><li><h3>Tenant Representation</h3><p>Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users.</p></li><li><h3>Buyer Representation</h3><p>Representation of owner users buying industrial property, including financing timing and closing.</p></li><li><h3>Landlord Representation</h3><p>Marketing and leasing of industrial buildings and multi tenant flex space.</p></li><li><h3>Investment Sales</h3><p>Pricing, marketing and sale of industrial investment property.</p></li><!--/BUILD:services--></ul>
   </div>
 </section>
 <!-- CLOSED DEALS -->
@@ -621,78 +819,141 @@
     </table>
   </div>
 </section>
-<!-- CLIENT LOGO MARQUEE -->
-<section class="marquee-section hidden" id="clientMarquee">
-  <div class="wrap">
-    <div class="marquee-label">Trusted by Industry Leaders</div>
-  </div>
-  <div class="marquee">
-    <div class="marquee-track" id="marqueeTrack"><!--BUILD:logos--><div class="client-logo">Bank Supplies</div><div class="client-logo">Advanced Systems</div><div class="client-logo">VIOS Compounding</div><div class="client-logo" aria-hidden="true">Bank Supplies</div><div class="client-logo" aria-hidden="true">Advanced Systems</div><div class="client-logo" aria-hidden="true">VIOS Compounding</div><!--/BUILD:logos--></div>
-  </div>
-</section>
 <!-- ACTIVE LISTINGS (CPIX EMBED) -->
 <section class="block dark" id="listings">
   <div class="wrap">
     <div class="section-head">
       <div class="section-head-left"><span class="section-num">03</span><h2 style="color:var(--white);">Active Listings</h2></div>
-      <span class="section-tag">Live Feed · CPIX</span>
+      <span class="section-tag">From CPIX</span>
     </div>
     <div class="listings-band">
-      <div><h3>Looking for industrial space?</h3><p>Browse every active sale and lease listing on CPIX, updated daily.</p></div>
-      <a href="https://cpix.resimplifi.com/cards?types=sale_lease&amp;statuses=active&amp;brokers=3440e031" target="_blank" rel="noopener" class="btn btn-dark">View Active Listings on CPIX <span class="arrow" aria-hidden="true">↗</span></a>
+      <div><h3>Looking for industrial space?</h3><p>Featured listings are below. See the full list of active sale and lease listings on CPIX.</p></div>
+      <a href="https://cpix.resimplifi.com/cards?types=sale_lease&amp;statuses=active&amp;brokers=3440e031" target="_blank" rel="noopener" class="btn btn-dark" data-track="cpix_all">View All Listings on CPIX <span class="arrow" aria-hidden="true">↗</span></a>
     </div>
-    <div class="listings-frame-wrap">
-      <iframe
-        id="listingsFrame"
-        class="listings-frame"
-        src="https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031"
-        title="Active Listings · Midwest Industrial Brokers"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <div class="listings-fallback" id="listingsFallback">
-        <h3>Listings Open in a New Tab</h3>
-        <p>Our live inventory is hosted on CPIX. Click below to browse every active sale and lease listing in our portfolio.</p>
-        <a href="https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031" target="_blank" rel="noopener" class="btn btn-dark">Open Active Listings <span class="arrow">↗</span></a>
-      </div>
+    <ul class="listing-grid" id="listingGrid"><!--BUILD:listings-->
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/eb5c197c-45700-mast-st" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/eb5c197c-45700-mast-st.webp" alt="45700 Mast St, 45700 Mast St, Plymouth, MI 48170" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Sale/Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">45700 Mast St</span>
+          <span class="lc-addr">45700 Mast St, Plymouth, MI 48170</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">15K SF</span></span><span><span class="k">Lot</span><span class="v">1.3 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/898605c0-taylor-distribution-center" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/898605c0-taylor-distribution-center.webp" alt="Taylor Distribution Center, 26456 Northline Rd, Taylor, MI 48180" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">Taylor Distribution Center</span>
+          <span class="lc-addr">26456 Northline Rd, Taylor, MI 48180</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">378K SF</span></span><span><span class="k">Lot</span><span class="v">44.3 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/b92a371c-3253532553-schoolcraft-rd" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/b92a371c-3253532553-schoolcraft-rd.webp" alt="32535-32553 Schoolcraft Rd, 32535-32553 Schoolcraft Rd, Livonia, MI 48150" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">32535-32553 Schoolcraft Rd</span>
+          <span class="lc-addr">32535-32553 Schoolcraft Rd, Livonia, MI 48150</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">1.5K - 6.9K SF</span></span><span><span class="k">Lot</span><span class="v">2.1 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/3a711d7f-39013913-varsity-dr" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/3a711d7f-39013913-varsity-dr.webp" alt="3901-3913 Varsity Dr, 3901-3913 Varsity Dr, Ann Arbor, MI 48108" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">3901-3913 Varsity Dr</span>
+          <span class="lc-addr">3901-3913 Varsity Dr, Ann Arbor, MI 48108</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">2.4K - 4.8K SF</span></span><span><span class="k">Lot</span><span class="v">1.7 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/a3afd471-34414-rosati-ave" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/a3afd471-34414-rosati-ave.webp" alt="34414 Rosati Ave, 34414 Rosati Ave, Livonia, MI 48150" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">34414 Rosati Ave</span>
+          <span class="lc-addr">34414 Rosati Ave, Livonia, MI 48150</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">7K SF</span></span><span><span class="k">Lot</span><span class="v">0.6 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/ad4ec5af-770-james-l-hart-parkway" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/ad4ec5af-770-james-l-hart-parkway.webp" alt="770 James L. Hart Parkway, 770 James L Hart Parkway, Ypsilanti, MI 48197" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Sale</span></span>
+        <span class="lc-body">
+          <span class="lc-title">770 James L. Hart Parkway</span>
+          <span class="lc-addr">770 James L Hart Parkway, Ypsilanti, MI 48197</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">30.6K SF</span></span><span><span class="k">Lot</span><span class="v">6.4 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/662be2ce-4469644808-helm-st" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/662be2ce-4469644808-helm-st.webp" alt="44696-44808 Helm St, 44696-44808 Helm St, Plymouth, MI 48170" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">44696-44808 Helm St</span>
+          <span class="lc-addr">44696-44808 Helm St, Plymouth, MI 48170</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">2.4K - 11.1K SF</span></span><span><span class="k">Lot</span><span class="v">12 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/abf8ecbf-802864-phoenix-dr" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/abf8ecbf-802864-phoenix-dr.webp" alt="802-864 Phoenix Dr, 802-864 Phoenix Dr, Ann Arbor, MI 48108" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">802-864 Phoenix Dr</span>
+          <span class="lc-addr">802-864 Phoenix Dr, Ann Arbor, MI 48108</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">4.3K SF</span></span><span><span class="k">Lot</span><span class="v">4 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>
+      <li><a class="listing-card" href="https://cpix.resimplifi.com/ebd93c16-8070-n-territorial-rd" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo"><img src="/uploads/listings/ebd93c16-8070-n-territorial-rd.webp" alt="8070 N. Territorial Rd, 8070 N. Territorial Rd, Plymouth, MI 48170" loading="lazy" decoding="async" width="640" height="360" /><span class="lc-type">Sale/Lease</span></span>
+        <span class="lc-body">
+          <span class="lc-title">8070 N. Territorial Rd</span>
+          <span class="lc-addr">8070 N. Territorial Rd, Plymouth, MI 48170</span>
+          <span class="lc-specs"><span><span class="k">Use</span><span class="v">Industrial</span></span><span><span class="k">Size</span><span class="v">15.3K SF</span></span><span><span class="k">Lot</span><span class="v">1.2 ac</span></span></span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li><!--/BUILD:listings--></ul>
+    <div class="listings-empty hidden" id="listingsEmpty">
+      <h3>See every active listing on CPIX</h3>
+      <p>Current sale and lease listings are hosted on CPIX.</p>
+      <a href="https://cpix.resimplifi.com/cards?types=sale_lease&amp;statuses=active&amp;brokers=3440e031" target="_blank" rel="noopener" class="btn btn-primary">Open Active Listings <span class="arrow" aria-hidden="true">↗</span></a>
     </div>
+    <p class="listings-note">Listing details come from CPIX. Availability and terms can change, so open a listing on CPIX or call Drake for the latest.</p>
   </div>
 </section>
-<!-- MARKET REPORT -->
-<section class="block alt hidden" id="market">
+<!-- MARKETS -->
+<section class="block alt" id="markets">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-head-left"><span class="section-num">04</span><h2>Market Report</h2></div>
-      <span class="section-tag">Detroit Industrial · Snapshot</span>
+      <div class="section-head-left"><span class="section-num">04</span><h2>Markets</h2></div>
+      <span class="section-tag">Where We Work</span>
     </div>
-    <div class="market-grid">
-      <div>
-        <div class="market-headline">
-          <div class="quarter" id="marketQuarter"></div>
-          <h3 id="marketHeadline"></h3>
-        </div>
-        <div class="market-stats" id="marketStats"></div>
-        <h4 class="subsection-title" style="font-size:14px; margin-bottom:16px;">Submarket Snapshot</h4>
-        <div class="submarket-wrap"><table class="submarket-table">
-          <thead><tr><th>Market</th><th>Vacancy</th><th>Avg. NNN</th><th>YoY Δ</th></tr></thead>
-          <tbody id="submarketBody"></tbody>
-        </table></div>
-        <p id="marketDataNote" style="font-size:11px; color:var(--gray-400); margin-top:12px; font-style:italic;"></p>
-      </div>
-      <div class="market-side">
-        <h4>Key Takeaways</h4>
-        <ul class="takeaway-list" id="takeawayList"></ul>
-        <h4>What We're Watching</h4>
-        <div class="market-update"><strong id="watchingTitle"></strong> <span id="watchingBody"></span></div>
-      </div>
+    <p class="section-lede">Industrial real estate across western Wayne County, Washtenaw County and greater Metro Detroit. Pick a market to see local closed deals and active listings.</p>
+    <ul class="market-grid-cards" id="marketCards"><!--BUILD:markets--><li><a class="market-card" href="/markets/plymouth-mi/"><span class="mc-name">Plymouth</span><span class="mc-sum">Light manufacturing, flex and distribution space close to I-275 and M-14.</span><span class="mc-meta">2 closed deals · 4 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ann-arbor-mi/"><span class="mc-name">Ann Arbor</span><span class="mc-sum">Flex, research and light industrial space across Washtenaw County.</span><span class="mc-meta">1 closed deal · 19 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/livonia-mi/"><span class="mc-name">Livonia</span><span class="mc-sum">An established industrial base with access to I-96 and I-275.</span><span class="mc-meta">1 closed deal · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/i-275-corridor/"><span class="mc-name">I-275 Corridor</span><span class="mc-sum">Plymouth, Livonia, Canton, Novi and Romulus along one north south route.</span><span class="mc-meta">4 closed deals · 12 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/metro-detroit/"><span class="mc-name">Metro Detroit</span><span class="mc-sum">Manufacturing, warehouse and distribution space across the region.</span><span class="mc-meta">5 closed deals · 14 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/canton-mi/"><span class="mc-name">Canton</span><span class="mc-sum">Industrial and flex space in western Wayne County off I-275.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/saline-mi/"><span class="mc-name">Saline</span><span class="mc-sum">Industrial space in southern Washtenaw County near US-12 and US-23.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/novi-mi/"><span class="mc-name">Novi</span><span class="mc-sum">Flex and light industrial space near I-96 and I-275.</span><span class="mc-meta">2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><!--/BUILD:markets--></ul>
+  </div>
+</section>
+<!-- FAQ -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left"><span class="section-num">05</span><h2>FAQ</h2></div>
+      <span class="section-tag">Owners · Tenants · Buyers</span>
     </div>
+    <div class="faq-list" id="faqList"><!--BUILD:faq-->
+      <details class="faq-item" open><summary><h3>How does Drake help owners sell or lease an industrial building?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>Disposition starts with a walkthrough and a review of the building, the market and your goals. From there Drake builds a pricing and marketing plan, lists the property on CPIX and other industrial channels, reaches out to likely buyers or tenants, and manages tours, offers, negotiation and due diligence through closing or lease signing.</p></div></details>
+      <details class="faq-item"><summary><h3>How does an acquisition search work for owner users and investors?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>It begins with a clear list of requirements, such as size, clear height, power, loading, yard, zoning, location and budget. Drake then searches listed and off market options, sets up tours, helps compare buildings side by side, and negotiates the purchase. He also helps coordinate inspections, environmental review, title and financing timing so the deal can close on schedule.</p></div></details>
+      <details class="faq-item"><summary><h3>What is a build-to-suit and when does it make sense?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>A build-to-suit is a new facility designed and built around a specific user. It can make sense when no existing building meets your needs, or when your operation needs special features like heavy power, high clear height or extra loading. Drake helps with site selection, entitlements and coordination with developers and contractors, and can compare build-to-suit options with existing buildings.</p></div></details>
+      <details class="faq-item"><summary><h3>How long does it take to lease industrial space?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>It depends on the size of the space, how many options fit, the condition of the building and how much work is needed before move in. A simple lease of a ready space can move quickly, while larger spaces or spaces that need improvements often take longer. Starting early gives you more choices and more negotiating room, so it is smart to reach out well before your current lease ends.</p></div></details>
+      <details class="faq-item"><summary><h3>What should I have ready before I start a search?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>Helpful details include the size you need, ceiling height, number and type of loading doors, power, parking and yard needs, preferred areas, budget, and your move in date. If you are buying, it also helps to know your financing plan. Drake can help you work through any of these if you are not sure yet.</p></div></details>
+      <details class="faq-item"><summary><h3>Do you represent tenants, buyers, landlords and sellers?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>Yes. Drake represents owners on disposition and leasing, and represents buyers and tenants on acquisitions and leases. On every assignment the representation is confirmed in writing at the start so everyone knows who is represented.</p></div></details>
+      <details class="faq-item"><summary><h3>Which areas do you cover?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>Drake focuses on industrial property in Plymouth, Livonia, Canton, Ann Arbor, Saline, Novi, Northville, Wixom, the I-275 corridor and greater Metro Detroit. Through Signature Associates he also handles assignments in other parts of Michigan and the region.</p></div></details>
+      <details class="faq-item"><summary><h3>How do I get started?</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short note through the contact form on this site. Share what you need and your timing, and Drake will follow up to talk through next steps.</p></div></details><!--/BUILD:faq--></div>
   </div>
 </section>
 <!-- RESOURCES -->
 <section class="block" id="resources">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-head-left"><span class="section-num">05</span><h2>Resources</h2></div>
+      <div class="section-head-left"><span class="section-num">06</span><h2>Resources</h2></div>
       <span class="section-tag">Reports · Zoning · Tools</span>
     </div>
     <div class="split-grid">
@@ -741,11 +1002,103 @@
     </div>
   </div>
 </section>
+<!-- CONTACT -->
+<section class="block alt" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left"><span class="section-num">07</span><h2>Contact</h2></div>
+      <span class="section-tag">Lease · Buy · Sell · Build</span>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <h3 class="contact-h">Tell me what you need</h3>
+        <p class="contact-intro">Share a few details and Drake will follow up. Prefer to talk now? Call Drake directly.</p>
+        <div class="call-buttons">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+          <a class="call-btn" href="mailto:dfilippis@signatureassociates.com" data-track="email"><span class="k">Email</span><span class="v">dfilippis@signatureassociates.com</span></a>
+        </div>
+        <p class="contact-fine">Drake Filippis, Associate Broker, Signature Associates. One Towne Square, Suite 1200, Southfield, MI 48076.</p>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="lead-form" id="leadForm" name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="f-row">
+            <label class="f"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+            <label class="f"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <div class="f-row">
+            <label class="f"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            <label class="f"><span>I want to *</span><select name="need" required>
+              <option value="">Choose one</option>
+              <option>Lease space</option>
+              <option>Buy a property</option>
+              <option>Sell a property</option>
+              <option>Build-to-suit</option>
+              <option>Something else</option>
+            </select></label>
+          </div>
+          <div class="f-row">
+            <label class="f"><span>Size</span><input type="text" name="size" placeholder="Example: 10,000 SF" /></label>
+            <label class="f"><span>Area</span><input type="text" name="area" placeholder="Example: Plymouth or I-275" /></label>
+          </div>
+          <label class="f"><span>Timing</span><select name="timing">
+            <option value="">Choose one</option>
+            <option>As soon as possible</option>
+            <option>Within 3 months</option>
+            <option>3 to 6 months</option>
+            <option>6 to 12 months</option>
+            <option>More than 12 months</option>
+            <option>Just exploring</option>
+          </select></label>
+          <label class="f"><span>Message</span><textarea name="message" rows="4" placeholder="Anything else that matters: power, clear height, docks, yard, budget"></textarea></label>
+          <button type="submit" class="btn btn-primary">Send to Drake <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-error" id="formError" role="alert" hidden>Something went wrong. Please call (248) 941-1125 or email dfilippis@signatureassociates.com.</p>
+        </form>
+        <div class="form-thanks" id="formThanks" hidden tabindex="-1">
+          <h3>Thanks. Your note is on its way.</h3>
+          <p>Drake will follow up soon. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MARKET REPORT -->
+<section class="block alt hidden" id="market">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left"><span class="section-num">08</span><h2>Market Report</h2></div>
+      <span class="section-tag">Detroit Industrial · Snapshot</span>
+    </div>
+    <div class="market-grid">
+      <div>
+        <div class="market-headline">
+          <div class="quarter" id="marketQuarter"></div>
+          <h3 id="marketHeadline"></h3>
+        </div>
+        <div class="market-stats" id="marketStats"></div>
+        <h4 class="subsection-title" style="font-size:14px; margin-bottom:16px;">Submarket Snapshot</h4>
+        <div class="submarket-wrap"><table class="submarket-table">
+          <thead><tr><th>Market</th><th>Vacancy</th><th>Avg. NNN</th><th>YoY Δ</th></tr></thead>
+          <tbody id="submarketBody"></tbody>
+        </table></div>
+        <p id="marketDataNote" style="font-size:11px; color:var(--gray-400); margin-top:12px; font-style:italic;"></p>
+      </div>
+      <div class="market-side">
+        <h4>Key Takeaways</h4>
+        <ul class="takeaway-list" id="takeawayList"></ul>
+        <h4>What We're Watching</h4>
+        <div class="market-update"><strong id="watchingTitle"></strong> <span id="watchingBody"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- PREFERRED SERVICES -->
 <section class="block alt hidden" id="services">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-head-left"><span class="section-num">06</span><h2>Preferred Services</h2></div>
+      <div class="section-head-left"><span class="section-num">09</span><h2>Preferred Services</h2></div>
       <span class="section-tag">Trusted Network of Specialists</span>
     </div>
     <div class="services-grid" id="servicesGrid"></div>
@@ -759,7 +1112,7 @@
       <h3>Ready to secure the right industrial space?</h3>
       <div class="cta-row">
         <a href="tel:+12489411125" class="btn btn-dark">Call (248) 941-1125 <span class="arrow" aria-hidden="true">→</span></a>
-        <a href="mailto:dfilippis@signatureassociates.com" class="btn btn-dark">Email Drake <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="#contact" class="btn btn-dark">Send a Request <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
     <div class="footer-grid">
@@ -779,7 +1132,9 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect</h4>
+        <h4>Markets</h4>
+        <ul id="footerMarkets"><!--BUILD:footermarkets--><li><a href="/markets/plymouth-mi/">Plymouth</a></li><li><a href="/markets/ann-arbor-mi/">Ann Arbor</a></li><li><a href="/markets/livonia-mi/">Livonia</a></li><li><a href="/markets/i-275-corridor/">I-275 Corridor</a></li><li><a href="/markets/metro-detroit/">Metro Detroit</a></li><li><a href="/markets/canton-mi/">Canton</a></li><li><a href="/markets/saline-mi/">Saline</a></li><li><a href="/markets/novi-mi/">Novi</a></li><!--/BUILD:footermarkets--></ul>
+        <h4 style="margin-top:24px;">Connect</h4>
         <ul>
           <li><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
@@ -790,6 +1145,8 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#deals">Closed Deals</a></li>
           <li><a href="#listings">Active Listings</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li class="hidden" data-nav="market"><a href="#market">Market Report</a></li>
           <li><a href="#resources">Resources</a></li>
           <li class="hidden" data-nav="services"><a href="#services">Preferred Services</a></li>
@@ -807,8 +1164,13 @@
     </div>
   </div>
 </footer>
-<a class="mobile-call" href="tel:+12489411125" aria-label="Call Drake at (248) 941-1125">Call Drake (248) 941-1125</a>
+<nav class="mobile-bar" aria-label="Quick contact">
+  <a class="mb-call" href="tel:+12489411125" data-track="call_mobile">Call Drake</a>
+  <a href="tel:+12487993161" data-track="call_office">Office</a>
+  <a href="#contact">Contact</a>
+</nav>
 <script src="/render.js"></script>
+<script src="/site.js" defer></script>
 <script>
   // ============================================================
   // CMS-driven content rendering
@@ -878,8 +1240,15 @@
 
   function renderLogos(logos) {
     const html = R.logos(logos);
-    $('clientMarquee').classList.toggle('hidden', !html);
-    setHTML('marqueeTrack', html);
+    $('clients').classList.toggle('hidden', !html);
+    setHTML('logoRow', html);
+  }
+
+  function renderListings(data) {
+    const s = data.listings_settings || {};
+    const html = R.listings(data.listings, { home: true, limit: s.home_limit });
+    setHTML('listingGrid', html);
+    $('listingsEmpty').classList.toggle('hidden', !!html);
   }
 
   // Smooth scroll with sticky-nav offset
@@ -897,35 +1266,19 @@
     });
   });
 
-  // CPIX iframe fallback · hide and show button-only fallback if iframe fails
-  (function() {
-    const frame = document.getElementById('listingsFrame');
-    const fallback = document.getElementById('listingsFallback');
-    if (!frame || !fallback) return;
-    let loaded = false;
-    frame.addEventListener('load', () => { loaded = true; });
-    frame.addEventListener('error', () => {
-      frame.style.display = 'none';
-      fallback.classList.add('show');
-    });
-    setTimeout(() => {
-      if (!loaded) {
-        frame.style.display = 'none';
-        fallback.classList.add('show');
-      }
-    }, 6000);
-  })();
-
   // Load data.json (cache-busted) and render everything
   fetch('/data.json?t=' + Date.now())
     .then(r => r.json())
     .then(data => {
       setHTML('statsGrid', R.stats(data.stats));
-      setHTML('coverageCities', R.coverage(data.coverage_cities));
+      setHTML('coverageCities', R.coverage(data.coverage_cities, data.markets));
       setHTML('teamGrid', R.team(data.team));
       if (Array.isArray(data.services) && data.services.length) setHTML('servicesList', R.serviceList(data.services));
       renderDeals(data.closed_deals);
       renderLogos(data.client_logos);
+      renderListings(data);
+      if (Array.isArray(data.markets)) setHTML('marketCards', R.marketCards(data.markets, data.closed_deals, data.listings));
+      if (Array.isArray(data.faqs)) setHTML('faqList', R.faq(data.faqs));
       renderMarketReport(data.market_report);
       renderServices(data.preferred_services);
     })

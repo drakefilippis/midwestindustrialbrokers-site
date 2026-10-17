@@ -17,7 +17,7 @@
         <div class="stat-num">${esc(s.value)}<span class="unit">${esc(s.unit)}</span></div>
         <div class="stat-label">${esc(s.label)}</div>
       </div>`).join(''),
-    coverage: (cities) => (cities || []).map(c => `<span>${esc(c)}</span>`).join(''),
+    coverage: (cities, markets) => (cities || []).map(c => { const m = (markets || []).find(x => String(x.name).toLowerCase() === String(c).toLowerCase()); return m ? `<a href="/markets/${esc(m.slug)}/">${esc(c)}</a>` : `<span>${esc(c)}</span>`; }).join(''),
     team: (team) => (team || []).map(b => `
       <div class="broker-card">
         <div class="broker-avatar" aria-hidden="true">${esc(b.initials)}</div>
@@ -51,7 +51,45 @@
         <img src="${esc(photoSrc(d.photos.find(p => photoSrc(p))))}" alt="${esc(d.property + (d.subtitle ? ', ' + d.subtitle : ''))}" loading="lazy" decoding="async" width="1200" height="720" />
         <span class="cap"><span class="k">${esc(d.year)} · ${esc(d.deal_type)}</span><span class="t">${esc(d.property)}</span><span class="m">${esc([isPlaceholder(d.client) ? '' : d.client, d.size].filter(Boolean).join(' · '))}</span></span>
       </a>`).join(''),
-    logos: (logos) => { const real = (logos || []).filter(l => !isPlaceholder(l)); if (real.length < 3) return ''; const items = real.map(l => `<div class="client-logo">${esc(l)}</div>`).join(''); return items + items.replace(/class="client-logo"/g, 'class="client-logo" aria-hidden="true"'); },
+    // Client logo strip: uniform white logos on a dark band, brand color on hover.
+    // Only logos with a url get a link (opens in a new tab).
+    logos: (logos) => (logos || []).filter(l => l && typeof l === 'object' && !isPlaceholder(l.name) && l.logo).map(l => {
+      const inner = `<img class="mono" src="${esc(l.logo)}" alt="${esc(l.name)}" loading="lazy" decoding="async" /><img class="color" src="${esc(l.logo_color || l.logo)}" alt="" aria-hidden="true" loading="lazy" decoding="async" />`;
+      const style = l.hover_bg ? ` style="--brand-bg:${esc(l.hover_bg)}"` : '';
+      return l.url
+        ? `<li class="logo-tile"${style}><a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.name)} (opens in a new tab)">${inner}</a></li>`
+        : `<li class="logo-tile"${style}><span>${inner}</span></li>`;
+    }).join(''),
+    // Active listing cards (data pulled from CPIX, stored in data.json).
+    listingCard: (l) => `
+      <li><a class="listing-card" href="${esc(l.url)}" target="_blank" rel="noopener" data-track="cpix_listing">
+        <span class="lc-photo">${l.photo ? `<img src="${esc(l.photo)}" alt="${esc(l.title + ', ' + l.address)}" loading="lazy" decoding="async" width="640" height="360" />` : ''}<span class="lc-type">${esc(l.deal_type)}</span></span>
+        <span class="lc-body">
+          <span class="lc-title">${esc(l.title)}</span>
+          <span class="lc-addr">${esc(l.address)}</span>
+          <span class="lc-specs">${[['Use', l.use], ['Size', l.size], ['Lot', l.lot]].filter(x => x[1]).map(x => `<span><span class="k">${x[0]}</span><span class="v">${esc(x[1])}</span></span>`).join('')}</span>
+          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+        </span>
+      </a></li>`,
+    listings: (listings, opts) => {
+      opts = opts || {};
+      let list = (listings || []).filter(l => l && l.show !== false && l.url && l.title);
+      if (opts.home) { const f = list.filter(l => l.featured); list = (f.length ? f : list).slice(0, opts.limit || 9); }
+      return list.map(R.listingCard).join('');
+    },
+    cityOf: (address) => String(address || '').split(',').slice(1).join(','),
+    matches: (text, cities) => (cities || []).some(c => new RegExp('\\b' + String(c).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(String(text || ''))),
+    marketDeals: (deals, m) => (deals || []).filter(d => R.matches(d.subtitle, m.cities)),
+    marketListings: (listings, m) => (listings || []).filter(l => l.show !== false && R.matches(R.cityOf(l.address), m.cities)),
+    marketUrl: (m) => '/markets/' + m.slug + '/',
+    marketCards: (markets, deals, listings) => (markets || []).map(m => {
+      const nd = R.marketDeals(deals, m).length, nl = R.marketListings(listings, m).length;
+      const meta = [nd ? nd + ' closed deal' + (nd > 1 ? 's' : '') : '', nl ? nl + ' active listing' + (nl > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
+      return `<li><a class="market-card" href="${R.marketUrl(m)}"><span class="mc-name">${esc(m.name)}</span><span class="mc-sum">${esc(m.summary)}</span>${meta ? `<span class="mc-meta">${meta}</span>` : ''}<span class="mc-go" aria-hidden="true">→</span></a></li>`;
+    }).join(''),
+    faq: (faqs) => (faqs || []).filter(f => f && f.q && f.a).map((f, i) => `
+      <details class="faq-item"${i === 0 ? ' open' : ''}><summary><h3>${esc(f.q)}</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>${esc(f.a)}</p></div></details>`).join(''),
+    faqJsonLd: (faqs) => JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: (faqs || []).filter(f => f && f.q && f.a).map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }, null, 1).replace(/</g, '\\u003c'),
     // Market report shows only when real data is in (data_note no longer says sample or placeholder).
     marketReady: (mr) => !!mr && !/placeholder|sample/i.test(mr.data_note || ''),
     services: (services) => (services || []).map(cat => {
