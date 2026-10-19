@@ -135,7 +135,7 @@
   }
  ]
 }</script>
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNWEQ77G2W"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DNWEQ77G2W');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -587,6 +587,11 @@
   .f input:focus, .f select:focus, .f textarea:focus { outline: none; border-color: var(--yellow); }
   .lead-form .btn { justify-self: start; padding: 20px 34px; font-size: 13px; }
   .lead-form .btn[disabled] { opacity: 0.6; cursor: wait; }
+  .f-group { border: 0; padding: 0; margin: 0; display: grid; gap: 18px; min-width: 0; }
+  .f-group + .f-group { border-top: 1px solid var(--line-steel); padding-top: 22px; }
+  .f-group legend { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900; letter-spacing: 0.16em; text-transform: uppercase; color: var(--yellow); padding: 0; margin-bottom: 18px; }
+  .bts-req .section-head h2 { color: #fff; }
+  .bts-req .contact-form-wrap { border-top-width: 8px; }
   .hp { position: absolute !important; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
   .form-error { color: #ff8a80; font-size: 14px; }
   .form-thanks h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 28px; text-transform: uppercase; color: var(--yellow); margin-bottom: 12px; }
@@ -713,7 +718,7 @@
     <h1>Build-to-Suit</h1>
     <div class="lede"><p>A new facility designed around your operation. When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation.</p></div>
     <div class="hero-cta" style="margin-top:32px;">
-      <a href="#inquiry" class="btn btn-primary">Start a Conversation <span class="arrow" aria-hidden="true">↓</span></a>
+      <a href="#inquiry" class="btn btn-primary">Submit Requirements <span class="arrow" aria-hidden="true">↓</span></a>
       <a href="tel:+12489411125" class="btn btn-ghost" data-track="call_mobile">Call (248) 941-1125 <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
@@ -733,62 +738,69 @@
     <ol class="steps"><li><h3>Requirements and budget</h3><p>Define the building, the site, the budget and the date you need to be operating.</p></li><li><h3>Site search</h3><p>Find land with the right zoning, utilities, access and room to grow.</p></li><li><h3>Developer and contractor selection</h3><p>Request proposals and compare developers and contractors on cost, schedule and terms.</p></li><li><h3>Entitlements and approvals</h3><p>Work through site plan review, zoning and other local approvals with the project team.</p></li><li><h3>Agreement and delivery</h3><p>Negotiate the lease or purchase agreement and track construction milestones through move in.</p></li></ol>
   </div>
 </section>
-<section class="block" id="deals">
+
+<section class="block alt bts-req" id="inquiry">
   <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">03</span><h2>Deals Completed</h2></div><span class="section-tag">Build-to-Suit</span></div>
-    <div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>
-  </div>
-</section>
-<section class="block alt" id="inquiry">
-  <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Start Here</h2></div><span class="section-tag">Build-to-Suit</span></div>
+    <div class="section-head"><div class="section-head-left"><span class="section-num">03</span><h2>Submit Your Build-to-Suit Requirements</h2></div><span class="section-tag">Build-to-Suit</span></div>
     <div class="contact-grid">
       <div class="contact-side">
-        <h3 class="contact-h">Tell me about your project</h3>
-        <p class="contact-intro">Share a few details and Drake will follow up. Prefer to talk now? Call Drake directly.</p>
+        <h3 class="contact-h">Tell Drake what you need to build</h3>
+        <p class="contact-intro">Share your size, site and timing needs. Drake will review them, look at land and developer options that fit, and call you to talk through next steps. Rough numbers are fine. Rather talk it through? Call now.</p>
         <div class="call-buttons">
           <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
           <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
         </div>
       </div>
       <div class="contact-form-wrap">
-        <form class="lead-form" name="service-inquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="service-inquiry" />
+        <form class="lead-form bts-form" name="bts-requirements" method="POST" action="/thank-you-bts.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="bts-requirements" />
           <input type="hidden" name="service" value="Build-to-Suit" />
           <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
-          <div class="f-row">
-            <label class="f"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
-            <label class="f"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
-          </div>
-          <div class="f-row">
-            <label class="f"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
-            <label class="f"><span>I want to *</span><select name="need" required>
-              <option value="">Choose one</option>
-              <option>Lease space</option><option>Lease out my building</option><option>Buy a property</option><option>Sell a property</option><option selected>Build-to-suit</option><option>Something else</option>
-            </select></label>
-          </div>
-          <div class="f-row">
-            <label class="f"><span>Size</span><input type="text" name="size" placeholder="Example: 10,000 SF" /></label>
-            <label class="f"><span>Area</span><input type="text" name="area" placeholder="Example: Plymouth or I-275" /></label>
-          </div>
-          <label class="f"><span>Timing</span><select name="timing">
-            <option value="">Choose one</option>
-            <option>As soon as possible</option><option>Within 3 months</option><option>3 to 6 months</option><option>6 to 12 months</option><option>More than 12 months</option><option>Just exploring</option>
-          </select></label>
-          <label class="f"><span>Message</span><textarea name="message" rows="4" placeholder="Anything else that matters: power, clear height, docks, yard, budget"></textarea></label>
-          <button type="submit" class="btn btn-primary">Send to Drake <span class="arrow" aria-hidden="true">→</span></button>
+          <fieldset class="f-group"><legend>Contact</legend>
+            <div class="f-row">
+              <label class="f"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label class="f"><span>Company</span><input type="text" name="company" autocomplete="organization" /></label>
+            </div>
+            <div class="f-row">
+              <label class="f"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+              <label class="f"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            </div>
+          </fieldset>
+          <fieldset class="f-group"><legend>Building</legend>
+            <div class="f-row">
+              <label class="f"><span>Building size (SF)</span><input type="text" name="building_size_sf" placeholder="Example: 60,000" inputmode="numeric" /></label>
+              <label class="f"><span>Land (acres)</span><input type="text" name="land_acres" placeholder="Example: 8" inputmode="decimal" /></label>
+            </div>
+            <div class="f-row">
+              <label class="f"><span>Use type</span><select name="use_type"><option value="">Choose one</option><option>Warehouse / distribution</option><option>Manufacturing</option><option>Flex</option><option>Other</option></select></label>
+              <label class="f"><span>Clear height</span><input type="text" name="clear_height" placeholder="Example: 32 ft" /></label>
+            </div>
+            <div class="f-row">
+              <label class="f"><span>Dock doors and drive-ins</span><input type="text" name="docks_drive_ins" placeholder="Example: 8 docks, 2 drive-ins" /></label>
+              <label class="f"><span>Power needs</span><input type="text" name="power" placeholder="Example: 2,000 amps, 480V 3 phase" /></label>
+            </div>
+          </fieldset>
+          <fieldset class="f-group"><legend>Location and timing</legend>
+            <label class="f"><span>Preferred markets</span><input type="text" name="preferred_markets" placeholder="Example: Plymouth, Canton, I-275 corridor" /></label>
+            <div class="f-row">
+              <label class="f"><span>Target occupancy timing</span><input type="text" name="occupancy_timing" placeholder="Example: Q3 2028" /></label>
+              <label class="f"><span>Own or lease</span><select name="own_or_lease"><option value="">Choose one</option><option>Own</option><option>Lease</option><option>Open</option></select></label>
+            </div>
+            <label class="f"><span>Notes</span><textarea name="notes" rows="4" placeholder="Yard, trailer parking, office share, cranes, budget or anything else that matters"></textarea></label>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit Requirements <span class="arrow" aria-hidden="true">→</span></button>
           <p class="form-error" role="alert" hidden>Something went wrong. Please call (248) 941-1125 or email dfilippis@signatureassociates.com.</p>
         </form>
         <div class="form-thanks" hidden tabindex="-1">
-          <h3>Thanks. Your note is on its way.</h3>
-          <p>Drake will follow up soon. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
+          <h3>Thanks. Your requirements are in.</h3>
+          <p>Drake will review them and follow up to talk through sites and next steps. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
         </div></div>
     </div>
   </div>
 </section>
 <section class="block">
   <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">05</span><h2>Other Services</h2></div><span class="section-tag">Industrial Brokerage</span></div>
+    <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Other Services</h2></div><span class="section-tag">Industrial Brokerage</span></div>
     <ul class="other-services"><li><a href="/services/disposition/">Disposition</a></li><li><a href="/services/acquisition/">Acquisition</a></li><li><a href="/services/tenant-representation/">Tenant Representation</a></li><li><a href="/services/buyer-representation/">Buyer Representation</a></li><li><a href="/services/landlord-representation/">Landlord Representation</a></li><li><a href="/services/investment-sales/">Investment Sales</a></li></ul>
   </div>
 </section>

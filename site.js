@@ -35,7 +35,7 @@
         .then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           var el = form.elements;
-          track('generate_lead', { form_name: form.getAttribute('name') || '', need: (el.need && el.need.value) || '', service: (el.service && el.service.value) || '' });
+          track('generate_lead', { form_name: form.getAttribute('name') || '', need: (el.need && el.need.value) || '', service: (el.service && el.service.value) || '', use_type: (el.use_type && el.use_type.value) || '', own_or_lease: (el.own_or_lease && el.own_or_lease.value) || '' });
           form.hidden = true;
           if (thanks) { thanks.hidden = false; thanks.focus(); }
         })

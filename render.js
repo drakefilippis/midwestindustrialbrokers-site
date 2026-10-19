@@ -75,6 +75,57 @@
           <p>Drake will follow up soon. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
         </div>`;
     },
+    // Build-to-Suit requirements form (Netlify Forms, name "bts-requirements").
+    btsForm: () => {
+      const uses = ['Warehouse / distribution', 'Manufacturing', 'Flex', 'Other'];
+      const tenure = ['Own', 'Lease', 'Open'];
+      const opt = (list) => '<option value="">Choose one</option>' + list.map(x => `<option>${esc(x)}</option>`).join('');
+      const txt = (name, label, ph, extra) => `<label class="f"><span>${label}</span><input type="text" name="${name}"${ph ? ` placeholder="${esc(ph)}"` : ''}${extra || ''} /></label>`;
+      return `
+        <form class="lead-form bts-form" name="bts-requirements" method="POST" action="/thank-you-bts.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="bts-requirements" />
+          <input type="hidden" name="service" value="Build-to-Suit" />
+          <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <fieldset class="f-group"><legend>Contact</legend>
+            <div class="f-row">
+              <label class="f"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label class="f"><span>Company</span><input type="text" name="company" autocomplete="organization" /></label>
+            </div>
+            <div class="f-row">
+              <label class="f"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+              <label class="f"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            </div>
+          </fieldset>
+          <fieldset class="f-group"><legend>Building</legend>
+            <div class="f-row">
+              ${txt('building_size_sf', 'Building size (SF)', 'Example: 60,000', ' inputmode="numeric"')}
+              ${txt('land_acres', 'Land (acres)', 'Example: 8', ' inputmode="decimal"')}
+            </div>
+            <div class="f-row">
+              <label class="f"><span>Use type</span><select name="use_type">${opt(uses)}</select></label>
+              ${txt('clear_height', 'Clear height', 'Example: 32 ft')}
+            </div>
+            <div class="f-row">
+              ${txt('docks_drive_ins', 'Dock doors and drive-ins', 'Example: 8 docks, 2 drive-ins')}
+              ${txt('power', 'Power needs', 'Example: 2,000 amps, 480V 3 phase')}
+            </div>
+          </fieldset>
+          <fieldset class="f-group"><legend>Location and timing</legend>
+            ${txt('preferred_markets', 'Preferred markets', 'Example: Plymouth, Canton, I-275 corridor')}
+            <div class="f-row">
+              ${txt('occupancy_timing', 'Target occupancy timing', 'Example: Q3 2028')}
+              <label class="f"><span>Own or lease</span><select name="own_or_lease">${opt(tenure)}</select></label>
+            </div>
+            <label class="f"><span>Notes</span><textarea name="notes" rows="4" placeholder="Yard, trailer parking, office share, cranes, budget or anything else that matters"></textarea></label>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit Requirements <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-error" role="alert" hidden>Something went wrong. Please call (248) 941-1125 or email dfilippis@signatureassociates.com.</p>
+        </form>
+        <div class="form-thanks" hidden tabindex="-1">
+          <h3>Thanks. Your requirements are in.</h3>
+          <p>Drake will review them and follow up to talk through sites and next steps. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
+        </div>`;
+    },
     deals: (deals) => (deals || []).map(d => {
       const sideClass = String(d.side || '').toLowerCase().replace(/\s+/g, '');
       const has = !!d.slug;
