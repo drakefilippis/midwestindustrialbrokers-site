@@ -217,6 +217,7 @@ for (const sv of services) {
   const callButtons = `<div class="call-buttons">
           <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
           <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+          <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
         </div>`;
   const inquirySection = isBts ? `<section class="block alt bts-req" id="inquiry">
   <div class="wrap">
