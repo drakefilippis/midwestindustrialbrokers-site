@@ -8,6 +8,9 @@
 <link rel="canonical" href="https://midwestindustrialbrokers.com/services/build-to-suit/" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0b0b0b" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Midwest Industrial Brokers" />
 <meta property="og:title" content="Build-to-Suit | Industrial Real Estate | Midwest Industrial Brokers" />
@@ -600,6 +603,14 @@
   .form-thanks p { color: #cfcfc9; font-size: 16px; }
   .form-thanks a { color: #fff; }
   .mobile-bar { display: none; }
+  /* Contact band (market pages) */
+  .contact-band { background: var(--steel); border-bottom: 1px solid var(--line-steel); padding: 40px 0; color: #fff; }
+  .contact-band .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr); gap: 32px; align-items: center; }
+  .cb-k { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yellow); margin-bottom: 8px; }
+  .cb-h { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 24px; line-height: 1.1; text-transform: uppercase; color: #fff; }
+  .call-buttons.row { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 0; }
+  @media (max-width: 1100px) { .contact-band .wrap { grid-template-columns: 1fr; gap: 20px; } }
+  @media (max-width: 760px) { .call-buttons.row { grid-template-columns: 1fr; } }
   /* Market pages */
   .page-hero { background: #000; color: #fff; padding: 96px 0 72px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line-steel); }
   .page-hero::before { content: ''; position: absolute; top: 0; right: 0; width: 96px; height: 96px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); }

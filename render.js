@@ -31,6 +31,12 @@
           ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile ↗</a></div>` : ''}
         </div>
       </div>`).join(''),
+    // Mobile / Office / Email contact buttons (same block on every page).
+    callButtons: (cls) => `<div class="call-buttons${cls ? ' ' + cls : ''}">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+          <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
+        </div>`,
     serviceUrl: (sv) => '/services/' + sv.slug + '/',
     serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => s.slug
       ? `<li><a class="service-card" href="/services/${esc(s.slug)}/"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li>`

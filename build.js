@@ -59,6 +59,7 @@ html = fill(html, {
   footermarkets: footerMarkets,
   footerservices: services.map(sv => `<li><a href="${R.serviceUrl(sv)}">${esc(sv.title)}</a></li>`).join(''),
   contactform: R.leadForm({ name: 'contact' }),
+  callbuttons: R.callButtons(),
 }, 'index.html');
 html = toggleHidden(html, /(<div )class="([^"]*listings-empty[^"]*)"( id="listingsEmpty")/, !!homeListings);
 html = toggleHidden(html, /(<section )class="([^"]*logo-band[^"]*)"( id="clients")/, !logosHtml);
@@ -66,7 +67,7 @@ fs.writeFileSync('index.html', html);
 
 // ---------- deal.html ----------
 let deal = fs.readFileSync('deal.html', 'utf8');
-deal = fill(deal, { analytics }, 'deal.html');
+deal = fill(deal, { analytics, contactbuttons: R.callButtons() }, 'deal.html');
 fs.writeFileSync('deal.html', deal);
 
 // ---------- shared shell for generated pages ----------
@@ -89,6 +90,9 @@ const page = ({ title, description, canonical, robots, image, jsonld, body, page
 ${canonical ? `<link rel="canonical" href="${canonical}" />` : ''}
 <meta name="robots" content="${robots || 'index, follow'}" />
 <meta name="theme-color" content="#0b0b0b" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Midwest Industrial Brokers" />
 <meta property="og:title" content="${esc(title)}" />
@@ -147,6 +151,12 @@ for (const m of markets) {
     </div>
   </div>
 </header>
+<section class="contact-band" aria-label="Contact Drake">
+  <div class="wrap">
+    <div class="cb-head"><span class="cb-k">Talk to Drake</span><h2 class="cb-h">Industrial space in ${esc(m.name)}?</h2></div>
+    ${R.callButtons('row')}
+  </div>
+</section>
 <section class="block">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Services</h2></div><span class="section-tag">${esc(m.name)}</span></div>
@@ -214,11 +224,7 @@ for (const sv of services) {
       : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
   </div>
 </section>`;
-  const callButtons = `<div class="call-buttons">
-          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
-          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
-          <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
-        </div>`;
+  const callButtons = R.callButtons();
   const inquirySection = isBts ? `<section class="block alt bts-req" id="inquiry">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Submit Your Build-to-Suit Requirements</h2></div><span class="section-tag">Build-to-Suit</span></div>
