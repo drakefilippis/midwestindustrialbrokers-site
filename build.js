@@ -203,6 +203,46 @@ for (const sv of services) {
       { '@type': 'ListItem', position: 2, name: 'Services', item: SITE + '/#services' },
       { '@type': 'ListItem', position: 3, name: sv.title, item: url } ] },
   ] };
+  const isBts = sv.slug === 'build-to-suit';
+  let n = (sv.steps || []).length ? 3 : 2;
+  const pad = (x) => String(x).padStart(2, '0');
+  // Build-to-Suit swaps the coming soon block and generic form for a requirements form.
+  const dealsSection = (isBts && !deals.length) ? '' : `<section class="block" id="deals">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Deals Completed</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
+    ${deals.length ? (photos.length ? `<div class="deal-photos svc-photos">${R.dealPhotos(photos)}</div>` : '') + dealsTable(deals)
+      : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
+  </div>
+</section>`;
+  const callButtons = `<div class="call-buttons">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+        </div>`;
+  const inquirySection = isBts ? `<section class="block alt bts-req" id="inquiry">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Submit Your Build-to-Suit Requirements</h2></div><span class="section-tag">Build-to-Suit</span></div>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <h3 class="contact-h">Tell Drake what you need to build</h3>
+        <p class="contact-intro">Share your size, site and timing needs. Drake will review them, look at land and developer options that fit, and call you to talk through next steps. Rough numbers are fine. Rather talk it through? Call now.</p>
+        ${callButtons}
+      </div>
+      <div class="contact-form-wrap">${R.btsForm()}</div>
+    </div>
+  </div>
+</section>` : `<section class="block alt" id="inquiry">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Start Here</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <h3 class="contact-h">Tell me about your project</h3>
+        <p class="contact-intro">Share a few details and Drake will follow up. Prefer to talk now? Call Drake directly.</p>
+        ${callButtons}
+      </div>
+      <div class="contact-form-wrap">${R.leadForm({ name: 'service-inquiry', service: sv.title, need: sv.need })}</div>
+    </div>
+  </div>
+</section>`;
   const body = `<header class="page-hero has-photo" id="top">
   <img class="hero-bg" src="${esc(heroPhoto)}" alt="" width="1200" height="720" fetchpriority="high" /><div class="hero-shade"></div>
   <div class="wrap">
@@ -210,7 +250,7 @@ for (const sv of services) {
     <h1>${esc(sv.title)}</h1>
     <div class="lede"><p>${esc(sv.headline || sv.description)}. ${esc(sv.description)}</p></div>
     <div class="hero-cta" style="margin-top:32px;">
-      <a href="#inquiry" class="btn btn-primary">Start a Conversation <span class="arrow" aria-hidden="true">↓</span></a>
+      <a href="#inquiry" class="btn btn-primary">${isBts ? 'Submit Requirements' : 'Start a Conversation'} <span class="arrow" aria-hidden="true">↓</span></a>
       <a href="tel:+12489411125" class="btn btn-ghost" data-track="call_mobile">Call (248) 941-1125 <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
@@ -230,32 +270,11 @@ ${(sv.steps || []).length ? `<section class="block alt">
     <ol class="steps">${sv.steps.map(st => `<li><h3>${esc(st.title)}</h3><p>${esc(st.text)}</p></li>`).join('')}</ol>
   </div>
 </section>` : ''}
-<section class="block" id="deals">
-  <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">03</span><h2>Deals Completed</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
-    ${deals.length ? (photos.length ? `<div class="deal-photos svc-photos">${R.dealPhotos(photos)}</div>` : '') + dealsTable(deals)
-      : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
-  </div>
-</section>
-<section class="block alt" id="inquiry">
-  <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Start Here</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
-    <div class="contact-grid">
-      <div class="contact-side">
-        <h3 class="contact-h">Tell me about your project</h3>
-        <p class="contact-intro">Share a few details and Drake will follow up. Prefer to talk now? Call Drake directly.</p>
-        <div class="call-buttons">
-          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
-          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
-        </div>
-      </div>
-      <div class="contact-form-wrap">${R.leadForm({ name: 'service-inquiry', service: sv.title, need: sv.need })}</div>
-    </div>
-  </div>
-</section>
+${dealsSection}
+${inquirySection}
 <section class="block">
   <div class="wrap">
-    <div class="section-head"><div class="section-head-left"><span class="section-num">05</span><h2>Other Services</h2></div><span class="section-tag">Industrial Brokerage</span></div>
+    <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Other Services</h2></div><span class="section-tag">Industrial Brokerage</span></div>
     <ul class="other-services">${services.filter(x => x.slug !== sv.slug).map(x => `<li><a href="${R.serviceUrl(x)}">${esc(x.title)}</a></li>`).join('')}</ul>
   </div>
 </section>`;
@@ -268,6 +287,12 @@ ${(sv.steps || []).length ? `<section class="block alt">
 fs.writeFileSync('thank-you.html', page({
   title: 'Thank You | Midwest Industrial Brokers', description: 'Thanks for contacting Midwest Industrial Brokers.', robots: 'noindex, follow',
   body: `<header class="page-hero" id="top"><div class="wrap"><h1>Thanks. Your note is on its way.</h1><div class="lede"><p>Drake will follow up soon. If it is urgent, call <a style="color:#FFD400" href="tel:+12489411125">(248) 941-1125</a>.</p></div><div class="hero-cta" style="margin-top:32px;"><a href="/" class="btn btn-primary">Back to Home <span class="arrow" aria-hidden="true">→</span></a></div></div></header>`,
+}));
+
+// ---------- thank-you-bts.html (no-JS fallback for the BTS requirements form) ----------
+fs.writeFileSync('thank-you-bts.html', page({
+  title: 'Requirements Received | Midwest Industrial Brokers', description: 'Thanks for sending your build-to-suit requirements.', robots: 'noindex, follow',
+  body: `<header class="page-hero" id="top"><div class="wrap"><h1>Thanks. Your requirements are in.</h1><div class="lede"><p>Drake will review them and follow up to talk through sites and next steps. If it is urgent, call <a style="color:#FFD400" href="tel:+12489411125">(248) 941-1125</a> or the office at <a style="color:#FFD400" href="tel:+12487993161">(248) 799-3161</a>.</p></div><div class="hero-cta" style="margin-top:32px;"><a href="/services/build-to-suit/" class="btn btn-primary">Back to Build-to-Suit <span class="arrow" aria-hidden="true">→</span></a></div></div></header>`,
 }));
 
 // ---------- sitemap.xml ----------
@@ -316,4 +341,4 @@ ${services.map(sv => `- [${sv.title}](${SITE}${R.serviceUrl(sv)})`).join('\n')}
 ${markets.map(m => `- [Industrial real estate in ${m.full_name}](${SITE}${R.marketUrl(m)})`).join('\n')}
 `;
 fs.writeFileSync('llms.txt', llms);
-console.log(`Built index.html, deal.html, ${services.length} service pages, ${markets.length} market pages, thank-you.html, sitemap.xml (${urls.length} urls), llms.txt`);
+console.log(`Built index.html, deal.html, ${services.length} service pages, ${markets.length} market pages, thank-you.html, thank-you-bts.html, sitemap.xml (${urls.length} urls), llms.txt`);
