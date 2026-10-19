@@ -27,7 +27,7 @@
     "Livonia",
     "Canton",
     "Novi",
-    "Farmington",
+    "Farmington Hills",
     "Romulus",
     "Taylor",
     "Ann Arbor",
@@ -1436,9 +1436,9 @@
         "Romulus",
         "Highland Township",
         "Southfield",
-        "Farmington",
         "Farmington Hills",
-        "Brighton"
+        "Brighton",
+        "Farmington"
       ],
       "title": "Metro Detroit Industrial Real Estate Broker | Midwest Industrial Brokers",
       "meta": "Industrial real estate brokerage across Metro Detroit. Disposition, acquisition, build-to-suit, tenant and buyer representation with Drake Filippis, Signature Associates. Call (248) 941-1125.",
@@ -1556,19 +1556,19 @@
       ]
     },
     {
-      "slug": "farmington-mi",
-      "name": "Farmington",
-      "full_name": "Farmington and Farmington Hills, MI",
+      "slug": "farmington-hills-mi",
+      "name": "Farmington Hills",
+      "full_name": "Farmington Hills, MI",
       "cities": [
-        "Farmington",
-        "Farmington Hills"
+        "Farmington Hills",
+        "Farmington"
       ],
-      "title": "Industrial Real Estate Broker in Farmington, MI | Midwest Industrial Brokers",
-      "meta": "Industrial and flex space in Farmington and Farmington Hills, Michigan near I-696, I-275 and M-5. Call Drake Filippis at (248) 941-1125.",
+      "title": "Industrial Real Estate Broker in Farmington Hills, MI | Midwest Industrial Brokers",
+      "meta": "Industrial and flex space in Farmington Hills, Michigan near I-696, I-275 and M-5. Call Drake Filippis at (248) 941-1125.",
       "summary": "Flex and light industrial space near I-696, I-275 and M-5.",
       "intro": [
-        "Farmington and Farmington Hills are in southwest Oakland County, where I-696, I-275 and M-5 come together. The area has flex, research, light industrial and office warehouse buildings used by technology, engineering and service companies that want central access across the region.",
-        "Drake represents owners, tenants and buyers in Farmington and Farmington Hills, and can compare options here with Novi, Livonia and the rest of the I-275 corridor."
+        "Farmington Hills is in southwest Oakland County, where I-696, I-275 and M-5 come together. The city has flex, research, light industrial and office warehouse buildings used by technology, engineering and service companies that want central access across the region.",
+        "Drake represents owners, tenants and buyers in Farmington Hills and neighboring Farmington, and can compare options here with Novi, Livonia and the rest of the I-275 corridor."
       ]
     },
     {

@@ -33,9 +33,9 @@
 - [Taylor](https://midwestindustrialbrokers.com/markets/taylor-mi/): Downriver industrial and distribution space near I-94.
 - [Ypsilanti](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/): Industrial space east of Ann Arbor along I-94 and US-12.
 - [Dexter](https://midwestindustrialbrokers.com/markets/dexter-mi/): Industrial buildings and land in western Washtenaw County.
-- [Farmington](https://midwestindustrialbrokers.com/markets/farmington-mi/): Flex and light industrial space near I-696, I-275 and M-5.
+- [Farmington Hills](https://midwestindustrialbrokers.com/markets/farmington-hills-mi/): Flex and light industrial space near I-696, I-275 and M-5.
 - [Brighton](https://midwestindustrialbrokers.com/markets/brighton-mi/): Industrial space in Livingston County at I-96 and US-23.
-- Coverage: Plymouth, Livonia, Canton, Novi, Farmington, Romulus, Taylor, Ann Arbor, Ypsilanti, Saline, Dexter, Brighton, Northville, Wixom, Metro Detroit
+- Coverage: Plymouth, Livonia, Canton, Novi, Farmington Hills, Romulus, Taylor, Ann Arbor, Ypsilanti, Saline, Dexter, Brighton, Northville, Wixom, Metro Detroit
 
 ## Active listings
 - [All active sale and lease listings on CPIX](https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031)
@@ -146,5 +146,5 @@ Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short
 - [Industrial real estate in Taylor, MI](https://midwestindustrialbrokers.com/markets/taylor-mi/)
 - [Industrial real estate in Ypsilanti, MI](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/)
 - [Industrial real estate in Dexter, MI](https://midwestindustrialbrokers.com/markets/dexter-mi/)
-- [Industrial real estate in Farmington and Farmington Hills, MI](https://midwestindustrialbrokers.com/markets/farmington-mi/)
+- [Industrial real estate in Farmington Hills, MI](https://midwestindustrialbrokers.com/markets/farmington-hills-mi/)
 - [Industrial real estate in Brighton, MI](https://midwestindustrialbrokers.com/markets/brighton-mi/)
