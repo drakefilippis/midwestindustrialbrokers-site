@@ -302,6 +302,31 @@ fs.writeFileSync('thank-you-bts.html', page({
   body: `<header class="page-hero" id="top"><div class="wrap"><h1>Thanks. Your requirements are in.</h1><div class="lede"><p>Drake will review them and follow up to talk through sites and next steps. If it is urgent, call <a style="color:#FFD400" href="tel:+12489411125">(248) 941-1125</a> or the office at <a style="color:#FFD400" href="tel:+12487993161">(248) 799-3161</a>.</p></div><div class="hero-cta" style="margin-top:32px;"><a href="/services/build-to-suit/" class="btn btn-primary">Back to Build-to-Suit <span class="arrow" aria-hidden="true">→</span></a></div></div></header>`,
 }));
 
+// ---------- deal-card-preview (prototype, noindex, not in nav or sitemap) ----------
+{
+  const by = (s) => (data.closed_deals || []).find(d => d.slug === s);
+  const cards = [
+    [by('michigan-fine-yarn'), {}, 'Sale with photo'],
+    [by('bank-supplies-saline'), { noPhoto: true }, 'Sale with photo placeholder'],
+    [by('Cross and Black'), {}, 'Lease with photo'],
+  ].filter(c => c[0]);
+  const extra = [[by('synergy-dance-clipper-plymouth'), { noPhoto: true }, 'Lease, both sides, placeholder'], [by('4301-highland-rd-waterford'), { noPhoto: true }, 'Sale, placeholder']].filter(c => c[0]);
+  const grid = (list) => `<ul class="deal-card-grid">${list.map(([d, o, label]) => `<li><span class="dcp-label">${esc(label)}</span>${R.dealCard(d, o)}</li>`).join('')}</ul>`;
+  fs.mkdirSync('deal-card-preview', { recursive: true });
+  fs.writeFileSync('deal-card-preview/index.html', page({
+    title: 'Deal Card Preview | Midwest Industrial Brokers', description: 'Internal preview of the closed deal card design.', robots: 'noindex, nofollow',
+    body: `<header class="page-hero" id="top"><div class="wrap"><div class="crumbs">Internal preview, not linked from the site</div><h1>Closed Deal Cards</h1><div class="lede"><p>Prototype of the card each closed deal will use. Every card shows only sale or lease, who Drake represented, size and city. Cards without a photo get the branded placeholder until a photo is added.</p></div></div></header>
+<section class="block"><div class="wrap">
+  <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Sample Grid</h2></div><span class="section-tag">Prototype</span></div>
+  ${grid(cards)}
+</div></section>
+<section class="block alt"><div class="wrap">
+  <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>More Variants</h2></div><span class="section-tag">Placeholder and both sides</span></div>
+  ${grid(extra)}
+</div></section>`,
+  }));
+}
+
 // ---------- sitemap.xml ----------
 const urls = [SITE + '/', ...services.map(sv => SITE + R.serviceUrl(sv)), ...markets.map(m => SITE + R.marketUrl(m)), ...(data.closed_deals || []).filter(d => d.slug).map(d => SITE + '/deal.html?slug=' + encodeURIComponent(d.slug))];
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${esc(u)}</loc></url>`).join('\n')}\n</urlset>\n`);
