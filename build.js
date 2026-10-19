@@ -13,6 +13,7 @@ const SITE = 'https://midwestindustrialbrokers.com';
 const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 const esc = R.esc;
 const markets = data.markets || [];
+const services = (data.services || []).filter(sv => sv.slug && !R.isPlaceholder(sv.title));
 const listingsCfg = data.listings_settings || {};
 const CPIX = listingsCfg.cpix_url || 'https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031';
 
@@ -44,7 +45,7 @@ const logosHtml = R.logos(data.client_logos);
 let html = fs.readFileSync('index.html', 'utf8');
 html = fill(html, {
   coverage: R.coverage(data.coverage_cities, markets),
-  stats: R.stats(data.stats),
+  stats: R.stats(data.stats, markets),
   team: R.team(data.team),
   services: R.serviceList(data.services),
   dealphotos: R.dealPhotos(data.closed_deals),
@@ -56,6 +57,8 @@ html = fill(html, {
   faqld: (data.faqs || []).length ? `<script type="application/ld+json">${R.faqJsonLd(data.faqs)}</script>` : '',
   analytics,
   footermarkets: footerMarkets,
+  footerservices: services.map(sv => `<li><a href="${R.serviceUrl(sv)}">${esc(sv.title)}</a></li>`).join(''),
+  contactform: R.leadForm({ name: 'contact' }),
 }, 'index.html');
 html = toggleHidden(html, /(<div )class="([^"]*listings-empty[^"]*)"( id="listingsEmpty")/, !!homeListings);
 html = toggleHidden(html, /(<section )class="([^"]*logo-band[^"]*)"( id="clients")/, !logosHtml);
@@ -147,7 +150,7 @@ for (const m of markets) {
 <section class="block">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Services</h2></div><span class="section-tag">${esc(m.name)}</span></div>
-    <ul class="services-list">${R.serviceList(data.services)}</ul>
+    <ul class="services-list svc-grid">${R.serviceList(data.services)}</ul>
   </div>
 </section>
 <section class="block" id="deals">
@@ -177,6 +180,90 @@ for (const m of markets) {
   fs.writeFileSync(path.join(dir, 'index.html'), page({ title: m.title, description: m.meta, canonical: url, image: photo, jsonld, body, pageType: 'market' }));
 }
 
+// ---------- service pages ----------
+const dealsTable = (deals) => `<table class="deals-table">
+      <thead><tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr></thead>
+      <tbody>${R.deals(deals)}</tbody>
+    </table>`;
+fs.rmSync('services', { recursive: true, force: true });
+for (const sv of services) {
+  const url = SITE + R.serviceUrl(sv);
+  const deals = R.serviceDeals(data.closed_deals, sv.slug);
+  const photos = deals.filter(d => (d.photos || []).length);
+  const heroPhoto = photos.length ? photos[0].photos[0] : '/uploads/cross-and-black.webp';
+  const title = `${sv.title} | Industrial Real Estate | Midwest Industrial Brokers`;
+  const meta = `${sv.title} for industrial property in Plymouth, Ann Arbor, the I-275 corridor and Metro Detroit. ${sv.description} Call Drake Filippis at (248) 941-1125.`;
+  const jsonld = { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'Service', '@id': url + '#service', name: sv.title, serviceType: sv.title + ' (industrial real estate)', description: (sv.overview || [sv.description]).join(' '), url, provider: business,
+      areaServed: markets.map(m => ({ '@type': 'Place', name: m.full_name })),
+      audience: (sv.who || []).length ? { '@type': 'Audience', audienceType: sv.who.join('; ') } : undefined },
+    { '@type': 'WebPage', '@id': url, url, name: title, description: meta, isPartOf: { '@type': 'WebSite', name: 'Midwest Industrial Brokers', url: SITE + '/' }, about: { '@id': url + '#service' } },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: SITE + '/#services' },
+      { '@type': 'ListItem', position: 3, name: sv.title, item: url } ] },
+  ] };
+  const body = `<header class="page-hero has-photo" id="top">
+  <img class="hero-bg" src="${esc(heroPhoto)}" alt="" width="1200" height="720" fetchpriority="high" /><div class="hero-shade"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / <a href="/#services">Services</a> / ${esc(sv.title)}</div>
+    <h1>${esc(sv.title)}</h1>
+    <div class="lede"><p>${esc(sv.headline || sv.description)}. ${esc(sv.description)}</p></div>
+    <div class="hero-cta" style="margin-top:32px;">
+      <a href="#inquiry" class="btn btn-primary">Start a Conversation <span class="arrow" aria-hidden="true">↓</span></a>
+      <a href="tel:+12489411125" class="btn btn-ghost" data-track="call_mobile">Call (248) 941-1125 <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</header>
+<section class="block">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Overview</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
+    <div class="svc-overview">
+      <div>${(sv.overview || []).map(p => `<p>${esc(p)}</p>`).join('')}</div>
+      ${(sv.who || []).length ? `<aside class="who-box"><h3>Who it is for</h3><ul class="who-list">${sv.who.map(w => `<li>${esc(w)}</li>`).join('')}</ul></aside>` : ''}
+    </div>
+  </div>
+</section>
+${(sv.steps || []).length ? `<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>How Drake Works</h2></div><span class="section-tag">Process</span></div>
+    <ol class="steps">${sv.steps.map(st => `<li><h3>${esc(st.title)}</h3><p>${esc(st.text)}</p></li>`).join('')}</ol>
+  </div>
+</section>` : ''}
+<section class="block" id="deals">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">03</span><h2>Deals Completed</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
+    ${deals.length ? (photos.length ? `<div class="deal-photos svc-photos">${R.dealPhotos(photos)}</div>` : '') + dealsTable(deals)
+      : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
+  </div>
+</section>
+<section class="block alt" id="inquiry">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Start Here</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <h3 class="contact-h">Tell me about your project</h3>
+        <p class="contact-intro">Share a few details and Drake will follow up. Prefer to talk now? Call Drake directly.</p>
+        <div class="call-buttons">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">${R.leadForm({ name: 'service-inquiry', service: sv.title, need: sv.need })}</div>
+    </div>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="section-head"><div class="section-head-left"><span class="section-num">05</span><h2>Other Services</h2></div><span class="section-tag">Industrial Brokerage</span></div>
+    <ul class="other-services">${services.filter(x => x.slug !== sv.slug).map(x => `<li><a href="${R.serviceUrl(x)}">${esc(x.title)}</a></li>`).join('')}</ul>
+  </div>
+</section>`;
+  const dir = path.join('services', sv.slug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), page({ title, description: meta, canonical: url, image: heroPhoto, jsonld, body, pageType: 'service' }));
+}
+
 // ---------- thank-you.html (no-JS fallback for the lead form) ----------
 fs.writeFileSync('thank-you.html', page({
   title: 'Thank You | Midwest Industrial Brokers', description: 'Thanks for contacting Midwest Industrial Brokers.', robots: 'noindex, follow',
@@ -184,7 +271,7 @@ fs.writeFileSync('thank-you.html', page({
 }));
 
 // ---------- sitemap.xml ----------
-const urls = [SITE + '/', ...markets.map(m => SITE + R.marketUrl(m)), ...(data.closed_deals || []).filter(d => d.slug).map(d => SITE + '/deal.html?slug=' + encodeURIComponent(d.slug))];
+const urls = [SITE + '/', ...services.map(sv => SITE + R.serviceUrl(sv)), ...markets.map(m => SITE + R.marketUrl(m)), ...(data.closed_deals || []).filter(d => d.slug).map(d => SITE + '/deal.html?slug=' + encodeURIComponent(d.slug))];
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${esc(u)}</loc></url>`).join('\n')}\n</urlset>\n`);
 
 // ---------- llms.txt ----------
@@ -204,7 +291,7 @@ const llms = `# Midwest Industrial Brokers
 - LinkedIn: ${t.linkedin_url || ''}
 
 ## Services
-${(data.services || []).filter(s => real(s.title)).map(s => `- ${s.title}: ${s.description}`).join('\n')}
+${services.map(sv => `- [${sv.title}](${SITE}${R.serviceUrl(sv)}): ${sv.description}`).join('\n')}
 
 ## Markets served
 ${markets.map(m => `- [${m.name}](${SITE}${R.marketUrl(m)}): ${m.summary}`).join('\n')}
@@ -225,7 +312,8 @@ ${(data.faqs || []).map(f => `### ${f.q}\n${f.a}`).join('\n\n')}
 
 ## Pages
 - [Home](${SITE}/)
+${services.map(sv => `- [${sv.title}](${SITE}${R.serviceUrl(sv)})`).join('\n')}
 ${markets.map(m => `- [Industrial real estate in ${m.full_name}](${SITE}${R.marketUrl(m)})`).join('\n')}
 `;
 fs.writeFileSync('llms.txt', llms);
-console.log(`Built index.html, deal.html, ${markets.length} market pages, thank-you.html, sitemap.xml (${urls.length} urls), llms.txt`);
+console.log(`Built index.html, deal.html, ${services.length} service pages, ${markets.length} market pages, thank-you.html, sitemap.xml (${urls.length} urls), llms.txt`);

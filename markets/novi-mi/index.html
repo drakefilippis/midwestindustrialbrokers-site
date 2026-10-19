@@ -80,7 +80,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Disposition",
-       "description": "Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing."
+       "description": "Selling an industrial building or land? Pricing, marketing and negotiation built to bring the right buyer to the table."
       }
      },
      {
@@ -88,7 +88,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Acquisition",
-       "description": "Owner user and investor acquisitions, from requirements and site search through due diligence and closing."
+       "description": "Buying for your business or your portfolio. A focused search, the right questions and a clean path to closing."
       }
      },
      {
@@ -96,7 +96,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Build-to-Suit",
-       "description": "Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities."
+       "description": "When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation."
       }
      },
      {
@@ -104,7 +104,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Tenant Representation",
-       "description": "Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users."
+       "description": "Leasing warehouse, manufacturing or flex space. Search, tours and lease negotiation on your side of the table."
       }
      },
      {
@@ -112,7 +112,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Buyer Representation",
-       "description": "Representation of owner users buying industrial property, including financing timing and closing."
+       "description": "Owner users buying a building for their own business. Search, negotiation and closing coordination with your goals first."
       }
      },
      {
@@ -120,7 +120,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Landlord Representation",
-       "description": "Marketing and leasing of industrial buildings and multi tenant flex space."
+       "description": "Leasing an industrial building or multi tenant flex property. Marketing, tenant outreach and lease negotiation that protect your asset."
       }
      },
      {
@@ -128,7 +128,7 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Investment Sales",
-       "description": "Pricing, marketing and sale of industrial investment property."
+       "description": "Buying or selling leased industrial property. Pricing, marketing and buyer outreach built around income and tenancy."
       }
      }
     ]
@@ -628,6 +628,59 @@
     .page-hero { padding: 64px 0 48px; }
   }
   @media (max-width: 600px) { .logo-tile { flex-basis: 100%; } .logo-row { flex-direction: column; } #listingGrid li:nth-child(n+7) { display: none; } }
+  /* ============ OCT 18: services cards and pages, wider logo band ============ */
+  .logo-band .wrap { flex-direction: column; gap: 24px; }
+  .logo-row { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; width: 100%; max-width: 1200px; }
+  .logo-tile > a, .logo-tile > span { width: 100%; height: 96px; padding: 16px 20px; }
+  .logo-tile img { max-height: 52px; }
+  .logo-tile img.color { max-width: calc(100% - 40px); max-height: 52px; }
+  .services-list { margin-top: 0; }
+  .services-list li { padding: 0; }
+  .service-card { position: relative; display: flex; flex-direction: column; gap: 10px; height: 100%; padding: 28px 26px 30px; color: #f2f2ee; text-decoration: none; transition: background 0.2s; }
+  .service-card::before { content: ''; position: absolute; left: 0; top: 0; width: 0; height: 4px; background: var(--yellow); transition: width 0.25s; }
+  .service-card:hover { background: var(--steel-3); }
+  .service-card:hover::before { width: 100%; }
+  .service-card h3 { margin-bottom: 0; }
+  .service-card .sc-go { margin-top: auto; padding-top: 8px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yellow); }
+  .svc-overview { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; }
+  .svc-overview p { font-size: 18px; line-height: 1.7; color: #d6d6d0; margin-bottom: 18px; }
+  .who-box { background: var(--steel-2); border: 1px solid var(--line-steel); border-top: 5px solid var(--yellow); padding: 30px; }
+  .who-box h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; text-transform: uppercase; color: #fff; margin-bottom: 16px; }
+  .who-list { list-style: none; }
+  .who-list li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line-steel); color: #e6e6e0; font-size: 15px; line-height: 1.5; }
+  .who-list li:last-child { border-bottom: none; }
+  .who-list li::before { content: ''; flex-shrink: 0; width: 10px; height: 10px; margin-top: 6px; background: var(--yellow); }
+  .steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line-steel); border: 1px solid var(--line-steel); }
+  .steps li { counter-increment: step; background: var(--steel-2); padding: 28px 24px; }
+  .steps li::before { content: counter(step, decimal-leading-zero); display: inline-block; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 0.1em; background: var(--yellow); color: #000; padding: 4px 10px; margin-bottom: 16px; }
+  .steps h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 17px; text-transform: uppercase; color: #fff; margin-bottom: 8px; }
+  .steps p { font-size: 14px; line-height: 1.6; color: #c4c4be; }
+  .coming-soon { display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; background: var(--steel-2); border: 1px dashed rgba(255,212,0,0.5); padding: 40px; }
+  .coming-soon h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(22px, 3vw, 32px); text-transform: uppercase; color: #fff; margin-bottom: 8px; }
+  .coming-soon p { color: #c4c4be; font-size: 16px; max-width: 560px; }
+  .svc-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .svc-grid li { grid-column: span 3; }
+  .svc-grid li:nth-child(-n+3) { grid-column: span 4; }
+  .svc-grid li:nth-child(-n+3) h3 { font-size: 22px; }
+  @media (max-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr; } .svc-grid li, .svc-grid li:nth-child(-n+3) { grid-column: auto; } }
+  @media (max-width: 600px) { .svc-grid { grid-template-columns: 1fr; } }
+  .deal-photos.svc-photos { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  .other-services { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+  .other-services a { display: inline-block; padding: 12px 18px; border: 2px solid var(--line-steel); color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .other-services a:hover { border-color: var(--yellow); color: var(--yellow); }
+  @media (max-width: 1100px) { .logo-row { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 960px) {
+    .svc-overview { grid-template-columns: 1fr; gap: 32px; }
+    .svc-overview p { font-size: 16px; }
+    .coming-soon { padding: 28px 22px; }
+    .coming-soon .btn { width: 100%; justify-content: center; }
+    .logo-tile > a, .logo-tile > span { height: 76px; padding: 12px 14px; }
+    .logo-tile img, .logo-tile img.color { max-height: 40px; }
+  }
+  @media (max-width: 600px) {
+    .logo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); flex-direction: initial; }
+    .logo-tile { flex-basis: auto; }
+  }
 </style>
 </head>
 <body data-page="market">
@@ -643,6 +696,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="/#team">Team</a></li>
+      <li><a href="/#services">Services</a></li>
       <li><a href="/#deals">Deals</a></li>
       <li><a href="/#listings">Listings</a></li>
       <li><a href="/#markets">Markets</a></li>
@@ -668,7 +722,7 @@
 <section class="block">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Services</h2></div><span class="section-tag">Novi</span></div>
-    <ul class="services-list"><li><h3>Disposition</h3><p>Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing.</p></li><li><h3>Acquisition</h3><p>Owner user and investor acquisitions, from requirements and site search through due diligence and closing.</p></li><li><h3>Build-to-Suit</h3><p>Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities.</p></li><li><h3>Tenant Representation</h3><p>Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users.</p></li><li><h3>Buyer Representation</h3><p>Representation of owner users buying industrial property, including financing timing and closing.</p></li><li><h3>Landlord Representation</h3><p>Marketing and leasing of industrial buildings and multi tenant flex space.</p></li><li><h3>Investment Sales</h3><p>Pricing, marketing and sale of industrial investment property.</p></li></ul>
+    <ul class="services-list svc-grid"><li><a class="service-card" href="/services/disposition/"><h3>Disposition</h3><p>Selling an industrial building or land? Pricing, marketing and negotiation built to bring the right buyer to the table.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/acquisition/"><h3>Acquisition</h3><p>Buying for your business or your portfolio. A focused search, the right questions and a clean path to closing.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/build-to-suit/"><h3>Build-to-Suit</h3><p>When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/tenant-representation/"><h3>Tenant Representation</h3><p>Leasing warehouse, manufacturing or flex space. Search, tours and lease negotiation on your side of the table.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/buyer-representation/"><h3>Buyer Representation</h3><p>Owner users buying a building for their own business. Search, negotiation and closing coordination with your goals first.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/landlord-representation/"><h3>Landlord Representation</h3><p>Leasing an industrial building or multi tenant flex property. Marketing, tenant outreach and lease negotiation that protect your asset.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li><li><a class="service-card" href="/services/investment-sales/"><h3>Investment Sales</h3><p>Buying or selling leased industrial property. Pricing, marketing and buyer outreach built around income and tenancy.</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li></ul>
   </div>
 </section>
 <section class="block" id="deals">
@@ -705,7 +759,7 @@
 <section class="block alt">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Other Markets</h2></div><span class="section-tag">Where We Work</span></div>
-    <ul class="market-grid-cards"><li><a class="market-card" href="/markets/plymouth-mi/"><span class="mc-name">Plymouth</span><span class="mc-sum">Light manufacturing, flex and distribution space close to I-275 and M-14.</span><span class="mc-meta">2 closed deals · 5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ann-arbor-mi/"><span class="mc-name">Ann Arbor</span><span class="mc-sum">Flex, research and light industrial space across Washtenaw County.</span><span class="mc-meta">1 closed deal · 19 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/livonia-mi/"><span class="mc-name">Livonia</span><span class="mc-sum">An established industrial base with access to I-96 and I-275.</span><span class="mc-meta">1 closed deal · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/i-275-corridor/"><span class="mc-name">I-275 Corridor</span><span class="mc-sum">Plymouth, Livonia, Canton, Novi and Romulus along one north south route.</span><span class="mc-meta">4 closed deals · 13 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/metro-detroit/"><span class="mc-name">Metro Detroit</span><span class="mc-sum">Manufacturing, warehouse and distribution space across the region.</span><span class="mc-meta">5 closed deals · 15 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/canton-mi/"><span class="mc-name">Canton</span><span class="mc-sum">Industrial and flex space in western Wayne County off I-275.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/saline-mi/"><span class="mc-name">Saline</span><span class="mc-sum">Industrial space in southern Washtenaw County near US-12 and US-23.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li></ul>
+    <ul class="market-grid-cards"><li><a class="market-card" href="/markets/plymouth-mi/"><span class="mc-name">Plymouth</span><span class="mc-sum">Light manufacturing, flex and distribution space close to I-275 and M-14.</span><span class="mc-meta">2 closed deals · 5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ann-arbor-mi/"><span class="mc-name">Ann Arbor</span><span class="mc-sum">Flex, research and light industrial space across Washtenaw County.</span><span class="mc-meta">1 closed deal · 19 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/livonia-mi/"><span class="mc-name">Livonia</span><span class="mc-sum">An established industrial base with access to I-96 and I-275.</span><span class="mc-meta">1 closed deal · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/i-275-corridor/"><span class="mc-name">I-275 Corridor</span><span class="mc-sum">Plymouth, Livonia, Canton, Novi and Romulus along one north south route.</span><span class="mc-meta">4 closed deals · 13 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/metro-detroit/"><span class="mc-name">Metro Detroit</span><span class="mc-sum">Manufacturing, warehouse and distribution space across the region.</span><span class="mc-meta">5 closed deals · 15 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/canton-mi/"><span class="mc-name">Canton</span><span class="mc-sum">Industrial and flex space in western Wayne County off I-275.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/saline-mi/"><span class="mc-name">Saline</span><span class="mc-sum">Industrial space in southern Washtenaw County near US-12 and US-23.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/romulus-mi/"><span class="mc-name">Romulus</span><span class="mc-sum">Warehouse and logistics space around Detroit Metro Airport.</span><span class="mc-meta">1 active listing</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/taylor-mi/"><span class="mc-name">Taylor</span><span class="mc-sum">Downriver industrial and distribution space near I-94.</span><span class="mc-meta">3 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ypsilanti-mi/"><span class="mc-name">Ypsilanti</span><span class="mc-sum">Industrial space east of Ann Arbor along I-94 and US-12.</span><span class="mc-meta">5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/dexter-mi/"><span class="mc-name">Dexter</span><span class="mc-sum">Industrial buildings and land in western Washtenaw County.</span><span class="mc-meta">2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/farmington-mi/"><span class="mc-name">Farmington</span><span class="mc-sum">Flex and light industrial space near I-696, I-275 and M-5.</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/brighton-mi/"><span class="mc-name">Brighton</span><span class="mc-sum">Industrial space in Livingston County at I-96 and US-23.</span><span class="mc-go" aria-hidden="true">→</span></a></li></ul>
   </div>
 </section>
 </main>
@@ -736,7 +790,9 @@
       </div>
       <div class="footer-col">
         <h4>Markets</h4>
-        <ul id="footerMarkets"><!--BUILD:footermarkets--><li><a href="/markets/plymouth-mi/">Plymouth</a></li><li><a href="/markets/ann-arbor-mi/">Ann Arbor</a></li><li><a href="/markets/livonia-mi/">Livonia</a></li><li><a href="/markets/i-275-corridor/">I-275 Corridor</a></li><li><a href="/markets/metro-detroit/">Metro Detroit</a></li><li><a href="/markets/canton-mi/">Canton</a></li><li><a href="/markets/saline-mi/">Saline</a></li><li><a href="/markets/novi-mi/">Novi</a></li><!--/BUILD:footermarkets--></ul>
+        <ul id="footerMarkets"><!--BUILD:footermarkets--><li><a href="/markets/plymouth-mi/">Plymouth</a></li><li><a href="/markets/ann-arbor-mi/">Ann Arbor</a></li><li><a href="/markets/livonia-mi/">Livonia</a></li><li><a href="/markets/i-275-corridor/">I-275 Corridor</a></li><li><a href="/markets/metro-detroit/">Metro Detroit</a></li><li><a href="/markets/canton-mi/">Canton</a></li><li><a href="/markets/saline-mi/">Saline</a></li><li><a href="/markets/novi-mi/">Novi</a></li><li><a href="/markets/romulus-mi/">Romulus</a></li><li><a href="/markets/taylor-mi/">Taylor</a></li><li><a href="/markets/ypsilanti-mi/">Ypsilanti</a></li><li><a href="/markets/dexter-mi/">Dexter</a></li><li><a href="/markets/farmington-mi/">Farmington</a></li><li><a href="/markets/brighton-mi/">Brighton</a></li><!--/BUILD:footermarkets--></ul>
+        <h4 style="margin-top:24px;">Services</h4>
+        <ul id="footerServices"><!--BUILD:footerservices--><li><a href="/services/disposition/">Disposition</a></li><li><a href="/services/acquisition/">Acquisition</a></li><li><a href="/services/build-to-suit/">Build-to-Suit</a></li><li><a href="/services/tenant-representation/">Tenant Representation</a></li><li><a href="/services/buyer-representation/">Buyer Representation</a></li><li><a href="/services/landlord-representation/">Landlord Representation</a></li><li><a href="/services/investment-sales/">Investment Sales</a></li><!--/BUILD:footerservices--></ul>
         <h4 style="margin-top:24px;">Connect</h4>
         <ul>
           <li><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">LinkedIn</a></li>

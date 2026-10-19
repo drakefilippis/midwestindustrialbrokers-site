@@ -12,7 +12,7 @@
 
   const R = {
     esc, telHref, isPlaceholder,
-    stats: (stats) => (stats || []).map(s => `
+    stats: (stats, markets) => (stats || []).map(s => (s.auto === 'markets' && Array.isArray(markets)) ? Object.assign({}, s, { value: String(markets.length) }) : s).map(s => `
       <div class="stat">
         <div class="stat-num">${esc(s.value)}<span class="unit">${esc(s.unit)}</span></div>
         <div class="stat-label">${esc(s.label)}</div>
@@ -31,7 +31,50 @@
           ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile ↗</a></div>` : ''}
         </div>
       </div>`).join(''),
-    serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => `<li><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></li>`).join(''),
+    serviceUrl: (sv) => '/services/' + sv.slug + '/',
+    serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => s.slug
+      ? `<li><a class="service-card" href="/services/${esc(s.slug)}/"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li>`
+      : `<li><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></li>`).join(''),
+    serviceDeals: (deals, slug) => (deals || []).filter(d => Array.isArray(d.services) && d.services.includes(slug)),
+    // Lead form (Netlify Forms). opts: { name, service, need, id }
+    leadForm: (opts) => {
+      opts = opts || {};
+      const needs = ['Lease space', 'Lease out my building', 'Buy a property', 'Sell a property', 'Build-to-suit', 'Something else'];
+      const timing = ['As soon as possible', 'Within 3 months', '3 to 6 months', '6 to 12 months', 'More than 12 months', 'Just exploring'];
+      const name = opts.name || 'contact';
+      return `
+        <form class="lead-form" name="${esc(name)}" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="${esc(name)}" />
+          ${opts.service ? `<input type="hidden" name="service" value="${esc(opts.service)}" />` : ''}
+          <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="f-row">
+            <label class="f"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+            <label class="f"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <div class="f-row">
+            <label class="f"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            <label class="f"><span>I want to *</span><select name="need" required>
+              <option value="">Choose one</option>
+              ${needs.map(n => `<option${n === opts.need ? ' selected' : ''}>${esc(n)}</option>`).join('')}
+            </select></label>
+          </div>
+          <div class="f-row">
+            <label class="f"><span>Size</span><input type="text" name="size" placeholder="Example: 10,000 SF" /></label>
+            <label class="f"><span>Area</span><input type="text" name="area" placeholder="Example: Plymouth or I-275" /></label>
+          </div>
+          <label class="f"><span>Timing</span><select name="timing">
+            <option value="">Choose one</option>
+            ${timing.map(t => `<option>${esc(t)}</option>`).join('')}
+          </select></label>
+          <label class="f"><span>Message</span><textarea name="message" rows="4" placeholder="Anything else that matters: power, clear height, docks, yard, budget"></textarea></label>
+          <button type="submit" class="btn btn-primary">Send to Drake <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-error" role="alert" hidden>Something went wrong. Please call (248) 941-1125 or email dfilippis@signatureassociates.com.</p>
+        </form>
+        <div class="form-thanks" hidden tabindex="-1">
+          <h3>Thanks. Your note is on its way.</h3>
+          <p>Drake will follow up soon. If it is urgent, call <a href="tel:+12489411125">(248) 941-1125</a>.</p>
+        </div>`;
+    },
     deals: (deals) => (deals || []).map(d => {
       const sideClass = String(d.side || '').toLowerCase().replace(/\s+/g, '');
       const has = !!d.slug;

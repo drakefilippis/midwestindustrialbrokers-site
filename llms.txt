@@ -12,13 +12,13 @@
 - LinkedIn: https://www.linkedin.com/in/drake-filippis-267a104a/
 
 ## Services
-- Disposition: Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing.
-- Acquisition: Owner user and investor acquisitions, from requirements and site search through due diligence and closing.
-- Build-to-Suit: Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities.
-- Tenant Representation: Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users.
-- Buyer Representation: Representation of owner users buying industrial property, including financing timing and closing.
-- Landlord Representation: Marketing and leasing of industrial buildings and multi tenant flex space.
-- Investment Sales: Pricing, marketing and sale of industrial investment property.
+- [Disposition](https://midwestindustrialbrokers.com/services/disposition/): Selling an industrial building or land? Pricing, marketing and negotiation built to bring the right buyer to the table.
+- [Acquisition](https://midwestindustrialbrokers.com/services/acquisition/): Buying for your business or your portfolio. A focused search, the right questions and a clean path to closing.
+- [Build-to-Suit](https://midwestindustrialbrokers.com/services/build-to-suit/): When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation.
+- [Tenant Representation](https://midwestindustrialbrokers.com/services/tenant-representation/): Leasing warehouse, manufacturing or flex space. Search, tours and lease negotiation on your side of the table.
+- [Buyer Representation](https://midwestindustrialbrokers.com/services/buyer-representation/): Owner users buying a building for their own business. Search, negotiation and closing coordination with your goals first.
+- [Landlord Representation](https://midwestindustrialbrokers.com/services/landlord-representation/): Leasing an industrial building or multi tenant flex property. Marketing, tenant outreach and lease negotiation that protect your asset.
+- [Investment Sales](https://midwestindustrialbrokers.com/services/investment-sales/): Buying or selling leased industrial property. Pricing, marketing and buyer outreach built around income and tenancy.
 
 ## Markets served
 - [Plymouth](https://midwestindustrialbrokers.com/markets/plymouth-mi/): Light manufacturing, flex and distribution space close to I-275 and M-14.
@@ -29,7 +29,13 @@
 - [Canton](https://midwestindustrialbrokers.com/markets/canton-mi/): Industrial and flex space in western Wayne County off I-275.
 - [Saline](https://midwestindustrialbrokers.com/markets/saline-mi/): Industrial space in southern Washtenaw County near US-12 and US-23.
 - [Novi](https://midwestindustrialbrokers.com/markets/novi-mi/): Flex and light industrial space near I-96 and I-275.
-- Coverage: Plymouth, Livonia, Ann Arbor, Saline, Northville, Novi, Wixom, Metro Detroit
+- [Romulus](https://midwestindustrialbrokers.com/markets/romulus-mi/): Warehouse and logistics space around Detroit Metro Airport.
+- [Taylor](https://midwestindustrialbrokers.com/markets/taylor-mi/): Downriver industrial and distribution space near I-94.
+- [Ypsilanti](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/): Industrial space east of Ann Arbor along I-94 and US-12.
+- [Dexter](https://midwestindustrialbrokers.com/markets/dexter-mi/): Industrial buildings and land in western Washtenaw County.
+- [Farmington](https://midwestindustrialbrokers.com/markets/farmington-mi/): Flex and light industrial space near I-696, I-275 and M-5.
+- [Brighton](https://midwestindustrialbrokers.com/markets/brighton-mi/): Industrial space in Livingston County at I-96 and US-23.
+- Coverage: Plymouth, Livonia, Canton, Novi, Farmington, Romulus, Taylor, Ann Arbor, Ypsilanti, Saline, Dexter, Brighton, Northville, Wixom, Metro Detroit
 
 ## Active listings
 - [All active sale and lease listings on CPIX](https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031)
@@ -87,8 +93,11 @@
 - [47495 Clipper St, Plymouth Twp, MI](https://midwestindustrialbrokers.com/deal.html?slug=synergy-dance-clipper-plymouth): 2026 Lease, 8,874 SF, Synergy Dance Studio, represented both
 
 ## Clients
-- BankSupplies
-- ViOS
+- BankSupplies (https://banksupplies.com/)
+- ViOS Compounding (https://www.vioscompounding.com/)
+- Advanced Systems (https://www.advancedsystems-inc.com/)
+- Saline Area Schools (https://www.salineschools.org/)
+- Packard Health (https://packardhealth.org/)
 - Interstate Capital (https://interstate-cap.com/)
 
 ## FAQ
@@ -118,6 +127,13 @@ Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short
 
 ## Pages
 - [Home](https://midwestindustrialbrokers.com/)
+- [Disposition](https://midwestindustrialbrokers.com/services/disposition/)
+- [Acquisition](https://midwestindustrialbrokers.com/services/acquisition/)
+- [Build-to-Suit](https://midwestindustrialbrokers.com/services/build-to-suit/)
+- [Tenant Representation](https://midwestindustrialbrokers.com/services/tenant-representation/)
+- [Buyer Representation](https://midwestindustrialbrokers.com/services/buyer-representation/)
+- [Landlord Representation](https://midwestindustrialbrokers.com/services/landlord-representation/)
+- [Investment Sales](https://midwestindustrialbrokers.com/services/investment-sales/)
 - [Industrial real estate in Plymouth and Plymouth Township, MI](https://midwestindustrialbrokers.com/markets/plymouth-mi/)
 - [Industrial real estate in Ann Arbor and Washtenaw County, MI](https://midwestindustrialbrokers.com/markets/ann-arbor-mi/)
 - [Industrial real estate in Livonia, MI](https://midwestindustrialbrokers.com/markets/livonia-mi/)
@@ -126,3 +142,9 @@ Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short
 - [Industrial real estate in Canton Township, MI](https://midwestindustrialbrokers.com/markets/canton-mi/)
 - [Industrial real estate in Saline, MI](https://midwestindustrialbrokers.com/markets/saline-mi/)
 - [Industrial real estate in Novi, MI](https://midwestindustrialbrokers.com/markets/novi-mi/)
+- [Industrial real estate in Romulus, MI](https://midwestindustrialbrokers.com/markets/romulus-mi/)
+- [Industrial real estate in Taylor, MI](https://midwestindustrialbrokers.com/markets/taylor-mi/)
+- [Industrial real estate in Ypsilanti, MI](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/)
+- [Industrial real estate in Dexter, MI](https://midwestindustrialbrokers.com/markets/dexter-mi/)
+- [Industrial real estate in Farmington and Farmington Hills, MI](https://midwestindustrialbrokers.com/markets/farmington-mi/)
+- [Industrial real estate in Brighton, MI](https://midwestindustrialbrokers.com/markets/brighton-mi/)
