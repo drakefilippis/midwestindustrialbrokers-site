@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <title>Closed Deal | Midwest Industrial Brokers</title>
 <meta name="description" content="Closed deal case study from Midwest Industrial Brokers, Drake Filippis of Signature Associates: industrial CRE transactions across Metro Detroit." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -90,6 +93,18 @@
   .cta-card h4 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 16px; line-height: 1.15; }
   .cta-card .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; background: var(--black); color: var(--yellow); text-decoration: none; transition: all 0.2s; }
   .cta-card .btn:hover { background: var(--black-soft); }
+  .contact-card { background: #151617; color: #fff; border-top: 5px solid var(--yellow); }
+  .contact-card h4 { color: #fff; }
+  .contact-card p { color: #cfcfc9; font-size: 15px; margin: -6px 0 16px; }
+  .call-buttons { display: grid; gap: 10px; }
+  .call-btn { display: flex; flex-direction: column; gap: 2px; padding: 16px 18px; min-width: 0; border: 2px solid rgba(255,255,255,0.09); background: #1d1f21; color: #fff; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+  .call-btn:hover { border-color: var(--yellow); }
+  .call-btn.primary { background: var(--yellow); border-color: var(--yellow); color: #000; }
+  .call-btn.primary:hover { background: var(--yellow-soft); }
+  .call-btn .k { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.8; }
+  .call-btn .v { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; overflow-wrap: anywhere; }
+  .call-btn:not(.primary) .v { font-size: 17px; }
+  .call-btn.email .v { font-size: 15px; letter-spacing: 0.01em; word-break: break-word; overflow-wrap: anywhere; }
   /* Back link */
   .back-link-section { padding: 48px 0; background: var(--gray-50); border-top: 1px solid var(--line); }
   .back-link { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: color 0.15s; }
@@ -198,9 +213,14 @@
             <div class="testimonial-quote" id="testimonialQuote"></div>
             <div class="testimonial-attr" id="testimonialAttr"></div>
           </div>
-          <div class="cta-card">
+          <div class="cta-card contact-card">
             <h4>Have a similar requirement?</h4>
-            <a href="mailto:dfilippis@signatureassociates.com" class="btn">Get In Touch →</a>
+            <p>Talk to Drake directly.</p>
+            <!--BUILD:contactbuttons--><div class="call-buttons">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+          <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
+        </div><!--/BUILD:contactbuttons-->
           </div>
         </aside>
       </div>

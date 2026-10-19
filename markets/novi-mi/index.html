@@ -8,6 +8,9 @@
 <link rel="canonical" href="https://midwestindustrialbrokers.com/markets/novi-mi/" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0b0b0b" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Midwest Industrial Brokers" />
 <meta property="og:title" content="Industrial Real Estate Broker in Novi, MI | Midwest Industrial Brokers" />
@@ -576,6 +579,8 @@
   .call-btn .k { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.8; }
   .call-btn .v { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; overflow-wrap: anywhere; }
   .call-btn:not(.primary) .v { font-size: 18px; }
+  .call-btn { min-width: 0; }
+  .call-btn.email .v { font-size: 16px; letter-spacing: 0.01em; text-transform: none; word-break: break-word; overflow-wrap: anywhere; }
   .contact-fine { font-size: 13px; color: #9a9a95; line-height: 1.6; }
   .contact-form-wrap { background: var(--steel-2); border: 1px solid var(--line-steel); border-top: 5px solid var(--yellow); padding: 36px; }
   .lead-form { display: grid; gap: 18px; }
@@ -599,6 +604,14 @@
   .form-thanks p { color: #cfcfc9; font-size: 16px; }
   .form-thanks a { color: #fff; }
   .mobile-bar { display: none; }
+  /* Contact band (market pages) */
+  .contact-band { background: var(--steel); border-bottom: 1px solid var(--line-steel); padding: 40px 0; color: #fff; }
+  .contact-band .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr); gap: 32px; align-items: center; }
+  .cb-k { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yellow); margin-bottom: 8px; }
+  .cb-h { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 24px; line-height: 1.1; text-transform: uppercase; color: #fff; }
+  .call-buttons.row { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 0; }
+  @media (max-width: 1100px) { .contact-band .wrap { grid-template-columns: 1fr; gap: 20px; } }
+  @media (max-width: 760px) { .call-buttons.row { grid-template-columns: 1fr; } }
   /* Market pages */
   .page-hero { background: #000; color: #fff; padding: 96px 0 72px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line-steel); }
   .page-hero::before { content: ''; position: absolute; top: 0; right: 0; width: 96px; height: 96px; background: var(--yellow); clip-path: polygon(100% 0, 100% 100%, 0 0); }
@@ -724,6 +737,16 @@
     </div>
   </div>
 </header>
+<section class="contact-band" aria-label="Contact Drake">
+  <div class="wrap">
+    <div class="cb-head"><span class="cb-k">Talk to Drake</span><h2 class="cb-h">Industrial space in Novi?</h2></div>
+    <div class="call-buttons row">
+          <a class="call-btn primary" href="tel:+12489411125" data-track="call_mobile"><span class="k">Mobile</span><span class="v">(248) 941-1125</span></a>
+          <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
+          <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
+        </div>
+  </div>
+</section>
 <section class="block">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Services</h2></div><span class="section-tag">Novi</span></div>

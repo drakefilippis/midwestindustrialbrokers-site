@@ -13,7 +13,7 @@
     var href = a.getAttribute('href') || '';
     var tag = a.getAttribute('data-track');
     if (href.indexOf('tel:') === 0) track('click_to_call', { phone: href.slice(4), link_id: tag || '' });
-    else if (href.indexOf('mailto:') === 0) track('click_email', { link_id: tag || '' });
+    else if (href.indexOf('mailto:') === 0) track('click_email', { link_id: tag || '', email: href.slice(7) });
     else if (/cpix\.resimplifi\.com/.test(href)) track('view_listing_cpix', { link_url: href, link_id: tag || '' });
   });
 
