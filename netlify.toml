@@ -1,3 +1,16 @@
 [build]
   publish = "."
   command = "node build.js"
+
+# Farmington market renamed to Farmington Hills (Oct 2026)
+[[redirects]]
+  from = "/markets/farmington-mi/*"
+  to = "/markets/farmington-hills-mi/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/markets/farmington-mi"
+  to = "/markets/farmington-hills-mi/"
+  status = 301
+  force = true

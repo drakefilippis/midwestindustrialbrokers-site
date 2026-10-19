@@ -16,18 +16,26 @@
       "label": "Clients Served"
     },
     {
-      "value": "7",
+      "value": "14",
       "unit": "",
-      "label": "Markets Covered"
+      "label": "Markets Covered",
+      "auto": "markets"
     }
   ],
   "coverage_cities": [
     "Plymouth",
     "Livonia",
-    "Ann Arbor",
-    "Saline",
-    "Northville",
+    "Canton",
     "Novi",
+    "Farmington Hills",
+    "Romulus",
+    "Taylor",
+    "Ann Arbor",
+    "Ypsilanti",
+    "Saline",
+    "Dexter",
+    "Brighton",
+    "Northville",
     "Wixom",
     "Metro Detroit"
   ],
@@ -45,32 +53,277 @@
   ],
   "services": [
     {
+      "slug": "disposition",
       "title": "Disposition",
-      "description": "Marketing and sale of industrial buildings and land for owners, from pricing strategy through closing."
+      "description": "Selling an industrial building or land? Pricing, marketing and negotiation built to bring the right buyer to the table.",
+      "headline": "Sell your industrial property with a plan",
+      "need": "Sell a property",
+      "overview": [
+        "Selling an industrial building takes more than a sign and a listing. Buyers look hard at power, clear height, loading, yard, zoning and the condition of the roof and building systems. Drake helps owners see the property the way buyers will, set a price the market will support, and run a process that brings serious buyers forward.",
+        "He works with owner users ready to move on, investors selling a building or portfolio, and owners of industrial land. The goal is the best mix of price, terms and certainty of closing."
+      ],
+      "steps": [
+        {
+          "title": "Property review",
+          "text": "Walk the building, gather surveys, leases and building data, and flag anything a buyer will ask about before it becomes a problem."
+        },
+        {
+          "title": "Pricing strategy",
+          "text": "Review recent sales and current competition to set a price and a plan that fit your timing and goals."
+        },
+        {
+          "title": "Marketing",
+          "text": "Photos and marketing materials, a CPIX listing, other industrial listing services, and direct outreach to users, investors and brokers."
+        },
+        {
+          "title": "Offers and negotiation",
+          "text": "Compare offers on price, terms, contingencies and buyer strength, then negotiate the purchase agreement."
+        },
+        {
+          "title": "Due diligence to closing",
+          "text": "Keep inspections, title, survey, environmental review and financing on schedule through closing."
+        }
+      ],
+      "who": [
+        "Owner users relocating, downsizing or consolidating",
+        "Investors selling a building or a portfolio",
+        "Owners of industrial land",
+        "Businesses, partnerships and estates with surplus property"
+      ]
     },
     {
+      "slug": "acquisition",
       "title": "Acquisition",
-      "description": "Owner user and investor acquisitions, from requirements and site search through due diligence and closing."
+      "description": "Buying for your business or your portfolio. A focused search, the right questions and a clean path to closing.",
+      "headline": "Find and buy the right industrial property",
+      "need": "Buy a property",
+      "overview": [
+        "Good industrial buildings often trade quickly, and some never reach the open market. Drake helps owner users and investors define exactly what they need, find options on and off the market, and move with confidence when the right property comes up.",
+        "For investors, that means a close look at tenants, lease terms, building condition and location. For users, it means making sure the building truly works for the operation before you commit."
+      ],
+      "steps": [
+        {
+          "title": "Requirements",
+          "text": "Define size, power, clear height, loading, yard, zoning, location, budget and timing."
+        },
+        {
+          "title": "Search",
+          "text": "Review listed properties and reach out directly to owners and brokers for off market options."
+        },
+        {
+          "title": "Tours and comparison",
+          "text": "Tour the best fits and compare them side by side, including the cost to make each one work."
+        },
+        {
+          "title": "Offer and negotiation",
+          "text": "Structure the letter of intent and purchase agreement, including price, contingencies and timing."
+        },
+        {
+          "title": "Due diligence and closing",
+          "text": "Coordinate inspections, environmental review, title, survey and financing so the deal closes on schedule."
+        }
+      ],
+      "who": [
+        "Owner users buying their first building",
+        "Growing companies consolidating locations",
+        "Investors adding industrial property",
+        "Companies replacing leased space with owned space"
+      ]
     },
     {
+      "slug": "build-to-suit",
       "title": "Build-to-Suit",
-      "description": "Land and build-to-suit site selection, entitlements and developer coordination for new industrial facilities."
+      "description": "When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation.",
+      "headline": "A new facility designed around your operation",
+      "need": "Build-to-suit",
+      "overview": [
+        "Sometimes the right building does not exist yet. Heavy power, extra clear height, more loading, a large yard or a specific location can all point toward new construction. A build-to-suit lets a user lease or own a facility designed around how the business actually runs.",
+        "Drake helps users decide whether new construction makes sense, find and secure land, and work with developers, contractors and local municipalities to keep the project on track. He can also compare build-to-suit options with existing buildings so the choice is clear."
+      ],
+      "steps": [
+        {
+          "title": "Requirements and budget",
+          "text": "Define the building, the site, the budget and the date you need to be operating."
+        },
+        {
+          "title": "Site search",
+          "text": "Find land with the right zoning, utilities, access and room to grow."
+        },
+        {
+          "title": "Developer and contractor selection",
+          "text": "Request proposals and compare developers and contractors on cost, schedule and terms."
+        },
+        {
+          "title": "Entitlements and approvals",
+          "text": "Work through site plan review, zoning and other local approvals with the project team."
+        },
+        {
+          "title": "Agreement and delivery",
+          "text": "Negotiate the lease or purchase agreement and track construction milestones through move in."
+        }
+      ],
+      "who": [
+        "Manufacturers that need heavy power or special features",
+        "Distribution users that need more loading or yard",
+        "Companies that have outgrown existing buildings",
+        "Landowners exploring development for a specific user"
+      ]
     },
     {
+      "slug": "tenant-representation",
       "title": "Tenant Representation",
-      "description": "Site search, tour strategy and lease negotiation for warehouse, manufacturing and flex users."
+      "description": "Leasing warehouse, manufacturing or flex space. Search, tours and lease negotiation on your side of the table.",
+      "headline": "Lease the right space on the right terms",
+      "need": "Lease space",
+      "overview": [
+        "A lease shapes your costs and your operation for years. Drake represents tenants looking for warehouse, manufacturing and flex space, and he works for the tenant. That means a full look at the market, honest advice about each option, and a firm negotiating position.",
+        "He also helps current tenants plan ahead for renewals, expansions and relocations, so there is time to compare options well before a lease ends."
+      ],
+      "steps": [
+        {
+          "title": "Needs analysis",
+          "text": "Define size, layout, power, loading, parking, location, budget and move in date."
+        },
+        {
+          "title": "Market survey",
+          "text": "Identify available spaces and spaces coming available soon, including options not widely advertised."
+        },
+        {
+          "title": "Tours",
+          "text": "Tour the strongest options and check each one against your requirements."
+        },
+        {
+          "title": "Proposals and negotiation",
+          "text": "Negotiate rent, term, improvements, operating costs, and renewal and expansion rights."
+        },
+        {
+          "title": "Lease review and move in",
+          "text": "Work with your attorney on the lease and track the build out through move in."
+        }
+      ],
+      "who": [
+        "Companies leasing their first industrial space",
+        "Tenants approaching a lease expiration",
+        "Growing companies that need more room",
+        "Businesses relocating or consolidating"
+      ]
     },
     {
+      "slug": "buyer-representation",
       "title": "Buyer Representation",
-      "description": "Representation of owner users buying industrial property, including financing timing and closing."
+      "description": "Owner users buying a building for their own business. Search, negotiation and closing coordination with your goals first.",
+      "headline": "Buy the building your business will run from",
+      "need": "Buy a property",
+      "overview": [
+        "Buying your own building is a big step. Owning can give you control over your space and a long term asset, but the building has to work for your operation from day one. Drake represents owner users through the full purchase, from the first search to closing.",
+        "He helps buyers time the purchase around financing, a current lease and the move itself, and keeps the deal moving through inspections and approvals."
+      ],
+      "steps": [
+        {
+          "title": "Requirements and budget",
+          "text": "Define what the building needs to do for your business and how the purchase will be financed."
+        },
+        {
+          "title": "Search and tours",
+          "text": "Find buildings that fit, on and off the market, and tour the best options."
+        },
+        {
+          "title": "Offer and negotiation",
+          "text": "Negotiate price, terms, contingencies and closing timing."
+        },
+        {
+          "title": "Due diligence",
+          "text": "Coordinate inspections, environmental review, zoning, title and survey."
+        },
+        {
+          "title": "Closing and move",
+          "text": "Work with your lender, attorney and title company to close and plan the move."
+        }
+      ],
+      "who": [
+        "Business owners leaving leased space",
+        "Companies consolidating into one building",
+        "Growing users that need a specific location",
+        "Family businesses planning for the long term"
+      ]
     },
     {
+      "slug": "landlord-representation",
       "title": "Landlord Representation",
-      "description": "Marketing and leasing of industrial buildings and multi tenant flex space."
+      "description": "Leasing an industrial building or multi tenant flex property. Marketing, tenant outreach and lease negotiation that protect your asset.",
+      "headline": "Lease your building to strong tenants",
+      "need": "Lease out my building",
+      "overview": [
+        "Vacant space costs money every month. Drake helps owners position industrial buildings and multi tenant flex properties so they lease to strong tenants on sound terms. That starts with knowing how the space compares to the competition and what tenants in the area are looking for.",
+        "From marketing and tours through lease negotiation, he keeps owners informed and focused on the terms that matter most for the property."
+      ],
+      "steps": [
+        {
+          "title": "Property assessment",
+          "text": "Review the space, the building and the competition to see where it stands."
+        },
+        {
+          "title": "Leasing strategy",
+          "text": "Recommend rates, terms and any improvements that help the space compete."
+        },
+        {
+          "title": "Marketing",
+          "text": "CPIX and other listing services, signage, broker outreach and direct calls to likely tenants."
+        },
+        {
+          "title": "Tours and tenant review",
+          "text": "Show the space and review prospective tenants, including their financial strength."
+        },
+        {
+          "title": "Lease negotiation",
+          "text": "Negotiate terms and work with your attorney through lease signing."
+        }
+      ],
+      "who": [
+        "Owners of single tenant industrial buildings",
+        "Owners of multi tenant flex and small bay properties",
+        "Investors with upcoming vacancies",
+        "Owner users with extra space to lease"
+      ]
     },
     {
+      "slug": "investment-sales",
       "title": "Investment Sales",
-      "description": "Pricing, marketing and sale of industrial investment property."
+      "description": "Buying or selling leased industrial property. Pricing, marketing and buyer outreach built around income and tenancy.",
+      "headline": "Sell or buy leased industrial property",
+      "need": "Sell a property",
+      "overview": [
+        "Industrial investment property is valued on its income, its tenants and the strength of its leases, along with the building and the location. Drake helps investors price these properties, present the income clearly, and reach buyers who are active in the market.",
+        "He works with private investors, partnerships and family offices on single buildings and small portfolios, and represents buyers looking to add industrial property."
+      ],
+      "steps": [
+        {
+          "title": "Investment review",
+          "text": "Review the rent roll, leases, operating expenses and building condition."
+        },
+        {
+          "title": "Pricing",
+          "text": "Set pricing based on recent investment sales and current buyer demand."
+        },
+        {
+          "title": "Offering materials",
+          "text": "Prepare a clear property package and financial summary."
+        },
+        {
+          "title": "Marketing and outreach",
+          "text": "Reach private investors, partnerships, funds and 1031 exchange buyers."
+        },
+        {
+          "title": "Negotiation and closing",
+          "text": "Negotiate terms and manage due diligence, tenant documents and closing."
+        }
+      ],
+      "who": [
+        "Private investors and partnerships",
+        "Owners of leased buildings or small portfolios",
+        "1031 exchange buyers",
+        "Family offices adding industrial property"
+      ]
     }
   ],
   "closed_deals": [
@@ -100,7 +353,11 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": []
+      "photos": [],
+      "services": [
+        "acquisition",
+        "buyer-representation"
+      ]
     },
     {
       "slug": "vios-compounding-livonia",
@@ -128,7 +385,11 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": []
+      "photos": [],
+      "services": [
+        "acquisition",
+        "buyer-representation"
+      ]
     },
     {
       "slug": "medical-investment-portfolio",
@@ -156,7 +417,12 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": []
+      "photos": [],
+      "services": [
+        "investment-sales",
+        "disposition",
+        "acquisition"
+      ]
     },
     {
       "slug": "bank-supplies-saline",
@@ -184,7 +450,11 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": []
+      "photos": [],
+      "services": [
+        "acquisition",
+        "buyer-representation"
+      ]
     },
     {
       "slug": "michigan-fine-yarn",
@@ -214,6 +484,10 @@
       },
       "photos": [
         "/uploads/maben.webp"
+      ],
+      "services": [
+        "acquisition",
+        "buyer-representation"
       ]
     },
     {
@@ -244,6 +518,9 @@
       },
       "photos": [
         "/uploads/cross-and-black.webp"
+      ],
+      "services": [
+        "tenant-representation"
       ]
     },
     {
@@ -272,7 +549,11 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": []
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ]
     }
   ],
   "client_logos": [
@@ -281,14 +562,35 @@
       "logo": "/uploads/logos/banksupplies-white.png",
       "logo_color": "/uploads/logos/banksupplies-white.png",
       "hover_bg": "#185A7D",
-      "url": ""
+      "url": "https://banksupplies.com/"
     },
     {
-      "name": "ViOS",
+      "name": "ViOS Compounding",
       "logo": "/uploads/logos/vios-white.png",
       "logo_color": "/uploads/logos/vios.png",
       "hover_bg": "#ffffff",
-      "url": ""
+      "url": "https://www.vioscompounding.com/"
+    },
+    {
+      "name": "Advanced Systems",
+      "logo": "/uploads/logos/advanced-systems-white.png",
+      "logo_color": "/uploads/logos/advanced-systems.png",
+      "hover_bg": "#ffffff",
+      "url": "https://www.advancedsystems-inc.com/"
+    },
+    {
+      "name": "Saline Area Schools",
+      "logo": "/uploads/logos/saline-area-schools-white.png",
+      "logo_color": "/uploads/logos/saline-area-schools.png",
+      "hover_bg": "#ffffff",
+      "url": "https://www.salineschools.org/"
+    },
+    {
+      "name": "Packard Health",
+      "logo": "/uploads/logos/packard-health-white.png",
+      "logo_color": "/uploads/logos/packard-health.png",
+      "hover_bg": "#ffffff",
+      "url": "https://packardhealth.org/"
     },
     {
       "name": "Interstate Capital",
@@ -1106,7 +1408,8 @@
         "Northville",
         "Romulus",
         "Taylor",
-        "Wixom"
+        "Wixom",
+        "Farmington Hills"
       ],
       "title": "I-275 Corridor Industrial Real Estate Broker | Midwest Industrial Brokers",
       "meta": "Industrial space along the I-275 corridor in western Wayne County and Oakland County, including Plymouth, Livonia, Canton, Novi and Romulus. Call Drake Filippis at (248) 941-1125.",
@@ -1132,7 +1435,10 @@
         "Taylor",
         "Romulus",
         "Highland Township",
-        "Southfield"
+        "Southfield",
+        "Farmington Hills",
+        "Brighton",
+        "Farmington"
       ],
       "title": "Metro Detroit Industrial Real Estate Broker | Midwest Industrial Brokers",
       "meta": "Industrial real estate brokerage across Metro Detroit. Disposition, acquisition, build-to-suit, tenant and buyer representation with Drake Filippis, Signature Associates. Call (248) 941-1125.",
@@ -1187,6 +1493,97 @@
       "intro": [
         "Novi is in southwest Oakland County where I-96, I-275 and M-5 meet. Along with nearby Wixom and Northville, it offers flex, research and light industrial buildings for companies that want quick highway access across the region.",
         "Drake represents owners, tenants and buyers in Novi and the surrounding communities, from small flex suites to full buildings."
+      ]
+    },
+    {
+      "slug": "romulus-mi",
+      "name": "Romulus",
+      "full_name": "Romulus, MI",
+      "cities": [
+        "Romulus"
+      ],
+      "title": "Industrial Real Estate Broker in Romulus, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, warehouse and logistics space in Romulus, Michigan near Detroit Metro Airport, I-94 and I-275. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Warehouse and logistics space around Detroit Metro Airport.",
+      "intro": [
+        "Romulus is in western Wayne County and is home to Detroit Metropolitan Wayne County Airport. With I-94 and I-275 both running through the city, its industrial areas draw warehouse, distribution, logistics and manufacturing users who need quick access to the airport and the regional highway network.",
+        "Drake represents owners, tenants and buyers in Romulus and can compare sites here with nearby options in Taylor, Canton and the rest of the I-275 corridor."
+      ]
+    },
+    {
+      "slug": "taylor-mi",
+      "name": "Taylor",
+      "full_name": "Taylor, MI",
+      "cities": [
+        "Taylor"
+      ],
+      "title": "Industrial Real Estate Broker in Taylor, MI | Midwest Industrial Brokers",
+      "meta": "Industrial and distribution space in Taylor, Michigan, Downriver Wayne County near I-94 and I-75. Disposition, acquisition, build-to-suit and leasing with Drake Filippis. Call (248) 941-1125.",
+      "summary": "Downriver industrial and distribution space near I-94.",
+      "intro": [
+        "Taylor is a Downriver community in Wayne County with access to I-94, nearby I-75 and Telegraph Road. Its industrial areas include warehouse, distribution and manufacturing buildings, from smaller shop spaces to large distribution facilities.",
+        "Drake works with owners, tenants and buyers in Taylor and the surrounding Downriver communities, and helps users weigh Taylor against options near the airport and along I-275."
+      ]
+    },
+    {
+      "slug": "ypsilanti-mi",
+      "name": "Ypsilanti",
+      "full_name": "Ypsilanti, MI",
+      "cities": [
+        "Ypsilanti"
+      ],
+      "title": "Industrial Real Estate Broker in Ypsilanti, MI | Midwest Industrial Brokers",
+      "meta": "Industrial and flex space in Ypsilanti and Ypsilanti Township, Michigan along I-94 and US-12. Call Drake Filippis, Signature Associates, at (248) 941-1125.",
+      "summary": "Industrial space east of Ann Arbor along I-94 and US-12.",
+      "intro": [
+        "Ypsilanti and Ypsilanti Township are in Washtenaw County just east of Ann Arbor, with access to I-94 and US-12 and the Willow Run area nearby. The area offers manufacturing, warehouse, flex and industrial land opportunities for users who want to be between Ann Arbor and Metro Detroit.",
+        "Drake represents owners, tenants and buyers in Ypsilanti on sales, leases and land, and can compare options here with the rest of Washtenaw County."
+      ]
+    },
+    {
+      "slug": "dexter-mi",
+      "name": "Dexter",
+      "full_name": "Dexter, MI",
+      "cities": [
+        "Dexter"
+      ],
+      "title": "Industrial Real Estate Broker in Dexter, MI | Midwest Industrial Brokers",
+      "meta": "Industrial property and land in Dexter, Michigan and western Washtenaw County. Disposition, acquisition, build-to-suit and leasing with Drake Filippis. Call (248) 941-1125.",
+      "summary": "Industrial buildings and land in western Washtenaw County.",
+      "intro": [
+        "Dexter is in western Washtenaw County, northwest of Ann Arbor, with access to I-94. The area has smaller industrial buildings, flex space and land that appeal to contractors, light manufacturers and service businesses that want to be close to Ann Arbor.",
+        "Drake helps owners and users in Dexter buy, sell and lease industrial property and land, and can compare Dexter with nearby options across Washtenaw County."
+      ]
+    },
+    {
+      "slug": "farmington-hills-mi",
+      "name": "Farmington Hills",
+      "full_name": "Farmington Hills, MI",
+      "cities": [
+        "Farmington Hills",
+        "Farmington"
+      ],
+      "title": "Industrial Real Estate Broker in Farmington Hills, MI | Midwest Industrial Brokers",
+      "meta": "Industrial and flex space in Farmington Hills, Michigan near I-696, I-275 and M-5. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Flex and light industrial space near I-696, I-275 and M-5.",
+      "intro": [
+        "Farmington Hills is in southwest Oakland County, where I-696, I-275 and M-5 come together. The city has flex, research, light industrial and office warehouse buildings used by technology, engineering and service companies that want central access across the region.",
+        "Drake represents owners, tenants and buyers in Farmington Hills and neighboring Farmington, and can compare options here with Novi, Livonia and the rest of the I-275 corridor."
+      ]
+    },
+    {
+      "slug": "brighton-mi",
+      "name": "Brighton",
+      "full_name": "Brighton, MI",
+      "cities": [
+        "Brighton"
+      ],
+      "title": "Industrial Real Estate Broker in Brighton, MI | Midwest Industrial Brokers",
+      "meta": "Industrial property in Brighton and Livingston County, Michigan near I-96 and US-23. Disposition, acquisition, build-to-suit and leasing with Drake Filippis. Call (248) 941-1125.",
+      "summary": "Industrial space in Livingston County at I-96 and US-23.",
+      "intro": [
+        "Brighton is in Livingston County where I-96 and US-23 meet, giving users access toward Detroit, Lansing, Ann Arbor and Flint. Its industrial areas include light manufacturing, warehouse and flex buildings, along with land for new development.",
+        "Drake helps owners and users in Brighton and the surrounding Livingston County communities buy, sell and lease industrial property."
       ]
     }
   ],

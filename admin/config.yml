@@ -42,6 +42,7 @@ collections:
               - { label: "Number", name: "value", widget: "string", hint: "e.g. $300, 14, 10,000" }
               - { label: "Unit", name: "unit", widget: "string", required: false, hint: "e.g. M+, +, B" }
               - { label: "Label", name: "label", widget: "string" }
+              - { label: "Auto count", name: "auto", widget: "select", required: false, options: ["markets"], hint: "Set to markets to show the number of market pages automatically" }
 
           # ============ SERVICES (listed in this order on the site) ============
           - label: "Services (in display order)"
@@ -50,7 +51,24 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: "Service", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "URL slug (page lives at /services/slug/)", name: "slug", widget: "string", hint: "lowercase with hyphens, like tenant-representation. Deals use this slug in their Services field." }
+              - { label: "Card text (homepage)", name: "description", widget: "text" }
+              - { label: "Page headline", name: "headline", widget: "string", required: false }
+              - label: "Form default for I want to"
+                name: "need"
+                widget: "select"
+                required: false
+                options: ["Lease space", "Lease out my building", "Buy a property", "Sell a property", "Build-to-suit", "Something else"]
+              - { label: "Overview paragraphs", name: "overview", widget: "list", required: false, field: { label: "Paragraph", name: "text", widget: "text" } }
+              - label: "Process steps"
+                name: "steps"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Step", name: "title", widget: "string" }
+                  - { label: "Detail", name: "text", widget: "text" }
+              - { label: "Who it is for", name: "who", widget: "list", required: false, field: { label: "Item", name: "text", widget: "string" } }
 
           # ============ COVERAGE CITIES (yellow strip) ============
           - label: "Coverage Cities (yellow strip)"
@@ -96,6 +114,19 @@ collections:
                 widget: "select"
                 options: ["Buyer", "Seller", "Tenant", "Landlord", "Both"]
               - { label: "Deal type", name: "deal_type", widget: "string", hint: "e.g. Sale, Lease NNN, Investment Sale" }
+              - label: "Services (shows this deal on those service pages)"
+                name: "services"
+                widget: "select"
+                multiple: true
+                required: false
+                options:
+                  - { label: "Disposition", value: "disposition" }
+                  - { label: "Acquisition", value: "acquisition" }
+                  - { label: "Build-to-Suit", value: "build-to-suit" }
+                  - { label: "Tenant Representation", value: "tenant-representation" }
+                  - { label: "Buyer Representation", value: "buyer-representation" }
+                  - { label: "Landlord Representation", value: "landlord-representation" }
+                  - { label: "Investment Sales", value: "investment-sales" }
               - { label: "Size or value", name: "size", widget: "string", hint: "e.g. 175,000 SF or $2,400,000" }
               - { label: "Closed date", name: "closed_date", widget: "string", required: false, hint: "e.g. April 17, 2026" }
               - { label: "Case study headline (shown at top of case study page)", name: "headline", widget: "string", required: false }
