@@ -43,8 +43,8 @@
       const lease = /lease/i.test(d.deal_type || '');
       const side = String(d.side || '').toLowerCase();
       const roles = { buyer: 'Buyer Representation', seller: 'Seller Representation', tenant: 'Tenant Representation', landlord: 'Landlord Representation', both: 'Both Sides' };
-      const c0 = String(d.city || d.subtitle || '').split(',')[0].trim();
-      const city = c0 ? c0 + ', MI' : '';
+      const c0 = d.city ? '' : String(d.subtitle || '').split(',')[0].trim();
+      const city = d.city ? d.city : (c0 ? c0 + ', MI' : '');
       const m = String(d.size || '').match(/^([\d,.]+)\s*(SF|AC|acres?)?/i);
       const num = m ? m[1] : String(d.size || '');
       const unit = m && m[2] ? m[2].toUpperCase().replace(/ACRES?/, 'AC') : (m ? 'SF' : '');

@@ -423,7 +423,8 @@
         "disposition",
         "acquisition"
       ],
-      "property_type": "Medical Office"
+      "property_type": "Medical Office",
+      "city": "4-building portfolio"
     },
     {
       "slug": "bank-supplies-saline",

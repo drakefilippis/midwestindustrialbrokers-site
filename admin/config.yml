@@ -108,6 +108,7 @@ collections:
                 options: ["2023", "2024", "2025", "2026", "2027"]
               - { label: "Property (address or portfolio name)", name: "property", widget: "string" }
               - { label: "Subtitle (city, context)", name: "subtitle", widget: "string", required: false }
+              - { label: "Card location override (optional, e.g. 4-building portfolio)", name: "city", widget: "string", required: false }
               - { label: "Client name (only if approved to publish)", name: "client", widget: "string", required: false }
               - { label: "Property type (shown on card, e.g. Manufacturing, Warehouse, Flex, Retail, Office, Land)", name: "property_type", widget: "string", required: false }
               - { label: "Client industry", name: "client_industry", widget: "string", required: false }
