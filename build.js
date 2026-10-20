@@ -307,7 +307,7 @@ fs.writeFileSync('thank-you-bts.html', page({
   const by = (s) => (data.closed_deals || []).find(d => d.slug === s);
   const cards = [
     [by('michigan-fine-yarn'), {}, 'Sale with photo'],
-    [by('bank-supplies-saline'), { noPhoto: true }, 'Sale with photo placeholder'],
+    [by('bank-supplies-saline'), { noPhoto: true, industry: 'Manufacturing' }, 'Sale with photo placeholder'],
     [by('Cross and Black'), {}, 'Lease with photo'],
   ].filter(c => c[0]);
   const extra = [[by('synergy-dance-clipper-plymouth'), { noPhoto: true }, 'Lease, both sides, placeholder'], [by('4301-highland-rd-waterford'), { noPhoto: true }, 'Sale, placeholder']].filter(c => c[0]);
@@ -315,7 +315,7 @@ fs.writeFileSync('thank-you-bts.html', page({
   fs.mkdirSync('deal-card-preview', { recursive: true });
   fs.writeFileSync('deal-card-preview/index.html', page({
     title: 'Deal Card Preview | Midwest Industrial Brokers', description: 'Internal preview of the closed deal card design.', robots: 'noindex, nofollow',
-    body: `<header class="page-hero" id="top"><div class="wrap"><div class="crumbs">Internal preview, not linked from the site</div><h1>Closed Deal Cards</h1><div class="lede"><p>Prototype of the card each closed deal will use. Every card shows only sale or lease, who Drake represented, size and city. Cards without a photo get the branded placeholder until a photo is added.</p></div></div></header>
+    body: `<header class="page-hero" id="top"><div class="wrap"><div class="crumbs">Internal preview, not linked from the site</div><h1>Closed Deal Cards</h1><div class="lede"><p>Prototype of the card each closed deal will use. Each card shows sold or leased, who Drake represented, size, city and industry. Cards without a photo get the branded placeholder until a photo is added. Cards link only when a full deal page exists.</p></div></div></header>
 <section class="block"><div class="wrap">
   <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Sample Grid</h2></div><span class="section-tag">Prototype</span></div>
   ${grid(cards)}

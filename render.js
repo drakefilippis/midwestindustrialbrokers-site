@@ -37,32 +37,31 @@
           <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
           <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
         </div>`,
-    // Closed-deal card (prototype). Fields: sale/lease, side represented, size, city, transaction type.
+    // Closed-deal card. Fields: sold/leased, side represented, size, city, industry.
     dealCard: (d, opts) => {
       opts = opts || {};
       const lease = /lease/i.test(d.deal_type || '');
       const side = String(d.side || '').toLowerCase();
-      const roles = { buyer: 'Buyer Representation', seller: 'Seller Representation', tenant: 'Tenant Representation', landlord: 'Landlord Representation', both: 'Both Sides Represented' };
-      const who = { buyer: 'the buyer', seller: 'the seller', tenant: 'the tenant', landlord: 'the landlord', both: 'both sides' };
-      const tx = lease ? 'Space leased' : (side === 'seller' ? 'Building sold' : side === 'both' ? 'Property sold' : 'Building purchased');
+      const roles = { buyer: 'Buyer Representation', seller: 'Seller Representation', tenant: 'Tenant Representation', landlord: 'Landlord Representation', both: 'Both Sides' };
       const c0 = String(d.city || d.subtitle || '').split(',')[0].trim();
       const city = c0 ? c0 + ', MI' : '';
       const m = String(d.size || '').match(/^([\d,.]+)\s*(SF|AC|acres?)?/i);
       const num = m ? m[1] : String(d.size || '');
       const unit = m && m[2] ? m[2].toUpperCase().replace(/ACRES?/, 'AC') : (m ? 'SF' : '');
       const photo = opts.noPhoto ? '' : photoSrc((d.photos || [])[0]);
+      const industry = d.industry || opts.industry || '';
       const media = photo
-        ? `<img src="${esc(photo)}" alt="${esc((lease ? 'Leased' : 'Sold') + ' industrial property in ' + city)}" loading="lazy" decoding="async" width="800" height="500" />`
-        : `<span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span><span class="dc-ph-note">Photo coming soon</span></span>`;
-      const tag = d.slug ? 'a' : 'div';
-      const href = d.slug ? ` href="${esc(dealUrl(d))}"` : '';
-      return `<${tag} class="deal-card${lease ? ' is-lease' : ' is-sale'}"${href}>
-        <span class="dc-media">${media}<span class="dc-chip">We represented ${who[side] || 'the client'}</span></span>
+        ? `<img src="${esc(photo)}" alt="${esc((lease ? 'Leased' : 'Sold') + ' property in ' + city)}" loading="lazy" decoding="async" width="800" height="500" />`
+        : `<span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span>`;
+      const link = d.slug && opts.link !== false;
+      const tag = link ? 'a' : 'div';
+      const href = link ? ` href="${esc(dealUrl(d))}"` : '';
+      return `<${tag} class="deal-card${lease ? ' is-lease' : ' is-sale'}${link ? ' is-link' : ''}"${href}>
+        <span class="dc-media">${media}<span class="dc-chip">${esc(roles[side] || d.side || '')}</span></span>
         <span class="dc-body">
           <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
-          <span class="dc-role">${esc(roles[side] || d.side || '')}</span>
           <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
-          <span class="dc-meta"><span class="dc-city">${esc(city)}</span><span class="dc-tx">${tx}</span></span>
+          <span class="dc-meta"><span class="dc-city">${esc(city)}</span>${industry ? `<span class="dc-ind">${esc(industry)}</span>` : ''}</span>
         </span>
       </${tag}>`;
     },
