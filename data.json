@@ -357,7 +357,8 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": ""
     },
     {
       "slug": "vios-compounding-livonia",
@@ -389,7 +390,8 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": ""
     },
     {
       "slug": "medical-investment-portfolio",
@@ -424,7 +426,8 @@
         "acquisition"
       ],
       "property_type": "Medical Office",
-      "city": "4-building portfolio"
+      "city": "4-building portfolio",
+      "price": ""
     },
     {
       "slug": "bank-supplies-saline",
@@ -457,7 +460,8 @@
         "acquisition",
         "buyer-representation"
       ],
-      "property_type": "Manufacturing"
+      "property_type": "Manufacturing",
+      "price": "$7,900,000"
     },
     {
       "slug": "michigan-fine-yarn",
@@ -491,7 +495,8 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": ""
     },
     {
       "slug": "Cross and Black",
@@ -524,7 +529,8 @@
       ],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": ""
     },
     {
       "slug": "synergy-dance-clipper-plymouth",
@@ -556,7 +562,8 @@
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": ""
     },
     {
       "slug": "",
@@ -572,7 +579,8 @@
       "photos": [],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "$7.51/SF/yr NNN"
     },
     {
       "slug": "",
@@ -584,12 +592,13 @@
       "property_type": "Manufacturing",
       "side": "Both",
       "deal_type": "Lease",
-      "size": "6,000 SF",
+      "size": "8,000 SF",
       "photos": [],
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": "$11.35/SF/yr G+U+J"
     },
     {
       "slug": "",
@@ -605,7 +614,8 @@
       "photos": [],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "$20.80/SF/yr G+U+J"
     },
     {
       "slug": "",
@@ -621,7 +631,8 @@
       "photos": [],
       "services": [
         "disposition"
-      ]
+      ],
+      "price": "$1,170,000"
     },
     {
       "slug": "",
@@ -637,7 +648,8 @@
       "photos": [],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "$9.27/SF/yr NNN"
     },
     {
       "slug": "",
@@ -653,7 +665,9 @@
       "photos": [],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "",
+      "price_note": "Sheet marked Release Sale Price: NO"
     },
     {
       "slug": "",
@@ -669,7 +683,8 @@
       "photos": [],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "$10.56/SF/yr NNN"
     },
     {
       "slug": "",
@@ -686,7 +701,8 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": "$2,165,000"
     },
     {
       "slug": "",
@@ -698,11 +714,12 @@
       "property_type": "Retail",
       "side": "Landlord",
       "deal_type": "Lease",
-      "size": "5,166 SF",
+      "size": "5,156 SF",
       "photos": [],
       "services": [
         "landlord-representation"
-      ]
+      ],
+      "price": "$24.46/SF/yr NNN"
     },
     {
       "slug": "",
@@ -720,7 +737,8 @@
         "disposition",
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": "$1,965,000"
     },
     {
       "slug": "",
@@ -732,12 +750,13 @@
       "property_type": "Manufacturing",
       "side": "Both",
       "deal_type": "Lease",
-      "size": "10,056 SF",
+      "size": "10,956 SF",
       "photos": [],
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": "$9.05/SF/yr NNN"
     },
     {
       "slug": "",
@@ -753,7 +772,8 @@
       "photos": [],
       "services": [
         "disposition"
-      ]
+      ],
+      "price": "$132,000"
     },
     {
       "slug": "",
@@ -769,7 +789,8 @@
       "photos": [],
       "services": [
         "landlord-representation"
-      ]
+      ],
+      "price": "$9.17/SF/yr NNN"
     },
     {
       "slug": "",
@@ -786,7 +807,8 @@
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": "$13.06/SF/yr Gross"
     },
     {
       "slug": "",
@@ -803,7 +825,8 @@
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": "$7.02/SF/yr G+U+J"
     }
   ],
   "client_logos": [
