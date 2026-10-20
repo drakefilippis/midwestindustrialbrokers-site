@@ -59,7 +59,7 @@
       return `<${tag} class="deal-card${lease ? ' is-lease' : ' is-sale'}"${href}>
         <span class="dc-media">${media}<span class="dc-chip">We represented ${who[side] || 'the client'}</span></span>
         <span class="dc-body">
-          <span class="dc-kind">${lease ? 'Lease' : 'Sale'}</span>
+          <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
           <span class="dc-role">${esc(roles[side] || d.side || '')}</span>
           <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
           <span class="dc-meta"><span class="dc-city">${esc(city)}</span><span class="dc-tx">${tx}</span></span>
