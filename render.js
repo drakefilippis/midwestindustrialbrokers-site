@@ -41,6 +41,37 @@
           <a class="call-btn" href="tel:+12487993161" data-track="call_office"><span class="k">Office</span><span class="v">(248) 799-3161</span></a>
           <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
         </div>`,
+    // Closed-deal card. Fields: sold/leased, side represented, size, city, industry.
+    dealCard: (d, opts) => {
+      opts = opts || {};
+      const lease = /lease/i.test(d.deal_type || '');
+      const side = String(d.side || '').toLowerCase();
+      const roles = { buyer: 'Buyer Representation', seller: 'Seller Representation', tenant: 'Tenant Representation', landlord: 'Landlord Representation', both: 'Both Sides' };
+      const c0 = d.city ? '' : String(d.subtitle || '').split(',')[0].trim();
+      const city = d.city ? d.city : (c0 ? c0 + ', MI' : '');
+      const m = String(d.size || '').match(/^([\d,.]+)\s*(SF|AC|acres?)?/i);
+      const num = m ? m[1] : String(d.size || '');
+      const unit = m && m[2] ? m[2].toUpperCase().replace(/ACRES?/, 'AC') : (m ? 'SF' : '');
+      const photo = opts.noPhoto ? '' : photoSrc((d.photos || [])[0]);
+      const industry = d.property_type || d.industry || opts.industry || '';
+      const media = photo
+        ? `<img src="${esc(photo)}" alt="${esc((lease ? 'Leased' : 'Sold') + ' property in ' + city)}" loading="lazy" decoding="async" width="800" height="500" />`
+        : `<span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span>`;
+      const link = d.slug && opts.link !== false;
+      const tag = link ? 'a' : 'div';
+      const href = link ? ` href="${esc(dealUrl(d))}"` : '';
+      return `<${tag} class="deal-card${lease ? ' is-lease' : ' is-sale'}${link ? ' is-link' : ''}"${href}>
+        <span class="dc-media">${media}<span class="dc-chip">${esc(roles[side] || d.side || '')}</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
+          <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
+          ${d.price ? `<span class="dc-price">${esc(d.price)}</span>` : ''}
+          <span class="dc-meta"><span class="dc-loc">${d.address ? `<span class="dc-addr">${esc(d.address)}</span>` : ''}<span class="dc-city">${esc(city)}</span></span>${industry ? `<span class="dc-ind">${esc(industry)}</span>` : ''}</span>
+        </span>
+      </${tag}>`;
+    },
+    // Deal card grid, newest year first, then largest first.
+    dealGrid: (deals) => (deals || []).filter(d => d && d.size).map((d, i) => [d, i]).sort((a, b) => (Number(b[0].year) - Number(a[0].year)) || (parseFloat(String(b[0].size).replace(/,/g, '')) * (/AC/i.test(b[0].size) ? 43560 : 1) - parseFloat(String(a[0].size).replace(/,/g, '')) * (/AC/i.test(a[0].size) ? 43560 : 1)) || a[1] - b[1]).map(([d]) => `<li data-year="${esc(d.year)}">${R.dealCard(d)}</li>`).join(''),
     serviceUrl: (sv) => '/services/' + sv.slug + '/',
     serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => s.slug
       ? `<li><a class="service-card" href="/services/${esc(s.slug)}/"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li>`

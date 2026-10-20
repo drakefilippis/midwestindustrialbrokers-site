@@ -48,8 +48,7 @@ html = fill(html, {
   stats: R.stats(data.stats, markets),
   team: R.team(data.team),
   services: R.serviceList(data.services),
-  dealphotos: R.dealPhotos(data.closed_deals),
-  deals: R.deals(data.closed_deals),
+  deals: R.dealGrid(data.closed_deals),
   logos: logosHtml,
   listings: homeListings,
   markets: R.marketCards(markets, data.closed_deals, data.listings),
@@ -166,10 +165,7 @@ for (const m of markets) {
 <section class="block" id="deals">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>Closed Deals</h2></div><span class="section-tag">${esc(m.name)}</span></div>
-    ${deals.length ? `<table class="deals-table">
-      <thead><tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr></thead>
-      <tbody>${R.deals(deals)}</tbody>
-    </table>` : `<p class="empty-note">No closed deals are posted for this market yet. <a href="/#deals">See all closed deals</a>.</p>`}
+    ${deals.length ? `<ul class="deal-card-grid">${R.dealGrid(deals)}</ul>` : `<p class="empty-note">No closed deals are posted for this market yet. <a href="/#deals">See all closed deals</a>.</p>`}
   </div>
 </section>
 <section class="block dark" id="listings">
@@ -220,7 +216,7 @@ for (const sv of services) {
   const dealsSection = (isBts && !deals.length) ? '' : `<section class="block" id="deals">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Deals Completed</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
-    ${deals.length ? (photos.length ? `<div class="deal-photos svc-photos">${R.dealPhotos(photos)}</div>` : '') + dealsTable(deals)
+    ${deals.length ? `<ul class="deal-card-grid">${R.dealGrid(deals)}</ul>`
       : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
   </div>
 </section>`;
@@ -301,6 +297,31 @@ fs.writeFileSync('thank-you-bts.html', page({
   title: 'Requirements Received | Midwest Industrial Brokers', description: 'Thanks for sending your build-to-suit requirements.', robots: 'noindex, follow',
   body: `<header class="page-hero" id="top"><div class="wrap"><h1>Thanks. Your requirements are in.</h1><div class="lede"><p>Drake will review them and follow up to talk through sites and next steps. If it is urgent, call <a style="color:#FFD400" href="tel:+12489411125">(248) 941-1125</a> or the office at <a style="color:#FFD400" href="tel:+12487993161">(248) 799-3161</a>.</p></div><div class="hero-cta" style="margin-top:32px;"><a href="/services/build-to-suit/" class="btn btn-primary">Back to Build-to-Suit <span class="arrow" aria-hidden="true">→</span></a></div></div></header>`,
 }));
+
+// ---------- deal-card-preview (prototype, noindex, not in nav or sitemap) ----------
+{
+  const by = (s) => (data.closed_deals || []).find(d => d.slug === s);
+  const cards = [
+    [by('michigan-fine-yarn'), {}, 'Sale with photo'],
+    [by('bank-supplies-saline'), { noPhoto: true, industry: 'Manufacturing' }, 'Sale with photo placeholder'],
+    [by('Cross and Black'), {}, 'Lease with photo'],
+  ].filter(c => c[0]);
+  const extra = [[by('synergy-dance-clipper-plymouth'), { noPhoto: true }, 'Lease, both sides, placeholder'], [by('4301-highland-rd-waterford'), { noPhoto: true }, 'Sale, placeholder']].filter(c => c[0]);
+  const grid = (list) => `<ul class="deal-card-grid">${list.map(([d, o, label]) => `<li><span class="dcp-label">${esc(label)}</span>${R.dealCard(d, o)}</li>`).join('')}</ul>`;
+  fs.mkdirSync('deal-card-preview', { recursive: true });
+  fs.writeFileSync('deal-card-preview/index.html', page({
+    title: 'Deal Card Preview | Midwest Industrial Brokers', description: 'Internal preview of the closed deal card design.', robots: 'noindex, nofollow',
+    body: `<header class="page-hero" id="top"><div class="wrap"><div class="crumbs">Internal preview, not linked from the site</div><h1>Closed Deal Cards</h1><div class="lede"><p>Prototype of the card each closed deal will use. Each card shows sold or leased, who Drake represented, size, city and industry. Cards without a photo get the branded placeholder until a photo is added. Cards link only when a full deal page exists.</p></div></div></header>
+<section class="block"><div class="wrap">
+  <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Sample Grid</h2></div><span class="section-tag">Prototype</span></div>
+  ${grid(cards)}
+</div></section>
+<section class="block alt"><div class="wrap">
+  <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>More Variants</h2></div><span class="section-tag">Placeholder and both sides</span></div>
+  ${grid(extra)}
+</div></section>`,
+  }));
+}
 
 // ---------- sitemap.xml ----------
 const urls = [SITE + '/', ...services.map(sv => SITE + R.serviceUrl(sv)), ...markets.map(m => SITE + R.marketUrl(m)), ...(data.closed_deals || []).filter(d => d.slug).map(d => SITE + '/deal.html?slug=' + encodeURIComponent(d.slug))];
