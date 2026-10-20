@@ -176,7 +176,7 @@ for (const m of markets) {
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">03</span><h2>Active Listings</h2></div><span class="section-tag">From CPIX</span></div>
     ${shown.length ? `<ul class="listing-grid">${shown.map(R.listingCard).join('')}</ul>` : `<p class="empty-note">No active listings in this market right now.</p>`}
-    <p class="listings-note">${listings.length > shown.length ? `Showing ${shown.length} of ${listings.length} listings here. ` : ''}<a class="btn btn-ghost" style="margin-top:16px;" href="${esc(CPIX)}" target="_blank" rel="noopener" data-track="cpix_all">View All Listings on CPIX <span class="arrow" aria-hidden="true">↗</span></a></p>
+    <p class="listings-note">${listings.length > shown.length ? `Showing ${shown.length} of ${listings.length} listings here. ` : ''}<a class="btn btn-ghost" style="margin-top:16px;" href="${esc(CPIX)}" target="_blank" rel="noopener" data-track="cpix_all">View All Listings on CPIX <span class="arrow" aria-hidden="true"><svg class="ext-ico" viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" focusable="false"><path d="M3.5 2.5h6v6M9.5 2.5 2.5 9.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></span></a></p>
   </div>
 </section>
 <section class="block alt">

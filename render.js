@@ -28,7 +28,7 @@
           ${b.email ? `<div><span class="lbl">Email</span><a href="mailto:${esc(b.email)}">${esc(b.email)}</a></div>` : ''}
           ${b.office_phone ? `<div><span class="lbl">Office</span><a href="${telHref(b.office_phone)}">${esc(b.office_phone)}</a></div>` : ''}
           ${b.mobile_phone ? `<div><span class="lbl">Mobile</span><a href="${telHref(b.mobile_phone)}">${esc(b.mobile_phone)}</a></div>` : ''}
-          ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile ↗</a></div>` : ''}
+          ${b.linkedin_url ? `<div><span class="lbl">LinkedIn</span><a href="${esc(b.linkedin_url)}" target="_blank" rel="noopener">View profile <svg class="ext-ico" viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" focusable="false"><path d="M3.5 2.5h6v6M9.5 2.5 2.5 9.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></a></div>` : ''}
         </div>
       </div>`).join(''),
     // Mobile / Office / Email contact buttons (same block on every page).
@@ -168,7 +168,7 @@
           <span class="lc-title">${esc(l.title)}</span>
           <span class="lc-addr">${esc(l.address)}</span>
           <span class="lc-specs">${[['Use', l.use], ['Size', l.size], ['Lot', l.lot]].filter(x => x[1]).map(x => `<span><span class="k">${x[0]}</span><span class="v">${esc(x[1])}</span></span>`).join('')}</span>
-          <span class="lc-link">View on CPIX <span aria-hidden="true">↗</span></span>
+          <span class="lc-link">View on CPIX <svg class="ext-ico" viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" focusable="false"><path d="M3.5 2.5h6v6M9.5 2.5 2.5 9.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></span>
         </span>
       </a></li>`,
     listings: (listings, opts) => {
