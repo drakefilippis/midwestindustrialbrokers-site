@@ -20,9 +20,13 @@
     coverage: (cities, markets) => (cities || []).map(c => { const m = (markets || []).find(x => String(x.name).toLowerCase() === String(c).toLowerCase()); return m ? `<a href="/markets/${esc(m.slug)}/">${esc(c)}</a>` : `<span>${esc(c)}</span>`; }).join(''),
     team: (team) => (team || []).map(b => `
       <div class="broker-card">
-        <div class="broker-avatar" aria-hidden="true">${esc(b.initials)}</div>
-        <h3 class="broker-name">${esc(b.name)}</h3>
-        <div class="broker-role">${esc(b.title)} · Signature Associates</div>
+        <div class="broker-head${b.photo ? ' has-photo' : ''}">
+          ${b.photo ? `<img class="broker-photo" src="${esc(b.photo)}" alt="${esc(b.name)}, ${esc(b.title)}, Signature Associates" width="800" height="800" loading="lazy" decoding="async" />` : `<div class="broker-avatar" aria-hidden="true">${esc(b.initials)}</div>`}
+          <div class="broker-id">
+            <h3 class="broker-name">${esc(b.name)}</h3>
+            <div class="broker-role">${esc(b.title)} · Signature Associates</div>
+          </div>
+        </div>
         <div class="broker-bio">${b.bio_html || ''}</div>
         <div class="broker-contact">
           ${b.email ? `<div><span class="lbl">Email</span><a href="mailto:${esc(b.email)}">${esc(b.email)}</a></div>` : ''}
