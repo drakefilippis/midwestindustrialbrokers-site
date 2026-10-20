@@ -21,7 +21,7 @@
     team: (team) => (team || []).map(b => `
       <div class="broker-card">
         <div class="broker-head${b.photo ? ' has-photo' : ''}">
-          ${b.photo ? `<img class="broker-photo" src="${esc(b.photo)}" alt="${esc(b.name)}, ${esc(b.title)}, Signature Associates" width="600" height="600" loading="lazy" decoding="async" />` : `<div class="broker-avatar" aria-hidden="true">${esc(b.initials)}</div>`}
+          ${b.photo ? `<img class="broker-photo" src="${esc(b.photo)}" alt="${esc(b.name)}, ${esc(b.title)}, Signature Associates" width="800" height="800" loading="lazy" decoding="async" />` : `<div class="broker-avatar" aria-hidden="true">${esc(b.initials)}</div>`}
           <div class="broker-id">
             <h3 class="broker-name">${esc(b.name)}</h3>
             <div class="broker-role">${esc(b.title)} · Signature Associates</div>

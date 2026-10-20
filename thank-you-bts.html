@@ -122,10 +122,12 @@
   .broker-card:hover { transform: translateY(-3px); border-color: var(--black); }
   .broker-avatar { width: 72px; height: 72px; background: var(--black); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em; margin-bottom: 24px; }
   .broker-head { display: block; }
-  .broker-head.has-photo { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; align-items: center; margin-bottom: 24px; }
+  .broker-head.has-photo { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 36px; align-items: center; margin-bottom: 28px; }
   .broker-head.has-photo .broker-role { margin-bottom: 0; }
-  .broker-photo { width: 160px; height: 160px; object-fit: cover; object-position: 50% 25%; display: block; background: #1d1f21; border-bottom: 5px solid var(--yellow); box-shadow: 6px 6px 0 var(--black); }
-  @media (max-width: 600px) { .broker-head.has-photo { grid-template-columns: 1fr; gap: 18px; } .broker-photo { width: 120px; height: 120px; box-shadow: 4px 4px 0 var(--black); } }
+  .broker-head.has-photo .broker-name { font-size: clamp(30px, 3vw, 40px); margin-bottom: 8px; }
+  @media (max-width: 760px) and (min-width: 601px) { .broker-head.has-photo { grid-template-columns: 180px minmax(0, 1fr); gap: 24px; } .broker-photo { width: 180px; height: 180px; } }
+  .broker-photo { width: 240px; height: 240px; object-fit: cover; object-position: 50% 25%; display: block; background: #1d1f21; border-bottom: 5px solid var(--yellow); box-shadow: 8px 8px 0 rgba(255,212,0,0.18); }
+  @media (max-width: 600px) { .broker-head.has-photo { grid-template-columns: 1fr; gap: 22px; } .broker-photo { width: 180px; height: 180px; box-shadow: 6px 6px 0 rgba(255,212,0,0.18); } }
   .broker-name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 28px; line-height: 1; text-transform: uppercase; margin-bottom: 4px; letter-spacing: -0.01em; }
   .broker-role { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: var(--gray-600); text-transform: uppercase; margin-bottom: 20px; }
   .broker-bio { font-size: 14px; line-height: 1.65; color: var(--gray-600); margin-bottom: 24px; }
