@@ -359,7 +359,8 @@
         "buyer-representation"
       ],
       "price": "",
-      "address": "4301 Highland Rd"
+      "address": "4301 Highland Rd",
+      "property_type": "R&D / Flex Industrial"
     },
     {
       "slug": "vios-compounding-livonia",
@@ -393,7 +394,8 @@
         "buyer-representation"
       ],
       "price": "",
-      "address": "32131 Industrial Drive"
+      "address": "32131 Industrial Drive",
+      "property_type": "Pharmaceutical R&D"
     },
     {
       "slug": "medical-investment-portfolio",
@@ -427,7 +429,7 @@
         "disposition",
         "acquisition"
       ],
-      "property_type": "Medical Office",
+      "property_type": "Investment",
       "city": "4-building portfolio",
       "price": "",
       "address": ""
@@ -501,7 +503,8 @@
         "buyer-representation"
       ],
       "price": "",
-      "address": "45570 Maben Rd"
+      "address": "45570 Maben Rd",
+      "property_type": "Retail"
     },
     {
       "slug": "Cross and Black",
@@ -536,7 +539,8 @@
         "tenant-representation"
       ],
       "price": "",
-      "address": "44099 Plymouth Oaks Blvd"
+      "address": "44099 Plymouth Oaks Blvd",
+      "property_type": "R&D / Flex Industrial"
     },
     {
       "slug": "synergy-dance-clipper-plymouth",
@@ -570,7 +574,8 @@
         "landlord-representation"
       ],
       "price": "",
-      "address": "47495 Clipper St"
+      "address": "47495 Clipper St",
+      "property_type": "Recreational"
     },
     {
       "slug": "",
