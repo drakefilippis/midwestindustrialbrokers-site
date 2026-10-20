@@ -5,3 +5,6 @@
 
 /uploads/*
   Cache-Control: public, max-age=2592000
+
+/deal-card-preview/*
+  X-Robots-Tag: noindex, nofollow

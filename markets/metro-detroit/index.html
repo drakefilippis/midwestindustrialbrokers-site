@@ -612,6 +612,37 @@
   .call-buttons.row { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 0; }
   @media (max-width: 1100px) { .contact-band .wrap { grid-template-columns: 1fr; gap: 20px; } }
   @media (max-width: 760px) { .call-buttons.row { grid-template-columns: 1fr; } }
+  /* Closed deal cards (prototype) */
+  .deal-card-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; }
+  .deal-card-grid > li { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .dcp-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8a85; }
+  .deal-card { display: flex; flex-direction: column; flex: 1; background: #0b0b0b; color: #fff; text-decoration: none; border: 2px solid #26292c; border-bottom: 6px solid var(--yellow); transition: transform 0.2s, border-color 0.2s; min-width: 0; }
+  .deal-card.is-link:hover { transform: translateY(-3px); border-color: var(--yellow); }
+  .dc-media { position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #151617; }
+  .dc-media img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(0.15) contrast(1.05); }
+  .dc-ph { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    background-color: #151617;
+    background-image: repeating-linear-gradient(135deg, rgba(255,212,0,0.07) 0 14px, transparent 14px 28px), linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: auto, 32px 32px, 32px 32px; }
+  .dc-ph-mark { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; background: var(--yellow); color: #1a1a1a; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.02em; box-shadow: 6px 6px 0 rgba(0,0,0,0.6); }
+  .dc-ph-note { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #8a8a85; }
+  .dc-chip { position: absolute; left: 0; bottom: 0; background: var(--yellow); color: #000; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 12px; }
+  .dc-body { display: flex; flex-direction: column; padding: 22px 22px 24px; gap: 4px; }
+  .dc-kind { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(40px, 4.4vw, 56px); line-height: 0.9; margin-bottom: 16px; text-transform: uppercase; letter-spacing: -0.02em; color: #fff; }
+  .is-lease .dc-kind { color: var(--yellow); }
+  .dc-role { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; color: #a9a9a3; margin-bottom: 14px; }
+  .dc-size { display: flex; align-items: baseline; gap: 8px; border-top: 1px solid #26292c; padding-top: 14px; }
+  .dc-num { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(30px, 3vw, 38px); line-height: 1; color: #fff; }
+  .dc-unit { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.12em; color: var(--yellow); }
+  .dc-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-top: 12px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .dc-city { color: #fff; }
+  .dc-price { display: block; margin-top: 8px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 17px; color: #e6e6e1; letter-spacing: 0.01em; }
+  .dc-loc { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .dc-addr { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #cfcfc9; }
+  .dc-ind { color: #8a8a85; margin-left: auto; text-align: right; }
+  #dealsGrid { margin-top: 8px; }
+  @media (max-width: 960px) { .deal-card-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .deal-card-grid { grid-template-columns: 1fr; } }
   .ext-ico { display: inline-block; width: 0.72em; height: 0.72em; margin-left: 0.35em; vertical-align: 0.02em; flex: none; }
   /* Market pages */
   .page-hero { background: #000; color: #fff; padding: 96px 0 72px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line-steel); }
@@ -757,50 +788,103 @@
 <section class="block" id="deals">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>Closed Deals</h2></div><span class="section-tag">Metro Detroit</span></div>
-    <table class="deals-table">
-      <thead><tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr></thead>
-      <tbody>
-      <tr data-year="2026" class="clickable" data-slug="4301-highland-rd-waterford">
-        <td><span class="deal-year">2026</span></td>
-        <td class="deal-property"><a href="/deal.html?slug=4301-highland-rd-waterford">4301 Highland Rd.</a><span class="sub">Waterford, MI</span></td>
-        <td>Advanced Systems</td>
-        <td><span class="badge buyer">Buyer</span></td>
-        <td class="deal-type">Sale</td>
-        <td class="deal-size">8,892 SF<span class="case-arrow" aria-hidden="true">→</span></td>
-      </tr>
-      <tr data-year="2026" class="clickable" data-slug="vios-compounding-livonia">
-        <td><span class="deal-year">2026</span></td>
-        <td class="deal-property"><a href="/deal.html?slug=vios-compounding-livonia">32131 Industrial Drive</a><span class="sub">Livonia, MI, New Headquarters</span></td>
-        <td>VIOS Compounding</td>
-        <td><span class="badge buyer">Buyer</span></td>
-        <td class="deal-type">Sale</td>
-        <td class="deal-size">15,400 SF<span class="case-arrow" aria-hidden="true">→</span></td>
-      </tr>
-      <tr data-year="2026" class="clickable" data-slug="michigan-fine-yarn">
-        <td><span class="deal-year">2026</span></td>
-        <td class="deal-property"><a href="/deal.html?slug=michigan-fine-yarn">45570 Maben Rd</a><span class="sub">Canton, MI 48188</span></td>
-        <td>Michigan Fine Yarn</td>
-        <td><span class="badge buyer">Buyer</span></td>
-        <td class="deal-type">Sale</td>
-        <td class="deal-size">7,680 SF<span class="case-arrow" aria-hidden="true">→</span></td>
-      </tr>
-      <tr data-year="2026" class="clickable" data-slug="Cross and Black">
-        <td><span class="deal-year">2026</span></td>
-        <td class="deal-property"><a href="/deal.html?slug=Cross%20and%20Black">44099 Plymouth Oaks Blvd</a><span class="sub">Plymouth</span></td>
-        <td>Cross and Black</td>
-        <td><span class="badge tenant">Tenant</span></td>
-        <td class="deal-type">Lease</td>
-        <td class="deal-size">7,711 SF<span class="case-arrow" aria-hidden="true">→</span></td>
-      </tr>
-      <tr data-year="2026" class="clickable" data-slug="synergy-dance-clipper-plymouth">
-        <td><span class="deal-year">2026</span></td>
-        <td class="deal-property"><a href="/deal.html?slug=synergy-dance-clipper-plymouth">47495 Clipper St</a><span class="sub">Plymouth Twp, MI</span></td>
-        <td>Synergy Dance Studio</td>
-        <td><span class="badge both">Both</span></td>
-        <td class="deal-type">Lease</td>
-        <td class="deal-size">8,874 SF<span class="case-arrow" aria-hidden="true">→</span></td>
-      </tr></tbody>
-    </table>
+    <ul class="deal-card-grid"><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=vios-compounding-livonia">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">15,400</span><span class="dc-unit">SF</span></span>
+          
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">32131 Industrial Drive</span><span class="dc-city">Livonia, MI</span></span><span class="dc-ind">Pharmaceutical R&amp;D</span></span>
+        </span>
+      </a></li><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=4301-highland-rd-waterford">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">8,892</span><span class="dc-unit">SF</span></span>
+          
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">4301 Highland Rd</span><span class="dc-city">Waterford, MI</span></span><span class="dc-ind">R&amp;D / Flex Industrial</span></span>
+        </span>
+      </a></li><li data-year="2026"><a class="deal-card is-lease is-link" href="/deal.html?slug=synergy-dance-clipper-plymouth">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">8,874</span><span class="dc-unit">SF</span></span>
+          
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">47495 Clipper St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Recreational</span></span>
+        </span>
+      </a></li><li data-year="2026"><a class="deal-card is-lease is-link" href="/deal.html?slug=Cross%20and%20Black">
+        <span class="dc-media"><img src="/uploads/cross-and-black.webp" alt="Leased property in Plymouth, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Tenant Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">7,711</span><span class="dc-unit">SF</span></span>
+          
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">44099 Plymouth Oaks Blvd</span><span class="dc-city">Plymouth, MI</span></span><span class="dc-ind">R&amp;D / Flex Industrial</span></span>
+        </span>
+      </a></li><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=michigan-fine-yarn">
+        <span class="dc-media"><img src="/uploads/maben.webp" alt="Sold property in Canton, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Buyer Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">7,680</span><span class="dc-unit">SF</span></span>
+          
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">45570 Maben Rd</span><span class="dc-city">Canton, MI</span></span><span class="dc-ind">Retail</span></span>
+        </span>
+      </a></li><li data-year="2025"><div class="deal-card is-sale">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Seller Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">0.54</span><span class="dc-unit">AC</span></span>
+          <span class="dc-price">$132,000</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">41200 Five Mile Rd</span><span class="dc-city">Northville Twp, MI</span></span><span class="dc-ind">Land</span></span>
+        </span>
+      </div></li><li data-year="2025"><div class="deal-card is-sale">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">19,740</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$2,165,000</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">45700 Port St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Manufacturing</span></span>
+        </span>
+      </div></li><li data-year="2025"><div class="deal-card is-lease">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">10,956</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$9.05/SF/yr NNN</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">11975 Globe St</span><span class="dc-city">Livonia, MI</span></span><span class="dc-ind">Manufacturing</span></span>
+        </span>
+      </div></li><li data-year="2025"><div class="deal-card is-sale">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Seller Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Sold</span>
+          <span class="dc-size"><span class="dc-num">10,000</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$1,170,000</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">14975 Cleat St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Industrial</span></span>
+        </span>
+      </div></li><li data-year="2025"><div class="deal-card is-lease">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">5,000</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$9.27/SF/yr NNN</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">40440 Grand River Ave #A8</span><span class="dc-city">Novi, MI</span></span><span class="dc-ind">Industrial</span></span>
+        </span>
+      </div></li><li data-year="2025"><div class="deal-card is-lease">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Landlord Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">5,000</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$9.17/SF/yr NNN</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">40440 Grand River Ave #A8</span><span class="dc-city">Novi, MI</span></span><span class="dc-ind">Industrial</span></span>
+        </span>
+      </div></li><li data-year="2024"><div class="deal-card is-lease">
+        <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
+        <span class="dc-body">
+          <span class="dc-kind">Leased</span>
+          <span class="dc-size"><span class="dc-num">32,736</span><span class="dc-unit">SF</span></span>
+          <span class="dc-price">$7.51/SF/yr NNN</span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">35255 Glendale St</span><span class="dc-city">Livonia, MI</span></span><span class="dc-ind">Industrial</span></span>
+        </span>
+      </div></li></ul>
   </div>
 </section>
 <section class="block dark" id="listings">
@@ -921,7 +1005,7 @@
 <section class="block alt">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">04</span><h2>Other Markets</h2></div><span class="section-tag">Where We Work</span></div>
-    <ul class="market-grid-cards"><li><a class="market-card" href="/markets/plymouth-mi/"><span class="mc-name">Plymouth</span><span class="mc-sum">Light manufacturing, flex and distribution space close to I-275 and M-14.</span><span class="mc-meta">2 closed deals · 5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ann-arbor-mi/"><span class="mc-name">Ann Arbor</span><span class="mc-sum">Flex, research and light industrial space across Washtenaw County.</span><span class="mc-meta">1 closed deal · 19 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/livonia-mi/"><span class="mc-name">Livonia</span><span class="mc-sum">An established industrial base with access to I-96 and I-275.</span><span class="mc-meta">1 closed deal · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/i-275-corridor/"><span class="mc-name">I-275 Corridor</span><span class="mc-sum">Plymouth, Livonia, Canton, Novi and Romulus along one north south route.</span><span class="mc-meta">4 closed deals · 13 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/canton-mi/"><span class="mc-name">Canton</span><span class="mc-sum">Industrial and flex space in western Wayne County off I-275.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/saline-mi/"><span class="mc-name">Saline</span><span class="mc-sum">Industrial space in southern Washtenaw County near US-12 and US-23.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/novi-mi/"><span class="mc-name">Novi</span><span class="mc-sum">Flex and light industrial space near I-96 and I-275.</span><span class="mc-meta">2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/romulus-mi/"><span class="mc-name">Romulus</span><span class="mc-sum">Warehouse and logistics space around Detroit Metro Airport.</span><span class="mc-meta">1 active listing</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/taylor-mi/"><span class="mc-name">Taylor</span><span class="mc-sum">Downriver industrial and distribution space near I-94.</span><span class="mc-meta">3 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ypsilanti-mi/"><span class="mc-name">Ypsilanti</span><span class="mc-sum">Industrial space east of Ann Arbor along I-94 and US-12.</span><span class="mc-meta">5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/dexter-mi/"><span class="mc-name">Dexter</span><span class="mc-sum">Industrial buildings and land in western Washtenaw County.</span><span class="mc-meta">2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/farmington-hills-mi/"><span class="mc-name">Farmington Hills</span><span class="mc-sum">Flex and light industrial space near I-696, I-275 and M-5.</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/brighton-mi/"><span class="mc-name">Brighton</span><span class="mc-sum">Industrial space in Livingston County at I-96 and US-23.</span><span class="mc-go" aria-hidden="true">→</span></a></li></ul>
+    <ul class="market-grid-cards"><li><a class="market-card" href="/markets/plymouth-mi/"><span class="mc-name">Plymouth</span><span class="mc-sum">Light manufacturing, flex and distribution space close to I-275 and M-14.</span><span class="mc-meta">4 closed deals · 5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ann-arbor-mi/"><span class="mc-name">Ann Arbor</span><span class="mc-sum">Flex, research and light industrial space across Washtenaw County.</span><span class="mc-meta">7 closed deals · 19 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/livonia-mi/"><span class="mc-name">Livonia</span><span class="mc-sum">An established industrial base with access to I-96 and I-275.</span><span class="mc-meta">3 closed deals · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/i-275-corridor/"><span class="mc-name">I-275 Corridor</span><span class="mc-sum">Plymouth, Livonia, Canton, Novi and Romulus along one north south route.</span><span class="mc-meta">11 closed deals · 13 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/canton-mi/"><span class="mc-name">Canton</span><span class="mc-sum">Industrial and flex space in western Wayne County off I-275.</span><span class="mc-meta">1 closed deal</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/saline-mi/"><span class="mc-name">Saline</span><span class="mc-sum">Industrial space in southern Washtenaw County near US-12 and US-23.</span><span class="mc-meta">2 closed deals</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/novi-mi/"><span class="mc-name">Novi</span><span class="mc-sum">Flex and light industrial space near I-96 and I-275.</span><span class="mc-meta">3 closed deals · 2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/romulus-mi/"><span class="mc-name">Romulus</span><span class="mc-sum">Warehouse and logistics space around Detroit Metro Airport.</span><span class="mc-meta">1 active listing</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/taylor-mi/"><span class="mc-name">Taylor</span><span class="mc-sum">Downriver industrial and distribution space near I-94.</span><span class="mc-meta">3 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/ypsilanti-mi/"><span class="mc-name">Ypsilanti</span><span class="mc-sum">Industrial space east of Ann Arbor along I-94 and US-12.</span><span class="mc-meta">5 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/dexter-mi/"><span class="mc-name">Dexter</span><span class="mc-sum">Industrial buildings and land in western Washtenaw County.</span><span class="mc-meta">2 active listings</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/farmington-hills-mi/"><span class="mc-name">Farmington Hills</span><span class="mc-sum">Flex and light industrial space near I-696, I-275 and M-5.</span><span class="mc-go" aria-hidden="true">→</span></a></li><li><a class="market-card" href="/markets/brighton-mi/"><span class="mc-name">Brighton</span><span class="mc-sum">Industrial space in Livingston County at I-96 and US-23.</span><span class="mc-go" aria-hidden="true">→</span></a></li></ul>
   </div>
 </section>
 </main>

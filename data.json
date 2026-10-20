@@ -357,7 +357,10 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": "",
+      "address": "4301 Highland Rd",
+      "property_type": "R&D / Flex Industrial"
     },
     {
       "slug": "vios-compounding-livonia",
@@ -389,7 +392,10 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": "",
+      "address": "32131 Industrial Drive",
+      "property_type": "Pharmaceutical R&D"
     },
     {
       "slug": "medical-investment-portfolio",
@@ -422,7 +428,11 @@
         "investment-sales",
         "disposition",
         "acquisition"
-      ]
+      ],
+      "property_type": "Investment",
+      "city": "4-building portfolio",
+      "price": "",
+      "address": ""
     },
     {
       "slug": "bank-supplies-saline",
@@ -454,7 +464,10 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "property_type": "Manufacturing",
+      "price": "$7,900,000",
+      "address": "1294 Beach Court"
     },
     {
       "slug": "michigan-fine-yarn",
@@ -488,7 +501,10 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "price": "",
+      "address": "45570 Maben Rd",
+      "property_type": "Retail"
     },
     {
       "slug": "Cross and Black",
@@ -521,7 +537,10 @@
       ],
       "services": [
         "tenant-representation"
-      ]
+      ],
+      "price": "",
+      "address": "44099 Plymouth Oaks Blvd",
+      "property_type": "R&D / Flex Industrial"
     },
     {
       "slug": "synergy-dance-clipper-plymouth",
@@ -553,7 +572,290 @@
       "services": [
         "tenant-representation",
         "landlord-representation"
-      ]
+      ],
+      "price": "",
+      "address": "47495 Clipper St",
+      "property_type": "Recreational"
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Warehouse lease, Livonia",
+      "subtitle": "Livonia, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "32,736 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "$7.51/SF/yr NNN",
+      "address": "35255 Glendale St"
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Manufacturing lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "8,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ],
+      "price": "$11.35/SF/yr G+U+J",
+      "address": "606 Airport Blvd #1-2"
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Office lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Office",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "6,412 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "$20.80/SF/yr G+U+J",
+      "address": "2350 Green Rd"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Flex sale, Plymouth Twp",
+      "subtitle": "Plymouth Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Seller",
+      "deal_type": "Sale",
+      "size": "10,000 SF",
+      "photos": [],
+      "services": [
+        "disposition"
+      ],
+      "price": "$1,170,000",
+      "address": "14975 Cleat St"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Novi",
+      "subtitle": "Novi, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "5,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "$9.27/SF/yr NNN",
+      "address": "40440 Grand River Ave #A8"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Flex lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Tenant",
+      "deal_type": "Sublease",
+      "size": "8,040 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "",
+      "price_note": "Sheet marked Release Sale Price: NO",
+      "address": "4100 Varsity Dr"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing lease, Shelby Twp",
+      "subtitle": "Shelby Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "11,525 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "$10.56/SF/yr NNN",
+      "address": "51523 Celeste Dr"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing sale, Plymouth Twp",
+      "subtitle": "Plymouth Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Buyer",
+      "deal_type": "Sale",
+      "size": "19,740 SF",
+      "photos": [],
+      "services": [
+        "acquisition",
+        "buyer-representation"
+      ],
+      "price": "$2,165,000",
+      "address": "45700 Port St"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Retail lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Retail",
+      "side": "Landlord",
+      "deal_type": "Lease",
+      "size": "5,156 SF",
+      "photos": [],
+      "services": [
+        "landlord-representation"
+      ],
+      "price": "$24.46/SF/yr NNN",
+      "address": "2015 W Stadium Blvd"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse sale, Saline",
+      "subtitle": "Saline, MI",
+      "client": "BankSupplies",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Both",
+      "deal_type": "Sale",
+      "size": "18,278 SF",
+      "photos": [
+        "/uploads/deals/1377-tefft-ct-saline.webp"
+      ],
+      "services": [
+        "disposition",
+        "acquisition",
+        "buyer-representation"
+      ],
+      "price": "$1,965,000",
+      "address": "1377 Tefft Ct"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing lease, Livonia",
+      "subtitle": "Livonia, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "10,956 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ],
+      "price": "$9.05/SF/yr NNN",
+      "address": "11975 Globe St"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Land sale, Northville Twp",
+      "subtitle": "Northville Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Land",
+      "side": "Seller",
+      "deal_type": "Land Sale",
+      "size": "0.54 AC",
+      "photos": [],
+      "services": [
+        "disposition"
+      ],
+      "price": "$132,000",
+      "address": "41200 Five Mile Rd"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Novi",
+      "subtitle": "Novi, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Landlord",
+      "deal_type": "Lease",
+      "size": "5,000 SF",
+      "photos": [],
+      "services": [
+        "landlord-representation"
+      ],
+      "price": "$9.17/SF/yr NNN",
+      "address": "40440 Grand River Ave #A8"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "16,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ],
+      "price": "$13.06/SF/yr Gross",
+      "address": "676-704 Airport Blvd"
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Belleville",
+      "subtitle": "Belleville, MI",
+      "client": "BankSupplies",
+      "client_industry": "",
+      "property_type": "Industrial",
+      "side": "Both",
+      "deal_type": "Sublease",
+      "size": "4,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ],
+      "price": "$7.02/SF/yr G+U+J",
+      "address": "43405-43460 I-94 N Service Dr #43430"
     }
   ],
   "client_logos": [
