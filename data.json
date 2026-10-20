@@ -753,7 +753,9 @@
       "side": "Both",
       "deal_type": "Sale",
       "size": "18,278 SF",
-      "photos": [],
+      "photos": [
+        "/uploads/deals/1377-tefft-ct-saline.webp"
+      ],
       "services": [
         "disposition",
         "acquisition",
