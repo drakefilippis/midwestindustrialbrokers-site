@@ -108,6 +108,7 @@ collections:
                 options: ["2023", "2024", "2025", "2026", "2027"]
               - { label: "Property (address or portfolio name)", name: "property", widget: "string" }
               - { label: "Subtitle (city, context)", name: "subtitle", widget: "string", required: false }
+              - { label: "Street address (shown on card)", name: "address", widget: "string", required: false }
               - { label: "Card location override (optional, e.g. 4-building portfolio)", name: "city", widget: "string", required: false }
               - { label: "Client name (only if approved to publish)", name: "client", widget: "string", required: false }
               - { label: "Price or rate on card (only if cleared to release, e.g. $1,965,000 or $9.05/SF/yr NNN)", name: "price", widget: "string", required: false }

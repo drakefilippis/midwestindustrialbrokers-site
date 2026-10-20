@@ -629,6 +629,8 @@
   .dc-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-top: 12px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
   .dc-city { color: #fff; }
   .dc-price { display: block; margin-top: 8px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 17px; color: #e6e6e1; letter-spacing: 0.01em; }
+  .dc-loc { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .dc-addr { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #cfcfc9; }
   .dc-ind { color: #8a8a85; margin-left: auto; text-align: right; }
   #dealsGrid { margin-top: 8px; }
   @media (max-width: 960px) { .deal-card-grid { grid-template-columns: 1fr 1fr; } }
@@ -863,7 +865,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">44,403</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">4-building portfolio</span><span class="dc-ind">Medical Office</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-city">4-building portfolio</span></span><span class="dc-ind">Medical Office</span></span>
         </span>
       </a></li><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=vios-compounding-livonia">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
@@ -871,7 +873,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">15,400</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Livonia, MI</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">32131 Industrial Drive</span><span class="dc-city">Livonia, MI</span></span></span>
         </span>
       </a></li><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=4301-highland-rd-waterford">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
@@ -879,7 +881,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">8,892</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Waterford, MI</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">4301 Highland Rd</span><span class="dc-city">Waterford, MI</span></span></span>
         </span>
       </a></li><li data-year="2026"><a class="deal-card is-lease is-link" href="/deal.html?slug=synergy-dance-clipper-plymouth">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -887,7 +889,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">8,874</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Plymouth Twp, MI</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">47495 Clipper St</span><span class="dc-city">Plymouth Twp, MI</span></span></span>
         </span>
       </a></li><li data-year="2026"><a class="deal-card is-lease is-link" href="/deal.html?slug=Cross%20and%20Black">
         <span class="dc-media"><img src="/uploads/cross-and-black.webp" alt="Leased property in Plymouth, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Tenant Representation</span></span>
@@ -895,7 +897,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">7,711</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Plymouth, MI</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">44099 Plymouth Oaks Blvd</span><span class="dc-city">Plymouth, MI</span></span></span>
         </span>
       </a></li><li data-year="2026"><a class="deal-card is-sale is-link" href="/deal.html?slug=michigan-fine-yarn">
         <span class="dc-media"><img src="/uploads/maben.webp" alt="Sold property in Canton, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Buyer Representation</span></span>
@@ -903,7 +905,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">7,680</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Canton, MI</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">45570 Maben Rd</span><span class="dc-city">Canton, MI</span></span></span>
         </span>
       </a></li><li data-year="2025"><a class="deal-card is-sale is-link" href="/deal.html?slug=bank-supplies-saline">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
@@ -911,7 +913,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">105,418</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$7,900,000</span>
-          <span class="dc-meta"><span class="dc-city">Saline, MI</span><span class="dc-ind">Manufacturing</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">1294 Beach Court</span><span class="dc-city">Saline, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
       </a></li><li data-year="2025"><div class="deal-card is-sale">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Seller Representation</span></span>
@@ -919,7 +921,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">0.54</span><span class="dc-unit">AC</span></span>
           <span class="dc-price">$132,000</span>
-          <span class="dc-meta"><span class="dc-city">Northville Twp, MI</span><span class="dc-ind">Land</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">41200 Five Mile Rd</span><span class="dc-city">Northville Twp, MI</span></span><span class="dc-ind">Land</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-sale">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
@@ -927,7 +929,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">19,740</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$2,165,000</span>
-          <span class="dc-meta"><span class="dc-city">Plymouth Twp, MI</span><span class="dc-ind">Manufacturing</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">45700 Port St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-sale">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -935,7 +937,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">18,278</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$1,965,000</span>
-          <span class="dc-meta"><span class="dc-city">Saline, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">1377 Tefft Ct</span><span class="dc-city">Saline, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -943,7 +945,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">16,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$13.06/SF/yr Gross</span>
-          <span class="dc-meta"><span class="dc-city">Ann Arbor, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">676-704 Airport Blvd</span><span class="dc-city">Ann Arbor, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
@@ -951,7 +953,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">11,525</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$10.56/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Shelby Twp, MI</span><span class="dc-ind">Manufacturing</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">51523 Celeste Dr</span><span class="dc-city">Shelby Twp, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -959,7 +961,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">10,956</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$9.05/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Livonia, MI</span><span class="dc-ind">Manufacturing</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">11975 Globe St</span><span class="dc-city">Livonia, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-sale">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Seller Representation</span></span>
@@ -967,7 +969,7 @@
           <span class="dc-kind">Sold</span>
           <span class="dc-size"><span class="dc-num">10,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$1,170,000</span>
-          <span class="dc-meta"><span class="dc-city">Plymouth Twp, MI</span><span class="dc-ind">Flex</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">14975 Cleat St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
@@ -975,7 +977,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">8,040</span><span class="dc-unit">SF</span></span>
           
-          <span class="dc-meta"><span class="dc-city">Ann Arbor, MI</span><span class="dc-ind">Flex</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">4100 Varsity Dr</span><span class="dc-city">Ann Arbor, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Landlord Representation</span></span>
@@ -983,7 +985,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">5,156</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$24.46/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Ann Arbor, MI</span><span class="dc-ind">Retail</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">2015 W Stadium Blvd</span><span class="dc-city">Ann Arbor, MI</span></span><span class="dc-ind">Retail</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
@@ -991,7 +993,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">5,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$9.27/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Novi, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">40440 Grand River Ave #A8</span><span class="dc-city">Novi, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Landlord Representation</span></span>
@@ -999,7 +1001,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">5,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$9.17/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Novi, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">40446 Grand River Ave #A8</span><span class="dc-city">Novi, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2025"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -1007,7 +1009,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">4,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$7.02/SF/yr G+U+J</span>
-          <span class="dc-meta"><span class="dc-city">Belleville, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">43405-43460 I-94 N Service Dr #43430</span><span class="dc-city">Belleville, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2024"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
@@ -1015,7 +1017,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">32,736</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$7.51/SF/yr NNN</span>
-          <span class="dc-meta"><span class="dc-city">Livonia, MI</span><span class="dc-ind">Warehouse</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">35255 Glendale St</span><span class="dc-city">Livonia, MI</span></span><span class="dc-ind">Industrial</span></span>
         </span>
       </div></li><li data-year="2024"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
@@ -1023,7 +1025,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">8,000</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$11.35/SF/yr G+U+J</span>
-          <span class="dc-meta"><span class="dc-city">Ann Arbor, MI</span><span class="dc-ind">Manufacturing</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">606 Airport Blvd #1-2</span><span class="dc-city">Ann Arbor, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
       </div></li><li data-year="2024"><div class="deal-card is-lease">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Tenant Representation</span></span>
@@ -1031,7 +1033,7 @@
           <span class="dc-kind">Leased</span>
           <span class="dc-size"><span class="dc-num">6,412</span><span class="dc-unit">SF</span></span>
           <span class="dc-price">$20.80/SF/yr G+U+J</span>
-          <span class="dc-meta"><span class="dc-city">Ann Arbor, MI</span><span class="dc-ind">Office</span></span>
+          <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">2350 Green Rd</span><span class="dc-city">Ann Arbor, MI</span></span><span class="dc-ind">Office</span></span>
         </span>
       </div></li><!--/BUILD:deals--></ul>
   </div>

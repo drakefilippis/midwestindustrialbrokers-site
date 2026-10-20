@@ -62,7 +62,7 @@
           <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
           <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
           ${d.price ? `<span class="dc-price">${esc(d.price)}</span>` : ''}
-          <span class="dc-meta"><span class="dc-city">${esc(city)}</span>${industry ? `<span class="dc-ind">${esc(industry)}</span>` : ''}</span>
+          <span class="dc-meta"><span class="dc-loc">${d.address ? `<span class="dc-addr">${esc(d.address)}</span>` : ''}<span class="dc-city">${esc(city)}</span></span>${industry ? `<span class="dc-ind">${esc(industry)}</span>` : ''}</span>
         </span>
       </${tag}>`;
     },
