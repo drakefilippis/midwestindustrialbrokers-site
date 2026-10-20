@@ -49,7 +49,7 @@
       const num = m ? m[1] : String(d.size || '');
       const unit = m && m[2] ? m[2].toUpperCase().replace(/ACRES?/, 'AC') : (m ? 'SF' : '');
       const photo = opts.noPhoto ? '' : photoSrc((d.photos || [])[0]);
-      const industry = d.industry || opts.industry || '';
+      const industry = d.property_type || d.industry || opts.industry || '';
       const media = photo
         ? `<img src="${esc(photo)}" alt="${esc((lease ? 'Leased' : 'Sold') + ' property in ' + city)}" loading="lazy" decoding="async" width="800" height="500" />`
         : `<span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span>`;
@@ -65,6 +65,8 @@
         </span>
       </${tag}>`;
     },
+    // Deal card grid, newest year first, then largest first.
+    dealGrid: (deals) => (deals || []).filter(d => d && d.size).map((d, i) => [d, i]).sort((a, b) => (Number(b[0].year) - Number(a[0].year)) || (parseFloat(String(b[0].size).replace(/,/g, '')) * (/AC/i.test(b[0].size) ? 43560 : 1) - parseFloat(String(a[0].size).replace(/,/g, '')) * (/AC/i.test(a[0].size) ? 43560 : 1)) || a[1] - b[1]).map(([d]) => `<li data-year="${esc(d.year)}">${R.dealCard(d)}</li>`).join(''),
     serviceUrl: (sv) => '/services/' + sv.slug + '/',
     serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => s.slug
       ? `<li><a class="service-card" href="/services/${esc(s.slug)}/"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li>`

@@ -422,7 +422,8 @@
         "investment-sales",
         "disposition",
         "acquisition"
-      ]
+      ],
+      "property_type": "Medical Office"
     },
     {
       "slug": "bank-supplies-saline",
@@ -454,7 +455,8 @@
       "services": [
         "acquisition",
         "buyer-representation"
-      ]
+      ],
+      "property_type": "Manufacturing"
     },
     {
       "slug": "michigan-fine-yarn",
@@ -549,6 +551,253 @@
         "quote": "",
         "attribution": ""
       },
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Warehouse lease, Livonia",
+      "subtitle": "Livonia, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "32,736 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Manufacturing lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "6,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2024",
+      "property": "Office lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Office",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "6,412 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Flex sale, Plymouth Twp",
+      "subtitle": "Plymouth Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Flex",
+      "side": "Seller",
+      "deal_type": "Sale",
+      "size": "10,000 SF",
+      "photos": [],
+      "services": [
+        "disposition"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Novi",
+      "subtitle": "Novi, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "5,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Flex lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Flex",
+      "side": "Tenant",
+      "deal_type": "Sublease",
+      "size": "8,040 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing lease, Shelby Twp",
+      "subtitle": "Shelby Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "11,525 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing sale, Plymouth Twp",
+      "subtitle": "Plymouth Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Buyer",
+      "deal_type": "Sale",
+      "size": "19,740 SF",
+      "photos": [],
+      "services": [
+        "acquisition",
+        "buyer-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Retail lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Retail",
+      "side": "Landlord",
+      "deal_type": "Lease",
+      "size": "5,166 SF",
+      "photos": [],
+      "services": [
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse sale, Saline",
+      "subtitle": "Saline, MI",
+      "client": "BankSupplies",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Both",
+      "deal_type": "Sale",
+      "size": "18,278 SF",
+      "photos": [],
+      "services": [
+        "disposition",
+        "acquisition",
+        "buyer-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Manufacturing lease, Livonia",
+      "subtitle": "Livonia, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Manufacturing",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "10,056 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Land sale, Northville Twp",
+      "subtitle": "Northville Twp, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Land",
+      "side": "Seller",
+      "deal_type": "Land Sale",
+      "size": "0.54 AC",
+      "photos": [],
+      "services": [
+        "disposition"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Novi",
+      "subtitle": "Novi, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Landlord",
+      "deal_type": "Lease",
+      "size": "5,000 SF",
+      "photos": [],
+      "services": [
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Ann Arbor",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Both",
+      "deal_type": "Lease",
+      "size": "16,000 SF",
+      "photos": [],
+      "services": [
+        "tenant-representation",
+        "landlord-representation"
+      ]
+    },
+    {
+      "slug": "",
+      "year": "2025",
+      "property": "Warehouse lease, Belleville",
+      "subtitle": "Belleville, MI",
+      "client": "BankSupplies",
+      "client_industry": "",
+      "property_type": "Warehouse",
+      "side": "Both",
+      "deal_type": "Sublease",
+      "size": "4,000 SF",
       "photos": [],
       "services": [
         "tenant-representation",

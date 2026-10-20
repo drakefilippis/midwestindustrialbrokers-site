@@ -48,8 +48,7 @@ html = fill(html, {
   stats: R.stats(data.stats, markets),
   team: R.team(data.team),
   services: R.serviceList(data.services),
-  dealphotos: R.dealPhotos(data.closed_deals),
-  deals: R.deals(data.closed_deals),
+  deals: R.dealGrid(data.closed_deals),
   logos: logosHtml,
   listings: homeListings,
   markets: R.marketCards(markets, data.closed_deals, data.listings),
@@ -166,10 +165,7 @@ for (const m of markets) {
 <section class="block" id="deals">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>Closed Deals</h2></div><span class="section-tag">${esc(m.name)}</span></div>
-    ${deals.length ? `<table class="deals-table">
-      <thead><tr><th style="width:90px;">Year</th><th>Property</th><th>Client</th><th>Represented</th><th>Type</th><th style="text-align:right;">Size / Value</th></tr></thead>
-      <tbody>${R.deals(deals)}</tbody>
-    </table>` : `<p class="empty-note">No closed deals are posted for this market yet. <a href="/#deals">See all closed deals</a>.</p>`}
+    ${deals.length ? `<ul class="deal-card-grid">${R.dealGrid(deals)}</ul>` : `<p class="empty-note">No closed deals are posted for this market yet. <a href="/#deals">See all closed deals</a>.</p>`}
   </div>
 </section>
 <section class="block dark" id="listings">
@@ -220,7 +216,7 @@ for (const sv of services) {
   const dealsSection = (isBts && !deals.length) ? '' : `<section class="block" id="deals">
   <div class="wrap">
     <div class="section-head"><div class="section-head-left"><span class="section-num">${pad(n++)}</span><h2>Deals Completed</h2></div><span class="section-tag">${esc(sv.title)}</span></div>
-    ${deals.length ? (photos.length ? `<div class="deal-photos svc-photos">${R.dealPhotos(photos)}</div>` : '') + dealsTable(deals)
+    ${deals.length ? `<ul class="deal-card-grid">${R.dealGrid(deals)}</ul>`
       : `<div class="coming-soon"><div><h3>Recent work coming soon</h3><p>Case studies for this service are on the way. In the meantime, tell Drake about your project and he will walk you through how he would approach it.</p></div><a href="#inquiry" class="btn btn-primary">Tell Drake About Your Project <span class="arrow" aria-hidden="true">↓</span></a></div>`}
   </div>
 </section>`;
