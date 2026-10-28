@@ -619,6 +619,39 @@
     .logo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); flex-direction: initial; }
     .logo-tile { flex-basis: auto; }
   }
+
+  /* ============ PHASE 1 AEO/GEO: Specialties, County Directory & Static Case Studies ============ */
+  .specialty-block-head { margin-top: 56px; margin-bottom: 24px; display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--line-steel); padding-bottom: 14px; }
+  .specialty-block-head h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(20px, 2.5vw, 28px); text-transform: uppercase; color: #fff; letter-spacing: -0.01em; }
+  .specialty-block-head span { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--yellow); }
+  .specialty-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line-steel); border: 1px solid var(--line-steel); }
+  .specialty-grid li { background: var(--steel-2); }
+  .specialty-card .sp-tag { display: inline-block; align-self: flex-start; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #000; background: var(--yellow); padding: 4px 9px; margin-bottom: 4px; }
+  @media (max-width: 960px) { .specialty-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .specialty-grid { grid-template-columns: 1fr; } }
+  .county-directory { margin-top: 36px; background: var(--steel-2); border: 1px solid var(--line-steel); border-left: 4px solid var(--yellow); }
+  .county-directory-toggle { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 28px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(14px, 1.8vw, 17px); text-transform: uppercase; letter-spacing: 0.06em; color: #fff; }
+  .county-directory-toggle::-webkit-details-marker { display: none; }
+  .county-directory-toggle:hover { color: var(--yellow); }
+  .cd-pill { display: inline-flex; align-items: center; gap: 12px; font-size: 11px; letter-spacing: 0.14em; color: var(--yellow); }
+  .county-directory[open] .faq-plus::after { transform: rotate(0deg); }
+  .county-directory-body { padding: 8px 28px 32px; border-top: 1px solid var(--line-steel); }
+  .county-dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-top: 20px; }
+  .county-dir-card { background: var(--ink); border: 1px solid var(--line-steel); padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .county-dir-head { display: flex; flex-direction: column; gap: 4px; }
+  .county-dir-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 18px; text-transform: uppercase; color: #fff; text-decoration: none; }
+  .county-dir-title:hover { color: var(--yellow); }
+  .county-dir-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yellow); }
+  .county-dir-sum { font-size: 13px; color: #b9b9b3; line-height: 1.5; }
+  .county-city-pills { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .county-city-pills a { display: inline-block; padding: 5px 10px; background: var(--steel-2); border: 1px solid var(--line-steel); color: #e6e6e0; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; text-decoration: none; }
+  .county-city-pills a:hover { border-color: var(--yellow); color: var(--yellow); }
+  .corridor-links { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line-steel); font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #a9a9a3; }
+  .corridor-links a { color: var(--yellow); text-decoration: none; margin: 0 6px; }
+  .specs-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line-steel); border: 1px solid var(--line-steel); margin-top: 32px; }
+  .specs-grid li { background: var(--steel-2); padding: 22px 24px; }
+  .specs-grid .sp-k { display: block; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--yellow); margin-bottom: 6px; }
+  .specs-grid .sp-v { display: block; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 16px; color: #fff; line-height: 1.35; }
 </style>
 </head>
 <body data-page="page">
@@ -648,7 +681,7 @@
 <header class="page-hero" id="top"><div class="wrap"><div class="crumbs">Internal preview, not linked from the site</div><h1>Closed Deal Cards</h1><div class="lede"><p>Prototype of the card each closed deal will use. Each card shows sold or leased, who Drake represented, size, city and industry. Cards without a photo get the branded placeholder until a photo is added. Cards link only when a full deal page exists.</p></div></div></header>
 <section class="block"><div class="wrap">
   <div class="section-head"><div class="section-head-left"><span class="section-num">01</span><h2>Sample Grid</h2></div><span class="section-tag">Prototype</span></div>
-  <ul class="deal-card-grid"><li><span class="dcp-label">Sale with photo</span><a class="deal-card is-sale is-link" href="/deal.html?slug=michigan-fine-yarn">
+  <ul class="deal-card-grid"><li><span class="dcp-label">Sale with photo</span><a class="deal-card is-sale is-link" href="/deals/michigan-fine-yarn/">
         <span class="dc-media"><img src="/uploads/maben.webp" alt="Sold property in Canton, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Buyer Representation</span></span>
         <span class="dc-body">
           <span class="dc-kind">Sold</span>
@@ -656,7 +689,7 @@
           
           <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">45570 Maben Rd</span><span class="dc-city">Canton, MI</span></span><span class="dc-ind">Retail</span></span>
         </span>
-      </a></li><li><span class="dcp-label">Sale with photo placeholder</span><a class="deal-card is-sale is-link" href="/deal.html?slug=bank-supplies-saline">
+      </a></li><li><span class="dcp-label">Sale with photo placeholder</span><a class="deal-card is-sale is-link" href="/deals/bank-supplies-saline/">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
         <span class="dc-body">
           <span class="dc-kind">Sold</span>
@@ -664,7 +697,7 @@
           <span class="dc-price">$7,900,000</span>
           <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">1294 Beach Court</span><span class="dc-city">Saline, MI</span></span><span class="dc-ind">Manufacturing</span></span>
         </span>
-      </a></li><li><span class="dcp-label">Lease with photo</span><a class="deal-card is-lease is-link" href="/deal.html?slug=Cross%20and%20Black">
+      </a></li><li><span class="dcp-label">Lease with photo</span><a class="deal-card is-lease is-link" href="/deals/cross-and-black/">
         <span class="dc-media"><img src="/uploads/cross-and-black.webp" alt="Leased property in Plymouth, MI" loading="lazy" decoding="async" width="800" height="500" /><span class="dc-chip">Tenant Representation</span></span>
         <span class="dc-body">
           <span class="dc-kind">Leased</span>
@@ -676,7 +709,7 @@
 </div></section>
 <section class="block alt"><div class="wrap">
   <div class="section-head"><div class="section-head-left"><span class="section-num">02</span><h2>More Variants</h2></div><span class="section-tag">Placeholder and both sides</span></div>
-  <ul class="deal-card-grid"><li><span class="dcp-label">Lease, both sides, placeholder</span><a class="deal-card is-lease is-link" href="/deal.html?slug=synergy-dance-clipper-plymouth">
+  <ul class="deal-card-grid"><li><span class="dcp-label">Lease, both sides, placeholder</span><a class="deal-card is-lease is-link" href="/deals/synergy-dance-clipper-plymouth/">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Both Sides</span></span>
         <span class="dc-body">
           <span class="dc-kind">Leased</span>
@@ -684,7 +717,7 @@
           
           <span class="dc-meta"><span class="dc-loc"><span class="dc-addr">47495 Clipper St</span><span class="dc-city">Plymouth Twp, MI</span></span><span class="dc-ind">Recreational</span></span>
         </span>
-      </a></li><li><span class="dcp-label">Sale, placeholder</span><a class="deal-card is-sale is-link" href="/deal.html?slug=4301-highland-rd-waterford">
+      </a></li><li><span class="dcp-label">Sale, placeholder</span><a class="deal-card is-sale is-link" href="/deals/4301-highland-rd-waterford/">
         <span class="dc-media"><span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span><span class="dc-chip">Buyer Representation</span></span>
         <span class="dc-body">
           <span class="dc-kind">Sold</span>
@@ -722,12 +755,16 @@
       </div>
       <div class="footer-col">
         <h4>Markets</h4>
-        <ul id="footerMarkets"><!--BUILD:footermarkets--><li><a href="/markets/plymouth-mi/">Plymouth</a></li><li><a href="/markets/ann-arbor-mi/">Ann Arbor</a></li><li><a href="/markets/livonia-mi/">Livonia</a></li><li><a href="/markets/i-275-corridor/">I-275 Corridor</a></li><li><a href="/markets/metro-detroit/">Metro Detroit</a></li><li><a href="/markets/canton-mi/">Canton</a></li><li><a href="/markets/saline-mi/">Saline</a></li><li><a href="/markets/novi-mi/">Novi</a></li><li><a href="/markets/romulus-mi/">Romulus</a></li><li><a href="/markets/taylor-mi/">Taylor</a></li><li><a href="/markets/ypsilanti-mi/">Ypsilanti</a></li><li><a href="/markets/dexter-mi/">Dexter</a></li><li><a href="/markets/farmington-hills-mi/">Farmington Hills</a></li><li><a href="/markets/brighton-mi/">Brighton</a></li><!--/BUILD:footermarkets--></ul>
+        <ul id="footerMarkets"><!--BUILD:footermarkets--><li><a href="/markets/plymouth-mi/">Plymouth</a></li><li><a href="/markets/ann-arbor-mi/">Ann Arbor</a></li><li><a href="/markets/livonia-mi/">Livonia</a></li><li><a href="/markets/canton-mi/">Canton</a></li><li><a href="/markets/romulus-mi/">Romulus</a></li><li><a href="/markets/taylor-mi/">Taylor</a></li><li><a href="/markets/farmington-hills-mi/">Farmington Hills</a></li><li><a href="/markets/wixom-mi/">Wixom</a></li><li><a href="/markets/auburn-hills-mi/">Auburn Hills</a></li><li><a href="/markets/rochester-hills-mi/">Rochester / Rochester Hills</a></li><li><a href="/markets/lake-orion-mi/">Lake Orion</a></li><li><a href="/markets/troy-mi/">Troy</a></li><li><a href="/markets/wayne-county-mi/">Wayne County Hub</a></li><li><a href="/markets/oakland-county-mi/">Oakland County Hub</a></li><li><a href="/markets/macomb-county-mi/">Macomb County Hub</a></li><li><a href="/markets/washtenaw-county-mi/">Washtenaw County Hub</a></li><li><a href="/markets/livingston-county-mi/">Livingston County Hub</a></li><li><a href="/markets/genesee-county-mi/">Genesee County Hub</a></li><!--/BUILD:footermarkets--></ul>
         <h4 style="margin-top:24px;">Services</h4>
-        <ul id="footerServices"><!--BUILD:footerservices--><li><a href="/services/disposition/">Disposition</a></li><li><a href="/services/acquisition/">Acquisition</a></li><li><a href="/services/build-to-suit/">Build-to-Suit</a></li><li><a href="/services/tenant-representation/">Tenant Representation</a></li><li><a href="/services/buyer-representation/">Buyer Representation</a></li><li><a href="/services/landlord-representation/">Landlord Representation</a></li><li><a href="/services/investment-sales/">Investment Sales</a></li><!--/BUILD:footerservices--></ul>
+        <ul id="footerServices"><!--BUILD:footerservices--><li><a href="/services/disposition/">Disposition</a></li><li><a href="/services/acquisition/">Acquisition</a></li><li><a href="/services/build-to-suit/">Build-to-Suit</a></li><li><a href="/services/tenant-representation/">Tenant Representation</a></li><li><a href="/services/buyer-representation/">Buyer Representation</a></li><li><a href="/services/landlord-representation/">Landlord Representation</a></li><li><a href="/services/investment-sales/">Investment Sales</a></li><li><a href="/services/cold-storage-food-logistics/">Cold Storage &amp; Food Logistics</a></li><li><a href="/services/heavy-power-onshoring-manufacturing/">Heavy Power &amp; Onshoring</a></li><li><a href="/services/robotics-automation-manufacturing/">Robotics &amp; Automation</a></li><li><a href="/services/data-center-supply-chain-manufacturing/">Data Center Supply Chain</a></li><li><a href="/services/sale-leaseback-capital-advisory/">Sale-Leaseback Advisory</a></li><li><a href="/services/defense-aerospace-supply-chain/">Defense &amp; Aerospace</a></li><li><a href="/services/rd-lab-cleanroom-ev-testing/">R&amp;D, Labs &amp; Cleanrooms</a></li><li><a href="/services/industrial-outdoor-storage-ios-truck-terminals/">IOS &amp; Truck Terminals</a></li><li><a href="/services/brownfield-economic-development-incentives/">Brownfield &amp; Incentives</a></li><!--/BUILD:footerservices--></ul>
         <h4 style="margin-top:24px;">Connect</h4>
         <ul>
           <li><a href="https://www.linkedin.com/in/drake-filippis-267a104a/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://x.com/detroitdrake" target="_blank" rel="noopener">X (@detroitdrake)</a></li>
+          <li><a href="https://www.signatureassociates.com/?team=drake-filippis" target="_blank" rel="noopener">Signature Associates Bio</a></li>
+          <li><a href="https://cpix.resimplifi.com/brokers/3440e031-drake-filippis" target="_blank" rel="noopener">CPIX Broker Profile</a></li>
+          <li><a href="https://www.crexi.com/profile/drake-filippis-drakefili" target="_blank" rel="noopener">Crexi Profile</a></li>
         </ul>
       </div>
       <div class="footer-col">

@@ -373,7 +373,7 @@
     fetch('/data.json?t=' + Date.now())
       .then(r => r.json())
       .then(data => {
-        const deal = (data.closed_deals || []).find(d => d.slug === slug);
+        const deal = (data.closed_deals || []).find(d => d.slug === slug || d.legacy_slug === slug || String(d.slug).toLowerCase() === String(slug).toLowerCase().replace(/\s+/g, "-"));
         if (deal) renderDeal(deal);
         else showError();
       })

@@ -8,16 +8,20 @@
   // Placeholder text like "[Client Name]" or "[Add case study narrative ...]" stays hidden until filled in.
   const isPlaceholder = (s) => { const t = String(s == null ? '' : s).trim(); return !t || /^\[.*\]$/s.test(t) || t.startsWith('[Add'); };
   const photoSrc = (p) => (p && typeof p === 'object') ? (p.url || p.image || '') : String(p || '');
-  const dealUrl = (d) => '/deal.html?slug=' + encodeURIComponent(d.slug);
+  const dealUrl = (d) => d && d.slug ? '/deals/' + encodeURIComponent(d.slug) + '/' : '/deal.html?slug=' + encodeURIComponent((d && d.slug) || '');
 
   const R = {
-    esc, telHref, isPlaceholder,
+    esc, telHref, isPlaceholder, dealUrl,
     stats: (stats, markets) => (stats || []).map(s => (s.auto === 'markets' && Array.isArray(markets)) ? Object.assign({}, s, { value: String(markets.length) }) : s).map(s => `
       <div class="stat">
         <div class="stat-num">${esc(s.value)}<span class="unit">${esc(s.unit)}</span></div>
         <div class="stat-label">${esc(s.label)}</div>
       </div>`).join(''),
-    coverage: (cities, markets) => (cities || []).map(c => { const m = (markets || []).find(x => String(x.name).toLowerCase() === String(c).toLowerCase()); return m ? `<a href="/markets/${esc(m.slug)}/">${esc(c)}</a>` : `<span>${esc(c)}</span>`; }).join(''),
+    coverage: (cities, markets) => (cities || []).map(c => {
+      const lc = String(c).toLowerCase();
+      const m = (markets || []).find(x => String(x.name).toLowerCase() === lc || (lc === 'rochester' && x.slug === 'rochester-hills-mi'));
+      return m ? `<a href="/markets/${esc(m.slug)}/">${esc(c)}</a>` : `<span>${esc(c)}</span>`;
+    }).join(''),
     team: (team) => (team || []).map(b => `
       <div class="broker-card">
         <div class="broker-head${b.photo ? ' has-photo' : ''}">
@@ -73,9 +77,12 @@
     // Deal card grid, newest year first, then largest first.
     dealGrid: (deals) => (deals || []).filter(d => d && d.size).map((d, i) => [d, i]).sort((a, b) => (Number(b[0].year) - Number(a[0].year)) || (parseFloat(String(b[0].size).replace(/,/g, '')) * (/AC/i.test(b[0].size) ? 43560 : 1) - parseFloat(String(a[0].size).replace(/,/g, '')) * (/AC/i.test(a[0].size) ? 43560 : 1)) || a[1] - b[1]).map(([d]) => `<li data-year="${esc(d.year)}">${R.dealCard(d)}</li>`).join(''),
     serviceUrl: (sv) => '/services/' + sv.slug + '/',
-    serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title)).map(s => s.slug
+    serviceList: (svc) => (svc || []).filter(s => !isPlaceholder(s.title) && s.category !== 'specialty').map(s => s.slug
       ? `<li><a class="service-card" href="/services/${esc(s.slug)}/"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Learn more <span aria-hidden="true">→</span></span></a></li>`
       : `<li><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></li>`).join(''),
+    specialtyList: (svc) => (svc || []).filter(s => s.category === 'specialty' && s.slug).map(s =>
+      `<li><a class="service-card specialty-card" href="/services/${esc(s.slug)}/">${s.tag ? `<span class="sp-tag">${esc(s.tag)}</span>` : ''}<h3>${esc(s.short_title || s.title)}</h3><p>${esc(s.description)}</p><span class="sc-go">Explore specialty <span aria-hidden="true">→</span></span></a></li>`
+    ).join(''),
     serviceDeals: (deals, slug) => (deals || []).filter(d => Array.isArray(d.services) && d.services.includes(slug)),
     // Lead form (Netlify Forms). opts: { name, service, need, id }
     leadForm: (opts) => {
@@ -187,7 +194,6 @@
         <span class="cap"><span class="k">${esc(d.year)} · ${esc(d.deal_type)}</span><span class="t">${esc(d.property)}</span><span class="m">${esc([isPlaceholder(d.client) ? '' : d.client, d.size].filter(Boolean).join(' · '))}</span></span>
       </a>`).join(''),
     // Client logo strip: uniform white logos on a dark band, brand color on hover.
-    // Only logos with a url get a link (opens in a new tab).
     logos: (logos) => (logos || []).filter(l => l && typeof l === 'object' && !isPlaceholder(l.name) && l.logo).map(l => {
       const inner = `<img class="mono" src="${esc(l.logo)}" alt="${esc(l.name)}" loading="lazy" decoding="async" /><img class="color" src="${esc(l.logo_color || l.logo)}" alt="" aria-hidden="true" loading="lazy" decoding="async" />`;
       const style = l.hover_bg ? ` style="--brand-bg:${esc(l.hover_bg)}"` : '';
@@ -222,6 +228,46 @@
       const meta = [nd ? nd + ' closed deal' + (nd > 1 ? 's' : '') : '', nl ? nl + ' active listing' + (nl > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
       return `<li><a class="market-card" href="${R.marketUrl(m)}"><span class="mc-name">${esc(m.name)}</span><span class="mc-sum">${esc(m.summary)}</span>${meta ? `<span class="mc-meta">${meta}</span>` : ''}<span class="mc-go" aria-hidden="true">→</span></a></li>`;
     }).join(''),
+    // Clean Primary Markets + Expandable County & Submarket Directory for Homepage
+    homeMarkets: (markets, counties, deals, listings, primaryGroups) => {
+      const mBySlug = {};
+      (markets || []).forEach(m => { mBySlug[m.slug] = m; });
+      let primaryList = [];
+      if (Array.isArray(primaryGroups) && primaryGroups.length) {
+        primaryGroups.forEach(g => (g.slugs || []).forEach(s => { if (mBySlug[s]) primaryList.push(mBySlug[s]); }));
+      } else {
+        primaryList = (markets || []).filter(m => m.primary);
+      }
+      if (!primaryList.length) primaryList = (markets || []).slice(0, 12);
+      const primaryHtml = `<ul class="market-grid-cards" id="marketCards">${R.marketCards(primaryList, deals, listings)}</ul>`;
+      if (!Array.isArray(counties) || !counties.length) return primaryHtml;
+      const corridorSlugs = ['i-275-corridor', 'metro-detroit'];
+      const corridors = corridorSlugs.map(s => mBySlug[s]).filter(Boolean);
+      const countyBlocks = counties.map(c => {
+        const subCities = (c.city_slugs || []).map(s => mBySlug[s]).filter(Boolean);
+        return `<div class="county-dir-card">
+          <div class="county-dir-head">
+            <a class="county-dir-title" href="/markets/${esc(c.slug)}/">${esc(c.name)} <span aria-hidden="true">→</span></a>
+            ${c.corridor_tag ? `<span class="county-dir-tag">${esc(c.corridor_tag)}</span>` : ''}
+          </div>
+          <p class="county-dir-sum">${esc(c.summary)}</p>
+          <ul class="county-city-pills">
+            ${subCities.map(m => `<li><a href="/markets/${esc(m.slug)}/">${esc(m.name)}</a></li>`).join('')}
+          </ul>
+        </div>`;
+      }).join('');
+      return `${primaryHtml}
+      <details class="county-directory">
+        <summary class="county-directory-toggle">
+          <span>Browse All ${counties.length} Counties &amp; ${markets.length}+ Michigan Industrial Submarkets</span>
+          <span class="cd-pill">Expand Directory <span class="faq-plus" aria-hidden="true"></span></span>
+        </summary>
+        <div class="county-directory-body">
+          <div class="county-dir-grid">${countyBlocks}</div>
+          ${corridors.length ? `<div class="corridor-links"><span>Regional Corridors:</span> ${corridors.map(m => `<a href="/markets/${esc(m.slug)}/">${esc(m.name)}</a>`).join(' · ')}</div>` : ''}
+        </div>
+      </details>`;
+    },
     faq: (faqs) => (faqs || []).filter(f => f && f.q && f.a).map((f, i) => `
       <details class="faq-item"${i === 0 ? ' open' : ''}><summary><h3>${esc(f.q)}</h3><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-a"><p>${esc(f.a)}</p></div></details>`).join(''),
     faqJsonLd: (faqs) => JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: (faqs || []).filter(f => f && f.q && f.a).map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }, null, 1).replace(/</g, '\\u003c'),

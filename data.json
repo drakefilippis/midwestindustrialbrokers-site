@@ -1,42 +1,42 @@
 {
   "stats": [
     {
-      "value": "$300",
+      "value": "14",
+      "unit": "+",
+      "label": "Years in Real Estate"
+    },
+    {
+      "value": "$60",
       "unit": "M+",
-      "label": "Career Deal Volume"
+      "label": "Recent CRE Volume"
     },
     {
-      "value": "14",
+      "value": "70",
       "unit": "+",
-      "label": "Years Experience"
+      "label": "Transactions Closed (2024-2026)"
     },
     {
-      "value": "10,000",
-      "unit": "+",
-      "label": "Clients Served"
-    },
-    {
-      "value": "14",
+      "value": "56",
       "unit": "",
-      "label": "Markets Covered",
-      "auto": "markets"
+      "label": "Active Listings · 3M+ SF Available"
     }
   ],
   "coverage_cities": [
     "Plymouth",
+    "Wixom",
+    "Ann Arbor",
     "Livonia",
     "Canton",
-    "Novi",
     "Farmington Hills",
+    "Auburn Hills",
+    "Rochester",
+    "Lake Orion",
+    "Troy",
+    "Novi",
     "Romulus",
     "Taylor",
-    "Ann Arbor",
-    "Ypsilanti",
-    "Saline",
-    "Dexter",
-    "Brighton",
-    "Northville",
-    "Wixom",
+    "Warren",
+    "Sterling Heights",
     "Metro Detroit"
   ],
   "team": [
@@ -44,7 +44,7 @@
       "name": "Drake Filippis",
       "title": "Associate Broker",
       "initials": "DF",
-      "bio_html": "Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in residential finance, leasing, and property management — closing more than <strong>$300 million in deal volume</strong> directly assisting over 10,000 clients.",
+      "bio_html": "<p>Drake Filippis is an Associate Broker with <strong>Signature Associates</strong> and founder of <strong>Midwest Industrial Brokers</strong> (<a href=\"https://midwestindustrialbrokers.com\">midwestindustrialbrokers.com</a>), his dedicated platform focused on his specialization in industrial real estate, with deep experience in manufacturing, cold storage, heavy power, R&amp;D, flex, multi-tenant, and R&amp;D lab space, as well as large distribution and big-box sale and lease transactions.</p><p>Raised in a Midwest industrial town and educated at <strong>Purdue University</strong> alongside top industrial, mechanical, and robotics engineers, Drake built an early fluency in how manufacturers and logistics operators actually use buildings, further sharpening his focus where industrial infrastructure and technology meet.</p><p>At <strong>Signature Associates</strong>, Drake has been mentored directly by the highest-producing industrial brokers in the Midwest, where industrialization has dominated for over a century, because things have always been built in Detroit. He works closely with state, county, municipal, and economic development agencies to navigate site selection, workforce incentives, and municipal approvals for economically stimulating businesses.</p>",
       "email": "dfilippis@signatureassociates.com",
       "office_phone": "(248) 799-3161",
       "mobile_phone": "(248) 941-1125",
@@ -90,7 +90,8 @@
         "Investors selling a building or a portfolio",
         "Owners of industrial land",
         "Businesses, partnerships and estates with surplus property"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "acquisition",
@@ -129,7 +130,8 @@
         "Growing companies consolidating locations",
         "Investors adding industrial property",
         "Companies replacing leased space with owned space"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "build-to-suit",
@@ -168,7 +170,8 @@
         "Distribution users that need more loading or yard",
         "Companies that have outgrown existing buildings",
         "Landowners exploring development for a specific user"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "tenant-representation",
@@ -207,7 +210,8 @@
         "Tenants approaching a lease expiration",
         "Growing companies that need more room",
         "Businesses relocating or consolidating"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "buyer-representation",
@@ -246,7 +250,8 @@
         "Companies consolidating into one building",
         "Growing users that need a specific location",
         "Family businesses planning for the long term"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "landlord-representation",
@@ -285,7 +290,8 @@
         "Owners of multi tenant flex and small bay properties",
         "Investors with upcoming vacancies",
         "Owner users with extra space to lease"
-      ]
+      ],
+      "category": "core"
     },
     {
       "slug": "investment-sales",
@@ -324,6 +330,753 @@
         "Owners of leased buildings or small portfolios",
         "1031 exchange buyers",
         "Family offices adding industrial property"
+      ],
+      "category": "core"
+    },
+    {
+      "slug": "cold-storage-food-logistics",
+      "category": "specialty",
+      "title": "Cold Storage, Freezer/Cooler & Food Logistics",
+      "short_title": "Cold Storage & Food Logistics",
+      "tag": "Michigan · Ohio · Midwest Hub",
+      "description": "Freezer, cooler, tri-temp (-20°F to 55°F) and USDA/FDA food-grade warehouse brokerage and build-to-suit across Michigan, Ohio and the Midwest cold chain.",
+      "headline": "Michigan, Ohio and Midwest cold storage, freezer/cooler and food logistics real estate",
+      "need": "Lease space",
+      "meta": "Cold storage, freezer, cooler and USDA/FDA food-grade industrial real estate across Michigan, Ohio and the Midwest. Tri-temp (-20°F to 55°F), blast freezing, ammonia/CO2/freon refrigeration and build-to-suit along I-75, I-94 and I-80/I-90. Call Drake Filippis at (248) 941-1125.",
+      "listings_keywords": [
+        "Cold Storage",
+        "Swanton",
+        "Rossford"
+      ],
+      "overview": [
+        "Cold storage is one of the most specialized and supply-constrained segments in Midwest industrial real estate. Food processors, cold chain 3PLs, grocery distributors, pharmaceutical operators and agricultural exporters cannot simply move into a standard dry warehouse. They need verified refrigeration tonnage, insulated metal panel (IMP) envelopes, under-slab glycol or electric floor heat to prevent frost heave, vapor barriers, sealed refrigerated dock aprons and strict USDA, FDA, SQF or BRC compliance.",
+        "Midwest Industrial Brokers serves as a dedicated Michigan, Ohio and Midwest hub for cold storage acquisitions, leasing, dispositions and cold build-to-suit development. Along the primary Great Lakes cold chain corridors connecting Metro Detroit (Taylor, Romulus, Detroit Metro Airport and I-94/I-75), Western Michigan, and Northwest Ohio (Toledo, Rossford and Swanton at the I-75 and I-80/I-90 Ohio Turnpike crossroads), Drake Filippis helps cold chain operators secure existing freezer/cooler facilities or deliver purpose-built cold storage on schedule.",
+        "Whether your operation requires -20°F deep-freeze storage, 0°F freezer bays, 34°F to 38°F perishable cooler rooms, 55°F climate-controlled food packaging areas, blast freezing cells, or dry warehouse space with structural capacity and power to convert into cold storage, Drake evaluates every technical detail before you commit."
+      ],
+      "specs": [
+        {
+          "label": "Temperature Ranges",
+          "value": "-20°F Deep Freeze to 55°F Controlled"
+        },
+        {
+          "label": "Refrigeration Systems",
+          "value": "Ammonia (NH3), CO2 Cascade, Freon / Glycol"
+        },
+        {
+          "label": "Clear Heights & Racking",
+          "value": "28' to 50'+ High-Cube & Mobile Racking"
+        },
+        {
+          "label": "Compliance Standards",
+          "value": "USDA, FDA, SQF, BRC & cGMP Washdown"
+        },
+        {
+          "label": "Floor & Envelope",
+          "value": "Heated Sub-Slab, 4\"-6\" IMP Walls, Sealed Docks"
+        },
+        {
+          "label": "Core Corridors",
+          "value": "I-75, I-94, I-80/I-90 Turnpike, DTW & US-23"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Thermal, refrigeration and throughput audit",
+          "text": "Define exact temperature zones (-20°F to 55°F), pallet positions, clear height, refrigeration system preference (central ammonia, CO2 transcritical, or distributed freon), floor slab insulation, washdown drainage and electrical load."
+        },
+        {
+          "title": "Michigan, Ohio and Midwest cold inventory search",
+          "text": "Survey all active and off-market freezer/cooler buildings, food processing plants, and turnkey cold build-to-suit sites across Metro Detroit, Taylor/DTW, Toledo/Rossford/Swanton, I-75, I-94 and I-80/I-90."
+        },
+        {
+          "title": "Dry-to-cold retrofit vs. build-to-suit analysis",
+          "text": "Compare existing cold facilities against high-clear dry warehouses suitable for box-in-box cooler/freezer retrofits and greenfield build-to-suit sites with utilities and truck court depth."
+        },
+        {
+          "title": "Refrigeration, power and environmental due diligence",
+          "text": "Coordinate mechanical inspections of compressors, condensers, evaporators, PSM/RMP ammonia safety compliance, roof load capacity, DTE/Consumers/FirstEnergy power availability and sanitary sewer capacity."
+        },
+        {
+          "title": "Lease or purchase structuring",
+          "text": "Negotiate specialized cold storage lease and sale terms, including tenant improvement allowances for thermal envelopes, refrigeration equipment ownership, backup generation and commissioning timelines."
+        }
+      ],
+      "who": [
+        "3PL cold chain logistics and refrigerated warehousing providers",
+        "Food and beverage processors, meat/poultry/dairy and produce distributors",
+        "Grocery, foodservice and last-mile cold fulfillment operators",
+        "Pharmaceutical, life-science and temperature-controlled supply chain users",
+        "Cold storage developers and institutional investors in Michigan and Ohio"
+      ],
+      "faqs": [
+        {
+          "q": "Where are the primary cold storage corridors in Michigan and Ohio?",
+          "a": "The strongest cold chain hubs sit along I-94 and I-75 near Detroit Metro Airport (Taylor and Romulus, MI) and at the junction of I-75 and the I-80/I-90 Ohio Turnpike in Northwest Ohio (Rossford, Swanton and Toledo, OH). These locations reach over 50% of North American consumers and Canadian border crossings within a one-day truck drive."
+        },
+        {
+          "q": "Do you have active cold storage listings in Michigan and Ohio?",
+          "a": "Yes. Active opportunities include large-scale freezer/cooler and build-to-suit cold storage facilities such as DTW Taylor Cold Storage (up to 249,700 SF in Taylor, MI), DTW Romulus Cold Storage (258,000 SF in Romulus, MI), Rossford Cold Storage (up to 258,000 SF in Rossford, OH), and Land Air Cold Storage (up to 258,700 SF in Swanton, OH), alongside off-market freezer/cooler buildings."
+        },
+        {
+          "q": "What should a food or cold storage user check before leasing or buying a building?",
+          "a": "Critical items include under-slab heating (glycol loops or electric heat trace) to prevent sub-freezing frost heave, insulation R-values and vapor barrier integrity, compressor and condenser age and refrigerant type (ammonia vs. freon/CO2), primary 480V power capacity, refrigerated dock seals and levelers, floor drains and municipal water/sewer pretreatment capacity."
+        }
+      ]
+    },
+    {
+      "slug": "heavy-power-onshoring-manufacturing",
+      "category": "specialty",
+      "title": "Heavy Power Manufacturing, Utility Upgrades, Onshoring & Reindustrialization",
+      "short_title": "Heavy Power & Onshoring",
+      "tag": "480V · Primary Service · Reshoring",
+      "description": "Industrial brokerage for high-amperage manufacturing, onshoring and reindustrialization projects, including direct utility coordination with DTE Energy, Consumers Energy and municipal utilities.",
+      "headline": "Heavy power manufacturing, utility capacity upgrades and Midwest reindustrialization",
+      "need": "Buy a property",
+      "meta": "Heavy power industrial buildings (2,000A to 10,000A+ at 480V, 13.2kV/40kV primary service) for onshoring, reshoring and reindustrialization in Michigan and the Midwest. Utility capacity verification with DTE Energy and Consumers Energy. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "The reindustrialization of the American Midwest and the reshoring of critical manufacturing supply chains have created intense demand for existing industrial buildings with heavy electrical infrastructure. Today, power availability and utility upgrade timelines are often the single biggest bottleneck in industrial site selection.",
+        "Many marketing flyers list 'heavy power' without verifying whether the switchgear, pad-mounted transformers, primary utility feeders or nearby substations actually have the available KVA/MVA capacity to run the buyer's machinery. Drake Filippis goes beyond the listing sheet to verify true primary and secondary voltage (480V/277V 3-phase, 2,000A to 10,000A+ bus-duct distribution, 13.2kV or 40kV primary service, and on-site KVA transformer ratings).",
+        "When a building or greenfield site needs a service upgrade, Drake connects clients with trusted industrial electrical engineers and works directly alongside DTE Energy, Consumers Energy and municipal electric utilities to evaluate feeder capacity, transformer lead times, load factors and utility infrastructure incentives before you sign a lease or purchase agreement."
+      ],
+      "specs": [
+        {
+          "label": "Secondary Service",
+          "value": "2,000A to 10,000A+ @ 480V / 3-Phase"
+        },
+        {
+          "label": "Primary Service",
+          "value": "13.2kV, 24kV & 40kV Primary Metering"
+        },
+        {
+          "label": "Transformer Capacity",
+          "value": "1,000 KVA to 10+ MVA Substations"
+        },
+        {
+          "label": "Utility Coordination",
+          "value": "DTE Energy, Consumers Energy & Municipal"
+        },
+        {
+          "label": "Distribution",
+          "value": "Overhead Busway, Switchgear & Dual Feeders"
+        },
+        {
+          "label": "Target Initiatives",
+          "value": "Onshoring, Reshoring & Domestic Manufacturing"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Load profile and power specification intake",
+          "text": "Document connected load vs. peak demand (kW/MVA), voltage requirements (480V 3-phase, primary service), load factor, power quality, harmonic filtering and compressed air or process cooling needs."
+        },
+        {
+          "title": "On-market and off-market heavy power screening",
+          "text": "Identify legacy automotive, stamping, plastics, foundry and advanced manufacturing facilities across Wayne, Oakland, Macomb and Washtenaw counties that already have primary transformers and heavy switchgear in place."
+        },
+        {
+          "title": "Physical switchgear and transformer verification",
+          "text": "Inspect nameplate ratings on main breakers, switchgear, bus ducts and pad-mounted transformers with trusted industrial electrical contractors rather than relying on outdated property records."
+        },
+        {
+          "title": "DTE Energy, Consumers Energy and municipal utility engagement",
+          "text": "Coordinate directly with utility economic development and engineering teams to verify substation capacity, circuit loading, line-extension costs, upgrade schedules and industrial power tariffs."
+        },
+        {
+          "title": "Contingency protection and closing",
+          "text": "Structure letters of intent and purchase or lease contracts with clear utility capacity confirmation milestones so your capital is protected while engineering studies are completed."
+        }
+      ],
+      "who": [
+        "Manufacturers onshoring or reshoring production to Michigan and the Midwest",
+        "Metal stamping, injection molding, die-casting, machining and fabrication plants",
+        "EV battery, power electronics and industrial equipment manufacturers",
+        "Foreign direct investment (FDI) manufacturers establishing a U.S. production footprint",
+        "Industrial owners selling high-amperage or crane-served manufacturing plants"
+      ],
+      "faqs": [
+        {
+          "q": "How do you verify if an industrial building truly has the power capacity advertised?",
+          "a": "We inspect the physical electrical room and transformer pad to check main switchgear ratings, voltage (208V/240V vs. 480V 3-phase), KVA nameplate ratings on transformers, and whether the service is primary or secondary metered. We then verify with DTE Energy or Consumers Energy that the local circuit and substation can support your connected and peak demand load."
+        },
+        {
+          "q": "Can you help increase power capacity at an existing building?",
+          "a": "Yes. Through our network of industrial electrical contractors and contacts at DTE Energy, Consumers Energy and local municipalities, we help buyers and tenants scope transformer upgrades, new primary feeds, switchgear replacements and utility cost-sharing programs based on your load factor and job creation."
+        },
+        {
+          "q": "Why are companies choosing Southeast Michigan for onshoring and reindustrialization?",
+          "a": "Southeast Michigan has one of the deepest inventories of heavy-power, crane-served manufacturing buildings in North America, backed by a skilled industrial workforce, tool-and-die ecosystem, international border crossings to Canada, and aggressive state and local reindustrialization incentives."
+        }
+      ]
+    },
+    {
+      "slug": "robotics-automation-manufacturing",
+      "category": "specialty",
+      "title": "Robotics, Automation & Advanced Manufacturing",
+      "short_title": "Robotics & Automation",
+      "tag": "High-Bay · Super-Flat Slabs · Tech Corridors",
+      "description": "Facilities for robotics integrators, industrial automation, autonomous systems and precision manufacturing along the Ann Arbor, Plymouth, Wixom and Oakland County engineering corridors.",
+      "headline": "Industrial real estate for robotics, automation integrators and advanced manufacturing",
+      "need": "Lease space",
+      "meta": "Robotics, automation and advanced manufacturing real estate in Ann Arbor, Plymouth, Novi, Wixom, Auburn Hills and Metro Detroit. High-bay clear heights, super-flat reinforced slabs, bridge cranes and R&D engineering headquarters. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "Southeast Michigan is the nerve center of North American industrial automation. Positioned between the University of Michigan in Ann Arbor, the I-275 technology corridor (Plymouth, Livonia, Canton, Novi, Wixom), and the I-75 automation alley in Oakland and Macomb counties (Auburn Hills, Troy, Rochester Hills, Sterling Heights, Warren), the region houses the highest concentration of robotics integrators, machine vision firms and industrial engineering talent in the country.",
+        "Robotics and automation facilities require a specific hybrid footprint: high-image engineering and software offices up front paired with high-bay assembly, integration and Factory Acceptance Testing (FAT) bays in the rear. Those production bays demand unobstructed column spacing, reinforced flat concrete slabs for AGVs and precision alignment, overhead bridge cranes, clean regulated 480V power, compressed air lines and oversized grade-level or dock doors to ship completed automation cells.",
+        "Drake Filippis represents robotics startups, global automation tier-1s, custom machine builders and precision manufacturers in securing headquarters, integration facilities and R&D centers across Michigan and the broader Midwest engineering belt."
+      ],
+      "specs": [
+        {
+          "label": "Clear Heights",
+          "value": "20' to 36'+ High-Bay Integration Bays"
+        },
+        {
+          "label": "Floor Slabs",
+          "value": "6\" to 12\" Reinforced, High FF/FL Flatness"
+        },
+        {
+          "label": "Material Handling",
+          "value": "5-Ton to 50-Ton Overhead Bridge Cranes"
+        },
+        {
+          "label": "Power & Utilities",
+          "value": "Clean 480V 3-Phase, Compressed Air & Busway"
+        },
+        {
+          "label": "Office-to-Shop Ratio",
+          "value": "15% to 40% Tech Office / Engineering Lab"
+        },
+        {
+          "label": "Talent Corridors",
+          "value": "Ann Arbor, Plymouth, Wixom, Auburn Hills & Troy"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Integration bay and engineering footprint scoping",
+          "text": "Map out clear height under hook, crane bridge span and tonnage, slab thickness and flatness tolerances, power drops for cell testing, and engineering office layout."
+        },
+        {
+          "title": "Corridor and talent-shed targeting",
+          "text": "Focus the search along the corridors where robotics engineers and skilled automation technicians live and commute, including I-94/M-14 (Ann Arbor/Plymouth), I-96/I-275 (Novi/Wixom/Livonia) and I-75 (Auburn Hills/Troy/Rochester)."
+        },
+        {
+          "title": "Structural and crane runway evaluation",
+          "text": "Verify column footings, roof truss capacity, existing crane rails, floor load ratings and oversized drive-in door clearances for wide-load machinery transport."
+        },
+        {
+          "title": "Build-out and tenant improvement structuring",
+          "text": "Negotiate landlord turnkey build-outs or tenant improvement allowances covering ESD flooring, clean assembly rooms, high-bay LED lighting, air conditioning in the shop and electrical bus-bar installation."
+        },
+        {
+          "title": "Expansion flexibility",
+          "text": "Secure expansion options, rights of first refusal on adjacent bays, or excess land so fast-growing robotics firms are not boxed in as production scales."
+        }
+      ],
+      "who": [
+        "Robotic system integrators and custom automation builders",
+        "Autonomous vehicle, drone, AGV/AMR and machine vision companies",
+        "Precision CNC machining, additive manufacturing and 3D printing operations",
+        "Semiconductor equipment, medical device and clean-tech manufacturers",
+        "University spinouts scaling from incubator space into production facilities"
+      ],
+      "faqs": [
+        {
+          "q": "Which Michigan submarkets are most popular for robotics and automation companies?",
+          "a": "Ann Arbor, Plymouth, Wixom, Novi and Livonia lead the western corridor for companies recruiting from the University of Michigan and western Metro Detroit, while Auburn Hills, Troy, Rochester Hills and Sterling Heights anchor the I-75 corridor for OEM factory automation and defense robotics."
+        },
+        {
+          "q": "What building specs matter most for a robotics integration facility?",
+          "a": "Robotics integrators typically need 20' to 32' clear height, wide column spacing to lay out full assembly lines during Factory Acceptance Testing, 5-ton to 20-ton bridge cranes, level reinforced floors, climate-controlled shop bays, 800A to 3,000A of 480V power, and oversized drive-in doors (14'x16' or larger) for rigging flatbed loads."
+        }
+      ]
+    },
+    {
+      "slug": "data-center-supply-chain-manufacturing",
+      "category": "specialty",
+      "title": "Data Center Supply Chain & Component Manufacturers",
+      "short_title": "Data Center Supply Chain",
+      "tag": "Switchgear · Cooling · Power Hardware",
+      "description": "Manufacturing and assembly facilities for companies producing the critical hardware that goes inside data centers: switchgear, transformers, PDUs, liquid/chiller cooling, server racks and fiber assemblies.",
+      "headline": "Real estate for manufacturers building the hardware inside hyperscale and enterprise data centers",
+      "need": "Buy a property",
+      "meta": "Industrial real estate for data center supply chain manufacturers and hardware suppliers in Michigan and the Midwest. Facilities for switchgear, transformer, PDU, liquid cooling, chiller, generator, server rack and fiber assembly production. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "The explosive build-out of AI and cloud data centers across the Midwest and North America has created a massive secondary bottleneck: manufacturing the critical electrical, thermal and structural hardware that goes inside those data centers. Midwest Industrial Brokers focuses specifically on the subcontractors, OEMs and component manufacturers producing data center equipment, rather than general contractors pouring concrete shells.",
+        "Companies manufacturing medium- and low-voltage switchgear, dry-type and liquid-filled transformers, power distribution units (PDUs), uninterruptible power supplies (UPS), backup generator enclosures, modular electrical skids (e-houses), liquid cooling manifolds, chillers, cooling distribution units (CDUs), server racks and high-density fiber assemblies need heavy industrial manufacturing buildings that can scale immediately.",
+        "Because Southeast Michigan already possesses deep electrical engineering talent, sheet-metal fabrication capacity, crane-served high-bay plants and high-amperage utility feeds for factory load testing, the region is a natural manufacturing hub for the data center supply chain serving Michigan, Ohio, Indiana, Illinois and national hyperscale deployments."
+      ],
+      "specs": [
+        {
+          "label": "Target Occupiers",
+          "value": "Data Center Hardware & Component Manufacturers"
+        },
+        {
+          "label": "Electrical Products",
+          "value": "Switchgear, Transformers, PDUs, UPS, Busway & E-Houses"
+        },
+        {
+          "label": "Thermal Products",
+          "value": "Liquid Cooling, CDUs, Chillers, CRAHs & Heat Exchangers"
+        },
+        {
+          "label": "Structural & Network",
+          "value": "Server Racks, Cabinets, Containment & Fiber Harnesses"
+        },
+        {
+          "label": "Facility Requirements",
+          "value": "Heavy Cranes (10T-50T), High-Amp Test Bays, Thick Slabs"
+        },
+        {
+          "label": "Logistics Reach",
+          "value": "Direct I-75, I-94, I-96 & I-80/I-90 Flatbed Corridors"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Component manufacturing and test-bay scoping",
+          "text": "Identify the exact production requirements for your hardware line, including crane hook height and capacity for moving transformers or e-house skids, high-voltage factory test bays, paint/powder-coat booths, and chilled-water loops for testing thermal systems."
+        },
+        {
+          "title": "Speed-to-market facility search",
+          "text": "Data center purchase orders carry strict delivery penalties. We target existing heavy manufacturing buildings in Wayne, Oakland, Macomb and Washtenaw counties that allow rapid equipment installation without waiting 24 months for greenfield construction."
+        },
+        {
+          "title": "Heavy floor, crane and yard verification",
+          "text": "Verify slab point-load capacities for stacked steel, copper busbar and transformer cores, inspect existing bridge cranes, and confirm heavy-duty paved yard space for staging modular skids and flatbed haulers."
+        },
+        {
+          "title": "Test-bay utility and permitting coordination",
+          "text": "Work with DTE Energy, Consumers Energy and municipal building departments to ensure sufficient electrical capacity for full-load factory witness testing and environmental permits for coating or brazing lines."
+        },
+        {
+          "title": "Acquisition, lease or expansion execution",
+          "text": "Negotiate purchase or lease terms that align with your customer contract awards and OEM production ramp schedules."
+        }
+      ],
+      "who": [
+        "Manufacturers of medium- and low-voltage switchgear, switchboards and breakers",
+        "Transformer, PDU, UPS, busway and modular power skid (e-house) manufacturers",
+        "Liquid cooling, immersion cooling, CDU, chiller and HVAC thermal management manufacturers",
+        "Backup power generator packaging and acoustic enclosure fabricators",
+        "Server rack, precision sheet-metal enclosure, cable tray and fiber-optic assembly suppliers"
+      ],
+      "faqs": [
+        {
+          "q": "Do you work with data center component manufacturers or data center developers?",
+          "a": "This specialty is built specifically for the manufacturers and subcontractors making the products and hardware that go into data centers, such as switchgear, transformers, cooling systems, server racks, modular power skids and fiber assemblies. We understand the heavy cranes, high-amp test bays, reinforced floors and rapid occupancy timelines those manufacturers need to fulfill hyperscale orders."
+        },
+        {
+          "q": "Why are data center hardware suppliers expanding manufacturing in Michigan?",
+          "a": "Michigan has existing high-bay, crane-served plants with heavy 480V power and a deep workforce experienced in precision sheet metal, electrical assembly, brazing, fluid dynamics and thermal management, all within a one-day flatbed drive of major Midwest and East Coast data center clusters."
+        }
+      ]
+    },
+    {
+      "slug": "sale-leaseback-capital-advisory",
+      "category": "specialty",
+      "title": "Sale-Leaseback & Industrial Capital Advisory",
+      "short_title": "Sale-Leaseback Advisory",
+      "tag": "Signature Associates Exclusive National Team",
+      "description": "Unlock capital trapped in owned industrial real estate and redeploy it into your operating business, backed by Signature Associates' exclusive national Sale-Leaseback team.",
+      "headline": "Unlock capital trapped in your industrial real estate with a premier national Sale-Leaseback team",
+      "need": "Sell a property",
+      "meta": "Industrial sale-leaseback advisory in Michigan and nationwide. Unlock 100% of your building's equity while maintaining operational control. Backed by Signature Associates' exclusive Sale-Leaseback team working with M&A firms, private credit, PE and REITs. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "For many manufacturing, distribution and industrial operating companies, millions of dollars in equity are locked inside owned real estate, earning a passive real estate return while the core operating business could generate a much higher return on invested capital (ROIC) from new machinery, automation, acquisitions, debt paydown or working capital.",
+        "While Midwest Industrial Brokers focuses day-in and day-out on industrial brokerage, Signature Associates has an exclusive Sale-Leaseback team that is arguably the best in the country. This dedicated capital markets group works daily with M&A advisory firms, investment banks, private credit funds, private capital, private equity sponsors, family offices and institutional net-lease REITs across the United States.",
+        "By contacting Drake Filippis at Midwest Industrial Brokers to evaluate a sale-leaseback, you get the best of both worlds: ground-level industrial valuation and facility expertise combined with direct execution from Signature Associates' national Sale-Leaseback platform to create a competitive bidding environment among institutional buyers."
+      ],
+      "specs": [
+        {
+          "label": "Capital Unlocked",
+          "value": "100% of Fair Market Real Estate Value"
+        },
+        {
+          "label": "Typical Lease Terms",
+          "value": "10 to 20+ Year Absolute NNN + Renewal Options"
+        },
+        {
+          "label": "Buyer Network",
+          "value": "REITs, Private Equity, Private Credit & Family Offices"
+        },
+        {
+          "label": "M&A Integration",
+          "value": "Simultaneous Buyout, Recapitalization & Add-On Funding"
+        },
+        {
+          "label": "Operational Control",
+          "value": "Long-Term Occupancy & Expansion Rights Preserved"
+        },
+        {
+          "label": "Execution Platform",
+          "value": "Midwest Industrial Brokers + Signature SLB Team"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Real estate vs. corporate capital return analysis",
+          "text": "Evaluate the current market value of your industrial facility, model sustainable market rent coverage (EBITDAR-to-rent ratio), and compare the implied cap rate against your company's weighted average cost of capital (WACC) and operating ROIC."
+        },
+        {
+          "title": "Credit, financial and lease structuring",
+          "text": "Partner with Signature Associates' exclusive Sale-Leaseback team to structure a long-term NNN lease (term, annual escalations, renewal options, maintenance covenants and expansion rights) that maximizes property valuation without restricting your operations."
+        },
+        {
+          "title": "Institutional offering and national buyer outreach",
+          "text": "Present the opportunity confidentially to active national net-lease REITs, private equity real estate funds, private credit groups and 1031 exchange buyers who compete aggressively for mission-critical industrial assets."
+        },
+        {
+          "title": "M&A, lender and tax coordination",
+          "text": "Work seamlessly alongside your CFO, CPA, corporate counsel, commercial bank or private equity sponsor, including simultaneous closings where sale-leaseback proceeds help fund an M&A transaction or recapitalization."
+        },
+        {
+          "title": "Offer comparison and closing",
+          "text": "Compare proposals not just on headline purchase price, but on lease flexibility, landlord creditworthiness, assignment/change-of-control provisions and certainty of close."
+        }
+      ],
+      "who": [
+        "Owner-operators of manufacturing, warehouse and distribution facilities unlocking growth capital",
+        "Companies funding new automation lines, acquisitions, partner buyouts or debt refinancing",
+        "Private equity sponsors and M&A advisors using sale-leasebacks to finance corporate acquisitions",
+        "Multi-site industrial companies monetizing corporate real estate portfolios",
+        "Business owners preparing for a future company sale who want to separate the real estate from the operating entity"
+      ],
+      "faqs": [
+        {
+          "q": "Why should an operating company consider an industrial sale-leaseback instead of a traditional mortgage?",
+          "a": "A conventional commercial mortgage typically lends 65% to 75% loan-to-value and requires principal amortization and restrictive bank covenants. A sale-leaseback unlocks 100% of the property's fair market value in cash, removes mortgage debt from your balance sheet, makes lease payments fully deductible for tax purposes, and lets you reinvest that capital into your core business where it earns a higher return."
+        },
+        {
+          "q": "How does Midwest Industrial Brokers partner with Signature Associates' Sale-Leaseback team?",
+          "a": "Drake Filippis provides the industrial property underwriting, local market comps and operational facility analysis, while integrating Signature Associates' exclusive national Sale-Leaseback team, who work daily with M&A firms, private credit, private equity and national REITs, to run an institutional capital markets process."
+        },
+        {
+          "q": "Will we lose control of our manufacturing facility if we do a sale-leaseback?",
+          "a": "No. You negotiate the lease before the property is sold. Standard industrial sale-leasebacks include 10- to 20-year initial terms plus multiple 5-year renewal options, giving you long-term operational control, the ability to make equipment improvements, and clear terms if you ever expand or sell the business."
+        }
+      ]
+    },
+    {
+      "slug": "defense-aerospace-supply-chain",
+      "category": "specialty",
+      "title": "Defense, Aerospace & Munitions Supply Chain",
+      "short_title": "Defense & Aerospace",
+      "tag": "TACOM Corridor · ITAR · Secure Manufacturing",
+      "description": "Secure manufacturing, engineering and assembly facilities for defense primes, tier-1/2 aerospace suppliers and munitions contractors across the Macomb Defense Corridor, Oakland and Washtenaw counties.",
+      "headline": "Industrial real estate for defense, aerospace and munitions manufacturers in Michigan",
+      "need": "Buy a property",
+      "meta": "Defense, aerospace and munitions manufacturing real estate in Warren, Sterling Heights, Macomb County, Auburn Hills, Troy, Ann Arbor and Metro Detroit. Near U.S. Army DEVCOM / TACOM Detroit Arsenal, ITAR/CMMC ready facilities. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "Southeast Michigan is home to the U.S. Army Detroit Arsenal in Warren (headquarters of TACOM and DEVCOM Ground Vehicle Systems Center), Selfridge Air National Guard Base in Macomb County, and one of the deepest defense, ground vehicle, aerospace and precision machining supply chains in the United States.",
+        "As defense spending shifts toward domestic munitions capacity, autonomous ground and aerial systems, military propulsion and Dual-Use aerospace manufacturing, primes and tier-1/2 subcontractors need facilities that meet strict physical security, power and structural standards.",
+        "Drake Filippis assists defense and aerospace manufacturers in sourcing, buying and leasing high-security industrial buildings across the Mound Road / Van Dyke defense corridor in Warren and Sterling Heights, the I-75 Oakland County engineering corridor, and the Ann Arbor / Willow Run / I-275 aviation and research belt."
+      ],
+      "specs": [
+        {
+          "label": "Security & Compliance",
+          "value": "ITAR, EAR, CMMC 2.0 & Perimeter-Secured Sites"
+        },
+        {
+          "label": "Classified Readiness",
+          "value": "SCIF-Capable Office/Lab & Controlled Access"
+        },
+        {
+          "label": "Defense Anchors",
+          "value": "Detroit Arsenal (TACOM/DEVCOM) & Selfridge ANGB"
+        },
+        {
+          "label": "Core Corridors",
+          "value": "Warren, Sterling Heights, Auburn Hills, Troy & Ann Arbor"
+        },
+        {
+          "label": "Production Specs",
+          "value": "Heavy Cranes, 480V Power, Thick Slabs & Test Cells"
+        },
+        {
+          "label": "Airfield Access",
+          "value": "Willow Run (YIP), DTW & Oakland County Int'l (PTK)"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Security, ITAR/CMMC and production requirements",
+          "text": "Review physical security setbacks, perimeter fencing, controlled entry points, SCIF or secure server room capability, along with heavy machining, crane, power and environmental specs."
+        },
+        {
+          "title": "Defense corridor targeting",
+          "text": "Identify qualified single-tenant or secure facilities in Macomb County (Warren, Sterling Heights, Shelby Township), Oakland County (Auburn Hills, Troy, Rochester Hills, Wixom) and Washtenaw/Wayne (Ann Arbor, Ypsilanti/Willow Run, Plymouth, Livonia)."
+        },
+        {
+          "title": "Ownership and foreign-interest screening",
+          "text": "For sensitive defense leases, verify building ownership structure, neighboring tenant uses and exclusive control over loading docks, roof access and telecommunications risers."
+        },
+        {
+          "title": "Facility inspection and infrastructure audit",
+          "text": "Verify floor load capacities for 5-axis CNC mills, crane hook heights for armored hull or airframe handling, primary electrical capacity and backup generator pads."
+        },
+        {
+          "title": "Confidential acquisition or lease execution",
+          "text": "Manage transactions under strict NDAs to protect contract bidding confidentiality through closing and facility commissioning."
+        }
+      ],
+      "who": [
+        "Defense primes and tier-1 / tier-2 ground vehicle and munitions suppliers",
+        "Aerospace precision machining, turbine component and composite manufacturers",
+        "Autonomous defense, unmanned aerial system (UAS) and counter-drone technology firms",
+        "Military R&D, prototyping, ballistics testing and systems integration contractors",
+        "Machine shops transitioning from commercial automotive to ITAR defense contracts"
+      ],
+      "faqs": [
+        {
+          "q": "Where is Michigan's primary defense manufacturing cluster located?",
+          "a": "The Macomb County defense corridor along Mound Road and M-53 (Van Dyke) in Warren and Sterling Heights anchors ground vehicle defense around the U.S. Army Detroit Arsenal (TACOM/DEVCOM). That cluster connects directly west via I-696 and M-59 into Troy, Auburn Hills and Wixom, and southwest along I-94 to Willow Run Airport and Ann Arbor."
+        },
+        {
+          "q": "What property features do ITAR and defense subcontractors typically require?",
+          "a": "Most defense suppliers prefer single-tenant freestanding buildings with controlled perimeter access, badge-secured entries separating visitor lobbies from shop floors, windowless or screened production bays, heavy 480V power for multi-axis CNC machining, bridge cranes, and fiber redundancy for CMMC-compliant networks."
+        }
+      ]
+    },
+    {
+      "slug": "rd-lab-cleanroom-ev-testing",
+      "category": "specialty",
+      "title": "R&D, Lab Space, Cleanrooms & Battery/EV Testing",
+      "short_title": "R&D, Labs & Cleanrooms",
+      "tag": "Flex R&D · Cleanrooms · Testing Cells",
+      "description": "High-tech flex, wet/dry laboratories, ISO cleanrooms, pharmaceutical compounding and powertrain/battery testing facilities across Ann Arbor, Plymouth, Livonia, Novi and Auburn Hills.",
+      "headline": "R&D, cleanroom, laboratory and testing facilities in Southeast Michigan",
+      "need": "Buy a property",
+      "meta": "R&D, laboratory, ISO cleanroom, pharmaceutical compounding and battery/EV testing real estate in Ann Arbor, Plymouth, Livonia, Novi, Wixom and Auburn Hills, MI. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "Southeast Michigan's R&D real estate market bridges life sciences, pharmaceutical compounding, medical devices, semiconductor/optics research, and mobility/battery testing. These operations require far more than standard flex office space. They need buildings with heavy mechanical, electrical and plumbing (MEP) bones.",
+        "Drake Filippis has represented pharmaceutical compounders (such as VIOS Compounding's headquarters acquisition in Livonia), automotive R&D engineering groups (such as Cross and Black in Plymouth), and adaptive reuse buyers of major corporate R&D campuses (such as the 50,266 SF former Tecumseh Products global R&D lab on Hines Drive in Ann Arbor).",
+        "Whether your team needs an existing ISO-rated cleanroom, cGMP pharmaceutical facility, wet/dry lab with fume hood exhaust, or a high-power technical center with dynamometer cells, battery cyclers, chilled water loops and reinforced ventilation, Drake identifies facilities that cut build-out cost and time in half."
+      ],
+      "specs": [
+        {
+          "label": "Lab & Cleanroom Types",
+          "value": "ISO 5-8 Cleanrooms, cGMP, Wet/Dry Labs"
+        },
+        {
+          "label": "Testing Infrastructure",
+          "value": "Dyno Cells, Battery Cyclers & Thermal Chambers"
+        },
+        {
+          "label": "Mechanical & HVAC",
+          "value": "Dedicated Make-Up Air, Chilled Water & Exhaust"
+        },
+        {
+          "label": "Power & Safety",
+          "value": "Heavy 480V 3-Phase, Backup Gen & H-Occupancy"
+        },
+        {
+          "label": "Key Submarkets",
+          "value": "Ann Arbor, Plymouth, Livonia, Novi, Wixom & Auburn Hills"
+        },
+        {
+          "label": "Building Formats",
+          "value": "Corporate Tech Centers, Flex R&D & Single-Tenant HQ"
+        }
+      ],
+      "steps": [
+        {
+          "title": "MEP, cleanroom and regulatory scoping",
+          "text": "Define air changes per hour (ACH), ISO cleanroom classification, ceiling deck height above drop ceilings, electrical load for testing chambers, deionized water, floor drains and hazardous material storage (H-occupancy) needs."
+        },
+        {
+          "title": "Existing R&D and lab infrastructure search",
+          "text": "Target second-generation R&D buildings, former OEM technical centers, and high-clear flex properties in Ann Arbor, Plymouth, Livonia, Novi, Farmington Hills and Auburn Hills with existing lab or testing infrastructure."
+        },
+        {
+          "title": "Roof, slab and utility capacity verification",
+          "text": "Evaluate structural roof capacity for heavy rooftop HVAC units and scrubbers, clear height from slab to deck to accommodate interstitial mechanical plenums, and primary utility feeds."
+        },
+        {
+          "title": "Zoning and environmental clearance",
+          "text": "Confirm municipal zoning approval for research, laboratory, chemical handling or battery testing uses, and coordinate with fire marshals on suppression and containment standards."
+        },
+        {
+          "title": "Turnkey lease or purchase execution",
+          "text": "Structure tenant improvement allowances, equipment financing timelines and phased occupancy so lab certification and commissioning stay on schedule."
+        }
+      ],
+      "who": [
+        "Pharmaceutical compounding, biotech, life-science and medical device companies",
+        "EV battery, fuel cell, powertrain and thermal management testing labs",
+        "Automotive, mobility and defense R&D engineering headquarters",
+        "Semiconductor, photonics, materials science and electronics labs",
+        "Owners repositioning or selling corporate technical centers and R&D facilities"
+      ],
+      "faqs": [
+        {
+          "q": "Why do cleanroom and laboratory users need specialized industrial flex buildings?",
+          "a": "Cleanrooms and testing labs require interstitial space above the ceiling grid for HEPA fan filter units, ductwork and process piping. That means a building needs 16' to 24'+ clear height to the roof deck, heavy roof load capacity for makeup-air units, dedicated 480V power, and reinforced slabs for vibration-sensitive instruments."
+        },
+        {
+          "q": "Where are R&D and technical centers concentrated in Metro Detroit and Ann Arbor?",
+          "a": "Ann Arbor (Research Park Drive, State Street, Jackson Road), Plymouth (Plymouth Oaks, M-14 corridor), Livonia, Novi, Farmington Hills and Wixom form the western R&D belt, while Auburn Hills, Troy and Rochester Hills anchor the northern I-75 technical center corridor."
+        }
+      ]
+    },
+    {
+      "slug": "industrial-outdoor-storage-ios-truck-terminals",
+      "category": "specialty",
+      "title": "Industrial Outdoor Storage (IOS), Truck Terminals & Fleet Yards",
+      "short_title": "IOS & Truck Terminals",
+      "tag": "Zoned Heavy Yard · Cross-Dock · DTW & Interstates",
+      "description": "Zoned industrial outdoor storage (IOS), drop-trailer yards, cross-dock truck terminals and equipment fleet facilities near I-94, I-275, I-75, DTW Airport and Detroit intermodal hubs.",
+      "headline": "Zoned Industrial Outdoor Storage (IOS), truck terminals and fleet maintenance yards",
+      "need": "Lease space",
+      "meta": "Industrial Outdoor Storage (IOS), truck terminals, cross-dock facilities and drop-trailer yards in Romulus, Taylor, Detroit, Belleville, Canton, Livonia, Warren and Metro Detroit. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "Industrial Outdoor Storage (IOS) and truck terminals are among the hardest properties to entitle in Southeast Michigan. While municipalities frequently welcome enclosed warehouses, very few townships allow unenclosed outdoor storage of semi-trailers, shipping containers, heavy construction equipment, utility fleet vehicles, pipe, lumber or bulk materials by right.",
+        "Because strict zoning ordinances and screening requirements block new IOS supply, existing grandfathered yards and heavy-zoned sites (M-2, I-2, Heavy Industrial) with low building-to-land coverage ratios command strong demand from logistics fleets, LTL carriers, equipment rental companies, infrastructure contractors and institutional IOS investors.",
+        "Drake Filippis tracks zoned outdoor storage sites, cross-dock truck terminals, maintenance shops with drive-through bays, and drop-trailer yards along I-94, I-275, I-75, I-96, Detroit Metro Airport (DTW), the Gordie Howe International Bridge / Ambassador Bridge border corridors, and regional Class I rail intermodal yards."
+      ],
+      "specs": [
+        {
+          "label": "Site Coverage Ratio",
+          "value": "5% to 25% Building-to-Land Coverage"
+        },
+        {
+          "label": "Shop & Terminal Formats",
+          "value": "Cross-Dock Doors & Drive-Through Maintenance Bays"
+        },
+        {
+          "label": "Yard Surfacing",
+          "value": "Heavy-Duty Concrete, Asphalt or Compacted Crushed Concrete"
+        },
+        {
+          "label": "Security & Site Specs",
+          "value": "Perimeter Fencing, LED Yard Lighting, Wide Turning Radii"
+        },
+        {
+          "label": "Zoning Classifications",
+          "value": "Heavy Industrial (M-2 / I-2) & Approved Outdoor Storage"
+        },
+        {
+          "label": "Core Logistics Hubs",
+          "value": "Romulus/DTW, Taylor, Belleville, Detroit, Livonia & Monroe"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Fleet, trailer count and zoning verification",
+          "text": "Determine tractor/trailer parking counts, turning radius requirements, maintenance bay specs (drive-through doors, floor trenches, oil-water separators), and outdoor material stacking height."
+        },
+        {
+          "title": "Municipal outdoor storage ordinance audit",
+          "text": "Before touring a site, we verify the exact municipal zoning code and special land-use rules to confirm whether outdoor storage or commercial fleet parking is permitted by right, grandfathered or requires township planning approval."
+        },
+        {
+          "title": "Corridor and weight-limit screening",
+          "text": "Target properties with Class A all-season (frost-law exempt) truck route access to I-94, I-275, I-75, I-96 and US-23."
+        },
+        {
+          "title": "Pavement, drainage and environmental review",
+          "text": "Evaluate yard base thickness (heavy concrete vs. asphalt vs. aggregate), stormwater retention, fuel island history, and Phase I/BEA environmental protections."
+        },
+        {
+          "title": "Lease, purchase or sale-leaseback execution",
+          "text": "Negotiate IOS leases, terminal acquisitions, or off-market dispositions to national IOS funds and regional fleet operators."
+        }
+      ],
+      "who": [
+        "Third-party logistics (3PL), LTL freight carriers and drayage trucking fleets",
+        "Heavy equipment rental, crane, scaffolding and utility contractors",
+        "Building materials, steel, pipe, precast concrete and lumber distributors",
+        "Municipal, waste management, utility line-truck and commercial vehicle fleets",
+        "Institutional IOS investors and landowners selling low-coverage industrial acreage"
+      ],
+      "faqs": [
+        {
+          "q": "Why is Industrial Outdoor Storage (IOS) so difficult to find in Metro Detroit?",
+          "a": "Most suburban zoning codes prohibit outdoor storage or commercial trailer parking unless it is accessory to a large building and fully screened behind masonry walls. Sites with heavy industrial zoning (M-2 or I-2) or grandfathered outdoor storage approval near I-94, I-275 and I-75 are scarce and rarely sit vacant."
+        },
+        {
+          "q": "Which communities around Metro Detroit offer the best access for truck terminals and IOS?",
+          "a": "Romulus, Taylor, Belleville/Van Buren Township, southwest Detroit, Dearborn, Brownstown, Monroe, Warren, Roseville and select industrial pockets of Livonia, Canton, Ypsilanti Township and Pontiac offer the strongest combination of heavy zoning and interstate access."
+        }
+      ]
+    },
+    {
+      "slug": "brownfield-economic-development-incentives",
+      "category": "specialty",
+      "title": "Brownfield, BEA & Economic Development Incentives",
+      "short_title": "Brownfield & Incentives",
+      "tag": "MEDC · BEA / Due Care · Tax Abatements",
+      "description": "Industrial site selection and redevelopment backed by Michigan Baseline Environmental Assessments (BEAs), Brownfield TIF, PA 198 tax abatements and municipal/state economic development incentives.",
+      "headline": "Navigate Michigan environmental liability protections and industrial economic development incentives",
+      "need": "Buy a property",
+      "meta": "Michigan industrial brownfield redevelopment, Baseline Environmental Assessments (BEA), Due Care plans, PA 198 tax abatements and MEDC economic development incentives. Call Drake Filippis at (248) 941-1125.",
+      "overview": [
+        "In a legacy manufacturing state like Michigan, many of the best-located industrial buildings and infill land sites, complete with heavy power, rail spurs and interstate frontage, carry some history of prior industrial use. Buyers from outside Michigan often walk away from great buildings because they do not understand Michigan's unique statutory liability protection: the Baseline Environmental Assessment (BEA).",
+        "Under Part 201 of Michigan's Natural Resources and Environmental Protection Act (NREPA), overseen by EGLE, a new buyer or tenant who conducts a Phase I/Phase II environmental assessment and timely submits a Baseline Environmental Assessment (BEA) within the statutory window can acquire a contaminated industrial property without becoming liable for pre-existing contamination, provided they exercise 'Due Care' for safe occupancy.",
+        "Beyond environmental protection, Drake Filippis works directly with municipal, county and state economic development professionals, including the Michigan Economic Development Corporation (MEDC), Oakland County, Wayne County, Washtenaw County, Macomb County and local township supervisors, to help job-creating industrial companies access Brownfield TIF reimbursement, PA 198 industrial property tax abatements, workforce training grants and utility infrastructure support."
+      ],
+      "specs": [
+        {
+          "label": "Environmental Liability",
+          "value": "Michigan Part 201 BEA & Section 20107a Due Care"
+        },
+        {
+          "label": "Tax & Capital Incentives",
+          "value": "Brownfield TIF (Act 381) & PA 198 Abatements"
+        },
+        {
+          "label": "State & Regional Agencies",
+          "value": "MEDC, EGLE, Detroit Regional Partnership & Counties"
+        },
+        {
+          "label": "Workforce & HR Programs",
+          "value": "Going PRO Talent Fund & Michigan Works! Grants"
+        },
+        {
+          "label": "Infrastructure Support",
+          "value": "Road, Water/Sewer & Utility Line-Extension Grants"
+        },
+        {
+          "label": "Eligible Projects",
+          "value": "Job-Creating Manufacturing, R&D, Onshoring & Redev"
+        }
+      ],
+      "steps": [
+        {
+          "title": "Project capital, headcount and payroll scoping",
+          "text": "Quantify planned real estate capital investment, new machinery and equipment spend, job creation numbers and average wage levels before any lease or purchase agreement is signed (since most state and municipal incentives require inducement prior to site commitment)."
+        },
+        {
+          "title": "Municipal and MEDC economic development alignment",
+          "text": "Engage state, county and township economic development directors early to gauge support for PA 198 industrial facilities tax exemptions, Brownfield Redevelopment Authority (BRA) tax increment financing, and workforce training grants."
+        },
+        {
+          "title": "Phase I / Phase II ESA and BEA timeline management",
+          "text": "Coordinate with vetted Michigan environmental engineering firms to complete Phase I and Phase II testing within the strict statutory deadlines required to file a Michigan BEA with EGLE."
+        },
+        {
+          "title": "Due Care and brownfield cost recovery",
+          "text": "Determine whether vapor mitigation, slab sealing, demolition, asbestos abatement or infrastructure improvements qualify for reimbursement through local and state Brownfield Tax Increment Financing (TIF)."
+        },
+        {
+          "title": "Incentive-contingent closing",
+          "text": "Structure purchase and lease contracts with clear environmental and municipal approval milestones so your company captures every available incentive dollar before closing."
+        }
+      ],
+      "who": [
+        "Manufacturers expanding headcount or investing in new facilities and equipment in Michigan",
+        "Out-of-state and international companies onshoring operations into Southeast Michigan",
+        "Buyers of legacy manufacturing plants requiring a Michigan BEA and Due Care plan",
+        "Developers acquiring infill industrial properties for demolition or adaptive reuse",
+        "Sellers of older industrial properties who need a broker capable of guiding buyers through environmental due diligence"
+      ],
+      "faqs": [
+        {
+          "q": "What is a Michigan Baseline Environmental Assessment (BEA) and why is it so important for industrial buyers?",
+          "a": "Michigan is one of the few states where a new buyer or tenant of a contaminated property can obtain statutory protection from cleanup liability for existing contamination. By completing a Phase I and Phase II Environmental Site Assessment prior to or within 45 days after acquisition and filing a BEA with EGLE within 6 months, the buyer is protected from liability for pre-existing conditions and only needs to comply with 'Due Care' obligations to keep occupants safe."
+        },
+        {
+          "q": "When should a company contact economic development agencies about incentives?",
+          "a": "Always before signing a binding lease or purchase agreement. State and local programs from MEDC and municipal councils typically require proof that the incentive is necessary for the project to move forward in that community. Drake coordinates introductions to state, county and local economic development teams while site selection is still underway."
+        }
       ]
     }
   ],
@@ -334,14 +1087,14 @@
       "property": "4301 Highland Rd.",
       "subtitle": "Waterford, MI",
       "client": "Advanced Systems",
-      "client_industry": "",
+      "client_industry": "R&D / Flex Industrial",
       "side": "Buyer",
       "deal_type": "Sale",
       "size": "8,892 SF",
       "closed_date": "April 17, 2026",
-      "headline": "Advanced Systems acquires 8,892 SF facility in Waterford",
-      "summary": "Buyer representation for Advanced Systems on the acquisition of 4301 Highland Rd., Waterford.",
-      "body_md": "[Add case study narrative here — search process, key requirements, why this site, how the transaction came together, timeline, any creative deal points.]",
+      "headline": "Advanced Systems Acquires 8,892 SF R&D and Flex Facility in Waterford",
+      "summary": "Buyer representation for Advanced Systems on the acquisition of 4301 Highland Rd in Waterford, Michigan.",
+      "body_md": "Advanced Systems needed a freestanding Oakland County facility that combined clean technical office and engineering space with functional flex and light industrial shop capacity along the M-59 corridor.\n\n### Search and Execution\n- **Requirement:** High-visibility Oakland County facility with adaptable R&D, assembly and service bays.\n- **Solution:** Identified and secured 4301 Highland Rd in Waterford, totaling 8,892 SF.\n- **Outcome:** Closed April 17, 2026 with Drake Filippis representing the buyer, giving Advanced Systems long-term ownership control in central Oakland County.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -357,7 +1110,8 @@
       "photos": [],
       "services": [
         "acquisition",
-        "buyer-representation"
+        "buyer-representation",
+        "rd-lab-cleanroom-ev-testing"
       ],
       "price": "",
       "address": "4301 Highland Rd",
@@ -374,9 +1128,9 @@
       "deal_type": "Sale",
       "size": "15,400 SF",
       "closed_date": "",
-      "headline": "VIOS Compounding establishes new HQ at 32131 Industrial Drive, Livonia",
-      "summary": "Buyer representation for pharmaceutical compounder VIOS Compounding on their new 15,400 SF headquarters acquisition in Livonia.",
-      "body_md": "[Add case study narrative here — site selection criteria for pharmaceutical compounding, build-out considerations, why Livonia, timeline.]",
+      "headline": "VIOS Compounding Acquires 15,400 SF Headquarters at 32131 Industrial Drive in Livonia",
+      "summary": "Buyer representation for pharmaceutical compounder VIOS Compounding on their 15,400 SF headquarters and cleanroom facility acquisition in Livonia, Michigan.",
+      "body_md": "Pharmaceutical compounding and life-science operations require buildings with strong mechanical, electrical and structural bones capable of supporting specialized cleanroom environments, dedicated HVAC make-up air and strict regulatory compliance.\n\n### Search and Execution\n- **Requirement:** A freestanding industrial/flex building in western Wayne County with the clear height, roof capacity, power and layout required for a flagship compounding pharmacy headquarters.\n- **Solution:** Secured 32131 Industrial Drive in Livonia, a 15,400 SF facility positioned immediately off the I-96 and I-275 industrial corridor.\n- **Outcome:** Represented the buyer through site selection, technical due diligence and closing, establishing VIOS Compounding's new headquarters in Livonia.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -392,7 +1146,8 @@
       "photos": [],
       "services": [
         "acquisition",
-        "buyer-representation"
+        "buyer-representation",
+        "rd-lab-cleanroom-ev-testing"
       ],
       "price": "",
       "address": "32131 Industrial Drive",
@@ -409,9 +1164,9 @@
       "deal_type": "Investment Sale",
       "size": "44,403 SF · 4 Buildings",
       "closed_date": "",
-      "headline": "Dual representation on 44,403 SF medical office investment portfolio",
-      "summary": "Represented both buyer and seller on a four-building medical office investment portfolio totaling 44,403 SF.",
-      "body_md": "[Add case study narrative here — portfolio composition, tenant mix, investment thesis, valuation approach, why dual rep worked, timeline.]",
+      "headline": "Dual Representation on 44,403 SF Four-Building Medical Investment Portfolio Sale",
+      "summary": "Represented both buyer and seller on the investment sale of a four-building medical office portfolio totaling 44,403 SF.",
+      "body_md": "Portfolio investment sales require detailed rent-roll underwriting, lease expiration analysis and direct alignment between seller valuation expectations and buyer yield requirements.\n\n### Transaction Highlights\n- **Asset:** Four-building medical office investment portfolio totaling 44,403 SF.\n- **Representation:** Drake Filippis represented both the seller and the buyer, managing underwriting, property inspections, tenant estoppels and closing coordination from start to finish.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -441,14 +1196,14 @@
       "property": "1294 Beach Court",
       "subtitle": "Saline, MI, New Headquarters",
       "client": "Bank Supplies",
-      "client_industry": "",
+      "client_industry": "Manufacturing & Distribution",
       "side": "Buyer",
       "deal_type": "Sale · Consolidation",
       "size": "105,418 SF",
       "closed_date": "",
-      "headline": "Bank Supplies acquires 105,418 SF headquarters in Saline",
-      "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court, a consolidation from four facilities into one new headquarters.",
-      "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
+      "headline": "BankSupplies Acquires 105,418 SF Headquarters at 1294 Beach Court in Saline for $7,900,000",
+      "summary": "Buyer representation for BankSupplies on the $7,900,000 acquisition of 1294 Beach Court in Saline, Michigan, consolidating four facilities into one 105,418 SF flagship headquarters.",
+      "body_md": "BankSupplies had outgrown its fragmented footprint across four separate buildings and needed a single, high-capacity manufacturing and distribution headquarters in Washtenaw County to unify operations and support long-term growth.\n\n### Search and Execution\n- **Requirement:** Over 100,000 SF in the Ann Arbor / Saline corridor with heavy industrial zoning, strong clear height, dock loading and corporate headquarters presence.\n- **Solution:** Identified and negotiated the $7,900,000 acquisition of 1294 Beach Court in Saline, a 105,418 SF facility on a prime industrial campus.\n- **Outcome:** Consolidated four locations under one roof while coordinating disposition and sublease strategies for the company's legacy spaces in Saline and Belleville.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -464,7 +1219,8 @@
       "photos": [],
       "services": [
         "acquisition",
-        "buyer-representation"
+        "buyer-representation",
+        "heavy-power-onshoring-manufacturing"
       ],
       "property_type": "Manufacturing",
       "price": "$7,900,000",
@@ -476,14 +1232,14 @@
       "property": "45570 Maben Rd",
       "subtitle": "Canton, MI 48188",
       "client": "Michigan Fine Yarn",
-      "client_industry": "Retail",
+      "client_industry": "Specialty Retail & Distribution",
       "side": "Buyer",
       "deal_type": "Sale",
       "size": "7,680 SF",
       "closed_date": "May 28, 2026",
-      "headline": "Michigan Fine Yarn Expands to Larger Facility",
-      "summary": "",
-      "body_md": "",
+      "headline": "Michigan Fine Yarn Acquires 7,680 SF Facility at 45570 Maben Rd in Canton",
+      "summary": "Buyer representation for Michigan Fine Yarn on the acquisition of a 7,680 SF facility at 45570 Maben Rd in Canton, Michigan.",
+      "body_md": "Growing specialty businesses along the I-275 corridor face tight inventory when searching for freestanding buildings under 10,000 SF.\n\n### Transaction Highlights\n- **Property:** 45570 Maben Rd, Canton, MI 48188 (7,680 SF).\n- **Representation:** Buyer representation for Michigan Fine Yarn.\n- **Outcome:** Closed May 28, 2026, providing the owner-user with dedicated showroom, fulfillment and warehouse space in Canton Township.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -508,7 +1264,7 @@
       "property_type": "Retail"
     },
     {
-      "slug": "Cross and Black",
+      "slug": "cross-and-black",
       "year": "2026",
       "property": "44099 Plymouth Oaks Blvd",
       "subtitle": "Plymouth",
@@ -518,9 +1274,9 @@
       "deal_type": "Lease",
       "size": "7,711 SF",
       "closed_date": "June 5, 2026",
-      "headline": "",
-      "summary": "",
-      "body_md": "",
+      "headline": "Cross and Black Leases 7,711 SF Automotive R&D Facility at 44099 Plymouth Oaks Blvd",
+      "summary": "Tenant representation for automotive R&D firm Cross and Black on a 7,711 SF flex industrial lease at 44099 Plymouth Oaks Blvd in Plymouth, Michigan.",
+      "body_md": "Plymouth Oaks Business Park is one of the premier R&D and high-tech flex industrial corridors along M-14 and I-275, drawing automotive suppliers, engineering groups and testing operations.\n\n### Transaction Highlights\n- **Property:** 44099 Plymouth Oaks Blvd, Plymouth, MI (7,711 SF).\n- **Representation:** Tenant representation for Cross and Black.\n- **Outcome:** Closed June 5, 2026, securing a high-image R&D and flex industrial footprint in Plymouth Township.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -537,11 +1293,13 @@
         "/uploads/cross-and-black.webp"
       ],
       "services": [
-        "tenant-representation"
+        "tenant-representation",
+        "rd-lab-cleanroom-ev-testing"
       ],
       "price": "",
       "address": "44099 Plymouth Oaks Blvd",
-      "property_type": "R&D / Flex Industrial"
+      "property_type": "R&D / Flex Industrial",
+      "legacy_slug": "Cross and Black"
     },
     {
       "slug": "synergy-dance-clipper-plymouth",
@@ -549,14 +1307,14 @@
       "property": "47495 Clipper St",
       "subtitle": "Plymouth Twp, MI",
       "client": "Synergy Dance Studio",
-      "client_industry": "Recreation and entertainment",
+      "client_industry": "Recreation and Entertainment",
       "side": "Both",
       "deal_type": "Lease",
       "size": "8,874 SF",
       "closed_date": "July 9, 2026",
-      "headline": "Synergy Dance Studio moves to new home at 47495 Clipper St",
-      "summary": "Represented both landlord and tenant on Synergy Dance Studio's 8,874 SF lease at 47495 Clipper St, Plymouth Twp.",
-      "body_md": "After seventeen years in downtown Plymouth, Synergy Dance Studio needed more than double the space at a location easier for families to reach. Clipper Street is their new home, where they keep growing and serving young dancers across Plymouth and the surrounding area.",
+      "headline": "Synergy Dance Studio Leases 8,874 SF at 47495 Clipper St in Plymouth Township",
+      "summary": "Represented both landlord and tenant on Synergy Dance Studio's 8,874 SF lease at 47495 Clipper St in Plymouth Township, Michigan.",
+      "body_md": "After seventeen years in downtown Plymouth, Synergy Dance Studio needed more than double the space at a location with high clear heights, open column spans and convenient access for families across the Plymouth-Canton community. Clipper Street in Plymouth Township delivered an 8,874 SF footprint where they continue growing.",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -579,7 +1337,7 @@
       "property_type": "Recreational"
     },
     {
-      "slug": "",
+      "slug": "35255-glendale-st-livonia-32-736-2024",
       "year": "2024",
       "property": "Warehouse lease, Livonia",
       "subtitle": "Livonia, MI",
@@ -594,10 +1352,13 @@
         "tenant-representation"
       ],
       "price": "$7.51/SF/yr NNN",
-      "address": "35255 Glendale St"
+      "address": "35255 Glendale St",
+      "headline": "32,736 SF Industrial Lease at 35255 Glendale St in Livonia, MI",
+      "summary": "Tenant representation by Drake Filippis on the 2024 lease of 32,736 SF at 35255 Glendale St, Livonia, MI ($7.51/SF/yr NNN).",
+      "body_md": "Drake Filippis (tenant representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **35255 Glendale St** in **Livonia, MI** in 2024.\n\n### Transaction Summary\n- **Property Address:** 35255 Glendale St, Livonia, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 32,736 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $7.51/SF/yr NNN\n- **Representation:** Tenant representation"
     },
     {
-      "slug": "",
+      "slug": "606-airport-blvd-1-2-ann-arbor-8-000-2024",
       "year": "2024",
       "property": "Manufacturing lease, Ann Arbor",
       "subtitle": "Ann Arbor, MI",
@@ -613,10 +1374,13 @@
         "landlord-representation"
       ],
       "price": "$11.35/SF/yr G+U+J",
-      "address": "606 Airport Blvd #1-2"
+      "address": "606 Airport Blvd #1-2",
+      "headline": "8,000 SF Manufacturing Lease at 606 Airport Blvd #1-2 in Ann Arbor, MI",
+      "summary": "Dual representation (both sides) by Drake Filippis on the 2024 lease of 8,000 SF at 606 Airport Blvd #1-2, Ann Arbor, MI ($11.35/SF/yr G+U+J).",
+      "body_md": "Drake Filippis (dual representation (both sides), Signature Associates / Midwest Industrial Brokers) completed the lease of **606 Airport Blvd #1-2** in **Ann Arbor, MI** in 2024.\n\n### Transaction Summary\n- **Property Address:** 606 Airport Blvd #1-2, Ann Arbor, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 8,000 SF\n- **Property Type:** Manufacturing\n- **Price / Rate:** $11.35/SF/yr G+U+J\n- **Representation:** Dual representation (both sides)"
     },
     {
-      "slug": "",
+      "slug": "2350-green-rd-ann-arbor-6-412-2024",
       "year": "2024",
       "property": "Office lease, Ann Arbor",
       "subtitle": "Ann Arbor, MI",
@@ -631,10 +1395,13 @@
         "tenant-representation"
       ],
       "price": "$20.80/SF/yr G+U+J",
-      "address": "2350 Green Rd"
+      "address": "2350 Green Rd",
+      "headline": "6,412 SF Office Lease at 2350 Green Rd in Ann Arbor, MI",
+      "summary": "Tenant representation by Drake Filippis on the 2024 lease of 6,412 SF at 2350 Green Rd, Ann Arbor, MI ($20.80/SF/yr G+U+J).",
+      "body_md": "Drake Filippis (tenant representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **2350 Green Rd** in **Ann Arbor, MI** in 2024.\n\n### Transaction Summary\n- **Property Address:** 2350 Green Rd, Ann Arbor, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 6,412 SF\n- **Property Type:** Office\n- **Price / Rate:** $20.80/SF/yr G+U+J\n- **Representation:** Tenant representation"
     },
     {
-      "slug": "",
+      "slug": "14975-cleat-st-plymouth-twp-10-000-2025",
       "year": "2025",
       "property": "Flex sale, Plymouth Twp",
       "subtitle": "Plymouth Twp, MI",
@@ -649,10 +1416,13 @@
         "disposition"
       ],
       "price": "$1,170,000",
-      "address": "14975 Cleat St"
+      "address": "14975 Cleat St",
+      "headline": "10,000 SF Industrial Sale at 14975 Cleat St in Plymouth Twp, MI",
+      "summary": "Seller representation by Drake Filippis on the 2025 sale of 10,000 SF at 14975 Cleat St, Plymouth Twp, MI ($1,170,000).",
+      "body_md": "Drake Filippis (seller representation, Signature Associates / Midwest Industrial Brokers) completed the sale of **14975 Cleat St** in **Plymouth Twp, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 14975 Cleat St, Plymouth Twp, MI\n- **Transaction Type:** Sale (Sold)\n- **Size:** 10,000 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $1,170,000\n- **Representation:** Seller representation"
     },
     {
-      "slug": "",
+      "slug": "40440-grand-river-ave-a8-novi-5-000-2025",
       "year": "2025",
       "property": "Warehouse lease, Novi",
       "subtitle": "Novi, MI",
@@ -667,10 +1437,13 @@
         "tenant-representation"
       ],
       "price": "$9.27/SF/yr NNN",
-      "address": "40440 Grand River Ave #A8"
+      "address": "40440 Grand River Ave #A8",
+      "headline": "5,000 SF Industrial Lease at 40440 Grand River Ave #A8 in Novi, MI",
+      "summary": "Tenant representation by Drake Filippis on the 2025 lease of 5,000 SF at 40440 Grand River Ave #A8, Novi, MI ($9.27/SF/yr NNN).",
+      "body_md": "Drake Filippis (tenant representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **40440 Grand River Ave #A8** in **Novi, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 40440 Grand River Ave #A8, Novi, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 5,000 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $9.27/SF/yr NNN\n- **Representation:** Tenant representation"
     },
     {
-      "slug": "",
+      "slug": "4100-varsity-dr-ann-arbor-8-040-2025",
       "year": "2025",
       "property": "Flex lease, Ann Arbor",
       "subtitle": "Ann Arbor, MI",
@@ -686,10 +1459,13 @@
       ],
       "price": "",
       "price_note": "Sheet marked Release Sale Price: NO",
-      "address": "4100 Varsity Dr"
+      "address": "4100 Varsity Dr",
+      "headline": "8,040 SF Industrial Sublease at 4100 Varsity Dr in Ann Arbor, MI",
+      "summary": "Tenant representation by Drake Filippis on the 2025 sublease of 8,040 SF at 4100 Varsity Dr, Ann Arbor, MI.",
+      "body_md": "Drake Filippis (tenant representation, Signature Associates / Midwest Industrial Brokers) completed the sublease of **4100 Varsity Dr** in **Ann Arbor, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 4100 Varsity Dr, Ann Arbor, MI\n- **Transaction Type:** Sublease (Leased)\n- **Size:** 8,040 SF\n- **Property Type:** Industrial\n- **Representation:** Tenant representation"
     },
     {
-      "slug": "",
+      "slug": "51523-celeste-dr-shelby-twp-11-525-2025",
       "year": "2025",
       "property": "Manufacturing lease, Shelby Twp",
       "subtitle": "Shelby Twp, MI",
@@ -704,10 +1480,13 @@
         "tenant-representation"
       ],
       "price": "$10.56/SF/yr NNN",
-      "address": "51523 Celeste Dr"
+      "address": "51523 Celeste Dr",
+      "headline": "11,525 SF Manufacturing Lease at 51523 Celeste Dr in Shelby Twp, MI",
+      "summary": "Tenant representation by Drake Filippis on the 2025 lease of 11,525 SF at 51523 Celeste Dr, Shelby Twp, MI ($10.56/SF/yr NNN).",
+      "body_md": "Drake Filippis (tenant representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **51523 Celeste Dr** in **Shelby Twp, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 51523 Celeste Dr, Shelby Twp, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 11,525 SF\n- **Property Type:** Manufacturing\n- **Price / Rate:** $10.56/SF/yr NNN\n- **Representation:** Tenant representation"
     },
     {
-      "slug": "",
+      "slug": "45700-port-st-plymouth-twp-19-740-2025",
       "year": "2025",
       "property": "Manufacturing sale, Plymouth Twp",
       "subtitle": "Plymouth Twp, MI",
@@ -723,10 +1502,13 @@
         "buyer-representation"
       ],
       "price": "$2,165,000",
-      "address": "45700 Port St"
+      "address": "45700 Port St",
+      "headline": "19,740 SF Manufacturing Sale at 45700 Port St in Plymouth Twp, MI",
+      "summary": "Buyer representation by Drake Filippis on the 2025 sale of 19,740 SF at 45700 Port St, Plymouth Twp, MI ($2,165,000).",
+      "body_md": "Drake Filippis (buyer representation, Signature Associates / Midwest Industrial Brokers) completed the sale of **45700 Port St** in **Plymouth Twp, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 45700 Port St, Plymouth Twp, MI\n- **Transaction Type:** Sale (Sold)\n- **Size:** 19,740 SF\n- **Property Type:** Manufacturing\n- **Price / Rate:** $2,165,000\n- **Representation:** Buyer representation"
     },
     {
-      "slug": "",
+      "slug": "2015-w-stadium-blvd-ann-arbor-5-156-2025",
       "year": "2025",
       "property": "Retail lease, Ann Arbor",
       "subtitle": "Ann Arbor, MI",
@@ -741,10 +1523,13 @@
         "landlord-representation"
       ],
       "price": "$24.46/SF/yr NNN",
-      "address": "2015 W Stadium Blvd"
+      "address": "2015 W Stadium Blvd",
+      "headline": "5,156 SF Retail Lease at 2015 W Stadium Blvd in Ann Arbor, MI",
+      "summary": "Landlord representation by Drake Filippis on the 2025 lease of 5,156 SF at 2015 W Stadium Blvd, Ann Arbor, MI ($24.46/SF/yr NNN).",
+      "body_md": "Drake Filippis (landlord representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **2015 W Stadium Blvd** in **Ann Arbor, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 2015 W Stadium Blvd, Ann Arbor, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 5,156 SF\n- **Property Type:** Retail\n- **Price / Rate:** $24.46/SF/yr NNN\n- **Representation:** Landlord representation"
     },
     {
-      "slug": "",
+      "slug": "1377-tefft-ct-saline-18-278-2025",
       "year": "2025",
       "property": "Warehouse sale, Saline",
       "subtitle": "Saline, MI",
@@ -763,10 +1548,13 @@
         "buyer-representation"
       ],
       "price": "$1,965,000",
-      "address": "1377 Tefft Ct"
+      "address": "1377 Tefft Ct",
+      "headline": "18,278 SF Industrial Sale at 1377 Tefft Ct in Saline, MI",
+      "summary": "Dual representation (both sides) by Drake Filippis on the 2025 sale of 18,278 SF at 1377 Tefft Ct, Saline, MI ($1,965,000).",
+      "body_md": "Drake Filippis (dual representation (both sides), Signature Associates / Midwest Industrial Brokers) completed the sale of **1377 Tefft Ct** in **Saline, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 1377 Tefft Ct, Saline, MI\n- **Transaction Type:** Sale (Sold)\n- **Size:** 18,278 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $1,965,000\n- **Representation:** Dual representation (both sides)\n- **Client:** BankSupplies"
     },
     {
-      "slug": "",
+      "slug": "11975-globe-st-livonia-10-956-2025",
       "year": "2025",
       "property": "Manufacturing lease, Livonia",
       "subtitle": "Livonia, MI",
@@ -782,10 +1570,13 @@
         "landlord-representation"
       ],
       "price": "$9.05/SF/yr NNN",
-      "address": "11975 Globe St"
+      "address": "11975 Globe St",
+      "headline": "10,956 SF Manufacturing Lease at 11975 Globe St in Livonia, MI",
+      "summary": "Dual representation (both sides) by Drake Filippis on the 2025 lease of 10,956 SF at 11975 Globe St, Livonia, MI ($9.05/SF/yr NNN).",
+      "body_md": "Drake Filippis (dual representation (both sides), Signature Associates / Midwest Industrial Brokers) completed the lease of **11975 Globe St** in **Livonia, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 11975 Globe St, Livonia, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 10,956 SF\n- **Property Type:** Manufacturing\n- **Price / Rate:** $9.05/SF/yr NNN\n- **Representation:** Dual representation (both sides)"
     },
     {
-      "slug": "",
+      "slug": "41200-five-mile-rd-northville-twp-0-54-2025",
       "year": "2025",
       "property": "Land sale, Northville Twp",
       "subtitle": "Northville Twp, MI",
@@ -800,10 +1591,13 @@
         "disposition"
       ],
       "price": "$132,000",
-      "address": "41200 Five Mile Rd"
+      "address": "41200 Five Mile Rd",
+      "headline": "0.54 AC Land Land Sale at 41200 Five Mile Rd in Northville Twp, MI",
+      "summary": "Seller representation by Drake Filippis on the 2025 land sale of 0.54 AC at 41200 Five Mile Rd, Northville Twp, MI ($132,000).",
+      "body_md": "Drake Filippis (seller representation, Signature Associates / Midwest Industrial Brokers) completed the land sale of **41200 Five Mile Rd** in **Northville Twp, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 41200 Five Mile Rd, Northville Twp, MI\n- **Transaction Type:** Land Sale (Sold)\n- **Size:** 0.54 AC\n- **Property Type:** Land\n- **Price / Rate:** $132,000\n- **Representation:** Seller representation"
     },
     {
-      "slug": "",
+      "slug": "40440-grand-river-ave-a8-novi-5-000-2025-landlord",
       "year": "2025",
       "property": "Warehouse lease, Novi",
       "subtitle": "Novi, MI",
@@ -818,10 +1612,13 @@
         "landlord-representation"
       ],
       "price": "$9.17/SF/yr NNN",
-      "address": "40440 Grand River Ave #A8"
+      "address": "40440 Grand River Ave #A8",
+      "headline": "5,000 SF Industrial Lease at 40440 Grand River Ave #A8 in Novi, MI",
+      "summary": "Landlord representation by Drake Filippis on the 2025 lease of 5,000 SF at 40440 Grand River Ave #A8, Novi, MI ($9.17/SF/yr NNN).",
+      "body_md": "Drake Filippis (landlord representation, Signature Associates / Midwest Industrial Brokers) completed the lease of **40440 Grand River Ave #A8** in **Novi, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 40440 Grand River Ave #A8, Novi, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 5,000 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $9.17/SF/yr NNN\n- **Representation:** Landlord representation"
     },
     {
-      "slug": "",
+      "slug": "676-704-airport-blvd-ann-arbor-16-000-2025",
       "year": "2025",
       "property": "Warehouse lease, Ann Arbor",
       "subtitle": "Ann Arbor, MI",
@@ -837,10 +1634,13 @@
         "landlord-representation"
       ],
       "price": "$13.06/SF/yr Gross",
-      "address": "676-704 Airport Blvd"
+      "address": "676-704 Airport Blvd",
+      "headline": "16,000 SF Industrial Lease at 676-704 Airport Blvd in Ann Arbor, MI",
+      "summary": "Dual representation (both sides) by Drake Filippis on the 2025 lease of 16,000 SF at 676-704 Airport Blvd, Ann Arbor, MI ($13.06/SF/yr Gross).",
+      "body_md": "Drake Filippis (dual representation (both sides), Signature Associates / Midwest Industrial Brokers) completed the lease of **676-704 Airport Blvd** in **Ann Arbor, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 676-704 Airport Blvd, Ann Arbor, MI\n- **Transaction Type:** Lease (Leased)\n- **Size:** 16,000 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $13.06/SF/yr Gross\n- **Representation:** Dual representation (both sides)"
     },
     {
-      "slug": "",
+      "slug": "43405-43460-i-94-n-service-dr-43430-belleville-4-000-2025",
       "year": "2025",
       "property": "Warehouse lease, Belleville",
       "subtitle": "Belleville, MI",
@@ -856,7 +1656,10 @@
         "landlord-representation"
       ],
       "price": "$7.02/SF/yr G+U+J",
-      "address": "43405-43460 I-94 N Service Dr #43430"
+      "address": "43405-43460 I-94 N Service Dr #43430",
+      "headline": "4,000 SF Industrial Sublease at 43405-43460 I-94 N Service Dr #43430 in Belleville, MI",
+      "summary": "Dual representation (both sides) by Drake Filippis on the 2025 sublease of 4,000 SF at 43405-43460 I-94 N Service Dr #43430, Belleville, MI ($7.02/SF/yr G+U+J).",
+      "body_md": "Drake Filippis (dual representation (both sides), Signature Associates / Midwest Industrial Brokers) completed the sublease of **43405-43460 I-94 N Service Dr #43430** in **Belleville, MI** in 2025.\n\n### Transaction Summary\n- **Property Address:** 43405-43460 I-94 N Service Dr #43430, Belleville, MI\n- **Transaction Type:** Sublease (Leased)\n- **Size:** 4,000 SF\n- **Property Type:** Industrial\n- **Price / Rate:** $7.02/SF/yr G+U+J\n- **Representation:** Dual representation (both sides)\n- **Client:** BankSupplies"
     }
   ],
   "client_logos": [
@@ -911,7 +1714,7 @@
         "label": "Total Inventory",
         "value": "615",
         "unit": "M SF",
-        "trend": "— Stable",
+        "trend": "Flat: Stable",
         "direction": "flat"
       },
       {
@@ -932,7 +1735,7 @@
         "label": "Net Absorption YTD",
         "value": "2.1",
         "unit": "M SF",
-        "trend": "— Tracking 2025",
+        "trend": "Flat: Tracking 2025",
         "direction": "flat"
       },
       {
@@ -994,15 +1797,15 @@
         "yoy_color": "gray"
       }
     ],
-    "data_note": "Sample / placeholder data — replace with current CoStar export.",
+    "data_note": "Sample / placeholder data,  replace with current CoStar export.",
     "takeaways": [
-      "Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
+      "Construction pipeline has compressed sharply,  speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
       "Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.",
-      "Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.",
-      "Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial."
+      "Ann Arbor / Saline remains the tightest market,  sub-5% vacancy and the highest NNN rates in the region.",
+      "Cap rates have stabilized in the 6.75%-7.50% range for stabilized Class A industrial."
     ],
     "watching_title": "EV supply chain shake-out:",
-    "watching_body": "several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters — could create opportunity for tenants with timing flexibility."
+    "watching_body": "several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters,  could create opportunity for tenants with timing flexibility."
   },
   "preferred_services": [
     {
@@ -1663,7 +2466,9 @@
       "intro": [
         "Plymouth and Plymouth Township sit in western Wayne County with direct access to I-275 and M-14. The area has a mix of established industrial parks, flex buildings and newer distribution space, and it draws users who want to stay between Detroit and Ann Arbor.",
         "Drake works with owners selling or leasing buildings here, and with manufacturers, contractors and service companies looking for their next facility. Every search starts with the details that matter for industrial users: power, clear height, loading, yard space, zoning and timing."
-      ]
+      ],
+      "county_slug": "wayne-county-mi",
+      "primary": true
     },
     {
       "slug": "ann-arbor-mi",
@@ -1682,7 +2487,9 @@
       "intro": [
         "Ann Arbor and the surrounding Washtenaw County communities are served by I-94, US-23 and M-14. Industrial space here often supports research and development, technology, light manufacturing and flex users, along with service businesses that want to be close to the university and the region's workforce.",
         "Drake represents owners, tenants and buyers in Ann Arbor, Saline, Ypsilanti, Dexter and nearby townships. He helps match each requirement to the buildings and sites that fit, and manages the process from first tour through closing or lease signing."
-      ]
+      ],
+      "county_slug": "washtenaw-county-mi",
+      "primary": true
     },
     {
       "slug": "livonia-mi",
@@ -1697,7 +2504,9 @@
       "intro": [
         "Livonia is a long established industrial community in western Wayne County, with I-96 and I-275 both running through the city. Its industrial corridors hold a wide range of manufacturing, warehouse and flex buildings, from small shop spaces to larger facilities.",
         "Drake helps companies buy or lease the right building in Livonia, and helps owners position their property for sale or lease. He focuses on the practical questions early, like power, loading, ceiling height, office build out and zoning, so there are fewer surprises later."
-      ]
+      ],
+      "county_slug": "wayne-county-mi",
+      "primary": true
     },
     {
       "slug": "i-275-corridor",
@@ -1720,7 +2529,8 @@
       "intro": [
         "I-275 runs north and south through western Wayne County, linking the I-96 and I-696 area near Novi with I-94 and I-75 to the south, with Detroit Metro Airport nearby. Communities along the route, including Livonia, Plymouth, Canton, Novi and Romulus, hold a large share of the region's manufacturing, warehouse and distribution space.",
         "Because the corridor crosses several cities and townships, zoning, taxes and building types can change from one exit to the next. Drake helps owners, tenants and buyers compare options across the corridor and focus on the sites that fit their operation."
-      ]
+      ],
+      "primary": false
     },
     {
       "slug": "metro-detroit",
@@ -1749,7 +2559,8 @@
       "intro": [
         "Metro Detroit has a large and varied industrial base, shaped by the automotive supply chain, advanced manufacturing and logistics. Major routes including I-94, I-96, I-75 and I-696 connect industrial areas across Wayne, Oakland and Macomb counties.",
         "Drake works across the region for owners, tenants and buyers of industrial property, with a focus on western Wayne County and the communities between Detroit and Ann Arbor. He handles disposition, acquisition, build-to-suit and leasing assignments from start to finish."
-      ]
+      ],
+      "primary": false
     },
     {
       "slug": "canton-mi",
@@ -1764,7 +2575,9 @@
       "intro": [
         "Canton Township is in western Wayne County along I-275, with Michigan Avenue and Ford Road as major east west routes. Its industrial areas include warehouse, light manufacturing and flex buildings used by a wide mix of businesses.",
         "Drake helps owners and users in Canton buy, sell and lease industrial property, and he can compare Canton sites with nearby options in Plymouth, Livonia and Romulus."
-      ]
+      ],
+      "county_slug": "wayne-county-mi",
+      "primary": true
     },
     {
       "slug": "saline-mi",
@@ -1779,7 +2592,9 @@
       "intro": [
         "Saline is in southern Washtenaw County, south of Ann Arbor, along US-12 with nearby access to US-23. Its industrial parks support manufacturing, warehouse and distribution users who want access to the Ann Arbor area.",
         "Drake has closed industrial deals in Saline and helps owners and users understand their options in the local market."
-      ]
+      ],
+      "county_slug": "washtenaw-county-mi",
+      "primary": false
     },
     {
       "slug": "novi-mi",
@@ -1796,7 +2611,9 @@
       "intro": [
         "Novi is in southwest Oakland County where I-96, I-275 and M-5 meet. Along with nearby Wixom and Northville, it offers flex, research and light industrial buildings for companies that want quick highway access across the region.",
         "Drake represents owners, tenants and buyers in Novi and the surrounding communities, from small flex suites to full buildings."
-      ]
+      ],
+      "county_slug": "oakland-county-mi",
+      "primary": false
     },
     {
       "slug": "romulus-mi",
@@ -1811,7 +2628,9 @@
       "intro": [
         "Romulus is in western Wayne County and is home to Detroit Metropolitan Wayne County Airport. With I-94 and I-275 both running through the city, its industrial areas draw warehouse, distribution, logistics and manufacturing users who need quick access to the airport and the regional highway network.",
         "Drake represents owners, tenants and buyers in Romulus and can compare sites here with nearby options in Taylor, Canton and the rest of the I-275 corridor."
-      ]
+      ],
+      "county_slug": "wayne-county-mi",
+      "primary": true
     },
     {
       "slug": "taylor-mi",
@@ -1826,7 +2645,9 @@
       "intro": [
         "Taylor is a Downriver community in Wayne County with access to I-94, nearby I-75 and Telegraph Road. Its industrial areas include warehouse, distribution and manufacturing buildings, from smaller shop spaces to large distribution facilities.",
         "Drake works with owners, tenants and buyers in Taylor and the surrounding Downriver communities, and helps users weigh Taylor against options near the airport and along I-275."
-      ]
+      ],
+      "county_slug": "wayne-county-mi",
+      "primary": true
     },
     {
       "slug": "ypsilanti-mi",
@@ -1841,7 +2662,9 @@
       "intro": [
         "Ypsilanti and Ypsilanti Township are in Washtenaw County just east of Ann Arbor, with access to I-94 and US-12 and the Willow Run area nearby. The area offers manufacturing, warehouse, flex and industrial land opportunities for users who want to be between Ann Arbor and Metro Detroit.",
         "Drake represents owners, tenants and buyers in Ypsilanti on sales, leases and land, and can compare options here with the rest of Washtenaw County."
-      ]
+      ],
+      "county_slug": "washtenaw-county-mi",
+      "primary": false
     },
     {
       "slug": "dexter-mi",
@@ -1856,7 +2679,9 @@
       "intro": [
         "Dexter is in western Washtenaw County, northwest of Ann Arbor, with access to I-94. The area has smaller industrial buildings, flex space and land that appeal to contractors, light manufacturers and service businesses that want to be close to Ann Arbor.",
         "Drake helps owners and users in Dexter buy, sell and lease industrial property and land, and can compare Dexter with nearby options across Washtenaw County."
-      ]
+      ],
+      "county_slug": "washtenaw-county-mi",
+      "primary": false
     },
     {
       "slug": "farmington-hills-mi",
@@ -1872,7 +2697,9 @@
       "intro": [
         "Farmington Hills is in southwest Oakland County, where I-696, I-275 and M-5 come together. The city has flex, research, light industrial and office warehouse buildings used by technology, engineering and service companies that want central access across the region.",
         "Drake represents owners, tenants and buyers in Farmington Hills and neighboring Farmington, and can compare options here with Novi, Livonia and the rest of the I-275 corridor."
-      ]
+      ],
+      "county_slug": "oakland-county-mi",
+      "primary": true
     },
     {
       "slug": "brighton-mi",
@@ -1887,7 +2714,549 @@
       "intro": [
         "Brighton is in Livingston County where I-96 and US-23 meet, giving users access toward Detroit, Lansing, Ann Arbor and Flint. Its industrial areas include light manufacturing, warehouse and flex buildings, along with land for new development.",
         "Drake helps owners and users in Brighton and the surrounding Livingston County communities buy, sell and lease industrial property."
-      ]
+      ],
+      "county_slug": "livingston-county-mi",
+      "primary": false
+    },
+    {
+      "slug": "wixom-mi",
+      "name": "Wixom",
+      "full_name": "Wixom, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Wixom",
+        "New Hudson",
+        "South Lyon"
+      ],
+      "title": "Industrial Real Estate Broker in Wixom, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing, robotics and warehouse buildings for lease and sale in Wixom, Michigan along I-96. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Modern industrial parks, robotics, manufacturing and distribution along I-96 in southwest Oakland County.",
+      "intro": [
+        "Wixom is one of southwest Oakland County's premier industrial hubs, anchored by direct I-96 access via Wixom Road and Beck Road. Following the redevelopment of the former Ford Wixom Assembly site and expansion along Alpha Drive, Century Drive and Loon Lake Road, Wixom attracts robotics integrators, automotive Tier-1 suppliers, medical device manufacturers and high-bay distribution users.",
+        "Drake Filippis represents owners, buyers and tenants in Wixom, New Hudson and South Lyon across acquisitions, dispositions, leasing, sale-leasebacks and build-to-suit projects. Every search focuses on verified 480V power capacity, clear height, crane capability, dock loading and municipal zoning."
+      ],
+      "primary": true
+    },
+    {
+      "slug": "southfield-mi",
+      "name": "Southfield",
+      "full_name": "Southfield, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Southfield"
+      ],
+      "title": "Industrial & Flex Real Estate Broker in Southfield, MI | Midwest Industrial Brokers",
+      "meta": "Flex, R&D, warehouse and light industrial real estate in Southfield, Michigan near M-10, I-696 and Telegraph Rd. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Central Metro Detroit flex, R&D, warehouse and corporate headquarters space at M-10, I-696 and US-24.",
+      "intro": [
+        "Southfield sits at the geographic center of Metro Detroit where the Lodge Freeway (M-10), I-696, Telegraph Road (US-24) and Northwestern Highway converge, and serves as headquarters to Signature Associates. Along Telegraph Road, Eight Mile Road and the West Ten Mile industrial corridor, Southfield offers high-access flex, R&D, telecom/data infrastructure and light distribution space.",
+        "Drake Filippis works out of Signature Associates' Southfield headquarters and helps owners, tenants and investors buy, sell and lease industrial and flex properties across Southfield and southern Oakland County."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "auburn-hills-mi",
+      "name": "Auburn Hills",
+      "full_name": "Auburn Hills, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Auburn Hills"
+      ],
+      "title": "Industrial Real Estate Broker in Auburn Hills, MI | Midwest Industrial Brokers",
+      "meta": "Corporate R&D headquarters, robotics, automation and manufacturing real estate in Auburn Hills, Michigan along I-75 and M-59. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Flagship R&D technical centers, robotics headquarters and advanced manufacturing along I-75 and M-59.",
+      "intro": [
+        "Auburn Hills is North America's flagship corporate R&D, robotics and advanced manufacturing hub along the I-75 and M-59 corridor. Home to Oakland Technology Park, Dutton Road, Brown Road and Lapeer Road industrial corridors, Auburn Hills houses global automotive OEMs, Tier-1 engineering headquarters, robotics integrators, battery/EV testing labs and high-image manufacturing plants.",
+        "Drake Filippis represents corporate users, robotics and automation firms, and property owners in Auburn Hills on technical center acquisitions, dispositions, leases and build-to-suit developments."
+      ],
+      "primary": true
+    },
+    {
+      "slug": "rochester-hills-mi",
+      "name": "Rochester / Rochester Hills",
+      "full_name": "Rochester and Rochester Hills, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Rochester Hills",
+        "Rochester"
+      ],
+      "title": "Industrial Real Estate Broker in Rochester Hills, MI | Midwest Industrial Brokers",
+      "meta": "High-tech flex, R&D, cleanroom, robotics and light manufacturing real estate in Rochester and Rochester Hills, Michigan near M-59 and I-75. Call Drake Filippis at (248) 941-1125.",
+      "summary": "High-image tech flex, R&D, cleanrooms and precision manufacturing near M-59, Hamlin Rd and Crooks Rd.",
+      "intro": [
+        "Rochester and Rochester Hills anchor the northeast Oakland County technology and precision manufacturing corridor along M-59, Hamlin Road, Crooks Road and Rochester Industrial Drive. The submarket draws robotics, electronics, life-science, aerospace and clean manufacturing companies seeking high-image buildings near executive housing and Oakland University talent.",
+        "Drake Filippis helps buyers, tenants and building owners navigate the tight Rochester Hills industrial market, identifying both listed and off-market flex, R&D and manufacturing buildings."
+      ],
+      "primary": true
+    },
+    {
+      "slug": "lake-orion-mi",
+      "name": "Lake Orion",
+      "full_name": "Lake Orion and Orion Township, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Lake Orion",
+        "Orion Township",
+        "Orion Twp",
+        "Oxford"
+      ],
+      "title": "Industrial Real Estate Broker in Lake Orion, MI | Midwest Industrial Brokers",
+      "meta": "Heavy manufacturing, supplier parks, warehouse and industrial land in Lake Orion and Orion Township, Michigan along M-24 and I-75. Call Drake Filippis at (248) 941-1125.",
+      "summary": "OEM supplier manufacturing, high-bay industrial and development land along I-75, Brown Rd and M-24.",
+      "intro": [
+        "Lake Orion and Orion Township sit immediately north of Auburn Hills along the Brown Road, Giddings Road and M-24 (Lapeer Road) industrial corridors off I-75. Anchored by GM Orion Assembly and a growing cluster of Tier-1 suppliers, robotics firms and logistics operators, Orion Township offers modern high-bay industrial buildings, heavy power infrastructure and greenfield development sites.",
+        "Drake Filippis assists manufacturers, suppliers and developers with building acquisitions, leasing, land assemblage and municipal approvals across Lake Orion, Orion Township and Oxford."
+      ],
+      "primary": true
+    },
+    {
+      "slug": "troy-mi",
+      "name": "Troy",
+      "full_name": "Troy, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Troy"
+      ],
+      "title": "Industrial Real Estate Broker in Troy, MI | Midwest Industrial Brokers",
+      "meta": "Flex, R&D, engineering, defense and light manufacturing real estate in Troy, Michigan along I-75 and Maple Rd. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Dense engineering, R&D, flex and light manufacturing parks off I-75, Maple Rd and Stephenson Hwy.",
+      "intro": [
+        "Troy contains one of the largest concentrations of engineering, R&D, testing and light industrial buildings in Oakland County. Concentrated along Stephenson Highway, Rochester Road, Maple Road (15 Mile), E. Fourteen Mile and the I-75 corridor, Troy's industrial parks support automotive engineering, defense subcontractors, automation builders and specialty distributors.",
+        "With virtually no vacant land left in Troy, existing industrial and flex buildings trade at a premium. Drake Filippis helps owner-users, tenants and landlords capture opportunities in Troy on and off the market."
+      ],
+      "primary": true
+    },
+    {
+      "slug": "royal-oak-mi",
+      "name": "Royal Oak",
+      "full_name": "Royal Oak, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Royal Oak"
+      ],
+      "title": "Industrial Real Estate Broker in Royal Oak, MI | Midwest Industrial Brokers",
+      "meta": "Infill industrial, flex, showroom and warehouse space for sale and lease in Royal Oak, Michigan near I-75 and I-696. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Infill light industrial, flex and service buildings along Coolidge Hwy, Meijer Dr and 14 Mile near I-75/I-696.",
+      "intro": [
+        "Royal Oak offers strategic infill industrial and flex properties along Coolidge Highway, 14 Mile Road, Meijer Drive and the Woodward/I-696/I-75 triangle. Because infill zoning in Royal Oak is tightly constrained, existing industrial buildings attract high demand from specialty manufacturers, commercial contractors, design-build firms and last-mile distributors.",
+        "Drake Filippis represents owners and occupiers in Royal Oak on industrial sales, acquisitions and leases."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "clawson-mi",
+      "name": "Clawson",
+      "full_name": "Clawson, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Clawson"
+      ],
+      "title": "Industrial Real Estate Broker in Clawson, MI | Midwest Industrial Brokers",
+      "meta": "Light manufacturing, machine shop and flex industrial real estate in Clawson, Michigan between Troy and Royal Oak. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Precision machining, tool-and-die and light industrial space along Maple Rd, Crooks Rd and Rochester Rd.",
+      "intro": [
+        "Bordered by Troy, Royal Oak and Madison Heights, Clawson features established light industrial pockets along Elmwood, Hendrickson, Crooks Road and 14 Mile Road. These freestanding shop and flex buildings serve precision machine shops, electrical contractors, prototype builders and local distributors who want immediate access to the I-75 corridor.",
+        "Drake Filippis helps owners sell or lease industrial buildings in Clawson and helps buyers secure hard-to-find small and mid-bay shop space."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "madison-heights-mi",
+      "name": "Madison Heights",
+      "full_name": "Madison Heights, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Madison Heights",
+        "Hazel Park",
+        "Ferndale"
+      ],
+      "title": "Industrial Real Estate Broker in Madison Heights, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing, R&D and warehouse space in Madison Heights, Michigan at the I-75 and I-696 interchange. Call Drake Filippis at (248) 941-1125.",
+      "summary": "High-density manufacturing, R&D, aerospace and distribution space at the I-75 and I-696 crossroads.",
+      "intro": [
+        "Madison Heights sits directly at the interchange of I-75 and I-696 in southeastern Oakland County, bridging Oakland and Macomb counties. Along Stephenson Highway, John R, Dequindre, Whitcomb and 14 Mile Road, Madison Heights holds a deep inventory of tool-and-die shops, aerospace/defense suppliers, R&D testing facilities and regional distribution warehouses.",
+        "Drake Filippis represents buyers, sellers, landlords and tenants throughout Madison Heights, Ferndale and Hazel Park."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "clarkston-mi",
+      "name": "Clarkston",
+      "full_name": "Clarkston and Independence Township, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Clarkston",
+        "Independence Township",
+        "Springfield Township",
+        "Holly"
+      ],
+      "title": "Industrial Real Estate Broker in Clarkston, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, contractor, flex and commercial land real estate in Clarkston and Independence Township, Michigan along I-75 and Dixie Hwy. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-75 north corridor industrial, contractor yards, flex buildings and development land along Dixie Hwy and M-15.",
+      "intro": [
+        "Clarkston and Independence Township anchor the northern I-75 corridor in Oakland County along Dixie Highway (US-24), Sashabaw Road and M-15. The area serves engineering firms, specialty manufacturers, regional contractors and growing businesses linking Auburn Hills and Pontiac with Genesee County.",
+        "Drake Filippis assists owners and users in Clarkston and northern Oakland County with industrial sales, leasing and land development."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "pontiac-mi",
+      "name": "Pontiac",
+      "full_name": "Pontiac, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Pontiac"
+      ],
+      "title": "Industrial Real Estate Broker in Pontiac, MI | Midwest Industrial Brokers",
+      "meta": "Heavy manufacturing, high-power industrial, logistics and IOS properties in Pontiac, Michigan near I-75, M-59 and Woodward Ave. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Heavy power manufacturing, large-scale distribution, rail-served plants and IOS yards in central Oakland County.",
+      "intro": [
+        "Pontiac is the historic industrial heart of Oakland County, encircled by I-75, M-59, Telegraph Road (US-24) and Woodward Avenue. Pontiac offers heavy industrial zoning, high-amperage DTE primary power infrastructure, crane-served manufacturing plants, large distribution centers and zoned outdoor storage yards at competitive occupancy costs.",
+        "Drake Filippis helps manufacturers, logistics operators and investors acquire, lease and reposition industrial assets in Pontiac, including coordinating brownfield, BEA and municipal economic development incentives."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "waterford-mi",
+      "name": "Waterford",
+      "full_name": "Waterford Township, MI",
+      "county_slug": "oakland-county-mi",
+      "cities": [
+        "Waterford",
+        "White Lake",
+        "Highland Township",
+        "Milford",
+        "Commerce Township"
+      ],
+      "title": "Industrial Real Estate Broker in Waterford, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, flex, R&D and aviation-adjacent properties in Waterford Township, Michigan along M-59 and Dixie Hwy. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Flex, light manufacturing and aviation-corridor industrial around Oakland County International Airport (PTK) and M-59.",
+      "intro": [
+        "Waterford Township sits along the M-59 (Highland Road) and Dixie Highway corridors in central Oakland County and is home to Oakland County International Airport (PTK). Waterford, along with neighboring Commerce Township, White Lake, Milford and Highland Township, provides flex industrial, R&D, machine shop and contractor facilities.",
+        "Having closed R&D/flex industrial transactions on Highland Road in Waterford, Drake Filippis represents buyers, sellers and tenants across the M-59 Oakland County corridor."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "warren-mi",
+      "name": "Warren",
+      "full_name": "Warren, MI",
+      "county_slug": "macomb-county-mi",
+      "cities": [
+        "Warren",
+        "Center Line"
+      ],
+      "title": "Industrial Real Estate Broker in Warren, MI | Midwest Industrial Brokers",
+      "meta": "Heavy manufacturing, defense, stamping, crane-served and tool-and-die industrial real estate in Warren, Michigan along Mound Rd, Van Dyke and I-696. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Michigan's largest industrial manufacturing city, anchored by the Mound Rd / Van Dyke defense and automotive corridor.",
+      "intro": [
+        "Warren is the largest city in Macomb County and one of the most concentrated heavy manufacturing centers in North America. Anchored by the General Motors Technical Center, the U.S. Army Detroit Arsenal (TACOM / DEVCOM), and the newly reconstructed Mound Road, Van Dyke (M-53), Groesbeck (M-97) and I-696 corridors, Warren features deep inventory of crane-served plants, heavy 480V power buildings, stamping/tooling shops and defense manufacturing facilities.",
+        "Drake Filippis represents manufacturers, defense contractors, data center hardware suppliers and investors buying, selling and leasing industrial property throughout Warren."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "sterling-heights-mi",
+      "name": "Sterling Heights",
+      "full_name": "Sterling Heights, MI",
+      "county_slug": "macomb-county-mi",
+      "cities": [
+        "Sterling Heights"
+      ],
+      "title": "Industrial Real Estate Broker in Sterling Heights, MI | Midwest Industrial Brokers",
+      "meta": "Defense, aerospace, robotics and heavy manufacturing real estate in Sterling Heights, Michigan along Mound Rd, Van Dyke (M-53) and M-59. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Premier defense, aerospace, automotive assembly and robotics corridor along Mound Rd, Van Dyke and M-59.",
+      "intro": [
+        "Sterling Heights is the heart of Macomb County's defense, aerospace and advanced manufacturing economy along Mound Road, Van Dyke Avenue (M-53) and Hall Road (M-59). Home to major assembly plants and global defense primes, Sterling Heights attracts Tier-1/2 defense subcontractors, robotics integrators, precision CNC machinists and large-scale logistics operators.",
+        "Drake Filippis helps industrial users and investors acquire, sell and lease crane-served, high-power and high-image industrial buildings in Sterling Heights."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "shelby-township-mi",
+      "name": "Shelby Township",
+      "full_name": "Shelby Township and Macomb Township, MI",
+      "county_slug": "macomb-county-mi",
+      "cities": [
+        "Shelby Twp",
+        "Shelby Township",
+        "Macomb Township",
+        "Utica"
+      ],
+      "title": "Industrial Real Estate Broker in Shelby Township, MI | Midwest Industrial Brokers",
+      "meta": "Modern manufacturing, precision machining and flex industrial real estate in Shelby Township and Macomb Township, Michigan along M-53 and M-59. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Modern industrial parks, clean manufacturing and growing corporate facilities along M-53 and 23 Mile to 26 Mile.",
+      "intro": [
+        "Shelby Township and neighboring Macomb Township offer some of Macomb County's newest and cleanest industrial parks along the M-53 (Van Dyke) freeway, M-59, 23 Mile Road and 26 Mile Road corridors. With active closed deal experience in Shelby Township (such as Celeste Drive), Drake Filippis helps growing manufacturers, automation companies and owner-users secure modern shop and headquarters facilities here."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "chesterfield-mi",
+      "name": "Chesterfield / I-94 Corridor",
+      "full_name": "Chesterfield, Clinton Township, Roseville and Fraser, MI",
+      "county_slug": "macomb-county-mi",
+      "cities": [
+        "Chesterfield",
+        "Clinton Township",
+        "Clinton Twp",
+        "Roseville",
+        "Fraser",
+        "Mount Clemens",
+        "Harrison Township"
+      ],
+      "title": "Industrial Real Estate Broker in Chesterfield, Roseville & Fraser, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing and distribution real estate in Chesterfield, Clinton Township, Roseville and Fraser, Michigan along I-94 and Gratiot Ave. Call Drake Filippis at (248) 941-1125.",
+      "summary": "East-side I-94 and Gratiot/Groesbeck manufacturing, tooling, distribution and defense-adjacent industrial space.",
+      "intro": [
+        "Along the I-94, Gratiot Avenue (M-3) and Groesbeck Highway (M-97) corridors in eastern Macomb County, Chesterfield Township, Clinton Township, Roseville and Fraser form a vital manufacturing and distribution belt connecting Metro Detroit with St. Clair County and the Blue Water Bridge to Canada.",
+        "From established tool-and-die and heavy power plants in Roseville and Fraser to modern high-bay industrial parks along I-94 and 23 Mile Road in Chesterfield, Drake Filippis represents buyers, sellers, landlords and tenants across the east-side industrial market."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "dearborn-mi",
+      "name": "Dearborn",
+      "full_name": "Dearborn and Allen Park, MI",
+      "county_slug": "wayne-county-mi",
+      "cities": [
+        "Dearborn",
+        "Dearborn Heights",
+        "Allen Park",
+        "Melvindale"
+      ],
+      "title": "Industrial Real Estate Broker in Dearborn, MI | Midwest Industrial Brokers",
+      "meta": "Heavy manufacturing, automotive supplier, logistics and R&D real estate in Dearborn, Michigan along I-94, Michigan Ave and Southfield Fwy. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Automotive OEM headquarters, Tier-1 R&D, heavy manufacturing and intermodal logistics along I-94 and M-39.",
+      "intro": [
+        "Anchored by Ford Motor Company's global headquarters, engineering campus and Rouge Complex, Dearborn is one of the cornerstone industrial markets of Wayne County. Positioned along I-94, the Southfield Freeway (M-39), Michigan Avenue (US-12) and Schaefer Road, Dearborn supports Tier-1 automotive R&D, heavy steel/metal processing, logistics terminals and supplier sequencing plants.",
+        "Drake Filippis represents industrial users, suppliers and property owners across Dearborn, Allen Park and Melvindale."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "van-buren-belleville-mi",
+      "name": "Van Buren / Belleville",
+      "full_name": "Van Buren Township and Belleville, MI",
+      "county_slug": "wayne-county-mi",
+      "cities": [
+        "Belleville",
+        "Van Buren",
+        "Van Buren Twp",
+        "Van Buren Township",
+        "Sumpter Township"
+      ],
+      "title": "Industrial Real Estate Broker in Belleville & Van Buren Twp, MI | Midwest Industrial Brokers",
+      "meta": "Big-box distribution, air-cargo logistics, R&D and industrial land in Belleville and Van Buren Township, Michigan along I-94 and I-275 near DTW and Willow Run. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-94 aerotropolis logistics, big-box distribution and R&D between Detroit Metro Airport (DTW) and Willow Run.",
+      "intro": [
+        "Van Buren Township and Belleville sit directly on the I-94 logistics corridor between Detroit Metro Airport (DTW) and Willow Run Airport (YIP), with immediate access to I-275. The submarket is a premier hub for big-box 3PL distribution, automotive R&D technical centers, air-freight forwarders and build-to-suit industrial campuses.",
+        "Having closed industrial transactions along the I-94 Service Drive in Belleville, Drake Filippis helps tenants, owner-users, developers and landlords execute leases, acquisitions and land deals across Van Buren Township and Belleville."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "detroit-mi",
+      "name": "Detroit",
+      "full_name": "Detroit, MI",
+      "county_slug": "wayne-county-mi",
+      "cities": [
+        "Detroit",
+        "Hamtramck",
+        "Highland Park"
+      ],
+      "title": "Industrial Real Estate Broker in Detroit, MI | Midwest Industrial Brokers",
+      "meta": "Industrial manufacturing, cold storage, intermodal logistics, IOS truck terminals and brownfield redevelopment in Detroit, Michigan near the Gordie Howe Bridge, I-75, I-94 and I-96. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Cross-border logistics near the Gordie Howe International Bridge, heavy manufacturing, cold storage and IOS yards.",
+      "intro": [
+        "With the opening of the Gordie Howe International Bridge alongside the Ambassador Bridge, Detroit-Windsor rail tunnel, Detroit marine terminals and Class I rail intermodal yards, the City of Detroit sits at the busiest international trade crossing in North America. Across Southwest Detroit, the I-94 / Mound Road industrial corridor, I-96 and Eastern Market, Detroit offers heavy industrial zoning, high-capacity power and water utilities, cold storage facilities and cross-dock truck terminals.",
+        "Drake Filippis represents industrial buyers, sellers and tenants in Detroit, including brownfield redevelopment, Michigan BEA environmental navigation and municipal incentive coordination."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "westland-mi",
+      "name": "Westland / Wayne / Redford",
+      "full_name": "Westland, Wayne, Redford and Garden City, MI",
+      "county_slug": "wayne-county-mi",
+      "cities": [
+        "Westland",
+        "Wayne",
+        "Redford",
+        "Redford Twp",
+        "Garden City",
+        "Inkster"
+      ],
+      "title": "Industrial Real Estate Broker in Westland, Wayne & Redford, MI | Midwest Industrial Brokers",
+      "meta": "Manufacturing, warehouse, machine shop and outdoor storage real estate in Westland, Wayne and Redford, Michigan near I-96, I-275 and Michigan Ave. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Value-driven manufacturing, shop space and heavy industrial corridors along Michigan Ave, Wayne Rd and Telegraph.",
+      "intro": [
+        "Westland, the City of Wayne, Redford Township and Garden City provide functional, cost-effective manufacturing, machine shop, assembly and warehouse buildings in western Wayne County. Served by Michigan Avenue (US-12), Wayne Road, Ford Road, Telegraph Road (US-24) and nearby I-275, I-96 and I-94, these communities offer strong skilled-trade access and heavy industrial zoning.",
+        "Drake Filippis helps owner-users, contractors, suppliers and investors buy, sell and lease industrial buildings across Westland, Wayne and Redford."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "downriver-mi",
+      "name": "Downriver / Brownstown / Woodhaven",
+      "full_name": "Brownstown, Woodhaven, Trenton and Downriver Wayne County, MI",
+      "county_slug": "wayne-county-mi",
+      "cities": [
+        "Brownstown",
+        "Woodhaven",
+        "Trenton",
+        "Southgate",
+        "Wyandotte",
+        "Riverview",
+        "Gibraltar",
+        "Flat Rock",
+        " Lincoln Park",
+        "Ecorse",
+        "River Rouge"
+      ],
+      "title": "Industrial Real Estate Broker in Brownstown, Woodhaven & Downriver, MI | Midwest Industrial Brokers",
+      "meta": "Big-box distribution, steel/heavy manufacturing, rail-served and IOS industrial real estate in Brownstown, Woodhaven, Flat Rock and Downriver Michigan along I-75. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-75 corridor big-box logistics, automotive assembly suppliers, heavy rail-served manufacturing and IOS yards.",
+      "intro": [
+        "Downriver Wayne County, anchored by Brownstown Township, Woodhaven, Flat Rock, Trenton, Wyandotte and River Rouge along the I-75 and I-275 corridors, is one of the Midwest's primary heavy manufacturing, steel processing and big-box logistics gateways linking Metro Detroit to Toledo and the Ohio Turnpike.",
+        "Drake Filippis represents logistics users, automotive suppliers, heavy manufacturers and institutional owners across the Downriver I-75 corridor."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "flint-mi",
+      "name": "Flint / Fenton / Grand Blanc",
+      "full_name": "Flint, Fenton, Grand Blanc and Genesee County, MI",
+      "county_slug": "genesee-county-mi",
+      "cities": [
+        "Flint",
+        "Fenton",
+        "Grand Blanc",
+        "burton",
+        "Swartz Creek",
+        "Davison",
+        "Mundy Township"
+      ],
+      "title": "Industrial Real Estate Broker in Flint, Fenton & Grand Blanc, MI | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing, distribution and build-to-suit real estate in Flint, Fenton, Grand Blanc and Genesee County, Michigan at the I-75, I-69 and US-23 crossroads. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-75, I-69 and US-23 logistics crossroads, Bishop Airport cargo hub, heavy manufacturing and supplier parks.",
+      "intro": [
+        "Genesee County sits at the strategic intersection of I-75, I-69 and US-23, with Bishop International Airport (FNT) and Class I rail service anchoring regional freight. From modern precision manufacturing and tech-flex parks along US-23 in Fenton and I-75 in Grand Blanc to large-scale manufacturing and mega-sites in Flint and Mundy Township, Genesee County offers high-capacity utilities and competitive occupancy costs.",
+        "Drake Filippis represents manufacturers, 3PLs and property owners across Flint, Fenton, Grand Blanc and the I-75/I-69 corridor."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "monroe-mi",
+      "name": "Monroe / I-75 Ohio Border",
+      "full_name": "Monroe, Bedford, Dundee and Monroe County, MI",
+      "county_slug": "monroe-county-mi",
+      "cities": [
+        "Monroe",
+        "Bedford",
+        "Temperance",
+        "Lambertville",
+        "Dundee",
+        "Milan",
+        "Carleton",
+        "Frenchtown"
+      ],
+      "title": "Industrial Real Estate Broker in Monroe County, MI & NW Ohio Corridor | Midwest Industrial Brokers",
+      "meta": "Industrial, cold storage, port/rail logistics and manufacturing real estate in Monroe, Dundee and Bedford, Michigan along I-75 and US-23 at the Ohio border. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Michigan-Ohio border gateway along I-75 and US-23, Port of Monroe, cold chain logistics and heavy manufacturing.",
+      "intro": [
+        "Monroe County is Michigan's southern industrial gateway along I-75 and US-23, bridging Metro Detroit and Ann Arbor directly with Toledo and the I-80/I-90 Ohio Turnpike. Anchored by the Port of Monroe (Michigan's only Lake Erie port), Class I rail, heavy DTE power generation, and major cold storage and distribution developments in neighboring Northwest Ohio (Rossford and Swanton), the corridor is a powerhouse for food logistics, heavy manufacturing and automotive supply chain users.",
+        "Drake Filippis represents users, developers and owners along the entire I-75 and US-23 Michigan-Ohio border corridor."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "port-huron-mi",
+      "name": "Port Huron / Marysville",
+      "full_name": "Port Huron, Marysville, Kimball and St. Clair County, MI",
+      "county_slug": "st-clair-county-mi",
+      "cities": [
+        "Port Huron",
+        "Marysville",
+        "Kimball",
+        "St. Clair",
+        "Fort Gratiot",
+        "Marine City"
+      ],
+      "title": "Industrial Real Estate Broker in Port Huron & St. Clair County, MI | Midwest Industrial Brokers",
+      "meta": "Cross-border industrial, mega-site build-to-suit, warehouse and manufacturing real estate in Port Huron, Marysville and Kimball, Michigan at the I-94 and I-69 Blue Water Bridge border crossing. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Blue Water Bridge cross-border logistics, I-94/I-69 terminus and 2M+ SF of build-to-suit industrial campus space.",
+      "intro": [
+        "Port Huron, Marysville and Kimball Township in St. Clair County sit at the eastern terminus of I-94 and I-69 at the Blue Water Bridge international border crossing with Sarnia, Ontario. The market is a premier hub for US-Canadian cross-border logistics, plastics, automotive suppliers and large-scale build-to-suit industrial campuses.",
+        "Drake Filippis actively markets major St. Clair County industrial developments including Port Huron Commerce Park (Buildings A & B totaling over 553,000 SF on 224 acres) and Bluewater Commerce Park in Kimball (five buildings totaling nearly 2,000,000 SF across 295 acres)."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "lapeer-mi",
+      "name": "Lapeer / I-69 Corridor",
+      "full_name": "Lapeer, Imlay City and Lapeer County, MI",
+      "county_slug": "lapeer-county-mi",
+      "cities": [
+        "Lapeer",
+        "Imlay City",
+        "Almont"
+      ],
+      "title": "Industrial Real Estate Broker in Lapeer, MI | Midwest Industrial Brokers",
+      "meta": "Manufacturing, plastics, fabrication, ag-industrial and warehouse real estate in Lapeer and Imlay City, Michigan along I-69 and M-24. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Cost-effective manufacturing, metal fabrication, plastics and logistics along I-69 and M-24 north of Oakland County.",
+      "intro": [
+        "Connected directly north from Auburn Hills and Lake Orion via M-24 and intersected east-west by the I-69 international trade corridor, Lapeer and Imlay City offer an established manufacturing base in plastics, tool-and-die, metal fabrication, defense components and food/ag processing.",
+        "Drake Filippis helps manufacturers and investors buy, sell and lease industrial buildings and development land along the M-24 and I-69 Lapeer County corridor."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "jackson-mi",
+      "name": "Jackson & Adrian",
+      "full_name": "Jackson, Adrian, Tecumseh and the I-94 West / US-127 Corridor, MI",
+      "county_slug": "jackson-lenawee-counties-mi",
+      "cities": [
+        "Jackson",
+        "Adrian",
+        "Tecumseh",
+        "Clinton",
+        "Blissfield",
+        "Chelsea",
+        "Manchester"
+      ],
+      "title": "Industrial Real Estate Broker in Jackson & Adrian, MI | Midwest Industrial Brokers",
+      "meta": "Heavy manufacturing, precision machining, distribution and industrial real estate in Jackson and Lenawee Counties, Michigan along I-94, US-127 and US-12. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-94 West, US-127 and US-12 precision machining, heavy power manufacturing and central Midwest logistics.",
+      "intro": [
+        "Directly west and southwest of Washtenaw County along I-94, US-127, US-12 and M-50, Jackson County (Jackson) and Lenawee County (Adrian, Tecumseh, Clinton) form a deep manufacturing belt known for aerospace/defense machining, medical devices, plastics, heavy stamping and agricultural/food processing, served by Consumers Energy electric infrastructure.",
+        "Drake Filippis represents owners, buyers and tenants across Jackson and Lenawee counties on industrial dispositions, acquisitions, sale-leasebacks and build-to-suit projects."
+      ],
+      "primary": false
+    },
+    {
+      "slug": "lansing-mi",
+      "name": "Lansing / I-96 Corridor",
+      "full_name": "Lansing, East Lansing, Mason and Ingham County, MI",
+      "county_slug": "ingham-county-mi",
+      "cities": [
+        "Lansing",
+        "East Lansing",
+        "Mason",
+        "Holt",
+        "Okemos",
+        "Williamston",
+        "Howell",
+        "Fowlerville"
+      ],
+      "title": "Industrial Real Estate Broker in Lansing & Ingham County, MI | Midwest Industrial Brokers",
+      "meta": "Automotive OEM supplier, EV/battery, distribution and manufacturing real estate in Lansing, Mason and Ingham County, Michigan along I-96, I-69 and US-127. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Mid-Michigan manufacturing, GM/EV supplier parks and distribution at the I-96, I-69 and US-127 junction.",
+      "intro": [
+        "Positioned at the mid-Michigan convergence of I-96, I-69 and US-127 and anchored by two General Motors assembly complexes, a major EV battery plant, Michigan State University research and Capital Region International Airport, Greater Lansing and Ingham County serve as a strategic manufacturing and central-state distribution hub.",
+        "Drake Filippis assists industrial suppliers, logistics operators and investors with acquisitions, leasing and dispositions along the I-96 corridor from Livingston County into Lansing."
+      ],
+      "primary": false
     }
   ],
   "faqs": [
@@ -1926,5 +3295,385 @@
   ],
   "analytics": {
     "ga4_measurement_id": "G-DNWEQ77G2W"
-  }
+  },
+  "primary_market_groups": [
+    {
+      "title": "West / I-275, I-94 & Washtenaw Corridor",
+      "tag": "Primary Deal Corridor",
+      "slugs": [
+        "plymouth-mi",
+        "wixom-mi",
+        "ann-arbor-mi",
+        "livonia-mi",
+        "canton-mi",
+        "farmington-hills-mi",
+        "romulus-mi",
+        "taylor-mi"
+      ]
+    },
+    {
+      "title": "North / I-75 & Oakland Corridor",
+      "tag": "Primary Deal Corridor",
+      "slugs": [
+        "auburn-hills-mi",
+        "rochester-hills-mi",
+        "lake-orion-mi",
+        "troy-mi"
+      ]
+    }
+  ],
+  "counties": [
+    {
+      "slug": "wayne-county-mi",
+      "name": "Wayne County",
+      "full_name": "Wayne County, MI",
+      "corridor_tag": "I-275 · I-94 · I-96 · I-75 · DTW Airport & Border Hub",
+      "city_slugs": [
+        "plymouth-mi",
+        "livonia-mi",
+        "canton-mi",
+        "romulus-mi",
+        "taylor-mi",
+        "dearborn-mi",
+        "van-buren-belleville-mi",
+        "detroit-mi",
+        "westland-mi",
+        "downriver-mi"
+      ],
+      "cities": [
+        "Plymouth",
+        "Livonia",
+        "Canton",
+        "Romulus",
+        "Taylor",
+        "Dearborn",
+        "Belleville",
+        "Van Buren",
+        "Detroit",
+        "Westland",
+        "Wayne",
+        "Redford",
+        "Northville",
+        "Brownstown",
+        "Woodhaven",
+        "Trenton",
+        "Wyandotte",
+        "Allen Park"
+      ],
+      "title": "Wayne County, MI Industrial Real Estate Broker | Plymouth, Livonia, Canton, Romulus & Detroit | Midwest Industrial Brokers",
+      "meta": "Industrial real estate broker for Wayne County, Michigan: Plymouth, Livonia, Canton, Romulus (DTW), Taylor, Dearborn, Belleville, Detroit, Westland and Downriver. Warehouse, manufacturing, cold storage and IOS. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Michigan's largest industrial market: I-275 corridor (Plymouth, Livonia, Canton), DTW Airport/I-94 logistics (Romulus, Taylor, Belleville), Dearborn and Detroit.",
+      "intro": [
+        "Wayne County is the backbone of Michigan's industrial real estate economy, encompassing the high-demand I-275 manufacturing and flex corridor (Plymouth, Plymouth Township, Livonia, Canton, Northville), the Detroit Metro Airport (DTW) and I-94 logistics aerotropolis (Romulus, Taylor, Van Buren Township, Belleville), the Dearborn automotive R&D and heavy manufacturing complex, Downriver I-75 distribution (Brownstown, Woodhaven), and international border crossings in Detroit.",
+        "Drake Filippis is one of the most active industrial brokers in western Wayne County and across the broader county footprint, handling dispositions, acquisitions, tenant/landlord representation, cold storage, heavy power manufacturing, R&D facilities and Industrial Outdoor Storage (IOS)."
+      ]
+    },
+    {
+      "slug": "oakland-county-mi",
+      "name": "Oakland County",
+      "full_name": "Oakland County, MI",
+      "corridor_tag": "I-75 Automation Alley · I-96 West · I-696 · M-59",
+      "city_slugs": [
+        "wixom-mi",
+        "auburn-hills-mi",
+        "rochester-hills-mi",
+        "lake-orion-mi",
+        "troy-mi",
+        "farmington-hills-mi",
+        "novi-mi",
+        "southfield-mi",
+        "royal-oak-mi",
+        "clawson-mi",
+        "madison-heights-mi",
+        "clarkston-mi",
+        "pontiac-mi",
+        "waterford-mi"
+      ],
+      "cities": [
+        "Wixom",
+        "Auburn Hills",
+        "Rochester Hills",
+        "Rochester",
+        "Lake Orion",
+        "Orion Township",
+        "Troy",
+        "Farmington Hills",
+        "Farmington",
+        "Novi",
+        "Southfield",
+        "Royal Oak",
+        "Clawson",
+        "Madison Heights",
+        "Clarkston",
+        "Pontiac",
+        "Waterford",
+        "Highland Township",
+        "Milford",
+        "New Hudson",
+        "South Lyon"
+      ],
+      "title": "Oakland County, MI Industrial Real Estate Broker | Wixom, Auburn Hills, Troy, Novi & Rochester Hills | Midwest Industrial Brokers",
+      "meta": "Industrial real estate broker for Oakland County, Michigan: Wixom, Auburn Hills, Rochester Hills, Lake Orion, Troy, Farmington Hills, Novi, Southfield, Madison Heights, Pontiac and Waterford. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Corporate R&D headquarters, robotics, automation and advanced manufacturing across the I-75 and I-96 Oakland County corridors.",
+      "intro": [
+        "Oakland County is the engineering, robotics, R&D and high-tech industrial powerhouse of the Midwest. Anchored on the west by the I-96 / I-275 / M-5 corridor (Wixom, Novi, Farmington Hills, South Lyon/New Hudson) and on the north/east by the I-75 and M-59 Automation Alley corridor (Auburn Hills, Rochester Hills, Lake Orion, Troy, Madison Heights, Royal Oak, Clawson, Pontiac, Waterford and Clarkston), Oakland County commands institutional investor and corporate occupier demand.",
+        "Drake Filippis represents robotics integrators, Tier-1 suppliers, R&D labs, heavy manufacturers and property owners across every Oakland County submarket."
+      ]
+    },
+    {
+      "slug": "macomb-county-mi",
+      "name": "Macomb County",
+      "full_name": "Macomb County, MI",
+      "corridor_tag": "Mound Rd Defense Corridor · M-53 Van Dyke · I-94 · M-59",
+      "city_slugs": [
+        "warren-mi",
+        "sterling-heights-mi",
+        "shelby-township-mi",
+        "chesterfield-mi"
+      ],
+      "cities": [
+        "Warren",
+        "Sterling Heights",
+        "Shelby Twp",
+        "Shelby Township",
+        "Macomb Township",
+        "Chesterfield",
+        "Clinton Township",
+        "Roseville",
+        "Fraser",
+        "Mount Clemens"
+      ],
+      "title": "Macomb County, MI Industrial Real Estate Broker | Warren, Sterling Heights, Shelby Twp & Chesterfield | Midwest Industrial Brokers",
+      "meta": "Industrial, defense, aerospace, heavy power and crane-served manufacturing real estate in Macomb County, Michigan: Warren, Sterling Heights, Shelby Township, Chesterfield, Clinton Township, Roseville and Fraser. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Heavy power manufacturing, crane-served plants, U.S. defense/aerospace supply chain and I-94 industrial parks.",
+      "intro": [
+        "Macomb County holds one of the highest concentrations of heavy manufacturing, tool-and-die, metal stamping, robotics and defense/aerospace facilities in the United States. Centered on the Mound Road, Van Dyke (M-53), Groesbeck (M-97), M-59 and I-94 corridors across Warren, Sterling Heights, Shelby Township, Chesterfield, Clinton Township, Roseville and Fraser, Macomb County is built for companies that actually make things.",
+        "Drake Filippis helps defense contractors, data center component manufacturers, precision machine shops and industrial investors acquire, lease and sell facilities across Macomb County."
+      ]
+    },
+    {
+      "slug": "washtenaw-county-mi",
+      "name": "Washtenaw County",
+      "full_name": "Washtenaw County, MI",
+      "corridor_tag": "I-94 · US-23 · M-14 · Ann Arbor R&D & Manufacturing",
+      "city_slugs": [
+        "ann-arbor-mi",
+        "saline-mi",
+        "ypsilanti-mi",
+        "dexter-mi"
+      ],
+      "cities": [
+        "Ann Arbor",
+        "Saline",
+        "Ypsilanti",
+        "Dexter",
+        "Northfield Twp",
+        "Pittsfield",
+        "Chelsea",
+        "Milan"
+      ],
+      "title": "Washtenaw County, MI Industrial Real Estate Broker | Ann Arbor, Saline, Ypsilanti & Dexter | Midwest Industrial Brokers",
+      "meta": "Industrial, R&D, lab, cleanroom, flex and manufacturing real estate in Washtenaw County, Michigan: Ann Arbor, Saline, Ypsilanti, Pittsfield Township and Dexter. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Tightest R&D, life-science, flex and precision manufacturing market in Michigan across Ann Arbor, Saline, Ypsilanti and Dexter.",
+      "intro": [
+        "Washtenaw County combines world-class research and engineering talent from the University of Michigan in Ann Arbor with major manufacturing, aviation and logistics corridors along I-94, US-23, M-14 and US-12 in Saline, Pittsfield Township, Ypsilanti (Willow Run), Dexter and Northfield Township. Sub-5% industrial vacancy makes Washtenaw County one of the most competitive industrial markets in the Midwest.",
+        "With landmark Washtenaw County closings including the 105,418 SF BankSupplies headquarters in Saline ($7.9M) and the 50,266 SF Tecumseh Products R&D headquarters sale on Hines Drive in Ann Arbor, plus nearly 20 active Washtenaw County listings, Drake Filippis is a leading resource in this market."
+      ]
+    },
+    {
+      "slug": "livingston-county-mi",
+      "name": "Livingston County",
+      "full_name": "Livingston County, MI",
+      "corridor_tag": "I-96 & US-23 Crossroads · Brighton · Howell",
+      "city_slugs": [
+        "brighton-mi"
+      ],
+      "cities": [
+        "Brighton",
+        "Howell",
+        "Fowlerville",
+        "Green Oak",
+        "pinckney",
+        "Hartland"
+      ],
+      "title": "Livingston County, MI Industrial Real Estate Broker | Brighton & Howell | Midwest Industrial Brokers",
+      "meta": "Industrial real estate, manufacturing, warehouse and development land in Livingston County, Michigan: Brighton, Howell, Green Oak Township and Fowlerville along I-96 and US-23. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Fast-growing I-96 and US-23 industrial corridor in Brighton, Howell and Green Oak Township.",
+      "intro": [
+        "Livingston County sits directly west of Oakland County and north of Washtenaw County at the intersection of I-96 and US-23. Anchored by Brighton, Howell, Green Oak Township and Fowlerville, the county attracts manufacturers, regional distributors and owner-users looking for modern buildings, lower tax rates, pro-business township entitlements and direct freeway reach to Metro Detroit, Ann Arbor, Lansing and Flint.",
+        "Drake Filippis represents buyers, sellers, landlords and developers on industrial buildings and land throughout Livingston County."
+      ]
+    },
+    {
+      "slug": "genesee-county-mi",
+      "name": "Genesee County",
+      "full_name": "Genesee County, MI",
+      "corridor_tag": "I-75 · I-69 · US-23 · Flint · Fenton · Grand Blanc",
+      "city_slugs": [
+        "flint-mi"
+      ],
+      "cities": [
+        "Flint",
+        "Fenton",
+        "Grand Blanc",
+        "Burton",
+        "Swartz Creek",
+        "Davison"
+      ],
+      "title": "Genesee County, MI Industrial Real Estate Broker | Flint, Fenton & Grand Blanc | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing and logistics real estate in Genesee County, Michigan: Flint, Fenton, Grand Blanc and Burton along I-75, I-69 and US-23. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-75, I-69 and US-23 manufacturing, automotive supply chain and distribution across Flint, Fenton and Grand Blanc.",
+      "intro": [
+        "Genesee County connects northern Oakland County and the I-75 / US-23 corridors with the international I-69 trade highway. Across Fenton, Grand Blanc, Flint and Mundy Township, Genesee County offers precision manufacturing parks, heavy industrial plants, rail- and air-served distribution at Bishop International Airport, and shovel-ready industrial mega-sites.",
+        "Drake Filippis assists industrial users and owners across Genesee County with site selection, acquisitions, dispositions and leasing."
+      ]
+    },
+    {
+      "slug": "monroe-county-mi",
+      "name": "Monroe County",
+      "full_name": "Monroe County, MI & NW Ohio Border Corridor",
+      "corridor_tag": "I-75 · US-23 · Port of Monroe · Ohio Turnpike Gateway",
+      "city_slugs": [
+        "monroe-mi"
+      ],
+      "cities": [
+        "Monroe",
+        "Bedford",
+        "Dundee",
+        "Milan",
+        "Swanton",
+        "Rossford",
+        "Toledo"
+      ],
+      "title": "Monroe County, MI & NW Ohio Industrial Real Estate Broker | Cold Storage & Logistics | Midwest Industrial Brokers",
+      "meta": "Industrial, cold storage, port and distribution real estate in Monroe County, Michigan (Monroe, Bedford, Dundee) and the I-75 / I-80/90 Northwest Ohio border corridor (Rossford, Swanton, Toledo). Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-75 and US-23 Michigan-Ohio border logistics, Port of Monroe, and Northwest Ohio cold storage hubs.",
+      "intro": [
+        "Monroe County forms the critical freight bridge between Southeast Michigan (Metro Detroit / DTW / Ann Arbor) and Northwest Ohio (Toledo, Rossford and Swanton at the I-75 and I-80/I-90 Ohio Turnpike interchange). Combined with the Port of Monroe and heavy rail/utility infrastructure, this bi-state corridor is one of the fastest-growing distribution and cold storage markets in the Midwest.",
+        "Drake Filippis represents industrial and cold chain clients across Monroe County and Northwest Ohio, including active marketing of large-scale cold storage facilities in Rossford and Swanton, OH."
+      ]
+    },
+    {
+      "slug": "st-clair-county-mi",
+      "name": "St. Clair County",
+      "full_name": "St. Clair County, MI",
+      "corridor_tag": "I-94 & I-69 Blue Water Bridge Border Corridor",
+      "city_slugs": [
+        "port-huron-mi"
+      ],
+      "cities": [
+        "Port Huron",
+        "Marysville",
+        "Kimball",
+        "St. Clair",
+        "Marine City"
+      ],
+      "title": "St. Clair County, MI Industrial Real Estate Broker | Port Huron, Marysville & Kimball | Midwest Industrial Brokers",
+      "meta": "Cross-border industrial real estate and build-to-suit campuses in St. Clair County, Michigan: Port Huron, Marysville and Kimball Township at the I-94 / I-69 Blue Water Bridge. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Blue Water Bridge international border hub with 2.5M+ SF of active build-to-suit industrial campus opportunities.",
+      "intro": [
+        "St. Clair County anchors the I-94 and I-69 cross-border manufacturing and logistics corridor at the Blue Water Bridge in Port Huron, Marysville and Kimball Township. With over 2.5 million square feet of active build-to-suit and big-box industrial space represented at Bluewater Commerce Park and Port Huron Commerce Park, St. Clair County offers unmatched scale for reshoring manufacturers, automotive suppliers and cross-border 3PLs.",
+        "Contact Drake Filippis to evaluate existing industrial buildings or custom build-to-suit sites in St. Clair County."
+      ]
+    },
+    {
+      "slug": "lapeer-county-mi",
+      "name": "Lapeer County",
+      "full_name": "Lapeer County, MI",
+      "corridor_tag": "I-69 & M-24 Manufacturing Corridor",
+      "city_slugs": [
+        "lapeer-mi"
+      ],
+      "cities": [
+        "Lapeer",
+        "Imlay City",
+        "Almont"
+      ],
+      "title": "Lapeer County, MI Industrial Real Estate Broker | Lapeer & Imlay City | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing and warehouse real estate in Lapeer County, Michigan along I-69 and M-24. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-69 and M-24 manufacturing, plastics, metal fabrication and distribution north of Oakland County.",
+      "intro": [
+        "Directly north of Oakland County's Auburn Hills and Lake Orion industrial parks along M-24 and bisected by I-69, Lapeer County provides value-driven manufacturing, plastics, machining and logistics sites with skilled regional labor.",
+        "Drake Filippis represents buyers, sellers and tenants across Lapeer and Imlay City."
+      ]
+    },
+    {
+      "slug": "jackson-lenawee-counties-mi",
+      "name": "Jackson & Lenawee Counties",
+      "full_name": "Jackson and Lenawee Counties, MI",
+      "corridor_tag": "I-94 West · US-127 · US-12 Manufacturing Corridor",
+      "city_slugs": [
+        "jackson-mi"
+      ],
+      "cities": [
+        "Jackson",
+        "Adrian",
+        "Tecumseh",
+        "Clinton",
+        "Chelsea",
+        "Manchester"
+      ],
+      "title": "Jackson & Lenawee County, MI Industrial Real Estate Broker | Jackson, Adrian & Tecumseh | Midwest Industrial Brokers",
+      "meta": "Industrial, manufacturing and warehouse real estate in Jackson and Lenawee Counties, Michigan along I-94, US-127 and US-12. Call Drake Filippis at (248) 941-1125.",
+      "summary": "I-94 West and US-127 precision machining, heavy power manufacturing and regional logistics.",
+      "intro": [
+        "Stretching west and southwest from Ann Arbor and Saline along I-94, US-12 and US-127, Jackson County and Lenawee County offer an established base of heavy power manufacturing, precision CNC machining, aerospace/defense components and food/ag industrial facilities.",
+        "Drake Filippis advises industrial owners and occupiers across Jackson, Adrian, Tecumseh and the western I-94 corridor."
+      ]
+    },
+    {
+      "slug": "ingham-county-mi",
+      "name": "Ingham County",
+      "full_name": "Ingham County & Greater Lansing, MI",
+      "corridor_tag": "I-96 · I-69 · US-127 Manufacturing Corridor",
+      "city_slugs": [
+        "lansing-mi"
+      ],
+      "cities": [
+        "Lansing",
+        "East Lansing",
+        "Mason",
+        "Holt",
+        "Okemos",
+        "Williamston"
+      ],
+      "title": "Ingham County & Lansing, MI Industrial Real Estate Broker | Midwest Industrial Brokers",
+      "meta": "Industrial, automotive supplier, EV/battery and distribution real estate in Lansing, Mason and Ingham County, Michigan along I-96, I-69 and US-127. Call Drake Filippis at (248) 941-1125.",
+      "summary": "Central Michigan OEM assembly, EV/battery supply chain and I-96/I-69 distribution hub.",
+      "intro": [
+        "Ingham County and Greater Lansing anchor the central Michigan I-96, I-69 and US-127 industrial corridor. Driven by automotive assembly, EV battery production, Tier-1 sequencing and statewide distribution, the market connects seamlessly east via I-96 to Livingston, Oakland and Wayne counties.",
+        "Drake Filippis represents industrial clients on acquisitions, leases, dispositions and build-to-suit projects across the I-96 corridor and Ingham County."
+      ]
+    }
+  ],
+  "press_citations": [
+    {
+      "title": "A tale of resiliency and adaptability at Detroit Industrial Real Estate Summit",
+      "publication": "REJournals",
+      "date": "September 3, 2026",
+      "role": "Featured Panelist,  Detroit Industrial Real Estate Market Outlook: Navigating Growth & Change",
+      "url": "https://rejournals.com/a-tale-of-resiliency-and-adaptability-at-detroit-industrial-real-estate-summit/"
+    },
+    {
+      "title": "Private equity firm plans 4.8M square feet of industrial space along I-94 in Southeast Michigan",
+      "publication": "Crain's Detroit Business / Signature Associates",
+      "date": "September 4, 2026",
+      "role": "Listing & Advisory Team,  4.8M SF I-94 Corridor Industrial Development",
+      "url": "https://www.signatureassociates.com/private-equity-firm-plans-4-8m-square-feet-of-industrial-space-along-i-94-in-southeast-michigan/"
+    },
+    {
+      "title": "$50M cold storage facility could bring up to 225 jobs to Metro Detroit",
+      "publication": "MLive / Signature Associates",
+      "date": "August 23, 2026",
+      "role": "Listing & Advisory Team,  257,950 SF DTW Romulus Cold Storage Facility",
+      "url": "https://www.signatureassociates.com/50m-cold-storage-facility-could-bring-up-to-225-jobs-to-metro-detroit/"
+    },
+    {
+      "title": "New downtown Ann Arbor fitness studio promises 'fun, unique and challenging' workouts",
+      "publication": "MLive",
+      "date": "January 8, 2026",
+      "role": "Quoted Commercial Real Estate Broker,  Ann Arbor Market",
+      "url": "https://www.mlive.com/news/ann-arbor/2026/01/new-downtown-ann-arbor-fitness-studio-promises-fun-unique-and-challenging-workouts.html"
+    }
+  ]
 }
