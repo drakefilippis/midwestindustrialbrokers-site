@@ -14,3 +14,30 @@
   to = "/markets/farmington-hills-mi/"
   status = 301
   force = true
+
+# Support /specialties/<slug> aliases to /services/<slug>
+[[redirects]]
+  from = "/specialties/cold-storage-mi-oh/*"
+  to = "/services/cold-storage-food-logistics/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/*"
+  to = "/services/:splat"
+  status = 301
+  force = true
+
+# Support /counties/<slug> aliases to /markets/<slug>
+[[redirects]]
+  from = "/counties/*"
+  to = "/markets/:splat"
+  status = 301
+  force = true
+
+# Normalize legacy Cross and Black slug
+[[redirects]]
+  from = "/deals/Cross%20and%20Black/*"
+  to = "/deals/cross-and-black/"
+  status = 301
+  force = true

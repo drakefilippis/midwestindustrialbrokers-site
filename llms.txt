@@ -1,17 +1,26 @@
 # Midwest Industrial Brokers
 
-> Industrial commercial real estate brokerage for Plymouth, Ann Arbor, the I-275 corridor and greater Metro Detroit, Michigan. Led by Drake Filippis, Associate Broker with Signature Associates.
+> Dedicated industrial commercial real estate brokerage platform of Drake Filippis, Associate Broker with Signature Associates. Specializing in manufacturing, cold storage (freezer/cooler & food logistics across Michigan, Ohio & the Midwest), heavy power manufacturing & reindustrialization/reshoring, robotics & automation, data center supply chain manufacturing, sale-leasebacks (with Signature Associates' exclusive national Sale-Leaseback team), defense & aerospace, R&D/lab/cleanroom facilities, Industrial Outdoor Storage (IOS), and brownfield/BEA economic development incentives.
 
-## Contact
+## Canonical Entity & Broker Facts
 - Broker: Drake Filippis, Associate Broker, Signature Associates
+- Platform: Founder, Midwest Industrial Brokers (https://midwestindustrialbrokers.com/)
+- Education: Purdue University (educated alongside industrial, mechanical, and robotics engineers; raised in a Midwest industrial town)
+- Experience & Track Record: 14+ Years in Real Estate | $60M+ in Recent Commercial Real Estate Volume | 70+ Transactions Closed (2024-2026) | 56 Active Listings with 3,000,000+ SF Available Throughout the Midwest
 - Mobile: (248) 941-1125
 - Office: (248) 799-3161
 - Email: dfilippis@signatureassociates.com
 - Contact form: https://midwestindustrialbrokers.com/#contact
 - Office address: Signature Associates, One Towne Square, Suite 1200, Southfield, MI 48076
+- Signature Associates Profile: https://www.signatureassociates.com/?team=drake-filippis
+- CPIX Broker Profile: https://cpix.resimplifi.com/brokers/3440e031-drake-filippis
+- CPIX Active Listings: https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031
 - LinkedIn: https://www.linkedin.com/in/drake-filippis-267a104a/
+- X (Twitter): https://x.com/detroitdrake
+- Crexi Profile: https://www.crexi.com/profile/drake-filippis-drakefili
+- LoopNet Profile: https://www.loopnet.com/company/signature-associates/southfield-mi/nklpdsnl/
 
-## Services
+## Core Brokerage Services
 - [Disposition](https://midwestindustrialbrokers.com/services/disposition/): Selling an industrial building or land? Pricing, marketing and negotiation built to bring the right buyer to the table.
 - [Acquisition](https://midwestindustrialbrokers.com/services/acquisition/): Buying for your business or your portfolio. A focused search, the right questions and a clean path to closing.
 - [Build-to-Suit](https://midwestindustrialbrokers.com/services/build-to-suit/): When no existing building fits. Site selection, entitlements and developer coordination for a facility designed around your operation.
@@ -20,24 +29,74 @@
 - [Landlord Representation](https://midwestindustrialbrokers.com/services/landlord-representation/): Leasing an industrial building or multi tenant flex property. Marketing, tenant outreach and lease negotiation that protect your asset.
 - [Investment Sales](https://midwestindustrialbrokers.com/services/investment-sales/): Buying or selling leased industrial property. Pricing, marketing and buyer outreach built around income and tenancy.
 
-## Markets served
-- [Plymouth](https://midwestindustrialbrokers.com/markets/plymouth-mi/): Light manufacturing, flex and distribution space close to I-275 and M-14.
-- [Ann Arbor](https://midwestindustrialbrokers.com/markets/ann-arbor-mi/): Flex, research and light industrial space across Washtenaw County.
-- [Livonia](https://midwestindustrialbrokers.com/markets/livonia-mi/): An established industrial base with access to I-96 and I-275.
-- [I-275 Corridor](https://midwestindustrialbrokers.com/markets/i-275-corridor/): Plymouth, Livonia, Canton, Novi and Romulus along one north south route.
-- [Metro Detroit](https://midwestindustrialbrokers.com/markets/metro-detroit/): Manufacturing, warehouse and distribution space across the region.
-- [Canton](https://midwestindustrialbrokers.com/markets/canton-mi/): Industrial and flex space in western Wayne County off I-275.
-- [Saline](https://midwestindustrialbrokers.com/markets/saline-mi/): Industrial space in southern Washtenaw County near US-12 and US-23.
-- [Novi](https://midwestindustrialbrokers.com/markets/novi-mi/): Flex and light industrial space near I-96 and I-275.
-- [Romulus](https://midwestindustrialbrokers.com/markets/romulus-mi/): Warehouse and logistics space around Detroit Metro Airport.
-- [Taylor](https://midwestindustrialbrokers.com/markets/taylor-mi/): Downriver industrial and distribution space near I-94.
-- [Ypsilanti](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/): Industrial space east of Ann Arbor along I-94 and US-12.
-- [Dexter](https://midwestindustrialbrokers.com/markets/dexter-mi/): Industrial buildings and land in western Washtenaw County.
-- [Farmington Hills](https://midwestindustrialbrokers.com/markets/farmington-hills-mi/): Flex and light industrial space near I-696, I-275 and M-5.
-- [Brighton](https://midwestindustrialbrokers.com/markets/brighton-mi/): Industrial space in Livingston County at I-96 and US-23.
-- Coverage: Plymouth, Livonia, Canton, Novi, Farmington Hills, Romulus, Taylor, Ann Arbor, Ypsilanti, Saline, Dexter, Brighton, Northville, Wixom, Metro Detroit
+## High-Intent Industrial Specialties
+- [Cold Storage, Freezer/Cooler & Food Logistics](https://midwestindustrialbrokers.com/services/cold-storage-food-logistics/): Freezer, cooler, tri-temp (-20°F to 55°F) and USDA/FDA food-grade warehouse brokerage and build-to-suit across Michigan, Ohio and the Midwest cold chain.
+- [Heavy Power Manufacturing, Utility Upgrades, Onshoring & Reindustrialization](https://midwestindustrialbrokers.com/services/heavy-power-onshoring-manufacturing/): Industrial brokerage for high-amperage manufacturing, onshoring and reindustrialization projects, including direct utility coordination with DTE Energy, Consumers Energy and municipal utilities.
+- [Robotics, Automation & Advanced Manufacturing](https://midwestindustrialbrokers.com/services/robotics-automation-manufacturing/): Facilities for robotics integrators, industrial automation, autonomous systems and precision manufacturing along the Ann Arbor, Plymouth, Wixom and Oakland County engineering corridors.
+- [Data Center Supply Chain & Component Manufacturers](https://midwestindustrialbrokers.com/services/data-center-supply-chain-manufacturing/): Manufacturing and assembly facilities for companies producing the critical hardware that goes inside data centers: switchgear, transformers, PDUs, liquid/chiller cooling, server racks and fiber assemblies.
+- [Sale-Leaseback & Industrial Capital Advisory](https://midwestindustrialbrokers.com/services/sale-leaseback-capital-advisory/): Unlock capital trapped in owned industrial real estate and redeploy it into your operating business, backed by Signature Associates' exclusive national Sale-Leaseback team.
+- [Defense, Aerospace & Munitions Supply Chain](https://midwestindustrialbrokers.com/services/defense-aerospace-supply-chain/): Secure manufacturing, engineering and assembly facilities for defense primes, tier-1/2 aerospace suppliers and munitions contractors across the Macomb Defense Corridor, Oakland and Washtenaw counties.
+- [R&D, Lab Space, Cleanrooms & Battery/EV Testing](https://midwestindustrialbrokers.com/services/rd-lab-cleanroom-ev-testing/): High-tech flex, wet/dry laboratories, ISO cleanrooms, pharmaceutical compounding and powertrain/battery testing facilities across Ann Arbor, Plymouth, Livonia, Novi and Auburn Hills.
+- [Industrial Outdoor Storage (IOS), Truck Terminals & Fleet Yards](https://midwestindustrialbrokers.com/services/industrial-outdoor-storage-ios-truck-terminals/): Zoned industrial outdoor storage (IOS), drop-trailer yards, cross-dock truck terminals and equipment fleet facilities near I-94, I-275, I-75, DTW Airport and Detroit intermodal hubs.
+- [Brownfield, BEA & Economic Development Incentives](https://midwestindustrialbrokers.com/services/brownfield-economic-development-incentives/): Industrial site selection and redevelopment backed by Michigan Baseline Environmental Assessments (BEAs), Brownfield TIF, PA 198 tax abatements and municipal/state economic development incentives.
 
-## Active listings
+## County Industrial Hubs (Michigan & Ohio Border Corridors)
+- [Wayne County (Wayne County, MI)](https://midwestindustrialbrokers.com/markets/wayne-county-mi/): Michigan's largest industrial market: I-275 corridor (Plymouth, Livonia, Canton), DTW Airport/I-94 logistics (Romulus, Taylor, Belleville), Dearborn and Detroit.
+- [Oakland County (Oakland County, MI)](https://midwestindustrialbrokers.com/markets/oakland-county-mi/): Corporate R&D headquarters, robotics, automation and advanced manufacturing across the I-75 and I-96 Oakland County corridors.
+- [Macomb County (Macomb County, MI)](https://midwestindustrialbrokers.com/markets/macomb-county-mi/): Heavy power manufacturing, crane-served plants, U.S. defense/aerospace supply chain and I-94 industrial parks.
+- [Washtenaw County (Washtenaw County, MI)](https://midwestindustrialbrokers.com/markets/washtenaw-county-mi/): Tightest R&D, life-science, flex and precision manufacturing market in Michigan across Ann Arbor, Saline, Ypsilanti and Dexter.
+- [Livingston County (Livingston County, MI)](https://midwestindustrialbrokers.com/markets/livingston-county-mi/): Fast-growing I-96 and US-23 industrial corridor in Brighton, Howell and Green Oak Township.
+- [Genesee County (Genesee County, MI)](https://midwestindustrialbrokers.com/markets/genesee-county-mi/): I-75, I-69 and US-23 manufacturing, automotive supply chain and distribution across Flint, Fenton and Grand Blanc.
+- [Monroe County (Monroe County, MI & NW Ohio Border Corridor)](https://midwestindustrialbrokers.com/markets/monroe-county-mi/): I-75 and US-23 Michigan-Ohio border logistics, Port of Monroe, and Northwest Ohio cold storage hubs.
+- [St. Clair County (St. Clair County, MI)](https://midwestindustrialbrokers.com/markets/st-clair-county-mi/): Blue Water Bridge international border hub with 2.5M+ SF of active build-to-suit industrial campus opportunities.
+- [Lapeer County (Lapeer County, MI)](https://midwestindustrialbrokers.com/markets/lapeer-county-mi/): I-69 and M-24 manufacturing, plastics, metal fabrication and distribution north of Oakland County.
+- [Jackson & Lenawee Counties (Jackson and Lenawee Counties, MI)](https://midwestindustrialbrokers.com/markets/jackson-lenawee-counties-mi/): I-94 West and US-127 precision machining, heavy power manufacturing and regional logistics.
+- [Ingham County (Ingham County & Greater Lansing, MI)](https://midwestindustrialbrokers.com/markets/ingham-county-mi/): Central Michigan OEM assembly, EV/battery supply chain and I-96/I-69 distribution hub.
+
+## Primary & Submarket City Pages
+- [Plymouth (Plymouth and Plymouth Township, MI)](https://midwestindustrialbrokers.com/markets/plymouth-mi/): Light manufacturing, flex and distribution space close to I-275 and M-14.
+- [Ann Arbor (Ann Arbor and Washtenaw County, MI)](https://midwestindustrialbrokers.com/markets/ann-arbor-mi/): Flex, research and light industrial space across Washtenaw County.
+- [Livonia (Livonia, MI)](https://midwestindustrialbrokers.com/markets/livonia-mi/): An established industrial base with access to I-96 and I-275.
+- [I-275 Corridor (the I-275 Corridor, Michigan)](https://midwestindustrialbrokers.com/markets/i-275-corridor/): Plymouth, Livonia, Canton, Novi and Romulus along one north south route.
+- [Metro Detroit (Metro Detroit, MI)](https://midwestindustrialbrokers.com/markets/metro-detroit/): Manufacturing, warehouse and distribution space across the region.
+- [Canton (Canton Township, MI)](https://midwestindustrialbrokers.com/markets/canton-mi/): Industrial and flex space in western Wayne County off I-275.
+- [Saline (Saline, MI)](https://midwestindustrialbrokers.com/markets/saline-mi/): Industrial space in southern Washtenaw County near US-12 and US-23.
+- [Novi (Novi, MI)](https://midwestindustrialbrokers.com/markets/novi-mi/): Flex and light industrial space near I-96 and I-275.
+- [Romulus (Romulus, MI)](https://midwestindustrialbrokers.com/markets/romulus-mi/): Warehouse and logistics space around Detroit Metro Airport.
+- [Taylor (Taylor, MI)](https://midwestindustrialbrokers.com/markets/taylor-mi/): Downriver industrial and distribution space near I-94.
+- [Ypsilanti (Ypsilanti, MI)](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/): Industrial space east of Ann Arbor along I-94 and US-12.
+- [Dexter (Dexter, MI)](https://midwestindustrialbrokers.com/markets/dexter-mi/): Industrial buildings and land in western Washtenaw County.
+- [Farmington Hills (Farmington Hills, MI)](https://midwestindustrialbrokers.com/markets/farmington-hills-mi/): Flex and light industrial space near I-696, I-275 and M-5.
+- [Brighton (Brighton, MI)](https://midwestindustrialbrokers.com/markets/brighton-mi/): Industrial space in Livingston County at I-96 and US-23.
+- [Wixom (Wixom, MI)](https://midwestindustrialbrokers.com/markets/wixom-mi/): Modern industrial parks, robotics, manufacturing and distribution along I-96 in southwest Oakland County.
+- [Southfield (Southfield, MI)](https://midwestindustrialbrokers.com/markets/southfield-mi/): Central Metro Detroit flex, R&D, warehouse and corporate headquarters space at M-10, I-696 and US-24.
+- [Auburn Hills (Auburn Hills, MI)](https://midwestindustrialbrokers.com/markets/auburn-hills-mi/): Flagship R&D technical centers, robotics headquarters and advanced manufacturing along I-75 and M-59.
+- [Rochester / Rochester Hills (Rochester and Rochester Hills, MI)](https://midwestindustrialbrokers.com/markets/rochester-hills-mi/): High-image tech flex, R&D, cleanrooms and precision manufacturing near M-59, Hamlin Rd and Crooks Rd.
+- [Lake Orion (Lake Orion and Orion Township, MI)](https://midwestindustrialbrokers.com/markets/lake-orion-mi/): OEM supplier manufacturing, high-bay industrial and development land along I-75, Brown Rd and M-24.
+- [Troy (Troy, MI)](https://midwestindustrialbrokers.com/markets/troy-mi/): Dense engineering, R&D, flex and light manufacturing parks off I-75, Maple Rd and Stephenson Hwy.
+- [Royal Oak (Royal Oak, MI)](https://midwestindustrialbrokers.com/markets/royal-oak-mi/): Infill light industrial, flex and service buildings along Coolidge Hwy, Meijer Dr and 14 Mile near I-75/I-696.
+- [Clawson (Clawson, MI)](https://midwestindustrialbrokers.com/markets/clawson-mi/): Precision machining, tool-and-die and light industrial space along Maple Rd, Crooks Rd and Rochester Rd.
+- [Madison Heights (Madison Heights, MI)](https://midwestindustrialbrokers.com/markets/madison-heights-mi/): High-density manufacturing, R&D, aerospace and distribution space at the I-75 and I-696 crossroads.
+- [Clarkston (Clarkston and Independence Township, MI)](https://midwestindustrialbrokers.com/markets/clarkston-mi/): I-75 north corridor industrial, contractor yards, flex buildings and development land along Dixie Hwy and M-15.
+- [Pontiac (Pontiac, MI)](https://midwestindustrialbrokers.com/markets/pontiac-mi/): Heavy power manufacturing, large-scale distribution, rail-served plants and IOS yards in central Oakland County.
+- [Waterford (Waterford Township, MI)](https://midwestindustrialbrokers.com/markets/waterford-mi/): Flex, light manufacturing and aviation-corridor industrial around Oakland County International Airport (PTK) and M-59.
+- [Warren (Warren, MI)](https://midwestindustrialbrokers.com/markets/warren-mi/): Michigan's largest industrial manufacturing city, anchored by the Mound Rd / Van Dyke defense and automotive corridor.
+- [Sterling Heights (Sterling Heights, MI)](https://midwestindustrialbrokers.com/markets/sterling-heights-mi/): Premier defense, aerospace, automotive assembly and robotics corridor along Mound Rd, Van Dyke and M-59.
+- [Shelby Township (Shelby Township and Macomb Township, MI)](https://midwestindustrialbrokers.com/markets/shelby-township-mi/): Modern industrial parks, clean manufacturing and growing corporate facilities along M-53 and 23 Mile to 26 Mile.
+- [Chesterfield / I-94 Corridor (Chesterfield, Clinton Township, Roseville and Fraser, MI)](https://midwestindustrialbrokers.com/markets/chesterfield-mi/): East-side I-94 and Gratiot/Groesbeck manufacturing, tooling, distribution and defense-adjacent industrial space.
+- [Dearborn (Dearborn and Allen Park, MI)](https://midwestindustrialbrokers.com/markets/dearborn-mi/): Automotive OEM headquarters, Tier-1 R&D, heavy manufacturing and intermodal logistics along I-94 and M-39.
+- [Van Buren / Belleville (Van Buren Township and Belleville, MI)](https://midwestindustrialbrokers.com/markets/van-buren-belleville-mi/): I-94 aerotropolis logistics, big-box distribution and R&D between Detroit Metro Airport (DTW) and Willow Run.
+- [Detroit (Detroit, MI)](https://midwestindustrialbrokers.com/markets/detroit-mi/): Cross-border logistics near the Gordie Howe International Bridge, heavy manufacturing, cold storage and IOS yards.
+- [Westland / Wayne / Redford (Westland, Wayne, Redford and Garden City, MI)](https://midwestindustrialbrokers.com/markets/westland-mi/): Value-driven manufacturing, shop space and heavy industrial corridors along Michigan Ave, Wayne Rd and Telegraph.
+- [Downriver / Brownstown / Woodhaven (Brownstown, Woodhaven, Trenton and Downriver Wayne County, MI)](https://midwestindustrialbrokers.com/markets/downriver-mi/): I-75 corridor big-box logistics, automotive assembly suppliers, heavy rail-served manufacturing and IOS yards.
+- [Flint / Fenton / Grand Blanc (Flint, Fenton, Grand Blanc and Genesee County, MI)](https://midwestindustrialbrokers.com/markets/flint-mi/): I-75, I-69 and US-23 logistics crossroads, Bishop Airport cargo hub, heavy manufacturing and supplier parks.
+- [Monroe / I-75 Ohio Border (Monroe, Bedford, Dundee and Monroe County, MI)](https://midwestindustrialbrokers.com/markets/monroe-mi/): Michigan-Ohio border gateway along I-75 and US-23, Port of Monroe, cold chain logistics and heavy manufacturing.
+- [Port Huron / Marysville (Port Huron, Marysville, Kimball and St. Clair County, MI)](https://midwestindustrialbrokers.com/markets/port-huron-mi/): Blue Water Bridge cross-border logistics, I-94/I-69 terminus and 2M+ SF of build-to-suit industrial campus space.
+- [Lapeer / I-69 Corridor (Lapeer, Imlay City and Lapeer County, MI)](https://midwestindustrialbrokers.com/markets/lapeer-mi/): Cost-effective manufacturing, metal fabrication, plastics and logistics along I-69 and M-24 north of Oakland County.
+- [Jackson & Adrian (Jackson, Adrian, Tecumseh and the I-94 West / US-127 Corridor, MI)](https://midwestindustrialbrokers.com/markets/jackson-mi/): I-94 West, US-127 and US-12 precision machining, heavy power manufacturing and central Midwest logistics.
+- [Lansing / I-96 Corridor (Lansing, East Lansing, Mason and Ingham County, MI)](https://midwestindustrialbrokers.com/markets/lansing-mi/): Mid-Michigan manufacturing, GM/EV supplier parks and distribution at the I-96, I-69 and US-127 junction.
+
+## Active Listings (Sample from 56 Active Listings / 3,000,000+ SF)
 - [All active sale and lease listings on CPIX](https://cpix.resimplifi.com/cards?types=sale_lease&statuses=active&brokers=3440e031)
 - [206 E. Huron St](https://cpix.resimplifi.com/61e25908-206-e-huron-st): Sale/Lease, Office, 24K SF, 0.6 ac lot, 206 E. Huron St, Ann Arbor, MI 48104
 - [45700 Mast St](https://cpix.resimplifi.com/eb5c197c-45700-mast-st): Sale/Lease, Industrial, 15K SF, 1.3 ac lot, 45700 Mast St, Plymouth, MI 48170
@@ -83,16 +142,37 @@
 - [Whittaker Road](https://cpix.resimplifi.com/97847a6e-whittaker-road): Sale, Land, 25.5 ac lot, Whittaker Road, Ypsilanti, MI 48197
 - [Baker Road](https://cpix.resimplifi.com/98450870-baker-road): Sale, Land, 15 ac lot, Baker Rd, Dexter, MI 48130
 
-## Selected closed deals
-- [4301 Highland Rd., Waterford, MI](https://midwestindustrialbrokers.com/deal.html?slug=4301-highland-rd-waterford): 2026 Sale, 8,892 SF, Advanced Systems, represented buyer
-- [32131 Industrial Drive, Livonia, MI, New Headquarters](https://midwestindustrialbrokers.com/deal.html?slug=vios-compounding-livonia): 2026 Sale, 15,400 SF, VIOS Compounding, represented buyer
-- [Medical Investment Sale Portfolio, 4-Building Medical Office Portfolio](https://midwestindustrialbrokers.com/deal.html?slug=medical-investment-portfolio): 2026 Investment Sale, 44,403 SF · 4 Buildings, Confidential, represented both
-- [1294 Beach Court, Saline, MI, New Headquarters](https://midwestindustrialbrokers.com/deal.html?slug=bank-supplies-saline): 2025 Sale · Consolidation, 105,418 SF, Bank Supplies, represented buyer
-- [45570 Maben Rd, Canton, MI 48188](https://midwestindustrialbrokers.com/deal.html?slug=michigan-fine-yarn): 2026 Sale, 7,680 SF, Michigan Fine Yarn, represented buyer
-- [44099 Plymouth Oaks Blvd, Plymouth](https://midwestindustrialbrokers.com/deal.html?slug=Cross%20and%20Black): 2026 Lease, 7,711 SF, Cross and Black, represented tenant
-- [47495 Clipper St, Plymouth Twp, MI](https://midwestindustrialbrokers.com/deal.html?slug=synergy-dance-clipper-plymouth): 2026 Lease, 8,874 SF, Synergy Dance Studio, represented both
+## Closed Deal Case Studies (Static Indexable Pages)
+- [Advanced Systems Acquires 8,892 SF R&D and Flex Facility in Waterford (Waterford, MI)](https://midwestindustrialbrokers.com/deals/4301-highland-rd-waterford/): 2026 Sale, 8,892 SF, client: Advanced Systems, represented buyer
+- [VIOS Compounding Acquires 15,400 SF Headquarters at 32131 Industrial Drive in Livonia (Livonia, MI, New Headquarters)](https://midwestindustrialbrokers.com/deals/vios-compounding-livonia/): 2026 Sale, 15,400 SF, client: VIOS Compounding, represented buyer
+- [Dual Representation on 44,403 SF Four-Building Medical Investment Portfolio Sale (4-Building Medical Office Portfolio)](https://midwestindustrialbrokers.com/deals/medical-investment-portfolio/): 2026 Investment Sale, 44,403 SF · 4 Buildings, client: Confidential, represented both
+- [BankSupplies Acquires 105,418 SF Headquarters at 1294 Beach Court in Saline for $7,900,000 (Saline, MI, New Headquarters)](https://midwestindustrialbrokers.com/deals/bank-supplies-saline/): 2025 Sale · Consolidation, 105,418 SF, $7,900,000, client: Bank Supplies, represented buyer
+- [Michigan Fine Yarn Acquires 7,680 SF Facility at 45570 Maben Rd in Canton (Canton, MI 48188)](https://midwestindustrialbrokers.com/deals/michigan-fine-yarn/): 2026 Sale, 7,680 SF, client: Michigan Fine Yarn, represented buyer
+- [Cross and Black Leases 7,711 SF Automotive R&D Facility at 44099 Plymouth Oaks Blvd (Plymouth)](https://midwestindustrialbrokers.com/deals/cross-and-black/): 2026 Lease, 7,711 SF, client: Cross and Black, represented tenant
+- [Synergy Dance Studio Leases 8,874 SF at 47495 Clipper St in Plymouth Township (Plymouth Twp, MI)](https://midwestindustrialbrokers.com/deals/synergy-dance-clipper-plymouth/): 2026 Lease, 8,874 SF, client: Synergy Dance Studio, represented both
+- [32,736 SF Industrial Lease at 35255 Glendale St in Livonia, MI (Livonia, MI)](https://midwestindustrialbrokers.com/deals/35255-glendale-st-livonia-32-736-2024/): 2024 Lease, 32,736 SF, $7.51/SF/yr NNN, represented tenant
+- [8,000 SF Manufacturing Lease at 606 Airport Blvd #1-2 in Ann Arbor, MI (Ann Arbor, MI)](https://midwestindustrialbrokers.com/deals/606-airport-blvd-1-2-ann-arbor-8-000-2024/): 2024 Lease, 8,000 SF, $11.35/SF/yr G+U+J, represented both
+- [6,412 SF Office Lease at 2350 Green Rd in Ann Arbor, MI (Ann Arbor, MI)](https://midwestindustrialbrokers.com/deals/2350-green-rd-ann-arbor-6-412-2024/): 2024 Lease, 6,412 SF, $20.80/SF/yr G+U+J, represented tenant
+- [10,000 SF Industrial Sale at 14975 Cleat St in Plymouth Twp, MI (Plymouth Twp, MI)](https://midwestindustrialbrokers.com/deals/14975-cleat-st-plymouth-twp-10-000-2025/): 2025 Sale, 10,000 SF, $1,170,000, represented seller
+- [5,000 SF Industrial Lease at 40440 Grand River Ave #A8 in Novi, MI (Novi, MI)](https://midwestindustrialbrokers.com/deals/40440-grand-river-ave-a8-novi-5-000-2025/): 2025 Lease, 5,000 SF, $9.27/SF/yr NNN, represented tenant
+- [8,040 SF Industrial Sublease at 4100 Varsity Dr in Ann Arbor, MI (Ann Arbor, MI)](https://midwestindustrialbrokers.com/deals/4100-varsity-dr-ann-arbor-8-040-2025/): 2025 Sublease, 8,040 SF, represented tenant
+- [11,525 SF Manufacturing Lease at 51523 Celeste Dr in Shelby Twp, MI (Shelby Twp, MI)](https://midwestindustrialbrokers.com/deals/51523-celeste-dr-shelby-twp-11-525-2025/): 2025 Lease, 11,525 SF, $10.56/SF/yr NNN, represented tenant
+- [19,740 SF Manufacturing Sale at 45700 Port St in Plymouth Twp, MI (Plymouth Twp, MI)](https://midwestindustrialbrokers.com/deals/45700-port-st-plymouth-twp-19-740-2025/): 2025 Sale, 19,740 SF, $2,165,000, represented buyer
+- [5,156 SF Retail Lease at 2015 W Stadium Blvd in Ann Arbor, MI (Ann Arbor, MI)](https://midwestindustrialbrokers.com/deals/2015-w-stadium-blvd-ann-arbor-5-156-2025/): 2025 Lease, 5,156 SF, $24.46/SF/yr NNN, represented landlord
+- [18,278 SF Industrial Sale at 1377 Tefft Ct in Saline, MI (Saline, MI)](https://midwestindustrialbrokers.com/deals/1377-tefft-ct-saline-18-278-2025/): 2025 Sale, 18,278 SF, $1,965,000, client: BankSupplies, represented both
+- [10,956 SF Manufacturing Lease at 11975 Globe St in Livonia, MI (Livonia, MI)](https://midwestindustrialbrokers.com/deals/11975-globe-st-livonia-10-956-2025/): 2025 Lease, 10,956 SF, $9.05/SF/yr NNN, represented both
+- [0.54 AC Land Land Sale at 41200 Five Mile Rd in Northville Twp, MI (Northville Twp, MI)](https://midwestindustrialbrokers.com/deals/41200-five-mile-rd-northville-twp-0-54-2025/): 2025 Land Sale, 0.54 AC, $132,000, represented seller
+- [5,000 SF Industrial Lease at 40440 Grand River Ave #A8 in Novi, MI (Novi, MI)](https://midwestindustrialbrokers.com/deals/40440-grand-river-ave-a8-novi-5-000-2025-landlord/): 2025 Lease, 5,000 SF, $9.17/SF/yr NNN, represented landlord
+- [16,000 SF Industrial Lease at 676-704 Airport Blvd in Ann Arbor, MI (Ann Arbor, MI)](https://midwestindustrialbrokers.com/deals/676-704-airport-blvd-ann-arbor-16-000-2025/): 2025 Lease, 16,000 SF, $13.06/SF/yr Gross, represented both
+- [4,000 SF Industrial Sublease at 43405-43460 I-94 N Service Dr #43430 in Belleville, MI (Belleville, MI)](https://midwestindustrialbrokers.com/deals/43405-43460-i-94-n-service-dr-43430-belleville-4-000-2025/): 2025 Sublease, 4,000 SF, $7.02/SF/yr G+U+J, client: BankSupplies, represented both
 
-## Clients
+## Trade Press & Industry Citations
+- [A tale of resiliency and adaptability at Detroit Industrial Real Estate Summit](https://rejournals.com/a-tale-of-resiliency-and-adaptability-at-detroit-industrial-real-estate-summit/) (REJournals, September 3, 2026) - Featured Panelist,  Detroit Industrial Real Estate Market Outlook: Navigating Growth & Change
+- [Private equity firm plans 4.8M square feet of industrial space along I-94 in Southeast Michigan](https://www.signatureassociates.com/private-equity-firm-plans-4-8m-square-feet-of-industrial-space-along-i-94-in-southeast-michigan/) (Crain's Detroit Business / Signature Associates, September 4, 2026) - Listing & Advisory Team,  4.8M SF I-94 Corridor Industrial Development
+- [$50M cold storage facility could bring up to 225 jobs to Metro Detroit](https://www.signatureassociates.com/50m-cold-storage-facility-could-bring-up-to-225-jobs-to-metro-detroit/) (MLive / Signature Associates, August 23, 2026) - Listing & Advisory Team,  257,950 SF DTW Romulus Cold Storage Facility
+- [New downtown Ann Arbor fitness studio promises 'fun, unique and challenging' workouts](https://www.mlive.com/news/ann-arbor/2026/01/new-downtown-ann-arbor-fitness-studio-promises-fun-unique-and-challenging-workouts.html) (MLive, January 8, 2026) - Quoted Commercial Real Estate Broker,  Ann Arbor Market
+
+## Clients Represented
 - BankSupplies (https://banksupplies.com/)
 - ViOS Compounding (https://www.vioscompounding.com/)
 - Advanced Systems (https://www.advancedsystems-inc.com/)
@@ -124,27 +204,3 @@ Drake focuses on industrial property in Plymouth, Livonia, Canton, Ann Arbor, Sa
 
 ### How do I get started?
 Call Drake at (248) 941-1125, call the office at (248) 799-3161, or send a short note through the contact form on this site. Share what you need and your timing, and Drake will follow up to talk through next steps.
-
-## Pages
-- [Home](https://midwestindustrialbrokers.com/)
-- [Disposition](https://midwestindustrialbrokers.com/services/disposition/)
-- [Acquisition](https://midwestindustrialbrokers.com/services/acquisition/)
-- [Build-to-Suit](https://midwestindustrialbrokers.com/services/build-to-suit/)
-- [Tenant Representation](https://midwestindustrialbrokers.com/services/tenant-representation/)
-- [Buyer Representation](https://midwestindustrialbrokers.com/services/buyer-representation/)
-- [Landlord Representation](https://midwestindustrialbrokers.com/services/landlord-representation/)
-- [Investment Sales](https://midwestindustrialbrokers.com/services/investment-sales/)
-- [Industrial real estate in Plymouth and Plymouth Township, MI](https://midwestindustrialbrokers.com/markets/plymouth-mi/)
-- [Industrial real estate in Ann Arbor and Washtenaw County, MI](https://midwestindustrialbrokers.com/markets/ann-arbor-mi/)
-- [Industrial real estate in Livonia, MI](https://midwestindustrialbrokers.com/markets/livonia-mi/)
-- [Industrial real estate in the I-275 Corridor, Michigan](https://midwestindustrialbrokers.com/markets/i-275-corridor/)
-- [Industrial real estate in Metro Detroit, MI](https://midwestindustrialbrokers.com/markets/metro-detroit/)
-- [Industrial real estate in Canton Township, MI](https://midwestindustrialbrokers.com/markets/canton-mi/)
-- [Industrial real estate in Saline, MI](https://midwestindustrialbrokers.com/markets/saline-mi/)
-- [Industrial real estate in Novi, MI](https://midwestindustrialbrokers.com/markets/novi-mi/)
-- [Industrial real estate in Romulus, MI](https://midwestindustrialbrokers.com/markets/romulus-mi/)
-- [Industrial real estate in Taylor, MI](https://midwestindustrialbrokers.com/markets/taylor-mi/)
-- [Industrial real estate in Ypsilanti, MI](https://midwestindustrialbrokers.com/markets/ypsilanti-mi/)
-- [Industrial real estate in Dexter, MI](https://midwestindustrialbrokers.com/markets/dexter-mi/)
-- [Industrial real estate in Farmington Hills, MI](https://midwestindustrialbrokers.com/markets/farmington-hills-mi/)
-- [Industrial real estate in Brighton, MI](https://midwestindustrialbrokers.com/markets/brighton-mi/)
