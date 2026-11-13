@@ -126,7 +126,7 @@ for (const m of markets) {
   const deals = R.marketDeals(data.closed_deals, m);
   const listings = R.marketListings(data.listings, m).map((l, i) => [l, i]).sort((a, b) => useRank(a[0]) - useRank(b[0]) || a[1] - b[1]).map(x => x[0]);
   const shown = listings.slice(0, 12);
-  const dealPhoto = deals.map(d => (d.photos || [])[0]).find(Boolean);
+  const dealPhoto = deals.filter(d => !d.skip_hero).map(d => (d.photos || [])[0]).find(Boolean);
   const photo = dealPhoto || (shown[0] && shown[0].photo);
   const others = markets.filter(x => x.slug !== m.slug);
   const jsonld = { '@context': 'https://schema.org', '@graph': [
@@ -355,7 +355,7 @@ ${markets.map(m => `- [${m.name}](${SITE}${R.marketUrl(m)}): ${m.summary}`).join
 ${(data.listings || []).filter(l => l.show !== false).map(l => `- [${l.title}](${l.url}): ${l.deal_type}, ${[l.use, l.size, l.lot ? l.lot + ' lot' : ''].filter(Boolean).join(', ')}, ${l.address}`).join('\n')}
 
 ## Selected closed deals
-${(data.closed_deals || []).filter(d => d.slug).map(d => `- [${d.property}, ${d.subtitle}](${SITE}/deal.html?slug=${encodeURIComponent(d.slug)}): ${d.year} ${d.deal_type}, ${d.size}${real(d.client) ? ', ' + d.client : ''}, represented ${String(d.side || '').toLowerCase()}`).join('\n')}
+${(data.closed_deals || []).filter(d => d.slug).map(d => `- [${d.property}, ${d.subtitle}](${SITE}/deal.html?slug=${encodeURIComponent(d.slug)}): ${d.year} ${d.deal_type}, ${d.size}${real(d.client) ? ', ' + d.client : ''}${real(d.tenant) ? ', tenant ' + d.tenant : ''}, represented ${String(d.side || '').toLowerCase()}`).join('\n')}
 
 ## Clients
 ${(data.client_logos || []).filter(l => l && l.name).map(l => `- ${l.name}${l.url ? ' (' + l.url + ')' : ''}`).join('\n')}
