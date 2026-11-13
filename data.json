@@ -401,22 +401,22 @@
     {
       "slug": "medical-investment-portfolio",
       "year": "2026",
-      "property": "Medical Investment Sale Portfolio",
-      "subtitle": "4-Building Medical Office Portfolio",
+      "property": "Medical Portfolio Investment Sale",
+      "subtitle": "4 Properties in Madison Heights, Flint, Lapeer and Lincoln Park, MI",
       "client": "Confidential",
       "client_industry": "Medical / Investment",
       "side": "Both",
       "deal_type": "Investment Sale",
-      "size": "44,403 SF · 4 Buildings",
+      "size": "44,403 SF · 4 Properties",
       "closed_date": "",
       "headline": "Dual representation on 44,403 SF medical office investment portfolio",
-      "summary": "Represented both buyer and seller on a four-building medical office investment portfolio totaling 44,403 SF.",
-      "body_md": "[Add case study narrative here — portfolio composition, tenant mix, investment thesis, valuation approach, why dual rep worked, timeline.]",
+      "summary": "Medical portfolio investment sale of four properties totaling 44,403 SF in Madison Heights, Flint, Lapeer and Lincoln Park, MI. Sold to a local investor / operator. Represented both the seller and the buyer.",
+      "body_md": "### Portfolio\n- **Properties:** 4\n- **Total size:** 44,403 SF\n- **Land:** 5.36 acres combined\n- **Locations:** Madison Heights, Flint, Lapeer and Lincoln Park, MI\n- **Use:** Patient care centers and a fabrication site\n- **Buyer:** Local investor / operator\n- **Representation:** Dual, seller and buyer",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
         "office_finish": "",
-        "acreage": "",
+        "acreage": "5.36 AC combined",
         "asking_price": "",
         "sale_price": ""
       },
@@ -424,16 +424,29 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": [],
+      "photos": [
+        "/uploads/deals/medical-portfolio-lapeer-mi.webp",
+        "/uploads/deals/medical-portfolio-flint-mi.webp",
+        "/uploads/deals/medical-portfolio-madison-heights-mi.webp",
+        "/uploads/deals/medical-portfolio-lincoln-park-mi.webp"
+      ],
       "services": [
         "investment-sales",
         "disposition",
         "acquisition"
       ],
-      "property_type": "Investment",
-      "city": "4-building portfolio",
+      "property_type": "Medical Office",
+      "city": "Madison Heights, Flint, Lapeer & Lincoln Park, MI",
       "price": "",
-      "address": ""
+      "address": "4 Properties",
+      "rep_label": "Dual Representation",
+      "photo_alts": [
+        "Medical office portfolio property in Lapeer, MI",
+        "Medical office portfolio property in Flint, MI",
+        "Medical office portfolio property in Madison Heights, MI",
+        "Medical office portfolio property in Lincoln Park, MI"
+      ],
+      "skip_hero": true
     },
     {
       "slug": "bank-supplies-saline",

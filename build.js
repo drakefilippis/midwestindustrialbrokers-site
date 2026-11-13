@@ -195,7 +195,7 @@ fs.rmSync('services', { recursive: true, force: true });
 for (const sv of services) {
   const url = SITE + R.serviceUrl(sv);
   const deals = R.serviceDeals(data.closed_deals, sv.slug);
-  const photos = deals.filter(d => (d.photos || []).length);
+  const photos = deals.filter(d => (d.photos || []).length && !d.skip_hero); // skip_hero: keep a deal's photo off service page heroes
   const heroPhoto = photos.length ? photos[0].photos[0] : '/uploads/cross-and-black.webp';
   const title = `${sv.title} | Industrial Real Estate | Midwest Industrial Brokers`;
   const meta = `${sv.title} for industrial property in Plymouth, Ann Arbor, the I-275 corridor and Metro Detroit. ${sv.description} Call Drake Filippis at (248) 941-1125.`;

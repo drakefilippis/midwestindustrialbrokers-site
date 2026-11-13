@@ -303,7 +303,7 @@
     const sideClass = String(deal.side || '').toLowerCase().replace(/\s+/g, '');
     const badges = [];
     if (deal.year) badges.push(`<span class="deal-badge year">${esc(deal.year)}</span>`);
-    if (deal.side) badges.push(`<span class="deal-badge side ${esc(sideClass)}">Represented ${esc(deal.side)}</span>`);
+    if (deal.side) badges.push(`<span class="deal-badge side ${esc(sideClass)}">${deal.rep_label ? esc(deal.rep_label) : 'Represented ' + esc(deal.side)}</span>`);
     if (deal.deal_type) badges.push(`<span class="deal-badge type">${esc(deal.deal_type)}</span>`);
     document.getElementById('dealBadges').innerHTML = badges.join('');
 
@@ -339,12 +339,12 @@
     // Photos (gallery between summary and body)
     const gallery = document.getElementById('dealGallery');
     if (gallery && Array.isArray(deal.photos) && deal.photos.length > 0) {
-      const items = deal.photos.map(p => {
+      const items = deal.photos.map((p, i) => {
         // Sveltia image widget in a list with a 'url' field can produce
         // either { url: "/uploads/foo.jpg" } or just "/uploads/foo.jpg"
         const src = (p && typeof p === 'object') ? (p.url || p.image || '') : String(p || '');
         if (!src) return '';
-        const alt = (deal.property || 'Deal photo') + (deal.client ? ', ' + deal.client : '');
+        const alt = (Array.isArray(deal.photo_alts) && deal.photo_alts[i]) || ((deal.property || 'Deal photo') + (deal.client ? ', ' + deal.client : ''));
         return `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" />`;
       }).filter(Boolean);
       if (items.length > 0) {
