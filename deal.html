@@ -311,6 +311,7 @@
     const facts = [];
     if (deal.size) facts.push(['Size / Value', deal.size]);
     if (deal.client) facts.push(['Client', deal.client]);
+    if (deal.tenant) facts.push(['Tenant', deal.tenant]);
     if (deal.client_industry) facts.push(['Industry', deal.client_industry]);
     if (deal.closed_date) facts.push(['Closed', deal.closed_date]);
     document.getElementById('dealFacts').innerHTML = facts.map(([l, v]) => `
