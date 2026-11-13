@@ -54,14 +54,15 @@
       const unit = m && m[2] ? m[2].toUpperCase().replace(/ACRES?/, 'AC') : (m ? 'SF' : '');
       const photo = opts.noPhoto ? '' : photoSrc((d.photos || [])[0]);
       const industry = d.property_type || d.industry || opts.industry || '';
+      const photoAlt = ((d.photo_alts || [])[0]) || ((lease ? 'Leased' : 'Sold') + ' property in ' + city);
       const media = photo
-        ? `<img src="${esc(photo)}" alt="${esc((lease ? 'Leased' : 'Sold') + ' property in ' + city)}" loading="lazy" decoding="async" width="800" height="500" />`
+        ? `<img src="${esc(photo)}" alt="${esc(photoAlt)}" loading="lazy" decoding="async" width="800" height="500" />`
         : `<span class="dc-ph" role="img" aria-label="Photo coming soon"><span class="dc-ph-mark" aria-hidden="true">MIB</span></span>`;
       const link = d.slug && opts.link !== false;
       const tag = link ? 'a' : 'div';
       const href = link ? ` href="${esc(dealUrl(d))}"` : '';
       return `<${tag} class="deal-card${lease ? ' is-lease' : ' is-sale'}${link ? ' is-link' : ''}"${href}>
-        <span class="dc-media">${media}<span class="dc-chip">${esc(roles[side] || d.side || '')}</span></span>
+        <span class="dc-media">${media}<span class="dc-chip">${esc(d.rep_label || roles[side] || d.side || '')}</span></span>
         <span class="dc-body">
           <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
           <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
@@ -183,7 +184,7 @@
     }).join(''),
     dealPhotos: (deals) => (deals || []).filter(d => d.slug && (d.photos || []).some(p => photoSrc(p))).slice(0, 4).map(d => `
       <a class="deal-photo" href="${dealUrl(d)}">
-        <img src="${esc(photoSrc(d.photos.find(p => photoSrc(p))))}" alt="${esc(d.property + (d.subtitle ? ', ' + d.subtitle : ''))}" loading="lazy" decoding="async" width="1200" height="720" />
+        <img src="${esc(photoSrc(d.photos.find(p => photoSrc(p))))}" alt="${esc(((d.photo_alts || [])[0]) || (d.property + (d.subtitle ? ', ' + d.subtitle : '')))}" loading="lazy" decoding="async" width="1200" height="720" />
         <span class="cap"><span class="k">${esc(d.year)} · ${esc(d.deal_type)}</span><span class="t">${esc(d.property)}</span><span class="m">${esc([isPlaceholder(d.client) ? '' : d.client, d.size].filter(Boolean).join(' · '))}</span></span>
       </a>`).join(''),
     // Client logo strip: uniform white logos on a dark band, brand color on hover.
