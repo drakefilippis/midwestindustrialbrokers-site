@@ -401,7 +401,7 @@
     {
       "slug": "medical-investment-portfolio",
       "year": "2026",
-      "property": "Medical Portfolio Investment Sale",
+      "property": "Medical Portfolio, Investment Sale",
       "subtitle": "4 Properties in Madison Heights, Flint, Lapeer and Lincoln Park, MI",
       "client": "Confidential",
       "client_industry": "Medical / Investment",
@@ -409,7 +409,7 @@
       "deal_type": "Investment Sale",
       "size": "44,403 SF · 4 Properties",
       "closed_date": "",
-      "headline": "Dual representation on 44,403 SF medical office investment portfolio",
+      "headline": "Dual representation on a 44,403 SF medical portfolio investment sale",
       "summary": "Medical portfolio investment sale of four properties totaling 44,403 SF in Madison Heights, Flint, Lapeer and Lincoln Park, MI. Sold to a local investor / operator. Represented both the seller and the buyer.",
       "body_md": "### Portfolio\n- **Properties:** 4\n- **Total size:** 44,403 SF\n- **Land:** 5.36 acres combined\n- **Locations:** Madison Heights, Flint, Lapeer and Lincoln Park, MI\n- **Use:** Patient care centers and a fabrication site\n- **Buyer:** Local investor / operator\n- **Representation:** Dual, seller and buyer",
       "deal_details": {
@@ -425,9 +425,9 @@
         "attribution": ""
       },
       "photos": [
+        "/uploads/deals/medical-portfolio-madison-heights-mi.webp",
         "/uploads/deals/medical-portfolio-lapeer-mi.webp",
         "/uploads/deals/medical-portfolio-flint-mi.webp",
-        "/uploads/deals/medical-portfolio-madison-heights-mi.webp",
         "/uploads/deals/medical-portfolio-lincoln-park-mi.webp"
       ],
       "services": [
@@ -435,16 +435,16 @@
         "disposition",
         "acquisition"
       ],
-      "property_type": "Medical Office",
+      "property_type": "Medical Portfolio",
       "city": "Madison Heights, Flint, Lapeer & Lincoln Park, MI",
       "price": "",
       "address": "4 Properties",
       "rep_label": "Dual Representation",
       "photo_alts": [
-        "Medical office portfolio property in Lapeer, MI",
-        "Medical office portfolio property in Flint, MI",
-        "Medical office portfolio property in Madison Heights, MI",
-        "Medical office portfolio property in Lincoln Park, MI"
+        "Medical portfolio property in Madison Heights, MI",
+        "Medical portfolio property in Lapeer, MI",
+        "Medical portfolio property in Flint, MI",
+        "Medical portfolio property in Lincoln Park, MI"
       ],
       "skip_hero": true
     },
