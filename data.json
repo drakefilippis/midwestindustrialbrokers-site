@@ -44,7 +44,7 @@
       "name": "Drake Filippis",
       "title": "Associate Broker",
       "initials": "DF",
-      "bio_html": "Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in residential finance, leasing, and property management — closing more than <strong>$300 million in deal volume</strong> directly assisting over 10,000 clients.",
+      "bio_html": "Drake specializes in <strong>industrial real estate</strong> with a focus on the Plymouth/Ann Arbor and greater Metro Detroit market. Over <strong>14 years of corporate real estate experience</strong> in residential finance, leasing, and property management \u2014 closing more than <strong>$300 million in deal volume</strong> directly assisting over 10,000 clients.",
       "email": "dfilippis@signatureassociates.com",
       "office_phone": "(248) 799-3161",
       "mobile_phone": "(248) 941-1125",
@@ -341,7 +341,7 @@
       "closed_date": "April 17, 2026",
       "headline": "Advanced Systems acquires 8,892 SF facility in Waterford",
       "summary": "Buyer representation for Advanced Systems on the acquisition of 4301 Highland Rd., Waterford.",
-      "body_md": "[Add case study narrative here — search process, key requirements, why this site, how the transaction came together, timeline, any creative deal points.]",
+      "body_md": "[Add case study narrative here \u2014 search process, key requirements, why this site, how the transaction came together, timeline, any creative deal points.]",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -376,7 +376,7 @@
       "closed_date": "",
       "headline": "VIOS Compounding establishes new HQ at 32131 Industrial Drive, Livonia",
       "summary": "Buyer representation for pharmaceutical compounder VIOS Compounding on their new 15,400 SF headquarters acquisition in Livonia.",
-      "body_md": "[Add case study narrative here — site selection criteria for pharmaceutical compounding, build-out considerations, why Livonia, timeline.]",
+      "body_md": "[Add case study narrative here \u2014 site selection criteria for pharmaceutical compounding, build-out considerations, why Livonia, timeline.]",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -407,7 +407,7 @@
       "client_industry": "Medical / Investment",
       "side": "Both",
       "deal_type": "Investment Sale",
-      "size": "44,403 SF · 4 Properties",
+      "size": "44,403 SF \u00b7 4 Properties",
       "closed_date": "",
       "headline": "Four Building, International Tenant Medical Portfolio Investment Disposition, 44,403 SF",
       "summary": "Four building medical portfolio totaling 44,403 SF in Madison Heights, Flint, Lapeer and Lincoln Park, MI. The tenant, founded in 1944, is one of Michigan's largest and most established providers of prosthetics, orthotics and accessibility solutions, with the largest certified orthotic staff in the state. It has occupied these sites for decades, including 40 years in Flint. Sold to a local investor / operator, with dual representation of the seller and the buyer.",
@@ -456,12 +456,12 @@
       "client": "Bank Supplies",
       "client_industry": "",
       "side": "Buyer",
-      "deal_type": "Sale · Consolidation",
+      "deal_type": "Sale \u00b7 Consolidation",
       "size": "105,418 SF",
       "closed_date": "",
       "headline": "Bank Supplies acquires 105,418 SF headquarters in Saline",
       "summary": "Buyer representation for Bank Supplies on the acquisition of 1294 Beach Court, a consolidation from four facilities into one new headquarters.",
-      "body_md": "[Add case study narrative here — what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
+      "body_md": "[Add case study narrative here \u2014 what consolidation drivers were in play, why Saline, the 1031 mechanics, timeline, key challenges solved.]",
       "deal_details": {
         "clear_height": "",
         "dock_doors": "",
@@ -592,6 +592,125 @@
       "property_type": "Recreational"
     },
     {
+      "slug": "1785-w-stadium-blvd-ann-arbor",
+      "year": "2026",
+      "property": "1785 W Stadium Blvd",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "tenant": "Packard Health",
+      "client_industry": "",
+      "side": "Landlord",
+      "deal_type": "Medical Office Lease, 10 Year Term",
+      "size": "7,491 SF",
+      "closed_date": "",
+      "headline": "Packard Health leases 7,491 SF of medical office at 1785 W Stadium Blvd",
+      "summary": "Packard Health has long served the Ann Arbor community and has signed a new 10 year lease at 1785 W Stadium Blvd.",
+      "body_md": "",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": [
+        "/uploads/deals/1785-w-stadium-blvd-ann-arbor.webp"
+      ],
+      "photo_alts": [
+        "1785 W Stadium Blvd, Ann Arbor, MI, medical office building"
+      ],
+      "services": [
+        "landlord-representation"
+      ],
+      "price": "",
+      "address": "1785 W Stadium Blvd",
+      "property_type": "Medical Office",
+      "rep_label": "Landlord Representation",
+      "skip_hero": true
+    },
+    {
+      "slug": "4220-varsity-dr-ann-arbor",
+      "year": "2026",
+      "property": "4220 Varsity Dr",
+      "subtitle": "Ann Arbor, MI",
+      "client": "RoviSys Technologies",
+      "client_industry": "",
+      "side": "Tenant",
+      "deal_type": "Lease",
+      "size": "8,137 SF",
+      "closed_date": "",
+      "headline": "RoviSys Technologies leases 8,137 SF at 4220 Varsity Dr, Ann Arbor",
+      "summary": "Tenant representation for RoviSys Technologies on its 8,137 SF industrial / flex lease at 4220 Varsity Dr, Ann Arbor.",
+      "body_md": "",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": [
+        "/uploads/deals/4220-varsity-dr-ann-arbor.webp"
+      ],
+      "photo_alts": [
+        "4220 Varsity Dr, Ann Arbor, MI, industrial / flex building exterior"
+      ],
+      "services": [
+        "tenant-representation"
+      ],
+      "price": "",
+      "address": "4220 Varsity Dr",
+      "property_type": "Industrial / Flex",
+      "rep_label": "Tenant Representation",
+      "skip_hero": true
+    },
+    {
+      "slug": "3917-research-park-dr-ann-arbor",
+      "year": "2026",
+      "property": "3917 Research Park Dr, Unit B-7",
+      "subtitle": "Ann Arbor, MI",
+      "client": "",
+      "client_industry": "",
+      "side": "Landlord",
+      "deal_type": "Lease",
+      "size": "3,654 SF",
+      "closed_date": "",
+      "headline": "3,654 SF flex / office lease at 3917 Research Park Dr, Ann Arbor",
+      "summary": "Landlord representation on a 3,654 SF flex / office lease at 3917 Research Park Dr, Unit B-7, Ann Arbor.",
+      "body_md": "",
+      "deal_details": {
+        "clear_height": "",
+        "dock_doors": "",
+        "office_finish": "",
+        "acreage": "",
+        "asking_price": "",
+        "sale_price": ""
+      },
+      "testimonial": {
+        "quote": "",
+        "attribution": ""
+      },
+      "photos": [],
+      "services": [
+        "landlord-representation"
+      ],
+      "price": "",
+      "address": "3917 Research Park Dr #B-7",
+      "property_type": "Flex / Office",
+      "rep_label": "Landlord Representation",
+      "skip_hero": true
+    },
+    {
       "slug": "",
       "year": "2024",
       "property": "Warehouse lease, Livonia",
@@ -606,7 +725,7 @@
       "services": [
         "tenant-representation"
       ],
-      "price": "$7.51/SF/yr NNN",
+      "price": "",
       "address": "35255 Glendale St"
     },
     {
@@ -625,7 +744,7 @@
         "tenant-representation",
         "landlord-representation"
       ],
-      "price": "$11.35/SF/yr G+U+J",
+      "price": "",
       "address": "606 Airport Blvd #1-2"
     },
     {
@@ -643,7 +762,7 @@
       "services": [
         "tenant-representation"
       ],
-      "price": "$20.80/SF/yr G+U+J",
+      "price": "",
       "address": "2350 Green Rd"
     },
     {
@@ -679,7 +798,7 @@
       "services": [
         "tenant-representation"
       ],
-      "price": "$9.27/SF/yr NNN",
+      "price": "",
       "address": "40440 Grand River Ave #A8"
     },
     {
@@ -716,7 +835,7 @@
       "services": [
         "tenant-representation"
       ],
-      "price": "$10.56/SF/yr NNN",
+      "price": "",
       "address": "51523 Celeste Dr"
     },
     {
@@ -753,7 +872,7 @@
       "services": [
         "landlord-representation"
       ],
-      "price": "$24.46/SF/yr NNN",
+      "price": "",
       "address": "2015 W Stadium Blvd"
     },
     {
@@ -794,7 +913,7 @@
         "tenant-representation",
         "landlord-representation"
       ],
-      "price": "$9.05/SF/yr NNN",
+      "price": "",
       "address": "11975 Globe St"
     },
     {
@@ -830,7 +949,7 @@
       "services": [
         "landlord-representation"
       ],
-      "price": "$9.17/SF/yr NNN",
+      "price": "",
       "address": "40440 Grand River Ave #A8"
     },
     {
@@ -849,7 +968,7 @@
         "tenant-representation",
         "landlord-representation"
       ],
-      "price": "$13.06/SF/yr Gross",
+      "price": "",
       "address": "676-704 Airport Blvd"
     },
     {
@@ -868,7 +987,7 @@
         "tenant-representation",
         "landlord-representation"
       ],
-      "price": "$7.02/SF/yr G+U+J",
+      "price": "",
       "address": "43405-43460 I-94 N Service Dr #43430"
     }
   ],
@@ -917,49 +1036,49 @@
     }
   ],
   "market_report": {
-    "quarter_label": "Q2 2026 · Detroit Industrial",
+    "quarter_label": "Q2 2026 \u00b7 Detroit Industrial",
     "headline": "Activity steadies as new supply tapers and tenants return to 100k+ SF requirements.",
     "stats": [
       {
         "label": "Total Inventory",
         "value": "615",
         "unit": "M SF",
-        "trend": "— Stable",
+        "trend": "\u2014 Stable",
         "direction": "flat"
       },
       {
         "label": "Overall Vacancy",
         "value": "6.8",
         "unit": "%",
-        "trend": "▲ +20 bps QoQ",
+        "trend": "\u25b2 +20 bps QoQ",
         "direction": "up"
       },
       {
         "label": "Avg. Asking NNN",
         "value": "$8.45",
         "unit": "/SF",
-        "trend": "▲ +3.1% YoY",
+        "trend": "\u25b2 +3.1% YoY",
         "direction": "up"
       },
       {
         "label": "Net Absorption YTD",
         "value": "2.1",
         "unit": "M SF",
-        "trend": "— Tracking 2025",
+        "trend": "\u2014 Tracking 2025",
         "direction": "flat"
       },
       {
         "label": "Under Construction",
         "value": "4.8",
         "unit": "M SF",
-        "trend": "▼ Down 38% YoY",
+        "trend": "\u25bc Down 38% YoY",
         "direction": "down"
       },
       {
         "label": "Sales Volume (TTM)",
         "value": "$1.6",
         "unit": "B",
-        "trend": "▲ Cap rates 7.2%",
+        "trend": "\u25b2 Cap rates 7.2%",
         "direction": "up"
       }
     ],
@@ -1007,20 +1126,20 @@
         "yoy_color": "gray"
       }
     ],
-    "data_note": "Sample / placeholder data — replace with current CoStar export.",
+    "data_note": "Sample / placeholder data \u2014 replace with current CoStar export.",
     "takeaways": [
-      "Construction pipeline has compressed sharply — speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
+      "Construction pipeline has compressed sharply \u2014 speculative starts down ~40% from 2024 peak, signaling supply discipline through 2027.",
       "Big-box (200k+ SF) requirements have returned in the I-94 / I-275 corridors after 18 months of quiet, driven by 3PL and EV-supply-chain users.",
-      "Ann Arbor / Saline remains the tightest market — sub-5% vacancy and the highest NNN rates in the region.",
-      "Cap rates have stabilized in the 6.75%–7.50% range for stabilized Class A industrial."
+      "Ann Arbor / Saline remains the tightest market \u2014 sub-5% vacancy and the highest NNN rates in the region.",
+      "Cap rates have stabilized in the 6.75%\u20137.50% range for stabilized Class A industrial."
     ],
     "watching_title": "EV supply chain shake-out:",
-    "watching_body": "several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters — could create opportunity for tenants with timing flexibility."
+    "watching_body": "several Tier-1 occupiers are reviewing footprint commitments as OEM production schedules slip. Expect sublease availability to tick up in Romulus and Brownstown in the next two quarters \u2014 could create opportunity for tenants with timing flexibility."
   },
   "preferred_services": [
     {
       "category": "Attorneys",
-      "subtitle": "CRE · Land Use · Closings",
+      "subtitle": "CRE \u00b7 Land Use \u00b7 Closings",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1032,7 +1151,7 @@
     },
     {
       "category": "Title",
-      "subtitle": "Title Insurance · Escrow · Closings",
+      "subtitle": "Title Insurance \u00b7 Escrow \u00b7 Closings",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1044,7 +1163,7 @@
     },
     {
       "category": "Environmental",
-      "subtitle": "Phase I · Phase II · BEA",
+      "subtitle": "Phase I \u00b7 Phase II \u00b7 BEA",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1056,7 +1175,7 @@
     },
     {
       "category": "Architecture",
-      "subtitle": "Industrial · Adaptive Reuse · Build-to-Suit",
+      "subtitle": "Industrial \u00b7 Adaptive Reuse \u00b7 Build-to-Suit",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1068,7 +1187,7 @@
     },
     {
       "category": "General Contractors",
-      "subtitle": "Build-out · Tenant Improvements · New Construction",
+      "subtitle": "Build-out \u00b7 Tenant Improvements \u00b7 New Construction",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1080,7 +1199,7 @@
     },
     {
       "category": "Structural Engineers",
-      "subtitle": "Mezzanines · Crane Loads · Inspections",
+      "subtitle": "Mezzanines \u00b7 Crane Loads \u00b7 Inspections",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1092,7 +1211,7 @@
     },
     {
       "category": "Surveyors",
-      "subtitle": "ALTA · Boundary · Topographical",
+      "subtitle": "ALTA \u00b7 Boundary \u00b7 Topographical",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1104,7 +1223,7 @@
     },
     {
       "category": "Appraisers",
-      "subtitle": "Industrial · MAI · Lender-Approved",
+      "subtitle": "Industrial \u00b7 MAI \u00b7 Lender-Approved",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1116,7 +1235,7 @@
     },
     {
       "category": "Property Inspectors",
-      "subtitle": "Commercial · Roof · Mechanical",
+      "subtitle": "Commercial \u00b7 Roof \u00b7 Mechanical",
       "contacts": [
         {
           "name": "[Contact Name]",
@@ -1128,7 +1247,7 @@
     },
     {
       "category": "Lenders",
-      "subtitle": "CRE Debt · SBA · Bridge",
+      "subtitle": "CRE Debt \u00b7 SBA \u00b7 Bridge",
       "contacts": [
         {
           "name": "[Contact Name]",

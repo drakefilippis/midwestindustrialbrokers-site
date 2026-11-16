@@ -42,6 +42,7 @@
           <a class="call-btn email" href="mailto:dfilippis@signatureassociates.com" data-track="email_button"><span class="k">Email</span><span class="v">dfilippis@<wbr>signatureassociates.com</span></a>
         </div>`,
     // Closed-deal card. Fields: sold/leased, side represented, size, city, industry.
+    // Lease rates are never shown (Nov 2026): price only renders on sale cards.
     dealCard: (d, opts) => {
       opts = opts || {};
       const lease = /lease/i.test(d.deal_type || '');
@@ -66,7 +67,7 @@
         <span class="dc-body">
           <span class="dc-kind">${lease ? 'Leased' : 'Sold'}</span>
           <span class="dc-size"><span class="dc-num">${esc(num)}</span>${unit ? `<span class="dc-unit">${unit}</span>` : ''}</span>
-          ${d.price ? `<span class="dc-price">${esc(d.price)}</span>` : ''}
+          ${d.price && !lease ? `<span class="dc-price">${esc(d.price)}</span>` : ''}
           <span class="dc-meta"><span class="dc-loc">${d.address ? `<span class="dc-addr">${esc(d.address)}</span>` : ''}<span class="dc-city">${esc(city)}</span></span>${industry ? `<span class="dc-ind">${esc(industry)}</span>` : ''}</span>
         </span>
       </${tag}>`;
