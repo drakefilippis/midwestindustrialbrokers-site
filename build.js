@@ -10,6 +10,16 @@ const fs = require('fs');
 const path = require('path');
 const R = require('./render.js');
 const SITE = 'https://midwestindustrialbrokers.com';
+const SHARE_IMAGE = '/uploads/hero-crane-bay-og-1200.jpg';
+const isShareDefault = (src) => !src || src === '/uploads/cross-and-black.webp';
+const SHARE_IMAGE_ALT = 'Crane-served industrial bay';
+const HERO_BG = `<picture>
+    <source type="image/webp" media="(min-width: 900px)" srcset="/uploads/hero-crane-bay-desktop-1280.webp 1280w, /uploads/hero-crane-bay-desktop-1920.webp 1920w" sizes="100vw" />
+    <source type="image/jpeg" media="(min-width: 900px)" srcset="/uploads/hero-crane-bay-desktop-1280.jpg 1280w, /uploads/hero-crane-bay-desktop-1920.jpg 1920w" sizes="100vw" />
+    <source type="image/webp" srcset="/uploads/hero-crane-bay-mobile-960.webp 960w, /uploads/hero-crane-bay-mobile-1440.webp 1440w" sizes="100vw" />
+    <img class="hero-bg" src="/uploads/hero-crane-bay-desktop-1920.jpg" srcset="/uploads/hero-crane-bay-mobile-960.jpg 960w, /uploads/hero-crane-bay-mobile-1440.jpg 1440w" sizes="100vw" alt="" width="1920" height="960" fetchpriority="high" />
+  </picture>
+  <div class="hero-shade"></div>`;
 const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 const esc = R.esc;
 const markets = data.markets || [];
@@ -79,7 +89,10 @@ const mobileBar = rootLinks(pick(/<nav class="mobile-bar"[\s\S]*?<\/nav>/));
 const fonts = `<link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />`;
-const page = ({ title, description, canonical, robots, image, jsonld, body, pageType }) => `<!DOCTYPE html>
+const page = ({ title, description, canonical, robots, image, jsonld, body, pageType }) => {
+  const ogImage = image || SHARE_IMAGE;
+  const ogAlt = image ? '' : SHARE_IMAGE_ALT;
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -97,8 +110,11 @@ ${canonical ? `<link rel="canonical" href="${canonical}" />` : ''}
 <meta property="og:title" content="${esc(title)}" />
 <meta property="og:description" content="${esc(description)}" />
 ${canonical ? `<meta property="og:url" content="${canonical}" />` : ''}
-<meta property="og:image" content="${SITE}${image || '/uploads/cross-and-black.webp'}" />
+<meta property="og:image" content="${SITE}${ogImage}" />
+${ogAlt ? `<meta property="og:image:alt" content="${esc(ogAlt)}" />` : ''}
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="${SITE}${ogImage}" />
+${ogAlt ? `<meta name="twitter:image:alt" content="${esc(ogAlt)}" />` : ''}
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld, null, 1).replace(/</g, '\\u003c')}</script>` : ''}
 ${analytics}
 ${fonts}
@@ -116,6 +132,7 @@ ${mobileBar}
 </body>
 </html>
 `;
+};
 
 // ---------- market pages ----------
 const useRank = (l) => /industrial/i.test(l.use) ? 0 : /land/i.test(l.use) ? 1 : 2;
@@ -138,8 +155,8 @@ for (const m of markets) {
     { '@type': 'Service', name: `Industrial real estate brokerage in ${m.full_name}`, serviceType: 'Industrial real estate brokerage', provider: business, areaServed: { '@type': 'Place', name: m.full_name },
       hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Services', itemListElement: (data.services || []).map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.title, description: s.description } })) } },
   ] };
-  const body = `<header class="page-hero${dealPhoto ? ' has-photo' : ''}" id="top">
-  ${dealPhoto ? `<img class="hero-bg" src="${esc(dealPhoto)}" alt="" width="1200" height="720" fetchpriority="high" /><div class="hero-shade"></div>` : ''}
+  const body = `<header class="page-hero has-photo" id="top">
+  ${HERO_BG}
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/#markets">Markets</a> / ${esc(m.name)}</div>
     <h1>Industrial Real Estate in ${esc(m.full_name)}</h1>
@@ -183,7 +200,7 @@ for (const m of markets) {
 </section>`;
   const dir = path.join('markets', m.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), page({ title: m.title, description: m.meta, canonical: url, image: photo, jsonld, body, pageType: 'market' }));
+  fs.writeFileSync(path.join(dir, 'index.html'), page({ title: m.title, description: m.meta, canonical: url, image: isShareDefault(photo) ? undefined : photo, jsonld, body, pageType: 'market' }));
 }
 
 // ---------- service pages ----------
@@ -196,7 +213,7 @@ for (const sv of services) {
   const url = SITE + R.serviceUrl(sv);
   const deals = R.serviceDeals(data.closed_deals, sv.slug);
   const photos = deals.filter(d => (d.photos || []).length && !d.skip_hero); // skip_hero: keep a deal's photo off service page heroes
-  const heroPhoto = photos.length ? photos[0].photos[0] : '/uploads/cross-and-black.webp';
+  const sharePhoto = photos.length ? photos[0].photos[0] : undefined;
   const title = `${sv.title} | Industrial Real Estate | Midwest Industrial Brokers`;
   const meta = `${sv.title} for industrial property in Plymouth, Ann Arbor, the I-275 corridor and Metro Detroit. ${sv.description} Call Drake Filippis at (248) 941-1125.`;
   const jsonld = { '@context': 'https://schema.org', '@graph': [
@@ -247,7 +264,7 @@ for (const sv of services) {
   </div>
 </section>`;
   const body = `<header class="page-hero has-photo" id="top">
-  <img class="hero-bg" src="${esc(heroPhoto)}" alt="" width="1200" height="720" fetchpriority="high" /><div class="hero-shade"></div>
+  ${HERO_BG}
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/#services">Services</a> / ${esc(sv.title)}</div>
     <h1>${esc(sv.title)}</h1>
@@ -283,7 +300,7 @@ ${inquirySection}
 </section>`;
   const dir = path.join('services', sv.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), page({ title, description: meta, canonical: url, image: heroPhoto, jsonld, body, pageType: 'service' }));
+  fs.writeFileSync(path.join(dir, 'index.html'), page({ title, description: meta, canonical: url, image: isShareDefault(sharePhoto) ? undefined : sharePhoto, jsonld, body, pageType: 'service' }));
 }
 
 // ---------- thank-you.html (no-JS fallback for the lead form) ----------

@@ -17,7 +17,10 @@
 <meta property="og:description" content="Industrial buildings for lease and sale in Livonia, Michigan. Drake Filippis helps owners, tenants and buyers with disposition, acquisition, build-to-suit and leasing. Call (248) 941-1125." />
 <meta property="og:url" content="https://midwestindustrialbrokers.com/markets/livonia-mi/" />
 <meta property="og:image" content="https://midwestindustrialbrokers.com/uploads/listings/b92a371c-3253532553-schoolcraft-rd.webp" />
+
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://midwestindustrialbrokers.com/uploads/listings/b92a371c-3253532553-schoolcraft-rd.webp" />
+
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
@@ -436,7 +439,8 @@
   .nav-cta { display: inline-flex; padding: 11px 18px; background: var(--yellow); color: #000; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
   .nav-cta:hover { background: var(--yellow-soft); }
   .hero { background: #000; padding: 160px 0 140px; min-height: min(88vh, 860px); display: flex; align-items: center; }
-  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.35) contrast(1.1) brightness(0.7); }
+  .hero picture, .page-hero picture { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; filter: grayscale(0.35) contrast(1.1) brightness(0.7); }
   .hero-shade { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.15) 100%), linear-gradient(0deg, rgba(0,0,0,0.6), transparent 40%); }
   .hero .wrap { z-index: 2; width: 100%; }
   .hero::before, .hero::after { z-index: 3; }
@@ -765,8 +769,14 @@
   </div>
 </nav>
 <main id="main">
-<header class="page-hero" id="top">
-  
+<header class="page-hero has-photo" id="top">
+  <picture>
+    <source type="image/webp" media="(min-width: 900px)" srcset="/uploads/hero-crane-bay-desktop-1280.webp 1280w, /uploads/hero-crane-bay-desktop-1920.webp 1920w" sizes="100vw" />
+    <source type="image/jpeg" media="(min-width: 900px)" srcset="/uploads/hero-crane-bay-desktop-1280.jpg 1280w, /uploads/hero-crane-bay-desktop-1920.jpg 1920w" sizes="100vw" />
+    <source type="image/webp" srcset="/uploads/hero-crane-bay-mobile-960.webp 960w, /uploads/hero-crane-bay-mobile-1440.webp 1440w" sizes="100vw" />
+    <img class="hero-bg" src="/uploads/hero-crane-bay-desktop-1920.jpg" srcset="/uploads/hero-crane-bay-mobile-960.jpg 960w, /uploads/hero-crane-bay-mobile-1440.jpg 1440w" sizes="100vw" alt="" width="1920" height="960" fetchpriority="high" />
+  </picture>
+  <div class="hero-shade"></div>
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/#markets">Markets</a> / Livonia</div>
     <h1>Industrial Real Estate in Livonia, MI</h1>
