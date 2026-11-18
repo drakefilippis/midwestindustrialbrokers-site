@@ -717,6 +717,31 @@
     },
     {
       "slug": "",
+      "year": "2026",
+      "property": "Industrial / Flex sale, Saline",
+      "subtitle": "Saline, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial / Flex",
+      "side": "Seller",
+      "deal_type": "Sale",
+      "size": "10,000 SF",
+      "closed_date": "January 2026",
+      "photos": [
+        "/uploads/deals/1271-industrial-dr-saline.webp"
+      ],
+      "photo_alts": [
+        "Aerial view of 1271 Industrial Dr, Saline"
+      ],
+      "services": [
+        "disposition"
+      ],
+      "price": "",
+      "address": "1271 Industrial Dr",
+      "rep_label": "Seller Representation"
+    },
+    {
+      "slug": "",
       "year": "2024",
       "property": "Warehouse lease, Livonia",
       "subtitle": "Livonia, MI",
