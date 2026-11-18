@@ -474,14 +474,19 @@
         "quote": "",
         "attribution": ""
       },
-      "photos": [],
+      "photos": [
+        "/uploads/deals/1294-beach-court-saline.webp"
+      ],
       "services": [
         "acquisition",
         "buyer-representation"
       ],
       "property_type": "Manufacturing",
       "price": "$7,900,000",
-      "address": "1294 Beach Court"
+      "address": "1294 Beach Court",
+      "photo_alts": [
+        "Aerial view of 1294 Beach Court, Saline"
+      ]
     },
     {
       "slug": "michigan-fine-yarn",
@@ -712,6 +717,31 @@
     },
     {
       "slug": "",
+      "year": "2026",
+      "property": "Industrial / Flex sale, Saline",
+      "subtitle": "Saline, MI",
+      "client": "",
+      "client_industry": "",
+      "property_type": "Industrial / Flex",
+      "side": "Seller",
+      "deal_type": "Sale",
+      "size": "10,000 SF",
+      "closed_date": "January 2026",
+      "photos": [
+        "/uploads/deals/1271-industrial-dr-saline.webp"
+      ],
+      "photo_alts": [
+        "Aerial view of 1271 Industrial Dr, Saline"
+      ],
+      "services": [
+        "disposition"
+      ],
+      "price": "",
+      "address": "1271 Industrial Dr",
+      "rep_label": "Seller Representation"
+    },
+    {
+      "slug": "",
       "year": "2024",
       "property": "Warehouse lease, Livonia",
       "subtitle": "Livonia, MI",
@@ -721,12 +751,17 @@
       "side": "Tenant",
       "deal_type": "Lease",
       "size": "32,736 SF",
-      "photos": [],
+      "photos": [
+        "/uploads/deals/35255-glendale-st-livonia.webp"
+      ],
       "services": [
         "tenant-representation"
       ],
       "price": "",
-      "address": "35255 Glendale St"
+      "address": "35255 Glendale St",
+      "photo_alts": [
+        "Aerial view of 35255 Glendale St, Livonia"
+      ]
     },
     {
       "slug": "",
@@ -831,12 +866,17 @@
       "side": "Tenant",
       "deal_type": "Lease",
       "size": "11,525 SF",
-      "photos": [],
+      "photos": [
+        "/uploads/deals/51523-celeste-dr-shelby-twp.webp"
+      ],
       "services": [
         "tenant-representation"
       ],
       "price": "",
-      "address": "51523 Celeste Dr"
+      "address": "51523 Celeste Dr",
+      "photo_alts": [
+        "Exterior view of 51523 Celeste Dr, Shelby Twp"
+      ]
     },
     {
       "slug": "",
