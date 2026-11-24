@@ -811,12 +811,17 @@
       "side": "Seller",
       "deal_type": "Sale",
       "size": "10,000 SF",
-      "photos": [],
+      "photos": [
+        "/uploads/deals/14975-cleat-st-plymouth-twp.webp"
+      ],
       "services": [
         "disposition"
       ],
       "price": "$1,170,000",
-      "address": "14975 Cleat St"
+      "address": "14975 Cleat St",
+      "photo_alts": [
+        "14975 Cleat St, Plymouth Twp, industrial building exterior"
+      ]
     },
     {
       "slug": "",
